@@ -57,6 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "academic-blue": {
+          DEFAULT: "hsl(var(--academic-blue))",
+          light: "hsl(var(--academic-blue-light))",
+          lighter: "hsl(var(--academic-blue-lighter))",
+        },
+        "academic-neutral": {
+          DEFAULT: "hsl(var(--academic-neutral))",
+          light: "hsl(var(--academic-neutral-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
