@@ -158,8 +158,8 @@ const Sources = () => {
           {sourceCategories.map((category, categoryIndex) => (
             <section key={categoryIndex} className="space-y-6">
               <div className="flex items-center space-x-3">
-                <div className="p-3 rounded-lg bg-academic-blue-lighter">
-                  <category.icon className="h-6 w-6 text-academic-blue" />
+                <div className="p-3 rounded-lg bg-academic-red-lighter">
+                  <category.icon className="h-6 w-6 text-academic-red" />
                 </div>
                 <div>
                   <h2 className="text-2xl font-bold academic-heading">{category.title}</h2>
@@ -182,7 +182,7 @@ const Sources = () => {
                           href={source.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center space-x-1 text-academic-blue hover:text-academic-blue/80 transition-colors"
+                          className="flex items-center space-x-1 text-academic-red hover:text-academic-red/80 transition-colors"
                         >
                           <ExternalLink className="h-4 w-4" />
                           <span className="text-sm">Visit</span>
@@ -205,17 +205,17 @@ const Sources = () => {
               </p>
             </div>
 
-            <Card className="p-8 bg-academic-blue-lighter/30">
+            <Card className="p-8 bg-academic-red-lighter/30">
               <div className="space-y-6">
                 <div className="flex items-center space-x-3">
-                  <FileText className="h-6 w-6 text-academic-blue" />
+                  <FileText className="h-6 w-6 text-academic-red" />
                   <h3 className="text-xl font-semibold academic-subheading">Quality Assurance Process</h3>
                 </div>
                 
                 <div className="space-y-4">
                   {methodologyNotes.map((note, index) => (
                     <div key={index} className="flex items-start space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-academic-blue mt-2 flex-shrink-0"></div>
+                      <div className="w-2 h-2 rounded-full bg-academic-red mt-2 flex-shrink-0"></div>
                       <p className="academic-body">{note}</p>
                     </div>
                   ))}

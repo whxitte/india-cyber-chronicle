@@ -72,7 +72,7 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
 
   const FilterSection = ({ title, options, category }: { title: string; options: string[]; category: string }) => (
     <div className="space-y-3">
-      <h4 className="font-medium text-sm text-academic-blue">{title}</h4>
+      <h4 className="font-medium text-sm text-academic-red">{title}</h4>
       <div className="space-y-2 max-h-40 overflow-y-auto">
         {options.map((option) => (
           <div key={option} className="flex items-center space-x-2">
@@ -85,7 +85,7 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
             />
             <Label 
               htmlFor={`${category}-${option}`}
-              className="text-sm cursor-pointer hover:text-academic-blue"
+              className="text-sm cursor-pointer hover:text-academic-red"
             >
               {option}
             </Label>
@@ -123,8 +123,8 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
       <Card className={`p-4 space-y-6 ${isExpanded ? 'block' : 'hidden lg:block'}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Filter className="h-4 w-4 text-academic-blue" />
-            <h3 className="font-semibold text-academic-blue">Filters</h3>
+            <Filter className="h-4 w-4 text-academic-red" />
+            <h3 className="font-semibold text-academic-red">Filters</h3>
           </div>
           {hasActiveFilters && (
             <Button variant="ghost" size="sm" onClick={clearAllFilters}>
@@ -159,7 +159,7 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
           <>
             <Separator />
             <div className="space-y-2">
-              <h4 className="font-medium text-sm text-academic-blue">Active Filters</h4>
+              <h4 className="font-medium text-sm text-academic-red">Active Filters</h4>
               <div className="flex flex-wrap gap-2">
                 {Object.entries(filters).map(([category, values]) =>
                   values.map((value) => (

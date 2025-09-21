@@ -16,7 +16,7 @@ const SearchBar = ({ value, onChange, placeholder = "Search incidents by organiz
         placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="pl-10 h-12 bg-background border-border focus:border-academic-blue focus:ring-academic-blue"
+        className="pl-10 h-12 bg-background border-border focus:border-academic-red focus:ring-academic-red"
       />
     </div>
   );

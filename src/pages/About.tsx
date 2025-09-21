@@ -64,10 +64,10 @@ const About = () => {
           </div>
 
           {/* Mission Statement */}
-          <Card className="p-8 bg-academic-blue-lighter/30">
+          <Card className="p-8 bg-academic-red-lighter/30">
             <div className="text-center space-y-4">
               <div className="flex justify-center">
-                <div className="p-4 rounded-full bg-academic-blue">
+                <div className="p-4 rounded-full bg-academic-red">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
               </div>
@@ -86,8 +86,8 @@ const About = () => {
               {objectives.map((objective, index) => (
                 <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 rounded-lg bg-academic-blue-lighter">
-                      <objective.icon className="h-6 w-6 text-academic-blue" />
+                    <div className="p-3 rounded-lg bg-academic-red-lighter">
+                      <objective.icon className="h-6 w-6 text-academic-red" />
                     </div>
                     <div className="space-y-2">
                       <h3 className="font-semibold academic-subheading">{objective.title}</h3>
@@ -107,7 +107,7 @@ const About = () => {
                 <Card key={index} className="p-6">
                   <div className="flex items-start space-x-6">
                     <div className="flex-shrink-0">
-                      <div className="w-10 h-10 rounded-full bg-academic-blue text-white flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 rounded-full bg-academic-red text-white flex items-center justify-center font-bold">
                         {step.step}
                       </div>
                     </div>
@@ -171,7 +171,7 @@ const About = () => {
             <Card className="p-8 bg-muted/30">
               <div className="space-y-4">
                 <div className="flex justify-center">
-                  <div className="w-20 h-20 rounded-full bg-academic-blue flex items-center justify-center">
+                  <div className="w-20 h-20 rounded-full bg-academic-red flex items-center justify-center">
                     <Users className="h-10 w-10 text-white" />
                   </div>
                 </div>

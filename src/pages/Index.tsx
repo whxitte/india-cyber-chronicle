@@ -10,7 +10,7 @@ const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const stats = [
-    { label: "Total Incidents", value: "250+", icon: Database, color: "text-academic-blue" },
+    { label: "Total Incidents", value: "250+", icon: Database, color: "text-academic-red" },
     { label: "Organizations", value: "120+", icon: Users, color: "text-green-600" },
     { label: "Sectors Covered", value: "15", icon: Shield, color: "text-orange-600" },
     { label: "Years of Data", value: "25", icon: TrendingUp, color: "text-purple-600" },
@@ -34,7 +34,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-academic-blue-lighter to-background py-16">
+      <section className="bg-gradient-to-b from-academic-red-lighter to-background py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="space-y-4">
@@ -62,7 +62,7 @@ const Index = () => {
                 </div>
                 <Button 
                   onClick={handleSearch}
-                  className="px-8 bg-academic-blue hover:bg-academic-blue/90"
+                  className="px-8 bg-academic-red hover:bg-academic-red/90"
                 >
                   Search
                 </Button>
@@ -70,7 +70,7 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-academic-blue hover:bg-academic-blue/90">
+              <Button asChild size="lg" className="bg-academic-red hover:bg-academic-red/90">
                 <Link to="/browse">
                   <Database className="mr-2 h-5 w-5" />
                   Browse All Incidents
@@ -98,11 +98,11 @@ const Index = () => {
               {stats.map((stat, index) => (
                 <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
                   <div className="flex justify-center mb-4">
-                    <div className="p-3 rounded-full bg-academic-blue-lighter">
+                    <div className="p-3 rounded-full bg-academic-red-lighter">
                       <stat.icon className={`h-8 w-8 ${stat.color}`} />
                     </div>
                   </div>
-                  <div className="text-3xl font-bold text-academic-blue mb-2">{stat.value}</div>
+                  <div className="text-3xl font-bold text-academic-red mb-2">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </Card>
               ))}
@@ -131,7 +131,7 @@ const Index = () => {
                         <AlertTriangle className="h-5 w-5 text-red-600" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-academic-blue">{incident.org}</h3>
+                        <h3 className="font-semibold text-academic-red">{incident.org}</h3>
                         <p className="text-sm text-muted-foreground">{incident.type} • {incident.date}</p>
                       </div>
                     </div>
@@ -155,15 +155,15 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center space-y-4">
             <div className="flex items-center justify-center space-x-3">
-              <Shield className="h-6 w-6 text-academic-blue" />
-              <span className="font-semibold text-academic-blue">India Cyber Incident Archive</span>
+              <Shield className="h-6 w-6 text-academic-red" />
+              <span className="font-semibold text-academic-red">India Cyber Incident Archive</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Advancing cyber security awareness through documented incident analysis
             </p>
             <div className="flex items-center justify-center space-x-6 text-sm">
-              <Link to="/about" className="text-muted-foreground hover:text-academic-blue">About</Link>
-              <Link to="/sources" className="text-muted-foreground hover:text-academic-blue">Sources</Link>
+              <Link to="/about" className="text-muted-foreground hover:text-academic-red">About</Link>
+              <Link to="/sources" className="text-muted-foreground hover:text-academic-red">Sources</Link>
               <span className="text-muted-foreground">© 2024 Research Archive</span>
             </div>
           </div>

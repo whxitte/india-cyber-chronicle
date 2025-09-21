@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Academic blue color palette */
+    /* Academic red color palette */
     --background: 0 0% 100%;
-    --foreground: 213 14% 16%;
+    --foreground: 0 14% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 213 14% 16%;
+    --card-foreground: 0 14% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 213 14% 16%;
+    --popover-foreground: 0 14% 16%;
 
-    --primary: 213 100% 25%;
+    --primary: 0 72% 51%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 25% 95%;
-    --secondary-foreground: 213 14% 16%;
+    --secondary: 0 25% 95%;
+    --secondary-foreground: 0 14% 16%;
 
-    --muted: 210 25% 97%;
-    --muted-foreground: 213 12% 45%;
+    --muted: 0 25% 97%;
+    --muted-foreground: 0 12% 45%;
 
-    --accent: 205 100% 94%;
-    --accent-foreground: 213 100% 25%;
+    --accent: 0 100% 94%;
+    --accent-foreground: 0 72% 51%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 213 100% 25%;
+    --border: 0 20% 90%;
+    --input: 0 20% 90%;
+    --ring: 0 72% 51%;
 
     /* Academic specific colors */
-    --academic-blue: 213 100% 25%;
-    --academic-blue-light: 213 80% 85%;
-    --academic-blue-lighter: 213 60% 95%;
-    --academic-neutral: 213 8% 50%;
-    --academic-neutral-light: 213 15% 95%;
+    --academic-red: 0 72% 51%;
+    --academic-red-light: 0 60% 85%;
+    --academic-red-lighter: 0 40% 95%;
+    --academic-neutral: 0 8% 50%;
+    --academic-neutral-light: 0 15% 95%;
     
     /* Status colors for incidents */
     --status-critical: 0 84% 60%;
@@ -70,39 +70,39 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 213 25% 6%;
-    --foreground: 210 40% 98%;
+    --background: 0 25% 6%;
+    --foreground: 0 40% 98%;
 
-    --card: 213 25% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 25% 8%;
+    --card-foreground: 0 40% 98%;
 
-    --popover: 213 25% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 25% 8%;
+    --popover-foreground: 0 40% 98%;
 
-    --primary: 213 80% 60%;
-    --primary-foreground: 213 25% 6%;
+    --primary: 0 80% 60%;
+    --primary-foreground: 0 25% 6%;
 
-    --secondary: 213 20% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 20% 15%;
+    --secondary-foreground: 0 40% 98%;
 
-    --muted: 213 20% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 0 20% 15%;
+    --muted-foreground: 0 20% 65%;
 
-    --accent: 213 30% 18%;
-    --accent-foreground: 213 80% 60%;
+    --accent: 0 30% 18%;
+    --accent-foreground: 0 80% 60%;
 
     --destructive: 0 62% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 40% 98%;
 
-    --border: 213 20% 15%;
-    --input: 213 20% 15%;
-    --ring: 213 80% 60%;
+    --border: 0 20% 15%;
+    --input: 0 20% 15%;
+    --ring: 0 80% 60%;
 
-    --academic-blue: 213 80% 60%;
-    --academic-blue-light: 213 50% 25%;
-    --academic-blue-lighter: 213 30% 18%;
-    --academic-neutral: 213 15% 60%;
-    --academic-neutral-light: 213 20% 15%;
+    --academic-red: 0 80% 60%;
+    --academic-red-light: 0 50% 25%;
+    --academic-red-lighter: 0 30% 18%;
+    --academic-neutral: 0 15% 60%;
+    --academic-neutral-light: 0 20% 15%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -125,7 +125,7 @@ All colors MUST be HSL.
 
   /* Academic typography */
   .academic-heading {
-    @apply font-bold text-academic-blue tracking-tight;
+    @apply font-bold text-academic-red tracking-tight;
   }
 
   .academic-subheading {
@@ -146,7 +146,7 @@ All colors MUST be HSL.
   }
 
   .data-table-header {
-    @apply bg-academic-blue-lighter border-b border-border;
+    @apply bg-academic-red-lighter border-b border-border;
   }
 
   .data-table-row {

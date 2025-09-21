@@ -111,8 +111,10 @@ const IncidentDetail = () => {
             <div className="lg:col-span-2 space-y-6">
               {/* Description */}
               <Card className="p-6">
-                <h2 className="text-xl font-semibold academic-subheading mb-4">Incident Overview</h2>
-                <p className="academic-body leading-relaxed">{incident.description}</p>
+                <h2 className="text-xl font-semibold academic-subheading mb-4">Incident Description</h2>
+                <div className="prose max-w-none">
+                  <p className="academic-body leading-relaxed text-base">{incident.description}</p>
+                </div>
               </Card>
 
               {/* Impact */}
@@ -135,7 +137,7 @@ const IncidentDetail = () => {
                 <div className="space-y-3">
                   {incident.sources.map((source, index) => (
                     <div key={index} className="flex items-start space-x-3 p-3 rounded-lg border hover:bg-muted/50 transition-colors">
-                      <FileText className="h-5 w-5 text-academic-blue mt-0.5 flex-shrink-0" />
+                      <FileText className="h-5 w-5 text-academic-red mt-0.5 flex-shrink-0" />
                       <div className="flex-1 space-y-1">
                         <div className="flex items-center justify-between">
                           <h3 className="font-medium">{source.title}</h3>
@@ -143,7 +145,7 @@ const IncidentDetail = () => {
                             href={source.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center space-x-1 text-academic-blue hover:text-academic-blue/80 transition-colors"
+                            className="flex items-center space-x-1 text-academic-red hover:text-academic-red/80 transition-colors"
                           >
                             <ExternalLink className="h-4 w-4" />
                             <span className="text-sm">View</span>

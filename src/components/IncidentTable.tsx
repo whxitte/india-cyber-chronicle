@@ -76,7 +76,7 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
       <div className="hidden lg:block">
         <div className="data-table">
           <div className="data-table-header">
-            <div className="grid grid-cols-8 gap-4 p-4 text-sm font-semibold text-academic-blue">
+            <div className="grid grid-cols-8 gap-4 p-4 text-sm font-semibold text-academic-red">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 Date
@@ -102,7 +102,7 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
               >
                 <div className="data-table-row grid grid-cols-8 gap-4 p-4 text-sm">
                   <div className="font-medium">{formatDate(incident.date)}</div>
-                  <div className="font-medium text-academic-blue">{incident.organization}</div>
+                  <div className="font-medium text-academic-red">{incident.organization}</div>
                   <div>{incident.sector}</div>
                   <div>{incident.incidentType}</div>
                   <div className="text-muted-foreground">{incident.attackMethod}</div>
@@ -118,7 +118,7 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
                   </div>
                   <div className="flex items-center gap-1">
                     <ExternalLink className="h-3 w-3 text-muted-foreground" />
-                    <span className="text-academic-blue">{incident.sources.length}</span>
+                    <span className="text-academic-red">{incident.sources.length}</span>
                   </div>
                 </div>
               </Link>
@@ -134,7 +134,7 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
             <Link to={`/incident/${incident.id}`} className="block space-y-3">
               <div className="flex items-start justify-between">
                 <div>
-                  <h3 className="font-semibold text-academic-blue">{incident.organization}</h3>
+                  <h3 className="font-semibold text-academic-red">{incident.organization}</h3>
                   <p className="text-sm text-muted-foreground">{formatDate(incident.date)}</p>
                 </div>
                 <Badge 
@@ -156,7 +156,7 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Sources:</span>
-                  <span className="flex items-center gap-1 text-academic-blue">
+                  <span className="flex items-center gap-1 text-academic-red">
                     <ExternalLink className="h-3 w-3" />
                     {incident.sources.length}
                   </span>
