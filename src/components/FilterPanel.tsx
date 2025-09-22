@@ -102,7 +102,7 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
         <Button
           variant="outline"
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full justify-between glass-card border border-white/20 backdrop-blur-sm bg-white/10 dark:bg-black/10 h-12"
+          className="w-full justify-between"
         >
           <span className="flex items-center gap-2">
             <Filter className="h-4 w-4" />
@@ -120,7 +120,7 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
       </div>
 
       {/* Filter Panel */}
-      <Card className={`glass-card border border-white/10 backdrop-blur-sm bg-white/5 dark:bg-black/5 p-6 space-y-6 ${isExpanded ? 'block' : 'hidden lg:block'}`} style={{ height: 'calc(100vh - 400px)', minHeight: '600px', overflowY: 'auto' }}>
+      <Card className={`p-4 space-y-6 ${isExpanded ? 'block' : 'hidden lg:block'}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Filter className="h-4 w-4 text-academic-red" />

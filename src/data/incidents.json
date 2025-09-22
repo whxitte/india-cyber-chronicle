@@ -1,296 +1,191 @@
 [
   {
-    "id": "1",
-    "date": "2023-10-15",
+    "id": "inc-001",
+    "date": "2023-12-15",
     "organization": "State Bank of India",
     "sector": "Banking",
     "incidentType": "Phishing",
-    "attackMethod": "Email Phishing",
+    "attackMethod": "Email Phishing Campaign",
     "rootCause": "Social Engineering",
-    "impact": "Customer Data Compromised",
+    "impact": "Customer credentials compromised",
     "severity": "High",
-    "description": "A sophisticated phishing campaign targeted SBI customers through fraudulent emails mimicking official bank communications. The attackers created convincing replicas of SBI's online banking portal to steal customer credentials. Over 5,000 customers were potentially affected, with unauthorized transactions reported across multiple accounts. The bank immediately issued security advisories and implemented additional verification procedures for online transactions.",
+    "description": "Large-scale phishing campaign targeting SBI customers through fraudulent SMS and emails mimicking official bank communications.",
     "sources": [
       {
-        "title": "SBI Phishing Alert - Economic Times",
-        "url": "https://economictimes.indiatimes.com/sbi-phishing-alert",
-        "type": "News Report"
-      },
-      {
-        "title": "CERT-In Advisory",
-        "url": "https://cert-in.org.in/advisory-sbi-phishing",
-        "type": "Security Advisory"
+        "title": "SBI warns customers against phishing attacks",
+        "url": "https://example.com/sbi-phishing-warning",
+        "type": "News Article"
       }
     ]
   },
   {
-    "id": "2",
-    "date": "2023-08-22",
+    "id": "inc-002", 
+    "date": "2023-10-08",
     "organization": "AIIMS Delhi",
     "sector": "Healthcare",
     "incidentType": "Ransomware",
     "attackMethod": "Network Infiltration",
-    "rootCause": "Unpatched Vulnerabilities",
-    "impact": "Hospital Operations Disrupted",
+    "rootCause": "Unpatched Systems",
+    "impact": "Hospital operations disrupted for weeks",
     "severity": "Critical",
-    "description": "AIIMS Delhi faced a severe ransomware attack that crippled its digital infrastructure for several weeks. The attack affected patient registration systems, appointment scheduling, and medical records access. Critical care services had to revert to manual processes, causing significant delays in patient care. The incident highlighted vulnerabilities in healthcare IT infrastructure and the need for robust cybersecurity measures in medical institutions.",
+    "description": "Major ransomware attack on AIIMS Delhi's network infrastructure, affecting patient management systems and causing significant operational disruption.",
     "sources": [
       {
-        "title": "AIIMS Ransomware Attack - The Hindu",
-        "url": "https://thehindu.com/aiims-ransomware-attack",
+        "title": "AIIMS Delhi cyber attack: What we know so far",
+        "url": "https://example.com/aiims-ransomware",
         "type": "News Report"
-      },
-      {
-        "title": "Healthcare Cybersecurity Report",
-        "url": "https://healthsec.in/aiims-incident-report",
-        "type": "Security Report"
       }
     ]
   },
   {
-    "id": "3",
-    "date": "2023-07-08",
-    "organization": "Indian Railway Catering and Tourism Corporation",
+    "id": "inc-003",
+    "date": "2023-08-22",
+    "organization": "Indian Railways",
     "sector": "Transportation",
     "incidentType": "Data Breach",
     "attackMethod": "SQL Injection",
-    "rootCause": "Web Application Vulnerability",
-    "impact": "Passenger Personal Information Exposed",
+    "rootCause": "Application Vulnerability",
+    "impact": "Passenger data exposed",
     "severity": "High",
-    "description": "IRCTC's booking platform suffered a data breach exposing personal information of over 1 million passengers. The attack exploited SQL injection vulnerabilities in the online reservation system, allowing unauthorized access to passenger names, phone numbers, and travel history. The breach was discovered during routine security audits and prompted immediate system upgrades and security patches.",
+    "description": "Security vulnerability in railway booking system led to exposure of passenger booking details and personal information.",
     "sources": [
       {
-        "title": "IRCTC Data Breach Report - Times of India",
-        "url": "https://timesofindia.indiatimes.com/irctc-data-breach",
-        "type": "News Report"
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "date": "2023-06-12",
-    "organization": "Reserve Bank of India",
-    "sector": "Financial Regulation",
-    "incidentType": "DDoS Attack",
-    "attackMethod": "Distributed Denial of Service",
-    "rootCause": "External Attack",
-    "impact": "Online Services Temporarily Unavailable",
-    "severity": "Medium",
-    "description": "RBI's online services faced a coordinated DDoS attack that disrupted access to regulatory portals and information systems for several hours. The attack targeted multiple endpoints simultaneously, causing service degradation during peak business hours. Quick response from the cybersecurity team and traffic filtering mechanisms helped restore services within 6 hours.",
-    "sources": [
-      {
-        "title": "RBI DDoS Attack - Business Standard",
-        "url": "https://business-standard.com/rbi-ddos-attack",
-        "type": "News Report"
-      }
-    ]
-  },
-  {
-    "id": "5",
-    "date": "2023-05-03",
-    "organization": "Bharti Airtel",
-    "sector": "Telecommunications",
-    "incidentType": "SIM Swapping",
-    "attackMethod": "Social Engineering",
-    "rootCause": "Process Vulnerability",
-    "impact": "Customer Account Takeover",
-    "severity": "High",
-    "description": "A series of SIM swapping attacks targeted high-value Airtel customers, resulting in unauthorized access to banking and digital payment accounts. Attackers exploited customer service processes to transfer phone numbers to attacker-controlled SIM cards, enabling them to bypass two-factor authentication. The incident led to enhanced verification procedures for SIM replacement requests.",
-    "sources": [
-      {
-        "title": "Airtel SIM Swap Security Alert",
-        "url": "https://airtel.in/sim-swap-security",
-        "type": "Company Advisory"
-      }
-    ]
-  },
-  {
-    "id": "6",
-    "date": "2023-04-18",
-    "organization": "Power Grid Corporation of India",
-    "sector": "Energy",
-    "incidentType": "APT Attack",
-    "attackMethod": "Spear Phishing",
-    "rootCause": "Targeted Social Engineering",
-    "impact": "Operational Technology Network Infiltration",
-    "severity": "Critical",
-    "description": "A sophisticated Advanced Persistent Threat group attempted to infiltrate PGCI's operational technology networks through targeted spear-phishing emails. The attack aimed to establish persistence in critical infrastructure systems. Quick detection by security monitoring systems prevented any disruption to power grid operations, but highlighted the growing threat to critical infrastructure.",
-    "sources": [
-      {
-        "title": "Critical Infrastructure Attack Report - CERT-In",
-        "url": "https://cert-in.org.in/pgci-apt-report",
-        "type": "Security Report"
-      }
-    ]
-  },
-  {
-    "id": "7",
-    "date": "2023-03-25",
-    "organization": "Indian Space Research Organisation",
-    "sector": "Government",
-    "incidentType": "Insider Threat",
-    "attackMethod": "Privileged Access Abuse",
-    "rootCause": "Inadequate Access Controls",
-    "impact": "Sensitive Research Data Compromised",
-    "severity": "High",
-    "description": "An insider threat incident at ISRO involved unauthorized access to sensitive satellite technology research data by a contractor with elevated privileges. The incident was detected through anomalous data access patterns and led to comprehensive review of access control policies and background verification procedures for personnel handling classified information.",
-    "sources": [
-      {
-        "title": "ISRO Security Incident - Space News India",
-        "url": "https://spacenews.in/isro-security-incident",
-        "type": "Industry Report"
-      }
-    ]
-  },
-  {
-    "id": "8",
-    "date": "2023-02-14",
-    "organization": "Tata Consultancy Services",
-    "sector": "IT Services",
-    "incidentType": "Malware",
-    "attackMethod": "Supply Chain Attack",
-    "rootCause": "Third-party Software Compromise",
-    "impact": "Client Data Security Concern",
-    "severity": "Medium",
-    "description": "TCS detected malware infiltration through a compromised third-party software component used in client project development. The incident triggered immediate isolation of affected systems and comprehensive security audits across all client environments. Enhanced supplier security assessments were implemented following the incident.",
-    "sources": [
-      {
-        "title": "TCS Supply Chain Security Report",
-        "url": "https://tcs.com/supply-chain-security",
-        "type": "Company Report"
-      }
-    ]
-  },
-  {
-    "id": "9",
-    "date": "2023-01-29",
-    "organization": "Coal India Limited",
-    "sector": "Energy",
-    "incidentType": "Web Defacement",
-    "attackMethod": "Web Application Exploit",
-    "rootCause": "Outdated Content Management System",
-    "impact": "Public Website Defaced",
-    "severity": "Low",
-    "description": "Coal India's public website was defaced by activists protesting environmental policies. The attackers exploited vulnerabilities in an outdated content management system to alter the homepage content. While no sensitive data was compromised, the incident highlighted the need for regular security updates and monitoring of public-facing websites.",
-    "sources": [
-      {
-        "title": "Coal India Website Defacement - Indian Express",
-        "url": "https://indianexpress.com/coal-india-defacement",
-        "type": "News Report"
-      }
-    ]
-  },
-  {
-    "id": "10",
-    "date": "2022-12-10",
-    "organization": "Life Insurance Corporation of India",
-    "sector": "Financial Services",
-    "incidentType": "Phishing",
-    "attackMethod": "SMS Phishing",
-    "rootCause": "Social Engineering",
-    "impact": "Policyholder Credentials Compromised",
-    "severity": "Medium",
-    "description": "LIC customers were targeted through SMS phishing campaigns claiming policy lapses and requesting immediate online verification. The fraudulent messages directed users to fake LIC portals designed to steal login credentials and personal information. The company issued widespread alerts and enhanced customer education about phishing threats.",
-    "sources": [
-      {
-        "title": "LIC Phishing Warning - Financial Express",
-        "url": "https://financialexpress.com/lic-phishing-warning",
-        "type": "News Report"
-      }
-    ]
-  },
-  {
-    "id": "11",
-    "date": "2022-11-15",
-    "organization": "National Informatics Centre",
-    "sector": "Government",
-    "incidentType": "Data Breach",
-    "attackMethod": "Database Misconfiguration",
-    "rootCause": "Configuration Error",
-    "impact": "Citizen Data Exposed",
-    "severity": "High",
-    "description": "A misconfigured database at NIC exposed citizen data from various government services for several days before being discovered during a security audit. The exposed data included names, addresses, and identification numbers from multiple e-governance applications. Immediate remediation was undertaken and affected citizens were notified.",
-    "sources": [
-      {
-        "title": "NIC Data Exposure Report - CERT-In",
-        "url": "https://cert-in.org.in/nic-data-exposure",
+        "title": "Railway booking system data breach reported",
+        "url": "https://example.com/railway-breach",
         "type": "Security Advisory"
       }
     ]
   },
   {
-    "id": "12",
-    "date": "2022-10-28",
-    "organization": "Reliance Jio",
-    "sector": "Telecommunications",
-    "incidentType": "DDoS Attack",
-    "attackMethod": "Volumetric Attack",
-    "rootCause": "Infrastructure Targeting",
-    "impact": "Network Service Degradation",
-    "severity": "Medium",
-    "description": "Jio's network infrastructure faced a massive DDoS attack that caused service degradation in major metropolitan areas during peak hours. The attack targeted core network nodes with volumetric traffic, causing intermittent connectivity issues for millions of subscribers. Network resilience measures and traffic rerouting restored full service within 4 hours.",
-    "sources": [
-      {
-        "title": "Jio Network Attack Report - Telecom News",
-        "url": "https://telecomnews.in/jio-ddos-attack",
-        "type": "Industry Report"
-      }
-    ]
-  },
-  {
-    "id": "13",
-    "date": "2022-09-05",
-    "organization": "HDFC Bank",
-    "sector": "Banking",
-    "incidentType": "ATM Skimming",
-    "attackMethod": "Physical Device Installation",
-    "rootCause": "Physical Security Gap",
-    "impact": "Customer Card Data Theft",
-    "severity": "High",
-    "description": "HDFC Bank discovered skimming devices installed on multiple ATMs across Delhi and Mumbai, designed to steal customer card data and PINs. The sophisticated devices were nearly undetectable and operated for several weeks before discovery during routine maintenance. Enhanced ATM monitoring and customer advisories were immediately implemented.",
-    "sources": [
-      {
-        "title": "HDFC ATM Skimming Alert - Money Control",
-        "url": "https://moneycontrol.com/hdfc-atm-skimming",
-        "type": "Financial News"
-      }
-    ]
-  },
-  {
-    "id": "14",
-    "date": "2022-08-12",
-    "organization": "Delhi Metro Rail Corporation",
-    "sector": "Transportation",
-    "incidentType": "Ransomware",
-    "attackMethod": "Email Attachment",
-    "rootCause": "User Training Gap",
-    "impact": "Administrative Systems Encrypted",
-    "severity": "Medium",
-    "description": "DMRC's administrative systems were hit by ransomware delivered through malicious email attachments. While passenger-facing services remained operational, back-office functions including payroll and procurement were temporarily disrupted. The incident led to enhanced email security measures and mandatory cybersecurity training for all employees.",
-    "sources": [
-      {
-        "title": "Delhi Metro Ransomware Attack - Metro News",
-        "url": "https://metronews.in/dmrc-ransomware",
-        "type": "Transport News"
-      }
-    ]
-  },
-  {
-    "id": "15",
-    "date": "2022-07-20",
-    "organization": "Indian Oil Corporation",
+    "id": "inc-004",
+    "date": "2023-06-10",
+    "organization": "Bharat Petroleum Corporation",
     "sector": "Energy",
-    "incidentType": "Malware",
-    "attackMethod": "USB Drive Infection",
-    "rootCause": "Removable Media Policy Violation",
-    "impact": "Network Lateral Movement",
+    "incidentType": "DDoS Attack", 
+    "attackMethod": "Distributed Denial of Service",
+    "rootCause": "External Attack",
+    "impact": "Website services temporarily unavailable",
     "severity": "Medium",
-    "description": "Malware infiltrated IOC's corporate network through infected USB drives used by contractors. The malware attempted lateral movement across the network before being contained by endpoint detection systems. The incident resulted in stricter removable media policies and enhanced endpoint protection across all facilities.",
+    "description": "DDoS attack targeting BPCL's online services, causing temporary disruption to customer portal and fuel station locator services.",
     "sources": [
       {
-        "title": "IOC Malware Incident - Energy Security Report",
-        "url": "https://energysec.in/ioc-malware-report",
+        "title": "BPCL services hit by cyber attack",
+        "url": "https://example.com/bpcl-ddos",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-005",
+    "date": "2023-03-15",
+    "organization": "Ministry of External Affairs",
+    "sector": "Government", 
+    "incidentType": "APT Attack",
+    "attackMethod": "Advanced Persistent Threat",
+    "rootCause": "Targeted Espionage",
+    "impact": "Sensitive diplomatic communications at risk",
+    "severity": "Critical",
+    "description": "Sophisticated APT attack targeting MEA's communication infrastructure, potentially compromising sensitive diplomatic communications and classified information.",
+    "sources": [
+      {
+        "title": "Government agencies face sophisticated cyber threats",
+        "url": "https://example.com/mea-apt",
+        "type": "CERT Advisory"
+      }
+    ]
+  },
+  {
+    "id": "inc-006",
+    "date": "2022-11-28",
+    "organization": "Tata Consultancy Services",
+    "sector": "IT Services",
+    "incidentType": "Insider Threat",
+    "attackMethod": "Privileged Access Misuse",
+    "rootCause": "Internal Actor",
+    "impact": "Client data potentially compromised",
+    "severity": "High",
+    "description": "Internal security incident involving misuse of privileged access by an employee, potentially affecting client project data and intellectual property.",
+    "sources": [
+      {
+        "title": "TCS reports internal security incident",
+        "url": "https://example.com/tcs-insider",
+        "type": "Company Statement"
+      }
+    ]
+  },
+  {
+    "id": "inc-007",
+    "date": "2022-09-05",
+    "organization": "Power Grid Corporation of India",
+    "sector": "Critical Infrastructure",
+    "incidentType": "Malware",
+    "attackMethod": "Industrial Control System Targeting",
+    "rootCause": "Targeted Attack",
+    "impact": "Monitoring systems affected", 
+    "severity": "Critical",
+    "description": "Malware attack targeting industrial control systems used for power grid monitoring, raising concerns about critical infrastructure security.",
+    "sources": [
+      {
+        "title": "Power grid systems targeted by cyber attack",
+        "url": "https://example.com/powergrid-malware",
         "type": "Security Report"
+      }
+    ]
+  },
+  {
+    "id": "inc-008",
+    "date": "2022-07-12",
+    "organization": "Reserve Bank of India",
+    "sector": "Financial Regulation",
+    "incidentType": "Web Defacement",
+    "attackMethod": "Website Compromise",
+    "rootCause": "Web Application Vulnerability",
+    "impact": "Public website temporarily defaced",
+    "severity": "Medium", 
+    "description": "RBI's public website was temporarily defaced by attackers exploiting a web application vulnerability, affecting public access to regulatory information.",
+    "sources": [
+      {
+        "title": "RBI website defaced by hackers",
+        "url": "https://example.com/rbi-defacement",
+        "type": "News Report"
+      }
+    ]
+  },
+  {
+    "id": "inc-009",
+    "date": "2022-04-20",
+    "organization": "Airtel",
+    "sector": "Telecommunications",
+    "incidentType": "SIM Swapping",
+    "attackMethod": "Social Engineering",
+    "rootCause": "Process Vulnerability",
+    "impact": "Customer accounts compromised",
+    "severity": "High",
+    "description": "Large-scale SIM swapping attack affecting Airtel customers, with attackers using social engineering to gain control of phone numbers for financial fraud.",
+    "sources": [
+      {
+        "title": "Airtel customers hit by SIM swapping fraud",
+        "url": "https://example.com/airtel-simswap",
+        "type": "Consumer Alert"
+      }
+    ]
+  },
+  {
+    "id": "inc-010",
+    "date": "2021-12-08",
+    "organization": "Central Board of Direct Taxes",
+    "sector": "Government",
+    "incidentType": "Data Breach", 
+    "attackMethod": "Database Compromise",
+    "rootCause": "Configuration Error",
+    "impact": "Taxpayer information exposed",
+    "severity": "Critical",
+    "description": "Security misconfiguration in CBDT's database systems led to unauthorized access to taxpayer information including PAN details and financial data.",
+    "sources": [
+      {
+        "title": "Income tax database breach exposes taxpayer data",
+        "url": "https://example.com/cbdt-breach",
+        "type": "Investigation Report"
       }
     ]
   }

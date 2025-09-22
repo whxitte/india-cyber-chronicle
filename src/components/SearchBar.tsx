@@ -1,5 +1,5 @@
-import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
+import { Input } from "@/components/ui/input";
 
 interface SearchBarProps {
   value: string;
@@ -7,16 +7,16 @@ interface SearchBarProps {
   placeholder?: string;
 }
 
-const SearchBar = ({ value, onChange, placeholder = "Search..." }: SearchBarProps) => {
+const SearchBar = ({ value, onChange, placeholder = "Search incidents by organization, year, or sector..." }: SearchBarProps) => {
   return (
-    <div className="relative group">
-      <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground h-5 w-5 transition-colors group-focus-within:text-academic-red" />
+    <div className="relative">
+      <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
       <Input
         type="text"
+        placeholder={placeholder}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder}
-        className="pl-12 pr-4 py-3 w-full h-12 text-base glass-card border border-white/20 backdrop-blur-sm bg-white/10 dark:bg-black/10 rounded-xl focus:border-academic-red/50 focus:ring-academic-red/20 placeholder:text-muted-foreground/70 transition-all duration-200"
+        className="pl-10 h-12 bg-background border-border focus:border-academic-red focus:ring-academic-red"
       />
     </div>
   );
