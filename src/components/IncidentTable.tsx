@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -29,7 +29,33 @@ interface IncidentTableProps {
 
 const IncidentTable = ({ incidents }: IncidentTableProps) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const [itemsPerPage, setItemsPerPage] = useState(20);
+  const tableContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const calculateItemsPerPage = () => {
+      if (tableContainerRef.current) {
+        const viewportHeight = window.innerHeight;
+        const headerHeight = 200; // Approximate space for header, search, title
+        const paginationHeight = 80; // Space for pagination
+        const availableHeight = viewportHeight - headerHeight - paginationHeight;
+        const rowHeight = 48; // Row height with p-3 padding
+        const calculatedItems = Math.floor(availableHeight / rowHeight);
+
+        const minItems = 15;
+        const maxItems = 50;
+        const newItemsPerPage = Math.max(minItems, Math.min(maxItems, calculatedItems));
+
+        setItemsPerPage(newItemsPerPage);
+      }
+    };
+
+    // Small delay to ensure DOM is ready
+    setTimeout(calculateItemsPerPage, 100);
+    window.addEventListener('resize', calculateItemsPerPage);
+
+    return () => window.removeEventListener('resize', calculateItemsPerPage);
+  }, []);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -71,13 +97,13 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-12rem)]">
+    <div ref={tableContainerRef} className="flex flex-col">
       {/* Desktop Table View */}
-      <div className="hidden lg:block flex-1 min-h-0">
-        <div className="h-full flex flex-col border rounded-lg bg-background">
+      <div className="hidden lg:block">
+        <div className="flex flex-col border rounded-lg bg-background">
           {/* Table Header */}
           <div className="border-b">
-            <div className="grid grid-cols-8 gap-4 p-4 text-sm font-semibold text-academic-red">
+            <div className="grid grid-cols-8 gap-4 p-3 text-sm font-semibold text-academic-red">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 Date
@@ -96,14 +122,14 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
           </div>
 
           {/* Table Body */}
-          <div className="flex-1 overflow-y-auto">
+          <div className="overflow-hidden">
             {currentIncidents.map((incident) => (
               <Link
                 key={incident.id}
                 to={`/incident/${incident.id}`}
                 className="block hover:bg-muted/50 transition-colors"
               >
-                <div className="grid grid-cols-8 gap-4 p-4 text-sm border-b border-border">
+                <div className="grid grid-cols-8 gap-4 p-3 text-sm border-b border-border">
                   <div className="font-medium">
                     {formatDate(incident.date)}
                   </div>

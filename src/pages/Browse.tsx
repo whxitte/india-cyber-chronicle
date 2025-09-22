@@ -121,7 +121,7 @@ const Browse = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 pb-20">
         <div className="space-y-8">
           {/* Page Header */}
           <div className="space-y-4">
@@ -154,16 +154,16 @@ const Browse = () => {
 
             {/* Incidents Table */}
             <div className="lg:col-span-3">
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-semibold academic-subheading">
-                    Incident Records
-                  </h2>
-                  <div className="text-sm text-muted-foreground">
-                    {filteredIncidents.length} incident{filteredIncidents.length !== 1 ? 's' : ''} found
-                  </div>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-xl font-semibold academic-subheading">
+                  Incident Records
+                </h2>
+                <div className="text-sm text-muted-foreground">
+                  {filteredIncidents.length} incident{filteredIncidents.length !== 1 ? 's' : ''} found
                 </div>
-                
+              </div>
+
+              <div>
                 {loading ? (
                   <div className="text-center py-12">
                     <p className="text-muted-foreground">Loading incidents...</p>

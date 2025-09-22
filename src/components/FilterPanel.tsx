@@ -140,44 +140,46 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
 
         <Separator />
 
-        <FilterSection title="Year" options={yearOptions} category="years" />
-        
-        <Separator />
-        
-        <FilterSection title="Sector" options={sectorOptions} category="sectors" />
-        
-        <Separator />
-        
-        <FilterSection title="Incident Type" options={incidentTypeOptions} category="incidentTypes" />
-        
-        <Separator />
-        
-        <FilterSection title="Severity" options={severityOptions} category="severities" />
+        <div className="space-y-6">
+          <FilterSection title="Year" options={yearOptions} category="years" />
 
-        {/* Active Filters Summary */}
-        {hasActiveFilters && (
-          <>
-            <Separator />
-            <div className="space-y-2">
-              <h4 className="font-medium text-sm text-academic-red">Active Filters</h4>
-              <div className="flex flex-wrap gap-2">
-                {Object.entries(filters).map(([category, values]) =>
-                  values.map((value) => (
-                    <Badge
-                      key={`${category}-${value}`}
-                      variant="secondary"
-                      className="cursor-pointer hover:bg-destructive hover:text-destructive-foreground"
-                      onClick={() => handleFilterChange(category, value, false)}
-                    >
-                      {value}
-                      <X className="h-3 w-3 ml-1" />
-                    </Badge>
-                  ))
-                )}
+          <Separator />
+
+          <FilterSection title="Sector" options={sectorOptions} category="sectors" />
+
+          <Separator />
+
+          <FilterSection title="Incident Type" options={incidentTypeOptions} category="incidentTypes" />
+
+          <Separator />
+
+          <FilterSection title="Severity" options={severityOptions} category="severities" />
+
+          {/* Active Filters Summary */}
+          {hasActiveFilters && (
+            <>
+              <Separator />
+              <div className="space-y-2">
+                <h4 className="font-medium text-sm text-academic-red">Active Filters</h4>
+                <div className="flex flex-wrap gap-2">
+                  {Object.entries(filters).map(([category, values]) =>
+                    values.map((value) => (
+                      <Badge
+                        key={`${category}-${value}`}
+                        variant="secondary"
+                        className="cursor-pointer hover:bg-destructive hover:text-destructive-foreground"
+                        onClick={() => handleFilterChange(category, value, false)}
+                      >
+                        {value}
+                        <X className="h-3 w-3 ml-1" />
+                      </Badge>
+                    ))
+                  )}
+                </div>
               </div>
-            </div>
-          </>
-        )}
+            </>
+          )}
+        </div>
       </Card>
     </div>
   );
