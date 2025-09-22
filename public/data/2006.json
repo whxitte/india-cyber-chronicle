@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-048",
+    "date": "2006-01-01",
+    "organization": "Multiple (Global)",
+    "sector": "Multiple",
+    "incidentType": "APT",
+    "attackMethod": "Spear Phishing, Network Intrusion",
+    "rootCause": "A long-term, coordinated cyber espionage campaign targeting a wide range of organizations.",
+    "impact": "Compromised at least 71 organizations, including the UN, governments, and defense contractors, leading to the theft of large volumes of sensitive data.",
+    "severity": "Critical",
+    "description": "Dubbed 'Operation Shady RAT' by McAfee, this was a multi-year campaign of cyber espionage targeting high-value organizations worldwide. The attacks, believed to originate from China, highlighted the scale and persistence of state-sponsored efforts to steal intellectual property and government secrets.",
+    "sources": [
+      {
+        "title": "Revealed: Operation Shady RAT",
+        "url": "https://www.vanityfair.com/news/2011/08/operation-shady-rat-201108",
+        "type": "News Article"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "inc-018",
+    "date": "2011-03-16",
+    "organization": "RSA Security",
+    "sector": "Technology & IT services",
+    "incidentType": "Data Breach",
+    "attackMethod": "Spear Phishing (APT)",
+    "rootCause": "An employee opened a malicious Excel file from a phishing email, allowing attackers to install a backdoor and pivot within the network.",
+    "impact": "Exfiltration of sensitive data related to RSA's SecurID two-factor authentication products, which was later used in an attack against Lockheed Martin.",
+    "severity": "High",
+    "description": "A sophisticated APT group breached cybersecurity firm RSA and stole information critical to its flagship SecurID authentication tokens. This attack demonstrated that even top security companies are vulnerable and highlighted the use of stolen security information to target other high-value entities.",
+    "sources": [
+      {
+        "title": "RSA breached, SecurID data stolen",
+        "url": "https://www.csoonline.com/article/518609/rsa-breached-securid-data-stolen.html",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-043",
+    "date": "2011-06-19",
+    "organization": "Citigroup",
+    "sector": "Banking & Finance",
+    "incidentType": "Data Breach",
+    "attackMethod": "Web Application Vulnerability",
+    "rootCause": "A parameter tampering vulnerability in the bank's website allowed attackers to access customer account data.",
+    "impact": "Exposed the names, account numbers, and contact information of approximately 360,000 credit card customers.",
+    "severity": "Medium",
+    "description": "Hackers exploited a basic security flaw on the Citigroup website to access the credit card data of hundreds of thousands of customers. The attackers simply needed to be logged-in customers and then alter digits in the browser's address bar to view the details of other accounts.",
+    "sources": [
+      {
+        "title": "Citigroup data breach hits 360,000 customers, more than first thought",
+        "url": "https://www.theguardian.com/business/2011/jun/16/citigroup-data-breach-customers",
+        "type": "News Article"
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "inc-002",
+    "date": "2021-05-07",
+    "organization": "Colonial Pipeline",
+    "sector": "Energy & Utilities",
+    "incidentType": "Ransomware",
+    "attackMethod": "Compromised credentials",
+    "rootCause": "A single compromised password for a VPN account that was not protected by multi-factor authentication.",
+    "impact": "Shutdown of a 5,500-mile pipeline, leading to fuel shortages and price spikes across the U.S. East Coast. A ransom of $4.4 million was paid.",
+    "severity": "Critical",
+    "description": "The DarkSide ransomware group executed an attack on Colonial Pipeline, the largest fuel pipeline operator in the United States. This attack on critical infrastructure highlighted the severe real-world consequences of cyber threats, causing widespread disruption and panic buying of gasoline.",
+    "sources": [
+      {
+        "title": "Colonial Pipeline Cyber Incident",
+        "url": "https://www.energy.gov/ceser/colonial-pipeline-cyber-incident",
+        "type": "Government Report"
+      }
+    ]
+  },
+  {
+    "id": "inc-007",
+    "date": "2021-05-20",
+    "organization": "Air India",
+    "sector": "Defense & Aerospace",
+    "incidentType": "Data Breach",
+    "attackMethod": "Third-Party System Compromise",
+    "rootCause": "Compromise of SITA, a third-party passenger service system provider used by Air India and other airlines.",
+    "impact": "Personal data of approximately 4.5 million global passengers, including names, dates of birth, contact information, and passport details, was breached.",
+    "severity": "High",
+    "description": "Air India was affected by a massive data breach originating from its data processor, SITA. The breach exposed a decade's worth of passenger data, highlighting the significant risks associated with third-party vendors in the supply chain.",
+    "sources": [
+      {
+        "title": "Air India data breach: Personal info of 45 lakh passengers including passport, credit card details leaked",
+        "url": "https://indianexpress.com/article/india/air-india-data-breach-personal-info-of-45-lakh-passengers-including-passport-credit-card-details-leaked-7324488/",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-021",
+    "date": "2021-07-02",
+    "organization": "Kaseya",
+    "sector": "Technology & IT services",
+    "incidentType": "Supply Chain Attack",
+    "attackMethod": "Exploitation of Zero-Day Vulnerability",
+    "rootCause": "The REvil ransomware group exploited a zero-day vulnerability in Kaseya's VSA remote management software.",
+    "impact": "Ransomware was deployed to the customers of Managed Service Providers (MSPs) using Kaseya VSA, affecting up to 1,500 downstream businesses worldwide.",
+    "severity": "Critical",
+    "description": "In a major supply chain attack, the REvil ransomware gang compromised Kaseya's VSA software, pushing a malicious update to MSPs. This allowed them to encrypt the systems of hundreds of MSP clients, including schools, retailers, and financial firms, in a single coordinated attack.",
+    "sources": [
+      {
+        "title": "CISA-FBI Guidance for MSPs and their Customers Affected by the Kaseya VSA Supply-Chain Ransomware Attack",
+        "url": "https://www.cisa.gov/news-events/news/cisa-fbi-guidance-msps-and-their-customers-affected-kaseya-vsa-supply-chain-ransomware",
+        "type": "Government Advisory"
+      }
+    ]
+  },
+  {
+    "id": "inc-037",
+    "date": "2021-02-05",
+    "organization": "Oldsmar, Florida Water Treatment Plant",
+    "sector": "Energy & Utilities",
+    "incidentType": "Critical Infrastructure Compromise",
+    "attackMethod": "Remote Access Hijacking",
+    "rootCause": "Unauthorized use of a dormant remote access software (TeamViewer) with weak security.",
+    "impact": "An attacker briefly gained control and attempted to increase sodium hydroxide (lye) levels in the water supply to dangerously high levels. The attempt was immediately thwarted.",
+    "severity": "High",
+    "description": "A hacker remotely accessed the computer systems of a water treatment plant in Oldsmar, Florida. They attempted to poison the water supply by drastically increasing the amount of a chemical additive, an incident that highlighted the vulnerability of critical infrastructure control systems.",
+    "sources": [
+      {
+        "title": "A Hacker Tried to Poison a Florida City's Water Supply, Officials Say",
+        "url": "https://www.nytimes.com/2021/02/08/us/oldsmar-florida-water-supply-hack.html",
+        "type": "News Article"
+      }
+    ]
+  }
+]

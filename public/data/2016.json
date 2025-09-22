@@ -1,0 +1,59 @@
+[
+  {
+    "id": "inc-011",
+    "date": "2016-10-21",
+    "organization": "Dyn",
+    "sector": "Technology & IT services",
+    "incidentType": "DDoS",
+    "attackMethod": "Botnet (Mirai)",
+    "rootCause": "A massive botnet composed of compromised Internet of Things (IoT) devices targeting Dyn's DNS infrastructure.",
+    "impact": "Widespread internet disruption across North America and Europe, making major websites like Twitter, Netflix, Spotify, and Amazon inaccessible for hours.",
+    "severity": "Critical",
+    "description": "The Mirai botnet launched one of the largest DDoS attacks ever recorded against DNS provider Dyn. The attack highlighted the emerging threat of insecure IoT devices being weaponized to disrupt core internet infrastructure on a massive scale.",
+    "sources": [
+      {
+        "title": "DDoS Attack on Dyn Barrels Through Internet",
+        "url": "https://krebsonsecurity.com/2016/10/ddos-on-dyn-impacts-twitter-spotify-reddit/",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-039",
+    "date": "2016-02-04",
+    "organization": "Bangladesh Bank",
+    "sector": "Banking & Finance",
+    "incidentType": "Financial Theft",
+    "attackMethod": "SWIFT Fraud, Malware",
+    "rootCause": "Malware installed on the bank's network allowed hackers to steal SWIFT credentials and issue fraudulent transfer requests.",
+    "impact": "Attackers attempted to steal nearly $1 billion. They successfully transferred $101 million, of which $81 million was laundered through casinos in the Philippines.",
+    "severity": "Critical",
+    "description": "In one of the largest bank heists in history, hackers breached Bangladesh's central bank and used the SWIFT messaging network to send fraudulent transfer orders from its account at the Federal Reserve Bank of New York. The majority of the funds were stolen and remain unrecovered.",
+    "sources": [
+      {
+        "title": "The great Bangladesh bank heist",
+        "url": "https://www.bbc.co.uk/news/stories-43174311",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-047",
+    "date": "2016-11-01",
+    "organization": "Tesco Bank",
+    "sector": "Banking & Finance",
+    "incidentType": "Financial Theft",
+    "attackMethod": "Unauthorized Transactions",
+    "rootCause": "Exploitation of weaknesses in the bank's mobile app debit card implementation.",
+    "impact": "Fraudulent transactions were made on 9,000 customer accounts, with \u00a32.26 million stolen directly from the bank.",
+    "severity": "High",
+    "description": "Tesco Bank suffered a sophisticated attack where cybercriminals were able to extract money directly from thousands of customer accounts over a weekend. The UK's financial regulator later fined the bank \u00a316.4 million for its security failings.",
+    "sources": [
+      {
+        "title": "Tesco Bank fined \u00a316.4m for security failings in 2016 cyber attack",
+        "url": "https://www.theguardian.com/business/2018/oct/01/tesco-bank-fined-cyber-attack-fca",
+        "type": "News Article"
+      }
+    ]
+  }
+]

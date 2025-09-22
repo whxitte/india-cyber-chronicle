@@ -22,7 +22,7 @@ interface FilterPanelProps {
 const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }: FilterPanelProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const yearOptions = Array.from({ length: 25 }, (_, i) => (2025 - i).toString());
+  const yearOptions = Array.from({ length: 26 }, (_, i) => (2000 + i).toString());
   const sectorOptions = [
     "Banking",
     "Government", 

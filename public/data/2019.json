@@ -1,0 +1,59 @@
+[
+  {
+    "id": "inc-008",
+    "date": "2019-10-21",
+    "organization": "Kudankulam Nuclear Power Plant (KKNPP)",
+    "sector": "Energy & Utilities",
+    "incidentType": "Malware Infection",
+    "attackMethod": "Spear Phishing / Network Intrusion",
+    "rootCause": "Malware, suspected to be 'DTrack', infected an administrative network computer connected to the internet.",
+    "impact": "Data exfiltration from an administrative network. Officials claimed the critical plant control systems were isolated and unaffected.",
+    "severity": "Medium",
+    "description": "India's largest nuclear power plant, KKNPP, confirmed a malware attack on its administrative network. While the plant's operational controls were reportedly secure, the incident raised serious concerns about the cybersecurity of India's critical nuclear infrastructure.",
+    "sources": [
+      {
+        "title": "Kudankulam Nuclear Power Plant's unit 1 and 2 not affected by cyber attack: Govt",
+        "url": "https://economictimes.indiatimes.com/news/defence/kudankulam-nuclear-power-plants-unit-1-and-2-not-affected-by-cyber-attack-govt/articleshow/72147395.cms",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-023",
+    "date": "2019-07-29",
+    "organization": "Capital One",
+    "sector": "Banking & Finance",
+    "incidentType": "Data Breach",
+    "attackMethod": "Server-Side Request Forgery (SSRF)",
+    "rootCause": "A misconfigured web application firewall (WAF) allowed a former AWS employee to access and exfiltrate data from Capital One's cloud storage.",
+    "impact": "Compromise of personal information, including credit card applications and social security numbers, for over 100 million customers in the US and Canada.",
+    "severity": "Critical",
+    "description": "A former Amazon Web Services engineer exploited a misconfigured firewall to gain access to Capital One's cloud environment. The breach was a significant example of a cloud-based data breach caused by misconfiguration, leading to the arrest of the perpetrator.",
+    "sources": [
+      {
+        "title": "Capital One Data Breach",
+        "url": "https://www.capitalone.com/facts2019/",
+        "type": "Company Statement"
+      }
+    ]
+  },
+  {
+    "id": "inc-030",
+    "date": "2019-03-01",
+    "organization": "Wipro",
+    "sector": "Technology & IT services",
+    "incidentType": "APT",
+    "attackMethod": "Phishing, Supply Chain Attack",
+    "rootCause": "Advanced phishing campaign targeting employees, leading to a breach of the company's network.",
+    "impact": "Wipro's systems were used as a launchpad to attack at least a dozen of its clients. Attackers created a covert command-and-control infrastructure.",
+    "severity": "High",
+    "description": "Indian IT giant Wipro was breached by a sophisticated threat actor who then used Wipro's network to launch attacks against its customers. The incident highlighted the significant risk of supply chain attacks where a trusted IT provider becomes the vector for compromising its clients.",
+    "sources": [
+      {
+        "title": "IT Giant Wipro Hacked, Used to Launch Attacks on a Dozen Customers",
+        "url": "https://krebsonsecurity.com/2019/04/it-giant-wipro-hacked-used-to-launch-attacks-on-a-dozen-customers/",
+        "type": "News Article"
+      }
+    ]
+  }
+]

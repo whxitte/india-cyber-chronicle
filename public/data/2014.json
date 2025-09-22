@@ -1,0 +1,59 @@
+[
+  {
+    "id": "inc-013",
+    "date": "2014-12-23",
+    "organization": "Ukraine Power Grids (multiple)",
+    "sector": "Energy & Utilities",
+    "incidentType": "Critical Infrastructure Compromise",
+    "attackMethod": "Spear Phishing, BlackEnergy3 Malware",
+    "rootCause": "Spear-phishing emails allowed attackers to gain a foothold, steal credentials, and pivot to the SCADA network.",
+    "impact": "The first confirmed cyberattack to take down a power grid, leaving approximately 230,000 people without electricity for several hours in Ukraine.",
+    "severity": "Critical",
+    "description": "Russian state-sponsored hackers (Sandworm Team) executed a sophisticated, multi-stage attack against Ukrainian power distribution companies. They used the BlackEnergy3 malware to gain remote control of industrial control systems (ICS) and remotely trip breakers, causing a widespread power outage.",
+    "sources": [
+      {
+        "title": "CISA Alert (IR-ALERT-H-16-056-01): Cyber-Attack Against Ukrainian Critical Infrastructure",
+        "url": "https://www.cisa.gov/news-events/ics-alerts/ir-alert-h-16-056-01",
+        "type": "Government Advisory"
+      }
+    ]
+  },
+  {
+    "id": "inc-027",
+    "date": "2014-05-27",
+    "organization": "eBay",
+    "sector": "Retail & E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "Spear Phishing",
+    "rootCause": "Compromised employee credentials allowed attackers to access the corporate network and exfiltrate a user database.",
+    "impact": "Exposed names, encrypted passwords, email addresses, and phone numbers of all 145 million eBay users. No financial data was stolen.",
+    "severity": "High",
+    "description": "Attackers gained access to eBay's network using a few compromised employee logins. The company urged all users to change their passwords following the discovery of the breach, which affected its entire user base at the time.",
+    "sources": [
+      {
+        "title": "EBay asks 145m users to change passwords after data breach",
+        "url": "https://www.theguardian.com/technology/2014/may/21/ebay-urges-users-to-reset-passwords-after-cyberattack",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-034",
+    "date": "2014-11-24",
+    "organization": "Sony Pictures Entertainment",
+    "sector": "Manufacturing & Supply chain",
+    "incidentType": "Data Breach, Wiper Malware",
+    "attackMethod": "Spear Phishing (APT)",
+    "rootCause": "Stolen credentials from a phishing attack allowed attackers, attributed to North Korea, to access the network.",
+    "impact": "Leaked massive amounts of confidential data, including employee information, executive emails, and unreleased films. Deployed wiper malware that destroyed company data.",
+    "severity": "Critical",
+    "description": "A hacking group calling itself the 'Guardians of Peace' launched a devastating attack against Sony Pictures, believed to be in retaliation for the movie 'The Interview'. The incident combined a massive data leak with destructive malware, causing immense financial and reputational damage.",
+    "sources": [
+      {
+        "title": "Sony Pictures hack: What you need to know",
+        "url": "https://www.bbc.com/news/technology-30526484",
+        "type": "News Article"
+      }
+    ]
+  }
+]

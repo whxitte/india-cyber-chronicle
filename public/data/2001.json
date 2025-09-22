@@ -1,0 +1,40 @@
+[
+  {
+    "id": "inc-032",
+    "date": "2001-07-13",
+    "organization": "Global (Web Servers)",
+    "sector": "Multiple",
+    "incidentType": "Worm",
+    "attackMethod": "Buffer Overflow Vulnerability",
+    "rootCause": "Exploitation of a buffer overflow vulnerability in Microsoft's Internet Information Services (IIS) web server software.",
+    "impact": "Infected over 359,000 servers in less than 14 hours, defacing websites with the message 'Hacked By Chinese!' and launching DDoS attacks against the White House website.",
+    "severity": "High",
+    "description": "The Code Red worm caused widespread disruption by exploiting a common vulnerability in Microsoft IIS. Its rapid propagation and high-profile targets demonstrated the potential for automated threats to spread globally in a matter of hours.",
+    "sources": [
+      {
+        "title": "Code Red's second wave crashes servers",
+        "url": "https://www.cnet.com/tech/services-and-software/code-reds-second-wave-crashes-servers/",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-040",
+    "date": "2001-09-18",
+    "organization": "Global (Multiple)",
+    "sector": "Multiple",
+    "incidentType": "Worm",
+    "attackMethod": "Exploitation of Multiple Vulnerabilities",
+    "rootCause": "The Nimda worm used five different infection vectors, including email, open network shares, and web server vulnerabilities.",
+    "impact": "Caused massive network slowdowns and disruption worldwide. It became the internet's most widespread virus in just 22 minutes.",
+    "severity": "High",
+    "description": "Nimda ('admin' spelled backward) was a complex computer worm that spread rapidly across the internet. Its multi-pronged approach to propagation made it highly effective and difficult to contain, causing significant economic damage and network congestion.",
+    "sources": [
+      {
+        "title": "Nimda worm slithers across the Net",
+        "url": "https://www.zdnet.com/article/nimda-worm-slithers-across-the-net/",
+        "type": "News Article"
+      }
+    ]
+  }
+]

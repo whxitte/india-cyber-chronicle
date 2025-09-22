@@ -1,0 +1,83 @@
+[
+  {
+    "id": "inc-003",
+    "date": "2017-05-12",
+    "organization": "Global (Multiple Organizations)",
+    "sector": "Multiple",
+    "incidentType": "Ransomware",
+    "attackMethod": "Exploitation of Vulnerability (EternalBlue)",
+    "rootCause": "Exploitation of the unpatched MS17-010 (EternalBlue) vulnerability in older versions of the Windows operating system.",
+    "impact": "Infected over 200,000 computers in 150 countries, causing massive disruptions in sectors like healthcare (UK's NHS) and telecom. In India, systems in West Bengal, Andhra Pradesh, and Gujarat were affected.",
+    "severity": "Critical",
+    "description": "The WannaCry ransomware cryptoworm spread globally, encrypting files on Windows PCs and demanding Bitcoin ransom payments. It was a wake-up call for global organizations to prioritize patching and cybersecurity hygiene, demonstrating how a single vulnerability could be weaponized on a massive scale.",
+    "sources": [
+      {
+        "title": "WannaCry Ransomware Attack",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/alert-aa23-011a",
+        "type": "Government Advisory"
+      },
+      {
+        "title": "WannaCry strikes India; govt says one-off cases, no major impact",
+        "url": "https://www.business-standard.com/article/companies/wannacry-strikes-india-govt-says-one-off-cases-no-major-impact-117051500698_1.html",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-004",
+    "date": "2017-09-07",
+    "organization": "Equifax",
+    "sector": "Banking & Finance",
+    "incidentType": "Data Breach",
+    "attackMethod": "Web Application Vulnerability",
+    "rootCause": "Failure to patch a known vulnerability in the Apache Struts web application framework for over two months.",
+    "impact": "Compromise of personally identifiable information (PII) of approximately 147 million people, including names, Social Security numbers, and driver's license numbers.",
+    "severity": "Critical",
+    "description": "Credit reporting agency Equifax suffered one of the most significant data breaches in history due to an unpatched web server vulnerability. The breach exposed the sensitive personal and financial data of nearly half the U.S. population, leading to massive fines and reputational damage.",
+    "sources": [
+      {
+        "title": "Equifax Data Breach: What to Know",
+        "url": "https://www.ftc.gov/enforcement/cases-proceedings/refunds/equifax-data-breach-settlement",
+        "type": "Government Information"
+      }
+    ]
+  },
+  {
+    "id": "inc-012",
+    "date": "2017-06-27",
+    "organization": "Global (Multiple Organizations)",
+    "sector": "Multiple",
+    "incidentType": "Wiper Malware",
+    "attackMethod": "Supply Chain Attack, Vulnerability Exploit",
+    "rootCause": "Initial distribution via a compromised update for Ukrainian accounting software (M.E.Doc), spreading via EternalBlue exploit.",
+    "impact": "Caused billions of dollars in damage globally, severely impacting companies like Maersk, FedEx, and Merck. The malware was designed to destroy data rather than extract a ransom.",
+    "severity": "Critical",
+    "description": "Initially appearing as ransomware, NotPetya was a destructive wiper malware attack attributed to Russian military hackers targeting Ukraine. It quickly spread worldwide, causing catastrophic operational and financial damage to multinational corporations, demonstrating the potential for cyber warfare to have global economic consequences.",
+    "sources": [
+      {
+        "title": "The Untold Story of NotPetya, the Most Devastating Cyberattack in History",
+        "url": "https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-044",
+    "date": "2017-05-18",
+    "organization": "Zomato",
+    "sector": "Retail & E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "Insider Threat",
+    "rootCause": "An employee's development account was compromised, allowing an internal developer to steal the data.",
+    "impact": "Exposed email addresses and hashed passwords of 17 million users. The data was briefly listed for sale on the dark web.",
+    "severity": "High",
+    "description": "Indian food delivery giant Zomato suffered a breach where user data was stolen by a developer from within the company. The company stated that the hacker's motive was to prove that security vulnerabilities existed, and they engaged with the hacker to take the stolen data off the market.",
+    "sources": [
+      {
+        "title": "Zomato hacked, 17 million user records stolen",
+        "url": "https://www.thehindu.com/sci-tech/technology/internet/zomato-hacked-17-million-user-records-stolen/article18475176.ece",
+        "type": "News Article"
+      }
+    ]
+  }
+]

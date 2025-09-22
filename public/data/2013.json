@@ -1,0 +1,59 @@
+[
+  {
+    "id": "inc-014",
+    "date": "2013-12-04",
+    "organization": "Target Corporation",
+    "sector": "Retail & E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "Third-Party Compromise, PoS Malware",
+    "rootCause": "Stolen credentials from a third-party HVAC vendor were used to access Target's network and deploy malware on point-of-sale (PoS) systems.",
+    "impact": "Compromise of credit/debit card data for approximately 40 million customers and personal information for up to 70 million.",
+    "severity": "Critical",
+    "description": "During the 2013 holiday season, attackers breached retailer Target's network through a trusted third-party vendor. They installed memory-scraping malware on PoS terminals to steal payment card data directly from transactions, a landmark case in retail and supply chain security.",
+    "sources": [
+      {
+        "title": "A King-Size Breach: The Target Data Security Incident",
+        "url": "https://www.darkreading.com/attacks-breaches/a-king-size-breach-the-target-data-security-incident",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-017",
+    "date": "2013-08-01",
+    "organization": "Yahoo",
+    "sector": "Technology & IT services",
+    "incidentType": "Data Breach",
+    "attackMethod": "Spear Phishing, Account Hijacking",
+    "rootCause": "State-sponsored actors used forged cookies to gain access to user accounts without needing passwords.",
+    "impact": "Compromised all 3 billion Yahoo user accounts, making it the largest data breach in history. Exposed names, email addresses, telephone numbers, and hashed passwords.",
+    "severity": "Critical",
+    "description": "In a breach initially occurring in 2013 but not fully disclosed until 2017, every single Yahoo user account was compromised. The sheer scale of the breach and the delay in its disclosure had significant consequences, including a reduced sale price to Verizon.",
+    "sources": [
+      {
+        "title": "Yahoo Says All Three Billion Accounts Were Hacked in 2013 Data Theft",
+        "url": "https://www.reuters.com/article/us-yahoo-cyber/yahoo-says-all-three-billion-accounts-were-hacked-in-2013-data-theft-idUSKCN1C82O1",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-042",
+    "date": "2013-02-19",
+    "organization": "Bit9 (now Carbon Black)",
+    "sector": "Technology & IT services",
+    "incidentType": "Supply Chain Attack",
+    "attackMethod": "Compromise of Code-Signing Certificate",
+    "rootCause": "Attackers breached the company's network and used its digital code-signing certificate to sign their own malware.",
+    "impact": "Malware signed with a legitimate Bit9 certificate was used to infect systems at several of Bit9's customers, bypassing security controls.",
+    "severity": "High",
+    "description": "Security firm Bit9, which specialized in whitelisting technology, was breached by hackers. The attackers stole a cryptographic key and used it to sign malware, causing it to appear as trusted software and enabling attacks on three of Bit9's customers.",
+    "sources": [
+      {
+        "title": "Security Firm Bit9 Hacked, Used to Spread Malware",
+        "url": "https://krebsonsecurity.com/2013/02/security-firm-bit9-hacked-used-to-spread-malware/",
+        "type": "News Article"
+      }
+    ]
+  }
+]

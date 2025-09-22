@@ -1,0 +1,116 @@
+[
+  {
+    "id": "inc-010",
+    "date": "2018-08-09",
+    "organization": "Cosmos Bank",
+    "sector": "Banking & Finance",
+    "incidentType": "Financial Theft",
+    "attackMethod": "Malware, ATM Cash-out, SWIFT Fraud",
+    "rootCause": "Malware compromise of the bank's ATM switch server, enabling fraudulent transaction approvals.",
+    "impact": "Theft of approximately \u20b994.42 crore (around $13.5 million) through coordinated ATM cash withdrawals in 28 countries and fraudulent SWIFT transfers.",
+    "severity": "Critical",
+    "description": "In a highly coordinated attack, hackers compromised the core banking system of India-based Cosmos Bank. They installed malware to bypass security controls, cloned thousands of debit cards, and orchestrated a massive cash-out from ATMs globally, alongside fraudulent SWIFT transactions.",
+    "sources": [
+      {
+        "title": "Cosmos Bank loses Rs 94 crore in cyber attack",
+        "url": "https://timesofindia.indiatimes.com/city/pune/cosmos-bank-loses-rs-94cr-in-cyber-attack/articleshow/65403282.cms",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-015",
+    "date": "2018-11-30",
+    "organization": "Marriott International (Starwood)",
+    "sector": "Retail & E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "Network Intrusion",
+    "rootCause": "Intruders gained unauthorized access to the Starwood guest reservation network in 2014 and remained undetected for four years.",
+    "impact": "Exposed personal and financial information of up to 500 million guests, including names, passport numbers, and payment card details.",
+    "severity": "Critical",
+    "description": "Marriott disclosed a massive data breach affecting the guest reservation database of its Starwood hotel brands. The breach was a result of a long-term intrusion that began before Marriott's acquisition of Starwood, highlighting the critical need for thorough cybersecurity due diligence in mergers and acquisitions.",
+    "sources": [
+      {
+        "title": "Marriott hack hits 500 million Starwood guests",
+        "url": "https://www.bbc.com/news/technology-46397394",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-022",
+    "date": "2018-03-29",
+    "organization": "Under Armour (MyFitnessPal)",
+    "sector": "Retail & E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "Unauthorized Access",
+    "rootCause": "An unauthorized party gained access to MyFitnessPal user data.",
+    "impact": "Exposed usernames, email addresses, and hashed passwords for approximately 150 million users of the MyFitnessPal application.",
+    "severity": "High",
+    "description": "Under Armour announced a massive data breach affecting its popular nutrition and fitness app, MyFitnessPal. While payment information was not compromised, the scale of the breach made it one of the largest of the year, affecting a global user base.",
+    "sources": [
+      {
+        "title": "Under Armour says 150 million MyFitnessPal accounts were hacked",
+        "url": "https://www.theverge.com/2018/3/29/17178712/under-armour-myfitnesspal-hack-data-breach-150-million",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-026",
+    "date": "2018-03-22",
+    "organization": "City of Atlanta",
+    "sector": "Government",
+    "incidentType": "Ransomware",
+    "attackMethod": "SamSam Ransomware",
+    "rootCause": "Exploitation of vulnerabilities in servers to gain access and deploy the SamSam ransomware across the city's network.",
+    "impact": "Disrupted numerous city services, including court and utility systems, for weeks. Recovery costs were estimated at $17 million, far exceeding the $51,000 ransom demand.",
+    "severity": "Critical",
+    "description": "The City of Atlanta's government was crippled by a SamSam ransomware attack that encrypted data across multiple departments. The city's refusal to pay the ransom led to a lengthy and costly recovery process, showcasing the severe impact of ransomware on municipal governments.",
+    "sources": [
+      {
+        "title": "Inside the crippling ransomware attack that brought Atlanta to its knees",
+        "url": "https://www.csoonline.com/article/568285/inside-the-crippling-ransomware-attack-that-brought-atlanta-to-its-knees.html",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-038",
+    "date": "2018-09-06",
+    "organization": "British Airways",
+    "sector": "Defense & Aerospace",
+    "incidentType": "Data Breach",
+    "attackMethod": "Web Skimming (Magecart)",
+    "rootCause": "Malicious JavaScript code was injected into the British Airways website and mobile app to skim customer payment information.",
+    "impact": "Theft of personal and financial details of approximately 500,000 customers who made bookings on the airline's website.",
+    "severity": "High",
+    "description": "The Magecart hacking group compromised the British Airways website by modifying a JavaScript library. This allowed them to capture customer data, including payment card information, in real-time as it was entered during the booking process.",
+    "sources": [
+      {
+        "title": "British Airways breach: How Magecart hackers stole customer data",
+        "url": "https://www.csoonline.com/article/567798/british-airways-breach-how-magecart-hackers-stole-customer-data.html",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-046",
+    "date": "2018-02-28",
+    "organization": "GitHub",
+    "sector": "Technology & IT services",
+    "incidentType": "DDoS",
+    "attackMethod": "Memcached Amplification Attack",
+    "rootCause": "Exploitation of thousands of misconfigured Memcached servers to amplify traffic directed at GitHub's servers.",
+    "impact": "The largest DDoS attack recorded at the time, peaking at 1.35 terabits per second. GitHub was intermittently unavailable for about 10 minutes.",
+    "severity": "High",
+    "description": "GitHub was targeted by a massive DDoS attack using a new amplification technique involving Memcached servers. Despite the record-breaking size of the attack, GitHub was able to mitigate it relatively quickly using DDoS protection services.",
+    "sources": [
+      {
+        "title": "February 28th DDoS Incident Report",
+        "url": "https://github.blog/2018-03-01-ddos-incident-report/",
+        "type": "Company Blog"
+      }
+    ]
+  }
+]

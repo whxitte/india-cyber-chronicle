@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-005",
+    "date": "2023-12-15",
+    "organization": "State Bank of India (SBI)",
+    "sector": "Banking",
+    "incidentType": "Phishing",
+    "attackMethod": "Email and SMS Phishing Campaign",
+    "rootCause": "Social Engineering",
+    "impact": "Customer login credentials, credit card details, and personal information were compromised for those who fell victim to the scam.",
+    "severity": "High",
+    "description": "A sophisticated and large-scale phishing campaign targeted millions of SBI customers using fraudulent SMS and emails. The messages, which mimicked official bank communications, directed users to fake websites to harvest their credentials and financial information.",
+    "sources": [
+      {
+        "title": "Fake SBI Message Warning: Mumbai Police Issues Alert, Asks People To Be Aware Of Phishing Scam",
+        "url": "https://www.indiatvnews.com/technology/news/fake-sbi-message-warning-mumbai-police-issues-alert-asks-people-to-be-aware-of-phishing-scam-2023-01-24-841793",
+        "type": "News Article"
+      }
+    ]
+  }
+]

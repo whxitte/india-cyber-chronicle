@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-016",
+    "date": "2010-06-01",
+    "organization": "Iranian Nuclear Facilities",
+    "sector": "Energy & Utilities",
+    "incidentType": "Critical Infrastructure Compromise",
+    "attackMethod": "Malware (Stuxnet Worm)",
+    "rootCause": "Introduction of malware via a USB drive into an air-gapped network, exploiting multiple zero-day vulnerabilities in Windows.",
+    "impact": "Physically destroyed nearly 1,000 uranium enrichment centrifuges at the Natanz facility in Iran by manipulating their industrial control systems (PLCs).",
+    "severity": "Critical",
+    "description": "Stuxnet was a highly sophisticated, nation-state cyber weapon designed to sabotage Iran's nuclear program. It was the first publicly known piece of malware to cause physical destruction of equipment, fundamentally changing the landscape of cyber warfare and critical infrastructure threats.",
+    "sources": [
+      {
+        "title": "Stuxnet: How a Computer Virus That Began as an American-Israeli Project Became a Global Threat",
+        "url": "https://www.vanityfair.com/news/2016/06/how-a-computer-virus-that-began-as-an-american-israeli-project-became-a-global-threat",
+        "type": "News Article"
+      }
+    ]
+  }
+]

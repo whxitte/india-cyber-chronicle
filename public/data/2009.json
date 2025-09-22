@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-035",
+    "date": "2009-12-15",
+    "organization": "Google and 30+ other companies",
+    "sector": "Technology & IT services",
+    "incidentType": "APT",
+    "attackMethod": "Spear Phishing, Zero-Day Exploit",
+    "rootCause": "A zero-day vulnerability in Internet Explorer was used in a phishing attack to gain access to corporate networks.",
+    "impact": "Theft of intellectual property from dozens of major tech companies and attempts to access the Gmail accounts of Chinese human rights activists.",
+    "severity": "Critical",
+    "description": "Dubbed 'Operation Aurora', this was a series of highly sophisticated and coordinated cyberattacks from China. Google's public disclosure of the attacks and their threat to cease operations in China marked a turning point in how corporations and governments discussed state-sponsored cyber espionage.",
+    "sources": [
+      {
+        "title": "A new approach to China",
+        "url": "https://googleblog.blogspot.com/2010/01/new-approach-to-china.html",
+        "type": "Company Blog"
+      }
+    ]
+  }
+]

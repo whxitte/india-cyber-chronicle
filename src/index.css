@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +7,12 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
 
 @layer base {
   :root {
@@ -70,13 +78,13 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 25% 6%;
+    --background: 215 13% 18%;
     --foreground: 0 40% 98%;
 
-    --card: 0 25% 8%;
+    --card: 215 13% 20%;
     --card-foreground: 0 40% 98%;
 
-    --popover: 0 25% 8%;
+    --popover: 215 13% 20%;
     --popover-foreground: 0 40% 98%;
 
     --primary: 0 80% 60%;
@@ -94,8 +102,8 @@ All colors MUST be HSL.
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 40% 98%;
 
-    --border: 0 20% 15%;
-    --input: 0 20% 15%;
+    --border: 218 13% 28%;
+    --input: 218 13% 28%;
     --ring: 0 80% 60%;
 
     --academic-red: 0 80% 60%;
@@ -109,7 +117,7 @@ All colors MUST be HSL.
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-border: 218 13% 28%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }

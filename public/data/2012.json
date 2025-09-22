@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-033",
+    "date": "2012-08-15",
+    "organization": "Saudi Aramco",
+    "sector": "Energy & Utilities",
+    "incidentType": "Wiper Malware",
+    "attackMethod": "Malware (Shamoon)",
+    "rootCause": "An employee with elevated privileges opened a phishing email, allowing the Shamoon malware to enter the network.",
+    "impact": "Destroyed data on approximately 35,000 corporate workstations, forcing the company to shut down its internal network and resort to manual processes.",
+    "severity": "Critical",
+    "description": "The Shamoon virus was a destructive wiper attack on the world's largest oil company, Saudi Aramco. The malware was designed purely for sabotage, overwriting the master boot records of infected machines and replacing data with a burning American flag image, crippling the company's business operations.",
+    "sources": [
+      {
+        "title": "The inside story of the biggest hack in history",
+        "url": "https://www.csoonline.com/article/563820/the-inside-story-of-the-biggest-hack-in-history.html",
+        "type": "News Article"
+      }
+    ]
+  }
+]

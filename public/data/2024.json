@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-041",
+    "date": "2024-02-12",
+    "organization": "Multiple French government ministries",
+    "sector": "Government",
+    "incidentType": "DDoS",
+    "attackMethod": "Distributed Denial-of-Service",
+    "rootCause": "Coordinated DDoS attacks claimed by hacktivist groups, including Anonymous Sudan.",
+    "impact": "Temporarily disrupted access to several government websites and internal services, though the impact was reportedly mitigated quickly.",
+    "severity": "Medium",
+    "description": "Several French government ministries were targeted by DDoS attacks of 'unprecedented intensity'. The attacks were claimed by pro-Russian hacktivist groups and were designed to overwhelm government servers and disrupt online services.",
+    "sources": [
+      {
+        "title": "France says government websites hit by cyberattacks of 'unprecedented intensity'",
+        "url": "https://www.reuters.com/technology/cybersecurity/france-says-several-government-bodies-targeted-by-cyber-attack-2024-03-11/",
+        "type": "News Article"
+      }
+    ]
+  }
+]

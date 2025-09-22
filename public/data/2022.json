@@ -1,0 +1,83 @@
+[
+  {
+    "id": "inc-001",
+    "date": "2022-11-23",
+    "organization": "All India Institute of Medical Sciences (AIIMS), Delhi",
+    "sector": "Healthcare",
+    "incidentType": "Ransomware",
+    "attackMethod": "Server Compromise",
+    "rootCause": "Suspected unpatched systems and network vulnerabilities.",
+    "impact": "Disruption of all digital services, including patient records and appointments, for over two weeks. Data of millions of patients compromised.",
+    "severity": "Critical",
+    "description": "A major ransomware attack crippled the IT infrastructure of one of India's premier medical institutions, AIIMS Delhi. The attack locked access to patient data, lab reports, and billing, forcing the hospital to operate manually for weeks and exposing significant vulnerabilities in national critical infrastructure.",
+    "sources": [
+      {
+        "title": "AIIMS Delhi ransomware attack: Servers still down, data may have been compromised",
+        "url": "https://www.indiatoday.in/technology/news/story/aiims-delhi-ransomware-attack-servers-still-down-data-may-have-been-compromised-2302322-2022-11-27",
+        "type": "News Article"
+      },
+      {
+        "title": "CERT-In analysis of AIIMS cyberattack",
+        "url": "https://www.thehindu.com/news/national/aiims-cyberattack-likely-caused-by-foreign-based-actors-says-cert-in-analysis/article66248383.ece",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-009",
+    "date": "2022-09-22",
+    "organization": "Optus",
+    "sector": "Telecom",
+    "incidentType": "Data Breach",
+    "attackMethod": "API Misconfiguration",
+    "rootCause": "An unauthenticated and publicly exposed API endpoint allowed unauthorized access to customer data.",
+    "impact": "Exposed personal data of up to 9.8 million current and former customers, including names, birth dates, phone numbers, and in some cases, passport or driver's license numbers.",
+    "severity": "Critical",
+    "description": "Optus, one of Australia's largest telecommunications companies, suffered a massive data breach due to a misconfigured API. The incident was one of Australia's worst-ever data breaches, prompting regulatory investigations and a national debate on data retention and security policies.",
+    "sources": [
+      {
+        "title": "What we know about the Optus data breach",
+        "url": "https://www.theguardian.com/australia-news/2022/sep/26/what-we-know-about-the-optus-data-breach",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-036",
+    "date": "2022-02-23",
+    "organization": "NVIDIA Corporation",
+    "sector": "Technology & IT services",
+    "incidentType": "Data Breach, Ransomware",
+    "attackMethod": "Compromised Credentials",
+    "rootCause": "Suspected compromise of employee credentials, possibly through social engineering, leading to network access.",
+    "impact": "The LAPSUS$ hacking group claimed to have exfiltrated 1 TB of sensitive company data, including employee credentials and proprietary information, and leaked it online.",
+    "severity": "High",
+    "description": "NVIDIA, a major graphics card and semiconductor manufacturer, suffered a significant data breach. The attackers exfiltrated large amounts of proprietary data and attempted to ransom the company, later releasing the data when their demands were not met.",
+    "sources": [
+      {
+        "title": "Nvidia data breach: what was stolen and what happens next?",
+        "url": "https://www.theguardian.com/technology/2022/mar/02/nvidia-data-breach-what-was-stolen-and-what-happens-next",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-049",
+    "date": "2022-02-15",
+    "organization": "Toyota",
+    "sector": "Manufacturing & Supply chain",
+    "incidentType": "Supply Chain Attack",
+    "attackMethod": "Third-Party System Compromise",
+    "rootCause": "A cyberattack on a key plastics supplier, Kojima Industries, which was forced to shut down its systems.",
+    "impact": "Forced Toyota to halt production at all 14 of its plants in Japan, resulting in a production loss of approximately 13,000 vehicles.",
+    "severity": "High",
+    "description": "A suspected ransomware attack on a key supplier caused a complete shutdown of Toyota's domestic car production. The incident demonstrated the fragility of just-in-time supply chains and how a cyberattack on a smaller partner can have a massive cascading effect on a major manufacturer.",
+    "sources": [
+      {
+        "title": "Toyota Halts Japan Plants After Suspected Cyberattack on Supplier",
+        "url": "https://www.wsj.com/articles/toyota-to-shut-down-all-japan-plants-on-tuesday-after-apparent-cyberattack-at-supplier-11646045618",
+        "type": "News Article"
+      }
+    ]
+  }
+]

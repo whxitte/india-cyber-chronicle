@@ -1,17 +1,18 @@
 import { useParams, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import incidentsData from "@/data/incidents.json";
-import { 
-  ArrowLeft, 
-  Calendar, 
-  Building, 
-  Shield, 
-  AlertTriangle, 
-  Target, 
+import { Incident } from "@/components/IncidentTable"; // Assuming Incident interface is exported from IncidentTable
+import {
+  ArrowLeft,
+  Calendar,
+  Building,
+  Shield,
+  AlertTriangle,
+  Target,
   ExternalLink,
   FileText,
   Info
@@ -19,7 +20,78 @@ import {
 
 const IncidentDetail = () => {
   const { id } = useParams();
-  const incident = incidentsData.find((inc) => inc.id === id);
+  console.log("Incident ID from URL params:", id);
+  const [incident, setIncident] = useState<Incident | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchAllIncidents = async () => {
+      try {
+        const years = Array.from({ length: 2025 - 2000 + 1 }, (_, i) => 2000 + i);
+        const fetchPromises = years.map(async (year) => {
+          try {
+            const response = await fetch(`/data/${year}.json`);
+            console.log(`Fetching: /data/${year}.json`);
+            if (!response.ok) {
+              if (response.status === 404) {
+                console.warn(`404: No data for year ${year}.`);
+                return []; // No data for this year, return empty array
+              }
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const contentType = response.headers.get("content-type");
+            if (!contentType || !contentType.includes("application/json")) {
+              throw new TypeError(`Oops, we didn't get JSON! Content-Type: ${contentType}`);
+            }
+            return response.json();
+          } catch (innerError) {
+            console.warn(`Could not fetch data for year ${year}:`, innerError);
+            return []; // Return empty array for failed fetches as well
+          }
+        });
+
+        const results = await Promise.all(fetchPromises);
+        const combinedIncidents: Incident[] = results.flat();
+        console.log("Combined Incidents:", combinedIncidents);
+        const foundIncident = combinedIncidents.find((inc) => inc.id === id);
+        console.log("Found Incident:", foundIncident);
+        setIncident(foundIncident || null);
+      } catch (outerError) {
+        console.error("Error fetching incidents:", outerError);
+        setError("Failed to load incident data.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAllIncidents();
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <div className="container mx-auto px-4 py-8 text-center">
+          <p className="text-muted-foreground">Loading incident details...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <div className="container mx-auto px-4 py-8 text-center text-red-500">
+          <p>{error}</p>
+          <Button asChild className="mt-4">
+            <Link to="/browse">Back to Browse</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   if (!incident) {
     return (

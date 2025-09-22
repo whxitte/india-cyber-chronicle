@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-029",
+    "date": "2008-12-31",
+    "organization": "Heartland Payment Systems",
+    "sector": "Banking & Finance",
+    "incidentType": "Data Breach",
+    "attackMethod": "SQL Injection, PoS Malware",
+    "rootCause": "An SQL injection attack on the company's website allowed attackers to install spyware on the corporate network.",
+    "impact": "Compromise of approximately 130 million credit and debit card numbers, making it one of the largest card breaches in history.",
+    "severity": "Critical",
+    "description": "Payment processor Heartland was breached by the same group behind the TJX attack, led by Albert Gonzalez. They used sophisticated malware to sniff and exfiltrate card data from the company's payment processing network over several months.",
+    "sources": [
+      {
+        "title": "Heartland Breach Affected 130 Million Credit Cards",
+        "url": "https://www.wired.com/2009/01/heartland-breach-affected-130-million-credit-cards/",
+        "type": "News Article"
+      }
+    ]
+  }
+]

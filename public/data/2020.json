@@ -1,0 +1,97 @@
+[
+  {
+    "id": "inc-006",
+    "date": "2020-12-13",
+    "organization": "SolarWinds",
+    "sector": "Technology & IT services",
+    "incidentType": "Supply Chain Attack",
+    "attackMethod": "Malicious Code Injection (Sunburst)",
+    "rootCause": "Compromise of the software build and code-signing infrastructure of SolarWinds' Orion Platform.",
+    "impact": "Infected systems of up to 18,000 SolarWinds customers, including multiple U.S. federal agencies like the Treasury and Commerce Departments. Enabled extensive espionage and data exfiltration.",
+    "severity": "Critical",
+    "description": "Russian state-sponsored actors (APT29/Cozy Bear) executed a highly sophisticated supply chain attack by injecting malicious code into updates for the SolarWinds Orion software. This allowed them to gain long-term access to the networks of thousands of high-value government and private sector targets globally.",
+    "sources": [
+      {
+        "title": "CISA Alert (AA20-352A): Advanced Persistent Threat Compromise of Government Agencies, Critical Infrastructure, and Private Sector Organizations",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/alert-aa20-352a",
+        "type": "Government Advisory"
+      }
+    ]
+  },
+  {
+    "id": "inc-019",
+    "date": "2020-10-22",
+    "organization": "Dr. Reddy's Laboratories",
+    "sector": "Healthcare",
+    "incidentType": "Ransomware",
+    "attackMethod": "Network Intrusion",
+    "rootCause": "Data breach in the company's server network.",
+    "impact": "Forced a temporary shutdown of production plants and data centers in India, the US, UK, Brazil, and Russia to contain the incident.",
+    "severity": "High",
+    "description": "Indian multinational pharmaceutical company Dr. Reddy's was hit by a cyberattack that disrupted its global operations. The incident occurred shortly after the company received approval to conduct clinical trials for a COVID-19 vaccine in India, highlighting the targeting of the pharma sector during the pandemic.",
+    "sources": [
+      {
+        "title": "Dr Reddy's shuts key plants after cyber attack",
+        "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/dr-reddys-shuts-key-plants-after-cyber-attack/articleshow/78805727.cms",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-025",
+    "date": "2020-07-15",
+    "organization": "Twitter",
+    "sector": "Technology & IT services",
+    "incidentType": "Account Hijacking",
+    "attackMethod": "Social Engineering (Vishing)",
+    "rootCause": "Attackers used phone spear-phishing (vishing) to trick several Twitter employees into providing credentials for internal administrative tools.",
+    "impact": "Hijacked 130 high-profile accounts, including those of Barack Obama, Joe Biden, and Elon Musk, to promote a cryptocurrency scam, defrauding users of over $100,000.",
+    "severity": "High",
+    "description": "A group of young hackers gained access to Twitter's internal tools by manipulating employees. They used this access to take over celebrity and corporate accounts, broadcasting a bitcoin scam that raised serious questions about the platform's security and the risks of insider threats.",
+    "sources": [
+      {
+        "title": "An Update on Our Security Incident",
+        "url": "https://blog.twitter.com/en_us/topics/company/2020/an-update-on-our-security-incident",
+        "type": "Company Blog"
+      }
+    ]
+  },
+  {
+    "id": "inc-028",
+    "date": "2020-05-14",
+    "organization": "Blackbaud",
+    "sector": "Technology & IT services",
+    "incidentType": "Ransomware",
+    "attackMethod": "Network Intrusion",
+    "rootCause": "A ransomware attack on the company's self-hosted environment.",
+    "impact": "Data was exfiltrated from the networks of thousands of non-profit, educational, and healthcare organizations that use Blackbaud's services. Blackbaud paid the ransom.",
+    "severity": "High",
+    "description": "Cloud software provider Blackbaud was hit by a ransomware attack where the threat actor both encrypted systems and exfiltrated a subset of data. The incident was a supply chain attack affecting a vast number of client organizations globally, who then had to notify their own donors and customers.",
+    "sources": [
+      {
+        "title": "Blackbaud Security Incident",
+        "url": "https://www.blackbaud.com/security-incident",
+        "type": "Company Statement"
+      }
+    ]
+  },
+  {
+    "id": "inc-050",
+    "date": "2020-09-27",
+    "organization": "Universal Health Services (UHS)",
+    "sector": "Healthcare",
+    "incidentType": "Ransomware",
+    "attackMethod": "Ryuk Ransomware",
+    "rootCause": "Likely initiated through a phishing email, allowing the Ryuk ransomware to propagate across the network.",
+    "impact": "Disabled IT systems at approximately 250 U.S. hospitals and facilities, forcing staff to use pen and paper and divert ambulances. The attack cost the company an estimated $67 million.",
+    "severity": "Critical",
+    "description": "UHS, a Fortune 500 hospital and healthcare provider, was hit by one of the largest medical-related cyberattacks in U.S. history. The Ryuk ransomware attack severely disrupted patient care across its national network of hospitals, showcasing the life-threatening potential of cyberattacks on healthcare.",
+    "sources": [
+      {
+        "title": "Universal Health Services says Ryuk ransomware attack cost it $67 million in 2020",
+        "url": "https://www.zdnet.com/article/universal-health-services-says-ryuk-ransomware-attack-cost-it-67-million-in-2020/",
+        "type": "News Article"
+      }
+    ]
+  }
+]

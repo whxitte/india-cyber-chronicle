@@ -4,9 +4,58 @@ import Header from "@/components/Header";
 import SearchBar from "@/components/SearchBar";
 import FilterPanel from "@/components/FilterPanel";
 import IncidentTable from "@/components/IncidentTable";
-import incidentsData from "@/data/incidents.json";
+import { Incident } from "@/components/IncidentTable";
 
 const Browse = () => {
+  const [allIncidents, setAllIncidents] = useState<Incident[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchIncidents = async () => {
+      try {
+        const years = Array.from({ length: 2025 - 2000 + 1 }, (_, i) => 2000 + i);
+        const fetchPromises = years.map(async (year) => {
+          try {
+            const response = await fetch(`/data/${year}.json`);
+            console.log(`Fetching: /data/${year}.json`);
+            if (!response.ok) {
+              if (response.status === 404) {
+                console.warn(`404: No data for year ${year}.`);
+                return []; // No data for this year, return empty array
+              }
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const contentType = response.headers.get("content-type");
+            if (!contentType || !contentType.includes("application/json")) {
+              throw new TypeError(`Oops, we didn't get JSON! Content-Type: ${contentType}`);
+            }
+            return response.json();
+          } catch (innerError) {
+            console.warn(`Could not fetch data for year ${year}:`, innerError);
+            return []; // Return empty array for failed fetches as well
+          }
+        });
+
+        const results = await Promise.all(fetchPromises);
+        const combinedIncidents = results.flat();
+        console.log("Combined Incidents:", combinedIncidents);
+
+        // Sort incidents by date in ascending order
+        combinedIncidents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+        setAllIncidents(combinedIncidents);
+      } catch (outerError) {
+        console.error("Error fetching incidents:", outerError);
+        setError("Failed to load incident data.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchIncidents();
+  }, []);
+
   const [searchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState(searchParams.get("search") || "");
   const [filters, setFilters] = useState({
@@ -17,7 +66,7 @@ const Browse = () => {
   });
 
   const filteredIncidents = useMemo(() => {
-    return incidentsData.filter((incident) => {
+    return allIncidents.filter((incident) => {
       // Search query filter
       if (searchQuery) {
         const query = searchQuery.toLowerCase();
@@ -66,12 +115,7 @@ const Browse = () => {
 
       return true;
     });
-  }, [searchQuery, filters]);
-
-  // Sort incidents by date (newest first)
-  const sortedIncidents = useMemo(() => {
-    return [...filteredIncidents].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  }, [filteredIncidents]);
+  }, [searchQuery, filters, allIncidents]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -103,8 +147,8 @@ const Browse = () => {
               <FilterPanel
                 filters={filters}
                 onFiltersChange={setFilters}
-                totalIncidents={incidentsData.length}
-                filteredCount={sortedIncidents.length}
+                totalIncidents={allIncidents.length}
+                filteredCount={filteredIncidents.length}
               />
             </div>
 
@@ -116,12 +160,20 @@ const Browse = () => {
                     Incident Records
                   </h2>
                   <div className="text-sm text-muted-foreground">
-                    {sortedIncidents.length} incident{sortedIncidents.length !== 1 ? 's' : ''} found
+                    {filteredIncidents.length} incident{filteredIncidents.length !== 1 ? 's' : ''} found
                   </div>
                 </div>
                 
-                {sortedIncidents.length > 0 ? (
-                  <IncidentTable incidents={sortedIncidents} />
+                {loading ? (
+                  <div className="text-center py-12">
+                    <p className="text-muted-foreground">Loading incidents...</p>
+                  </div>
+                ) : error ? (
+                  <div className="text-center py-12 text-red-500">
+                    <p>{error}</p>
+                  </div>
+                ) : filteredIncidents.length > 0 ? (
+                  <IncidentTable incidents={filteredIncidents} />
                 ) : (
                   <div className="text-center py-12">
                     <div className="text-muted-foreground mb-4">

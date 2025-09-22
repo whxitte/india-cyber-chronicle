@@ -1,0 +1,21 @@
+[
+  {
+    "id": "inc-024",
+    "date": "2007-12-05",
+    "organization": "TJX Companies",
+    "sector": "Retail & E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "Wi-Fi Wardriving, SQL Injection",
+    "rootCause": "Poorly secured in-store Wi-Fi networks (using WEP) allowed attackers to access the corporate network and exploit vulnerabilities to steal data.",
+    "impact": "Theft of over 45 million credit and debit card numbers over an 18-month period, resulting in massive financial losses and fines.",
+    "severity": "Critical",
+    "description": "In one of the earliest mega-breaches, attackers led by Albert Gonzalez exploited weak Wi-Fi security at TJX retail stores. They maintained access for over a year, siphoning payment card data from the company's payment processing systems, setting a precedent for large-scale retail breaches.",
+    "sources": [
+      {
+        "title": "The TJX data breach: 15 years later",
+        "url": "https://www.twingate.com/blog/tips/TJX-data-breach",
+        "type": "Blog Post"
+      }
+    ]
+  }
+]

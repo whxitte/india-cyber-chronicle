@@ -1,0 +1,40 @@
+[
+  {
+    "id": "inc-020",
+    "date": "2015-06-01",
+    "organization": "U.S. Office of Personnel Management (OPM)",
+    "sector": "Government",
+    "incidentType": "Data Breach",
+    "attackMethod": "Network Intrusion (APT)",
+    "rootCause": "Social engineering and stolen credentials allowed attackers to gain a foothold and escalate privileges within the network.",
+    "impact": "Theft of PII for 21.5 million current and former federal employees, including sensitive background check information (SF-86 forms) and 5.6 million fingerprint records.",
+    "severity": "Critical",
+    "description": "Chinese state-sponsored hackers conducted a massive espionage campaign against the OPM, exfiltrating highly sensitive records of government employees. The breach was one of the most significant in U.S. history, compromising detailed personal information used for security clearances.",
+    "sources": [
+      {
+        "title": "OPM data breach: What you need to know",
+        "url": "https://www.csoonline.com/article/567220/opm-data-breach-what-you-need-to-know.html",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-045",
+    "date": "2015-07-05",
+    "organization": "Hacking Team",
+    "sector": "Technology & IT services",
+    "incidentType": "Data Breach",
+    "attackMethod": "Network Intrusion",
+    "rootCause": "An external attacker gained access to the company's internal network, possibly through an unpatched system or stolen credentials.",
+    "impact": "400 GB of internal data, including source code for surveillance tools, internal emails, and client lists, was stolen and leaked online.",
+    "severity": "High",
+    "description": "The Italian surveillance technology company Hacking Team, which sold spyware to governments and law enforcement agencies, was itself hacked. The massive data dump exposed the company's controversial client list and the inner workings of its powerful hacking tools.",
+    "sources": [
+      {
+        "title": "Hacking Team hacked: firm that sold spying tools is now a victim",
+        "url": "https://www.theguardian.com/technology/2015/jul/06/hacking-team-hacked-firm-that-sells-spying-tools-is-now-a-victim",
+        "type": "News Article"
+      }
+    ]
+  }
+]
