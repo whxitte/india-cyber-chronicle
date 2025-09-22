@@ -1,38 +1,269 @@
 [
   {
-    "id": "inc-032",
-    "date": "2001-07-13",
-    "organization": "Global (Web Servers)",
-    "sector": "Multiple",
-    "incidentType": "Worm",
-    "attackMethod": "Buffer Overflow Vulnerability",
-    "rootCause": "Exploitation of a buffer overflow vulnerability in Microsoft's Internet Information Services (IIS) web server software.",
-    "impact": "Infected over 359,000 servers in less than 14 hours, defacing websites with the message 'Hacked By Chinese!' and launching DDoS attacks against the White House website.",
-    "severity": "High",
-    "description": "The Code Red worm caused widespread disruption by exploiting a common vulnerability in Microsoft IIS. Its rapid propagation and high-profile targets demonstrated the potential for automated threats to spread globally in a matter of hours.",
+    "id": "inc-2001-001",
+    "date": "2001-01-26",
+    "organization": "Government of India",
+    "sector": "Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism",
+    "rootCause": "Vulnerable web server software",
+    "impact": "Multiple Indian government websites defaced",
+    "severity": "Medium",
+    "description": "On India's Republic Day 2001, Pakistani hacker groups defaced several Indian government websites, replacing content with anti-India propaganda. This marked one of the earliest organized hacktivist campaigns against India.",
     "sources": [
       {
-        "title": "Code Red's second wave crashes servers",
-        "url": "https://www.cnet.com/tech/services-and-software/code-reds-second-wave-crashes-servers/",
+        "title": "Pakistani hackers deface Indian sites",
+        "url": "https://www.rediff.com/news/2001/jan/27hack.htm",
+        "type": "News Article"
+      },
+      {
+        "title": "Republic Day cyber attacks",
+        "url": "https://www.thehindu.com/2001/01/29/stories/0229000a.htm",
         "type": "News Article"
       }
     ]
   },
   {
-    "id": "inc-040",
-    "date": "2001-09-18",
-    "organization": "Global (Multiple)",
-    "sector": "Multiple",
-    "incidentType": "Worm",
-    "attackMethod": "Exploitation of Multiple Vulnerabilities",
-    "rootCause": "The Nimda worm used five different infection vectors, including email, open network shares, and web server vulnerabilities.",
-    "impact": "Caused massive network slowdowns and disruption worldwide. It became the internet's most widespread virus in just 22 minutes.",
-    "severity": "High",
-    "description": "Nimda ('admin' spelled backward) was a complex computer worm that spread rapidly across the internet. Its multi-pronged approach to propagation made it highly effective and difficult to contain, causing significant economic damage and network congestion.",
+    "id": "inc-2001-002",
+    "date": "2001-02-10",
+    "organization": "Indian Railways",
+    "sector": "Transportation",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism",
+    "rootCause": "Insecure web applications",
+    "impact": "Indian Railways website defaced by pro-Pakistan hackers",
+    "severity": "Medium",
+    "description": "Hackers from Pakistan targeted the Indian Railways official website in February 2001. They replaced content with slogans and anti-India propaganda messages. This was part of the ongoing India–Pakistan cyber conflict.",
     "sources": [
       {
-        "title": "Nimda worm slithers across the Net",
-        "url": "https://www.zdnet.com/article/nimda-worm-slithers-across-the-net/",
+        "title": "Hackers hit Indian Railways website",
+        "url": "https://timesofindia.indiatimes.com/india/pak-hackers-deface-railways-site/articleshow/1935419330.cms",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-003",
+    "date": "2001-05-07",
+    "organization": "Ministry of External Affairs (Government of India)",
+    "sector": "Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivist defacement by pro-Pakistan group",
+    "rootCause": "Insecure public-facing web server",
+    "impact": "Homepage replaced with anti-India propaganda, reputational impact for Indian foreign ministry.",
+    "severity": "Medium",
+    "description": "On May 7, 2001, the Ministry of External Affairs website was defaced with anti-India slogans, allegedly by the Pakistani hacker group G-Force. The high-profile defacement was widely reported.",
+    "sources": [
+      {
+        "title": "India's foreign ministry web site hacked (UPI, May 2001)",
+        "url": "https://www.upi.com/Archives/2001/05/07/Indias-foreign-ministry-web-site-hacked/6042989208000/",
+        "type": "News Article"
+      },
+      {
+        "title": "Pakistani group G-Force hacked MEA site (Rediff, July 2001)",
+        "url": "https://m.rediff.com/news/2001/jul/10hack1.htm",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-004",
+    "date": "2001-07-10",
+    "organization": "Mumbai Police Cyber Crime Cell",
+    "sector": "Government / Law enforcement",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Remote compromise of web server",
+    "rootCause": "Weakly secured hosting and insufficient monitoring",
+    "impact": "Defacement of official Cyber Crime Cell pages. Embarrassment for law enforcement. Suspects arrested.",
+    "severity": "Medium",
+    "description": "The Mumbai Police Cyber Crime Cell website was hacked in July 2001 and defaced with abusive messages. The police later arrested suspects and linked them to wider cybercrime cases including credit card fraud.",
+    "sources": [
+      {
+        "title": "Two suspects picked up for hacking into Bombay police web site (Rediff, July 2001)",
+        "url": "https://m.rediff.com/news/2001/jul/10hack.htm",
+        "type": "News Article"
+      },
+      {
+        "title": "India Hackers Scared Straight? (Wired, July 2001)",
+        "url": "https://www.wired.com/2001/07/india-hackers-scared-straight",
+        "type": "News Article"
+      },
+      {
+        "title": "India Hackers Face More Charges (Wired, Aug 2001)",
+        "url": "https://www.wired.com/2001/08/india-hackers-face-more-charges",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-005",
+    "date": "2001-07-13",
+    "organization": "Multiple Indian IIS web servers and websites",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass malware (Code Red)",
+    "attackMethod": "Buffer-overflow exploit against Microsoft IIS (default.ida ISAPI extension), mass scanning and propagation",
+    "rootCause": "Unpatched Microsoft IIS vulnerability (MS01-033 / CVE-2001-0500)",
+    "impact": "Widespread defacement of IIS-hosted pages, heavy scanning traffic and disruption; numerous Indian IIS servers infected.",
+    "severity": "High",
+    "description": "The Code Red worm outbreak on July 13, 2001 exploited a buffer overflow in Microsoft IIS Indexing Service. It defaced web pages and generated massive scanning traffic. Indian IIS servers were among those heavily impacted.",
+    "sources": [
+      {
+        "title": "Microsoft Security Bulletin MS01-033",
+        "url": "https://learn.microsoft.com/en-us/security-updates/securitybulletins/2001/ms01-033",
+        "type": "Microsoft Security Bulletin"
+      },
+      {
+        "title": "CAIDA analysis - The Spread of the Code Red Worm",
+        "url": "https://www.caida.org/archive/code-red/",
+        "type": "Research / Analysis"
+      },
+      {
+        "title": "Code Red: history & lessons",
+        "url": "https://www.kaspersky.com/blog/history-lessons-code-red/45082/",
+        "type": "Security Analysis"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-006",
+    "date": "2001-08-04",
+    "organization": "Multiple Indian IIS-hosted websites",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass malware (Code Red II)",
+    "attackMethod": "Buffer-overflow exploit against Microsoft IIS, installing a backdoor and scanning for nearby hosts",
+    "rootCause": "Unpatched IIS vulnerabilities exploited by Code Red family",
+    "impact": "Secondary wave of infections that created backdoors on compromised hosts, increasing reinfection risk for IIS servers in India.",
+    "severity": "High",
+    "description": "Code Red II, detected in early August 2001, was a variant of the original Code Red worm. It exploited the same IIS flaws but installed a backdoor, leading to persistent compromise of IIS servers including those in India.",
+    "sources": [
+      {
+        "title": "Microsoft Security Bulletin MS01-044 (August 2001)",
+        "url": "https://learn.microsoft.com/en-us/security-updates/securitybulletins/2001/ms01-044",
+        "type": "Microsoft Security Bulletin"
+      },
+      {
+        "title": "CAIDA analysis - Code Red family behaviour",
+        "url": "https://www.caida.org/archive/code-red/",
+        "type": "Research / Analysis"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-007",
+    "date": "2001-07-17",
+    "organization": "Multiple Indian corporate and personal e-mail users",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass-mailer (SirCam)",
+    "attackMethod": "E-mail-borne executable attachments, spreading through address books and network shares",
+    "rootCause": "User execution of malicious attachments and open network shares",
+    "impact": "Exfiltration of random documents from infected machines and widespread mail disruption among Indian users and corporates.",
+    "severity": "High",
+    "description": "SirCam worm (July 2001) spread by emailing itself with attached files stolen from infected computers. Indian users faced both privacy leaks and operational issues as corporate mail systems were flooded.",
+    "sources": [
+      {
+        "title": "SirCam devious but not sinister (Wired, July 2001)",
+        "url": "https://www.wired.com/2001/07/sircam-devious-but-not-sinister",
+        "type": "News Article"
+      },
+      {
+        "title": "Sircam (encyclopedic summary)",
+        "url": "https://en.wikipedia.org/wiki/Sircam",
+        "type": "Encyclopedic / Reference"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-008",
+    "date": "2001-09-18",
+    "organization": "Multiple Indian organisations (corporate, ISP, academic)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass malware (Nimda)",
+    "attackMethod": "Multi-vector propagation: e-mail, infected web pages, network shares and IIS exploits",
+    "rootCause": "Exploitation of multiple known Windows/IIS vulnerabilities and poor patch hygiene",
+    "impact": "Rapid global spread causing clogged e-mail systems, infected web content and major disruption. Indian organisations faced significant cleanup and downtime.",
+    "severity": "High",
+    "description": "The Nimda worm (September 18, 2001) spread via email, websites, network shares and IIS vulnerabilities, making it one of the fastest-spreading worms. Indian corporations and ISPs reported widespread infections and disruptions.",
+    "sources": [
+      {
+        "title": "The Nimda Worm: An Overview (SANS Institute)",
+        "url": "https://www.sans.org/white-papers/95",
+        "type": "Research Paper"
+      },
+      {
+        "title": "Safe mail and worm attack — The Nimda worm (India Today, Sept 30, 2001)",
+        "url": "https://www.indiatoday.in/magazine/science-and-technology/story/20011001-mail-with-an-attachment-readmeexe-is-a-worm-776451-2001-09-30",
+        "type": "News Article"
+      },
+      {
+        "title": "Scary hybrid Internet worm loose (Wired, Sept 2001)",
+        "url": "https://www.wired.com/2001/09/scary-hybrid-internet-worm-loose",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-009",
+    "date": "2001-10-23",
+    "organization": "Multiple Indian news websites",
+    "sector": "Media / Press",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivist compromise and defacement by Pakistani patriotic groups",
+    "rootCause": "Weak security on smaller publisher web servers",
+    "impact": "Two Indian news sites defaced as part of Indo-Pak cyber conflict.",
+    "severity": "Medium",
+    "description": "On October 23, 2001 two Indian news websites were defaced by Pakistani hackers as part of a pattern of Indo-Pak hacktivism. Documented in academic reporting and security chronologies.",
+    "sources": [
+      {
+        "title": "Regional rivalry India–Pakistan in cyberspace (ETH Zurich / CSS)",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      },
+      {
+        "title": "Cyber-equation between India and Pakistan (NDU Journal)",
+        "url": "https://ndujournal.ndu.edu.pk/site/article/download/183/138/171",
+        "type": "Research Paper"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-010",
+    "date": "2001-11-22",
+    "organization": "Department of Atomic Energy (India)",
+    "sector": "Government / Defence",
+    "incidentType": "Threatening e-mail & cybercrime case",
+    "attackMethod": "Threatening e-mails and alleged hacking-related activity",
+    "rootCause": "Insider misuse of electronic communication",
+    "impact": "Arrests and sedition charges against accused individuals including ex-ISRO scientist.",
+    "severity": "Medium",
+    "description": "In November 2001 Mumbai police arrested individuals, including a former ISRO scientist, for sending threatening e-mails to the Department of Atomic Energy. They faced sedition charges and were linked to earlier hacking activity.",
+    "sources": [
+      {
+        "title": "Police slap sedition charge on hackers (Times of India, Nov 2001)",
+        "url": "https://timesofindia.indiatimes.com/city/mumbai/police-slap-sedition-charge-on-hackers/articleshow/231596143.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Mumbai Police catch two hackers (India Today, Aug 2001)",
+        "url": "https://www.indiatoday.in/magazine/crime-stories/story/20010827-mumbai-police-catch-two-hackers-boast-internet-is-no-longer-a-safe-haven-for-criminals-774065-2001-08-26",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-2001-011",
+    "date": "2001-12-14",
+    "organization": "Indian Parliament",
+    "sector": "Government",
+    "incidentType": "Cyber Espionage Attempt",
+    "attackMethod": "Phishing & Malware",
+    "rootCause": "Email-borne malware",
+    "impact": "Malware-laced emails sent to Members of Parliament after the Parliament attack",
+    "severity": "High",
+    "description": "Shortly after the December 13, 2001 terrorist attack on the Indian Parliament, cyber units detected attempts to infiltrate parliamentary email systems using malware-laced attachments. Intelligence linked these campaigns to state-sponsored actors aiming to gather sensitive government data.",
+    "sources": [
+      {
+        "title": "Cyber threats after Parliament attack",
+        "url": "https://archive.indianexpress.com/news/hackers-target-parliamentarians/388/",
         "type": "News Article"
       }
     ]

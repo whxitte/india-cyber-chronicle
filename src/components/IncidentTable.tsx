@@ -52,7 +52,18 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
   };
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString("en-IN", {
+    // Handle special unverified dates like "2000-0-0" or "0-0-0"
+    if (dateString.includes("-0-0") || dateString === "0-0-0") {
+      return dateString;
+    }
+
+    // Try to parse as a valid date, if invalid return as-is
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) {
+      return dateString;
+    }
+
+    return date.toLocaleDateString("en-IN", {
       year: "numeric",
       month: "short",
       day: "numeric",
@@ -92,7 +103,7 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
                 to={`/incident/${incident.id}`}
                 className="block hover:bg-muted/50 transition-colors"
               >
-                <div className="grid grid-cols-8 gap-4 p-4 text-sm border-b last:border-b-0">
+                <div className="grid grid-cols-8 gap-4 p-4 text-sm border-b border-border">
                   <div className="font-medium">
                     {formatDate(incident.date)}
                   </div>

@@ -1,1 +1,160 @@
-[]
+[
+  {
+    "id": "inc-001",
+    "date": "2000-05-04",
+    "organization": "Multiple Indian organisations (government agencies, companies, universities)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware Infection",
+    "attackMethod": "Email worm (attachment: LOVE-LETTER-FOR-YOU.TXT.vbs) spread via Microsoft Outlook address books",
+    "rootCause": "Social engineering combined with users opening malicious attachments and lack of email filtering",
+    "impact": "Widespread email system disruption across organisations in India, file overwrites/loss on infected machines, productivity impact and remediation costs",
+    "severity": "High",
+    "description": "The *ILOVEYOU* (Love Bug) worm, released 4 May 2000 (created by Onel de Guzman, a student in the Philippines), rapidly propagated via Outlook address books and affected millions worldwide. Indian government offices, companies and academic institutions were among the many victims who suffered mail-server overloads, infected desktops and data loss. The ILOVEYOU (Love Bug) worm was a computer worm that caused widespread damage, though it did not originate in or specifically target India in 2000; it spread globally via email, exploiting human nature and technical vulnerabilities.\n\nThe worm exploited the common practice of hiding file extensions in Windows, making the malicious attachment appear as a harmless text file. Its successful exploitation of the social engineering technique of using a tempting subject line was key to its rapid global spread, infecting millions of computers in a matter of days. \n\n- *How it spread*: Social Engineering: The virus spread as an email with the subject line 'ILOVEYOU' and an attachment named 'LOVE-LETTER-FOR-YOU. TXT. vbs\n\n- *Exploiting Windows*: Windows' default setting to hide known file extensions, such as .vbs (a Visual Basic script), led users to believe the file was a simple .txt document.\n\n- *Activating the Script*: Opening the attachment ran the Visual Basic script, which would overwrite random files on the user's local computer and copy itself to all the addresses in the user's Microsoft Outlook Address Book, rapidly spreading the infection to other computers' ",
+    "sources": [
+      {
+        "title": "ILOVEYOU (Wikipedia entry)",
+        "url": "https://en.wikipedia.org/wiki/ILOVEYOU",
+        "type": "Reference Article"
+      },
+      {
+        "title": "The 'I Love You' worm, 2000 coverage (The Guardian)",
+        "url": "https://www.theguardian.com/world/2000/may/05/jamesmeek",
+        "type": "News Article"
+      },
+      {
+        "title": "Rediff: The Indian who fought 'I Love You' (May 2000)",
+        "url": "https://m.rediff.com/us/2000/may/08us2.htm",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-002",
+    "date": "2000-12-23",
+    "organization": "Parliament of India (official website)",
+    "sector": "Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Unauthorized website defacement (politically motivated hack)",
+    "rootCause": "Web server/site vulnerability and insufficient hardening",
+    "impact": "Homepage defacement, reputational damage and temporary service disruption",
+    "severity": "Medium",
+    "description": "During the 2000 India–Pakistan cyber skirmishes, the official Parliament website was reported defaced by pro-Pakistan messages; the episode was part of a larger wave of politically motivated defacements targeting Indian government sites.\n\nWired explicitly lists the Indian Parliament website among defaced targets in 2000.",
+    "sources": [
+      {
+        "title": "Both Sides Hacked Over Kashmir (Wired, Dec 2000)",
+        "url": "https://www.wired.com/2000/12/both-sides-hacked-over-kashmir/",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-003",
+    "date": "2000-12-23",
+    "organization": "Zee Television (corporate website)",
+    "sector": "Media & Entertainment",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Unauthorized defacement of public website pages",
+    "rootCause": "Web application vulnerabilities and inadequate monitoring",
+    "impact": "Public-facing pages defaced with political content, reputational impact and web downtime for remediation",
+    "severity": "Medium",
+    "description": "Zee TV's website was listed among several corporate and institutional sites defaced in the 2000 wave of politically motivated hacks tied to the India–Pakistan online skirmish.",
+    "sources": [
+      {
+        "title": "Both Sides Hacked Over Kashmir (Wired, Dec 2000)",
+        "url": "https://www.wired.com/2000/12/both-sides-hacked-over-kashmir/",
+        "type": "News Article"
+      },
+      {
+        "title": "India Today (June 2001 retrospective mentioning Zee defacement in Dec 2000)",
+        "url": "https://www.indiatoday.in/magazine/indiascope/story/20010618-indian-hacks-into-pakistani-website-sends-warning-775059-2001-06-17",
+        "type": "Indian news magazine"
+      }
+    ]
+  },
+  {
+    "id": "inc-004",
+    "date": "2000-12-23",
+    "organization": "Indian Institute of Science (IISc) website",
+    "sector": "Education / Research",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Unauthorized defacement",
+    "rootCause": "Public-facing web server weaknesses and lack of proactive patching/hardening",
+    "impact": "Website defacement, temporary unavailability of public-facing services, reputational harm",
+    "severity": "Medium",
+    "description": "IISc's website was cited among Indian academic and government sites defaced during 2000's cross-border hacktivist incidents that targeted many Indian web resources.",
+    "sources": [
+      {
+        "title": "Both Sides Hacked Over Kashmir (Wired, Dec 2000)",
+        "url": "https://www.wired.com/2000/12/both-sides-hacked-over-kashmir/",
+        "type": "News Article"
+      },
+      {
+        "title": "Times of India retrospective (mentions IISc incidents around 2001)",
+        "url": "https://timesofindia.indiatimes.com/india/hacking-of-iisc-website-was-a-warning/articleshow/1351795.cms",
+        "type": "Indian newspaper retrospective"
+      }
+    ]
+  },
+  {
+    "id": "inc-005",
+    "date": "2000-12-23",
+    "organization": "Glaxo Wellcome India (corporate website)",
+    "sector": "Pharmaceutical / Corporate",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Website defacement",
+    "rootCause": "Exploitation of public website vulnerabilities",
+    "impact": "Public pages defaced, potential loss of trust and temporary service interruption",
+    "severity": "Medium",
+    "description": "Glaxo Wellcome's Indian site was reported among corporate sites defaced during the 2000 wave of politically motivated hacking directed at Indian web properties.",
+    "sources": [
+      {
+        "title": "Both Sides Hacked Over Kashmir (Wired, Dec 2000)",
+        "url": "https://www.wired.com/2000/12/both-sides-hacked-over-kashmir/",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-006",
+    "date": "2000-0-0",
+    "organization": "Multiple Indian government and private websites (aggregated)",
+    "sector": "Government / Private",
+    "incidentType": "Mass Website Defacements",
+    "attackMethod": "Coordinated defacement campaigns by foreign hacktivist groups",
+    "rootCause": "Politically motivated hacktivism exploiting weakly secured public web servers",
+    "impact": "Dozens of Indian websites defaced (reported numbers vary), reputational damage and increased govt. focus on cybercrime response",
+    "severity": "Medium",
+    "description": "Throughout 2000 multiple Indian websites (including government, research and corporate sites) were defaced in a wave of politically motivated attacks linked to India–Pakistan tensions. Reports cite over 40 high-profile Indian sites targeted during the year.",
+    "sources": [
+      {
+        "title": "Both Sides Hacked Over Kashmir (Wired, Dec 2000)",
+        "url": "https://www.wired.com/2000/12/both-sides-hacked-over-kashmir/",
+        "type": "News Article"
+      }
+    ]
+  },
+  {
+    "id": "inc-007",
+    "date": "2000-0-0",
+    "organization": "Indian online infrastructure (general national impact)",
+    "sector": "National / Multiple sectors",
+    "incidentType": "Early cyber incidents & rise of hacktivism",
+    "attackMethod": "Various (website defacements, email worms, basic intrusions)",
+    "rootCause": "Immature cybersecurity posture, weak web/host hardening and nascent incident response",
+    "impact": "Raised national awareness, drove early policy and capability responses including steps toward law and cybercrime units",
+    "severity": "Medium",
+    "description": "The year 2000 marked a watershed for India as worms like ILOVEYOU and politically motivated website defacements highlighted systemic gaps in cybersecurity across government, academia, media and private companies. These incidents contributed to the early formation of national cyber-response thinking and legal attention.",
+    "sources": [
+      {
+        "title": "Both Sides Hacked Over Kashmir (Wired, Dec 2000)",
+        "url": "https://www.wired.com/2000/12/both-sides-hacked-over-kashmir/",
+        "type": "News Article"
+      },
+      {
+        "title": "ILOVEYOU (Wikipedia entry)",
+        "url": "https://en.wikipedia.org/wiki/ILOVEYOU",
+        "type": "Reference Article"
+      }
+    ]
+  }
+]

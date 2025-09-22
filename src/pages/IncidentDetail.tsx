@@ -126,10 +126,75 @@ const IncidentDetail = () => {
   };
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString("en-IN", {
+    // Handle special unverified dates like "2000-0-0" or "0-0-0"
+    if (dateString.includes("-0-0") || dateString === "0-0-0") {
+      return dateString;
+    }
+
+    // Try to parse as a valid date, if invalid return as-is
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) {
+      return dateString;
+    }
+
+    return date.toLocaleDateString("en-IN", {
       year: "numeric",
       month: "long",
       day: "numeric",
+    });
+  };
+
+  const formatDescription = (description: string) => {
+    const paragraphs = description.split('\n\n').filter(paragraph => paragraph.trim() !== '');
+
+    return paragraphs.map((paragraph, index) => {
+      const trimmedParagraph = paragraph.trim();
+
+      // Check if this paragraph is a list (starts with multiple lines beginning with -)
+      const lines = trimmedParagraph.split('\n');
+      const isListParagraph = lines.every(line => line.trim().startsWith('-') || line.trim() === '');
+
+      if (isListParagraph && lines.some(line => line.trim().startsWith('-'))) {
+        // Render as unordered list
+        const listItems = lines
+          .filter(line => line.trim().startsWith('-'))
+          .map((line, itemIndex) => {
+            const content = line.replace(/^-\s*/, '').trim();
+            return (
+              <li key={itemIndex} className="mb-1">
+                {formatTextWithBold(content)}
+              </li>
+            );
+          });
+
+        return (
+          <ul key={index} className="list-disc list-inside mb-4 last:mb-0 space-y-1">
+            {listItems}
+          </ul>
+        );
+      } else {
+        // Render as paragraph
+        return (
+          <p key={index} className="academic-body leading-relaxed text-base mb-4 last:mb-0">
+            {formatTextWithBold(trimmedParagraph)}
+          </p>
+        );
+      }
+    });
+  };
+
+  const formatTextWithBold = (text: string) => {
+    // Split text by both **bold** and *bold* patterns
+    // Using a regex that matches both single and double asterisks
+    const parts = text.split(/(\*\*.*?\*\*|\*.*?\*)/);
+
+    return parts.map((part, index) => {
+      if ((part.startsWith('**') && part.endsWith('**')) || (part.startsWith('*') && part.endsWith('*'))) {
+        // Remove the * or ** markers and make bold
+        const boldText = part.startsWith('**') ? part.slice(2, -2) : part.slice(1, -1);
+        return <strong key={index}>{boldText}</strong>;
+      }
+      return part;
     });
   };
 
@@ -185,7 +250,7 @@ const IncidentDetail = () => {
               <Card className="p-6">
                 <h2 className="text-xl font-semibold academic-subheading mb-4">Incident Description</h2>
                 <div className="prose max-w-none">
-                  <p className="academic-body leading-relaxed text-base">{incident.description}</p>
+                  {formatDescription(incident.description)}
                 </div>
               </Card>
 

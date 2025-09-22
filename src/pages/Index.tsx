@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
 import SearchBar from "@/components/SearchBar";
-import { Database, Shield, FileText, TrendingUp, AlertTriangle, Users } from "lucide-react";
+import { Database, Shield, FileText, TrendingUp, Users } from "lucide-react";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -16,11 +16,6 @@ const Index = () => {
     { label: "Years of Data", value: "25", icon: TrendingUp, color: "text-purple-600" },
   ];
 
-  const recentIncidents = [
-    { org: "State Bank of India", type: "Phishing", date: "Dec 2023", severity: "High" },
-    { org: "AIIMS Delhi", type: "Ransomware", date: "Oct 2023", severity: "Critical" },
-    { org: "Indian Railways", type: "Data Breach", date: "Aug 2023", severity: "High" },
-  ];
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
@@ -34,7 +29,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-academic-red-lighter to-background py-16">
+      <section className="bg-gradient-to-b from-academic-red-lighter to-background min-h-screen flex items-center">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="space-y-4">
@@ -111,44 +106,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Recent Incidents Preview */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex items-center justify-between mb-8">
-              <h2 className="text-3xl font-bold academic-heading">Recent Incidents</h2>
-              <Button asChild variant="outline">
-                <Link to="/browse">View All</Link>
-              </Button>
-            </div>
-            
-            <div className="grid gap-4">
-              {recentIncidents.map((incident, index) => (
-                <Card key={index} className="p-4 hover:shadow-md transition-shadow">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-4">
-                      <div className="p-2 rounded-lg bg-red-100">
-                        <AlertTriangle className="h-5 w-5 text-red-600" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-academic-red">{incident.org}</h3>
-                        <p className="text-sm text-muted-foreground">{incident.type} • {incident.date}</p>
-                      </div>
-                    </div>
-                    <div className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      incident.severity === "Critical" 
-                        ? "bg-red-100 text-red-800" 
-                        : "bg-orange-100 text-orange-800"
-                    }`}>
-                      {incident.severity}
-                    </div>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="border-t bg-muted/30 py-12">
