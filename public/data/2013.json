@@ -1,59 +1,167 @@
 [
   {
-    "id": "inc-014",
-    "date": "2013-12-04",
-    "organization": "Target Corporation",
-    "sector": "Retail & E-commerce",
-    "incidentType": "Data Breach",
-    "attackMethod": "Third-Party Compromise, PoS Malware",
-    "rootCause": "Stolen credentials from a third-party HVAC vendor were used to access Target's network and deploy malware on point-of-sale (PoS) systems.",
-    "impact": "Compromise of credit/debit card data for approximately 40 million customers and personal information for up to 70 million.",
-    "severity": "Critical",
-    "description": "During the 2013 holiday season, attackers breached retailer Target's network through a trusted third-party vendor. They installed memory-scraping malware on PoS terminals to steal payment card data directly from transactions, a landmark case in retail and supply chain security.",
-    "sources": [
-      {
-        "title": "A King-Size Breach: The Target Data Security Incident",
-        "url": "https://www.darkreading.com/attacks-breaches/a-king-size-breach-the-target-data-security-incident",
-        "type": "News Article"
-      }
-    ]
-  },
-  {
-    "id": "inc-017",
-    "date": "2013-08-01",
-    "organization": "Yahoo",
-    "sector": "Technology & IT services",
-    "incidentType": "Data Breach",
-    "attackMethod": "Spear Phishing, Account Hijacking",
-    "rootCause": "State-sponsored actors used forged cookies to gain access to user accounts without needing passwords.",
-    "impact": "Compromised all 3 billion Yahoo user accounts, making it the largest data breach in history. Exposed names, email addresses, telephone numbers, and hashed passwords.",
-    "severity": "Critical",
-    "description": "In a breach initially occurring in 2013 but not fully disclosed until 2017, every single Yahoo user account was compromised. The sheer scale of the breach and the delay in its disclosure had significant consequences, including a reduced sale price to Verizon.",
-    "sources": [
-      {
-        "title": "Yahoo Says All Three Billion Accounts Were Hacked in 2013 Data Theft",
-        "url": "https://www.reuters.com/article/us-yahoo-cyber/yahoo-says-all-three-billion-accounts-were-hacked-in-2013-data-theft-idUSKCN1C82O1",
-        "type": "News Article"
-      }
-    ]
-  },
-  {
-    "id": "inc-042",
-    "date": "2013-02-19",
-    "organization": "Bit9 (now Carbon Black)",
-    "sector": "Technology & IT services",
-    "incidentType": "Supply Chain Attack",
-    "attackMethod": "Compromise of Code-Signing Certificate",
-    "rootCause": "Attackers breached the company's network and used its digital code-signing certificate to sign their own malware.",
-    "impact": "Malware signed with a legitimate Bit9 certificate was used to infect systems at several of Bit9's customers, bypassing security controls.",
+    "id": "inc-2013-001",
+    "date": "2013-03",
+    "organization": "Defence Research and Development Organisation (DRDO)",
+    "sector": "Government (Defense)",
+    "incidentType": "Cyber Espionage / Data Theft",
+    "attackMethod": "Network infiltration, malware via email attachments",
+    "rootCause": "State-sponsored hacking (Chinese origin), vulnerable email systems",
+    "impact": "Theft of thousands of top-secret files, including Cabinet Committee on Security documents, missile systems data, and e-tickets of DRDO scientists; uploaded to a Guangdong server",
     "severity": "High",
-    "description": "Security firm Bit9, which specialized in whitelisting technology, was breached by hackers. The attackers stole a cryptographic key and used it to sign malware, causing it to appear as trusted software and enabling attacks on three of Bit9's customers.",
+    "description": "In March 2013, Chinese hackers breached DRDO's computer systems, stealing thousands of sensitive files related to missile programs, army cyber policy, and deals with Bharat Dynamics Ltd. The breach was detected by NTRO and private experts when cracking a file attached to hacked DRDO email accounts. This was the largest security breach in Indian defense history, prompting Defence Minister A.K. Antony to order a probe.\n\nKey details:\n- Actors: Chinese hackers (state-sponsored suspected)\n- Targets: DRDO servers and emails\n- Motivation: Espionage\n- Consequence: Probe ordered, system audits",
     "sources": [
       {
-        "title": "Security Firm Bit9 Hacked, Used to Spread Malware",
-        "url": "https://krebsonsecurity.com/2013/02/security-firm-bit9-hacked-used-to-spread-malware/",
+        "title": "Chinese hackers breach DRDO security, steal thousands of secret files",
+        "url": "https://www.dnaindia.com/india/report-chinese-hackers-breach-drdo-security-steal-thousands-of-secret-files-1804804",
+        "type": "News Article"
+      },
+      {
+        "title": "Chinese hackers infiltrate Indian Defence Research Organisation",
+        "url": "https://thehackernews.com/2013/03/chinese-hackers-infiltrate-indian.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Chinese hackers breach DRDO security, steal thousands of secret files",
+        "url": "https://www.newindianexpress.com/nation/2013/Mar/14/chinese-hack-drdo-computers-antony-seeks-report-458371.html",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2013-002",
+    "date": "2013-02",
+    "organization": "Three Chandigarh Shopkeepers' Websites (Sector 20)",
+    "sector": "Private (Retail)",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Server vulnerability exploitation, hacktivism",
+    "rootCause": "Poor website security, geopolitical tensions",
+    "impact": "Defacement with Pakistani flag, anti-India expletives, and objectionable material; temporary downtime, police complaint filed",
+    "severity": "Medium",
+    "description": "In February 2013, Pakistani hacker Wasim Gujjar defaced websites of three Chandigarh shopkeepers in Sector 20, posting pro-Pakistan slogans, anti-India expletives, and a Pakistani flag. Victims, including Naresh Garg (Sector 20 market association president), filed a police complaint. Despite antivirus use, the attack succeeded, taking four days to restore.\n\nKey details:\n- Actor: Wasim Gujjar (Pakistani hacker)\n- Targets: Chandigarh retail websites\n- Motivation: Hacktivism\n- Consequence: Police probe, security upgrades",
+    "sources": [
+      {
+        "title": "Pak hackers target city businessman, pile hatred | Chandigarh News - Times of India",
+        "url": "https://timesofindia.indiatimes.com/city/chandigarh/Pak-hackers-target-city-businessman-pile-hatred/articleshow/18247554.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2013-003",
+    "date": "2013",
+    "organization": "Multiple Indian defense, aerospace, and telecommunication sectors",
+    "sector": "Defense / Aerospace / Telecom",
+    "incidentType": "Cyber Espionage (Operation Hangover)",
+    "attackMethod": "APT malware (e.g., Hangover RAT), spear-phishing",
+    "rootCause": "Indian-origin hacking infrastructure, targeting vulnerabilities",
+    "impact": "Espionage on Pakistani and other targets, but exposed Indian capabilities; industrial and national security data theft",
+    "severity": "High",
+    "description": "Operation Hangover, uncovered in May 2013 by Norman Shark, revealed an Indian cyber espionage infrastructure active since 2010, targeting Pakistan, US, China, and others. It used malware exploiting Java and Word vulnerabilities for data theft from government and military entities. The campaign, linked to Indian groups like Appin Security, focused on national security and industrial espionage.\n\nKey details:\n- Actors: Indian hackers (private firms suspected)\n- Targets: Pakistani government/military, global entities\n- Motivation: Espionage\n- Consequence: Global scrutiny on Indian APTs",
+    "sources": [
+      {
+        "title": "Operation Hangover: Unveiling an Indian Cyberattack Infrastructure",
+        "url": "https://www.norman.com/documents/operation-hangover/",
+        "type": "Security Report"
+      },
+      {
+        "title": "Operation Hangover, the Indian Cyberattack Infrastructure",
+        "url": "https://www.cyberdefensemagazine.com/operation-hangover-the-indian-cyberattack-infrastructure/",
+        "type": "Analysis"
+      },
+      {
+        "title": "Operation Hangover: India's three-year silent cyber war on Pakistan",
+        "url": "https://www.pakistantoday.com.pk/2013/05/21/operation-hangover-indias-three-year-silent-cyber-war-on-pakistan/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2013-004",
+    "date": "2013-01-25",
+    "organization": "Punjab National Bank (PNB)",
+    "sector": "Financial",
+    "incidentType": "Phishing Fraud",
+    "attackMethod": "Phishing attack on customer account",
+    "rootCause": "Customer phishing vulnerability, bank's negligence in fraud detection",
+    "impact": "₹80.10 lakh fraudulent transfer from customer's account; customer awarded ₹45 lakh compensation",
+    "severity": "Medium",
+    "description": "In January 2013, a PNB customer (Poona Auto Ancillaries Pvt Ltd) lost ₹80.10 lakh to phishing, with 40 unauthorized transactions. The Maharashtra IT court ordered PNB to pay ₹45 lakh compensation, criticizing lax KYC and investigation. This set a precedent for bank liability in phishing cases.\n\nKey details:\n- Actor: Unknown phishers\n- Target: PNB customer account\n- Motivation: Financial gain\n- Consequence: Compensation awarded, bank reforms",
+    "sources": [
+      {
+        "title": "PNB customer who fell prey to phishing gets compensation | Pune News - The Indian Express",
+        "url": "https://indianexpress.com/article/cities/pune/pnb-customer-who-fell-prey-to-phishing-gets-compensation/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2013-005",
+    "date": "2013",
+    "organization": "Multiple Indian websites (government, corporate, educational)",
+    "sector": "Government / Private / Education",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism, exploiting vulnerabilities",
+    "rootCause": "Outdated CMS, geopolitical motives",
+    "impact": "28,481 websites hacked, including 189 government sites; reputational damage",
+    "severity": "Medium",
+    "description": "CERT-In reported 28,481 website hacks in 2013, including 189 government sites, driven by hacktivism and vulnerabilities in Joomla/WordPress. Pakistani groups targeted sites amid tensions.\n\nKey details:\n- Actors: Pakistani and other hackers\n- Targets: Indian websites\n- Motivation: Defacement\n- Consequence: CERT-In advisories, patching drives",
+    "sources": [
+      {
+        "title": "Annual Report (2013) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2014-0034.pdf",
+        "type": "Official Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2013-006",
+    "date": "2013",
+    "organization": "Multiple Indian financial and e-commerce sectors",
+    "sector": "Financial / E-commerce",
+    "incidentType": "Phishing Attacks",
+    "attackMethod": "Mass phishing campaigns",
+    "rootCause": "Social engineering, lack of awareness",
+    "impact": "Financial losses, identity theft; $4 billion corporate losses estimated",
+    "severity": "High",
+    "description": "Phishing surged in 2013, targeting banks and e-commerce, causing $4 billion corporate losses. CERT-In reported increased incidents, with attackers using fake emails for credential theft.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Financial users\n- Motivation: Financial gain\n- Consequence: Awareness campaigns",
+    "sources": [
+      {
+        "title": "Annual Report (2013) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2014-0034.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "India's corporate sector lost $4 bn to cyber attacks in 2013: Symantec",
+        "url": "https://www.business-standard.com/article/companies/india-s-corporate-sector-lost-4-bn-to-cyber-attacks-in-2013-symantec-114022700195_1.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2013-007",
+    "date": "2013",
+    "organization": "Multiple Indian BPO firms",
+    "sector": "Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Fraud / Data Theft",
+    "attackMethod": "Misuse of privileged access",
+    "rootCause": "Insider threats, weak controls",
+    "impact": "Financial losses, client data compromise",
+    "severity": "High",
+    "description": "BPO insider frauds persisted in 2013, with employees misusing client data for unauthorized transactions, leading to arrests and scrutiny.\n\nKey details:\n- Actors: BPO employees\n- Targets: Client accounts\n- Motivation: Financial gain\n- Consequence: NASSCOM guidelines",
+    "sources": [
+      {
+        "title": "BPO Fraud in India on the Rise - Asia Sentinel",
+        "url": "https://www.asiasentinel.com/p/bpo-frauds-india-on-the-rise",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (aggregated cases across the year)"
   }
 ]
