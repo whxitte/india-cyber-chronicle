@@ -1,21 +1,182 @@
 [
   {
-    "id": "inc-035",
+    "id": "inc-2009-001",
     "date": "2009-12-15",
-    "organization": "Google and 30+ other companies",
-    "sector": "Technology & IT services",
-    "incidentType": "APT",
-    "attackMethod": "Spear Phishing, Zero-Day Exploit",
-    "rootCause": "A zero-day vulnerability in Internet Explorer was used in a phishing attack to gain access to corporate networks.",
-    "impact": "Theft of intellectual property from dozens of major tech companies and attempts to access the Gmail accounts of Chinese human rights activists.",
-    "severity": "Critical",
-    "description": "Dubbed 'Operation Aurora', this was a series of highly sophisticated and coordinated cyberattacks from China. Google's public disclosure of the attacks and their threat to cease operations in China marked a turning point in how corporations and governments discussed state-sponsored cyber espionage.",
+    "organization": "National Security Advisor's Office and Ministry of External Affairs (MEA)",
+    "sector": "Government (National Security)",
+    "incidentType": "Cyber Espionage / Hacking",
+    "attackMethod": "Spear-phishing with malicious PDF attachment containing a Trojan",
+    "rootCause": "State-sponsored hacking (Chinese origin suspected), social engineering",
+    "impact": "Targeted intrusion into sensitive government networks, potential data compromise, though mitigated",
+    "severity": "High",
+    "description": "On December 15, 2009, coinciding with Google’s report of Operation Aurora, the National Security Advisor’s office and MEA were targeted by a China-based attack using a Trojan-laden PDF attachment. NSA M.K. Narayanan confirmed the attempt was detected and blocked, but it underscored sophisticated cyber threats from China.\n\nKey details:\n- Actors: Chinese hackers (suspected state-sponsored)\n- Targets: NSA office, MEA\n- Motivation: Espionage\n- Consequence: Strengthened cyber defenses",
     "sources": [
       {
-        "title": "A new approach to China",
-        "url": "https://googleblog.blogspot.com/2010/01/new-approach-to-china.html",
-        "type": "Company Blog"
+        "title": "Chinese made a bid to hack our computers, says Narayanan",
+        "url": "https://timesofindia.indiatimes.com/india/chinese-made-a-bid-to-hack-our-computers-says-narayanan/articleshow/5474104.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "India’s Response to China’s Cyber Attacks - The Diplomat",
+        "url": "https://thediplomat.com/2019/07/indias-response-to-chinas-cyber-attacks/",
+        "type": "Analysis"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2009-002",
+    "date": "2009-03",
+    "organization": "Indian Government and Diplomatic Networks (including MEA, embassies, Tibetan government-in-exile)",
+    "sector": "Government / Diplomatic",
+    "incidentType": "Cyber Espionage (GhostNet)",
+    "attackMethod": "Malware infection via Trojan horses, keyloggers, backdoors",
+    "rootCause": "Targeted phishing, network vulnerabilities",
+    "impact": "Compromise of 1,295 computers globally, including Indian diplomatic data; potential exfiltration",
+    "severity": "High",
+    "description": "In March 2009, the GhostNet espionage network, uncovered by Citizen Lab, infiltrated Indian embassies, MEA, and the Tibetan government-in-exile in Dharamsala. China-based attackers used Trojans to steal documents and control systems, exposing India’s cyber vulnerabilities.\n\nKey details:\n- Actors: Chinese hackers (suspected state-sponsored)\n- Targets: Indian diplomatic networks, Tibetan offices\n- Motivation: Espionage\n- Consequence: Global exposure, India bolstered cybersecurity",
+    "sources": [
+      {
+        "title": "GhostNet - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/GhostNet",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Cyber-spies based in China target Indian government and Dalai Lama",
+        "url": "https://www.theguardian.com/technology/2010/apr/06/cyber-spies-china-target-india",
+        "type": "News Article"
+      },
+      {
+        "title": "Tracking GhostNet: Investigating a Cyber Espionage Network",
+        "url": "https://citizenlab.ca/wp-content/uploads/2017/05/ghostnet.pdf",
+        "type": "Research Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2009-003",
+    "date": "2009",
+    "organization": "Multiple Indian websites (various, particularly .in domains)",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism, exploiting web server vulnerabilities (SQL injection, XSS)",
+    "rootCause": "Outdated web servers, geopolitical tensions",
+    "impact": "6,023 Indian websites defaced, including 3,042 .in domains; reputational damage",
+    "severity": "Medium",
+    "description": "CERT-In reported 6,023 website defacements in 2009, with 3,042 targeting .in domains, driven by Indo-Pak hacktivism. Pakistani hackers exploited SQL injection and XSS to inject malicious content, escalating after Mumbai 26/11-related tensions.\n\nKey details:\n- Actors: Pakistani hackers (e.g., Pakistan Cyber Army)\n- Targets: Indian websites\n- Motivation: Political hacktivism\n- Consequence: CERT-In advisories, web security improvements",
+    "sources": [
+      {
+        "title": "Annual Report (2009) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=annualreport09.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "Indian, Pak hackers deface govt websites - Times of India",
+        "url": "https://timesofindia.indiatimes.com/india/indian-pak-hackers-deface-govt-websites/articleshow/3759424.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Regional rivalry between India-Pakistan: tit-for-tat in cyberspace",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2009-004",
+    "date": "2009-01",
+    "organization": "Satyam Computer Services",
+    "sector": "Corporate / IT",
+    "incidentType": "Corporate Fraud (Cyber-Enabled)",
+    "attackMethod": "Falsification of digital accounts and financial records",
+    "rootCause": "Insider manipulation of accounting systems",
+    "impact": "Inflation of assets by $1.47 billion, stock crash, loss of investor confidence",
+    "severity": "High",
+    "description": "In January 2009, Satyam’s chairman Ramalinga Raju confessed to a $1.47 billion fraud, manipulating digital accounting records to inflate assets. Known as 'India’s Enron,' it shook the IT sector.\n\nKey details:\n- Actor: Ramalinga Raju and insiders\n- Target: Satyam financial records\n- Motivation: Financial deception\n- Consequence: Company restructuring, legal actions",
+    "sources": [
+      {
+        "title": "Satyam scandal - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Satyam_scandal",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Satyam Scam: Case Study of the Satyam Fraud Case | 5paisa",
+        "url": "https://www.5paisa.com/blog/satyam-scam",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2009-005",
+    "date": "2009",
+    "organization": "Indian Government, Military, and Dalai Lama’s Office",
+    "sector": "Government / Military / Diplomatic",
+    "incidentType": "Cyber Espionage (Shadow Network)",
+    "attackMethod": "Targeted malware via email attachments, social engineering",
+    "rootCause": "State-sponsored hacking (Chinese origin), vulnerable systems",
+    "impact": "Theft of 1,500 emails and sensitive documents, including military data",
+    "severity": "High",
+    "description": "The Shadow Network, uncovered in 2010 but active in 2009, was a China-based espionage operation targeting Indian government, military, and the Dalai Lama’s office. It stole 1,500 emails and sensitive documents using malware delivered via email attachments.\n\nKey details:\n- Actors: Chinese hackers (state-sponsored)\n- Targets: Indian government, military, Dalai Lama\n- Motivation: Espionage\n- Consequence: Global report, India enhanced cyber defenses",
+    "sources": [
+      {
+        "title": "Shadows in the Cloud: Investigating Cyber Espionage 2.0",
+        "url": "https://citizenlab.ca/wp-content/uploads/2017/05/shadows-in-the-cloud.pdf",
+        "type": "Research Report"
+      },
+      {
+        "title": "Chinese Hackers Stole Indian Government Secrets, Report Says",
+        "url": "https://www.nytimes.com/2010/04/06/science/06cyber.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified (reported in 2010, active in 2009)"
+  },
+  {
+    "id": "inc-2009-006",
+    "date": "2009",
+    "organization": "Financial and E-commerce sectors in India",
+    "sector": "Financial / E-commerce",
+    "incidentType": "Phishing Attacks",
+    "attackMethod": "Mass phishing campaigns",
+    "rootCause": "Social engineering, lack of user awareness",
+    "impact": "Financial losses, identity theft, reputational damage to institutions",
+    "severity": "High",
+    "description": "Phishing attacks surged in 2009, targeting Indian financial and e-commerce sectors. CERT-In reported increased incidents, with attackers using fake emails to steal credentials, leading to significant financial losses.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Banks, online platforms\n- Motivation: Financial gain\n- Consequence: Awareness campaigns, stronger authentication",
+    "sources": [
+      {
+        "title": "Annual Report (2009) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=annualreport09.pdf",
+        "type": "Official Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2009-007",
+    "date": "2009",
+    "organization": "Multiple Indian websites and networks",
+    "sector": "Multiple",
+    "incidentType": "Mass Malware Propagation",
+    "attackMethod": "Malvertising, compromised websites (SQL injection, XSS), drive-by downloads",
+    "rootCause": "Web vulnerabilities, inadequate patching",
+    "impact": "Malware infections, data theft, botnet formation",
+    "severity": "High",
+    "description": "2009 saw a rise in malware via compromised Indian websites using SQL injection and XSS. CERT-In reported incidents involving Trojans (e.g., Koobface targeting social media) and worms, leading to data exfiltration and botnets.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Websites and users\n- Motivation: Malware distribution\n- Consequence: CERT-In advisories, patching efforts",
+    "sources": [
+      {
+        "title": "Annual Report (2009) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=annualreport09.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "Web-based malicious attacks on rise in India - The New Indian Express",
+        "url": "https://www.newindianexpress.com/nation/2009/May/04/web-based-malicious-attacks-on-rise-in-india-46404.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

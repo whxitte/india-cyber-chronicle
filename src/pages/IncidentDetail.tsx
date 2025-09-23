@@ -15,7 +15,8 @@ import {
   Target,
   ExternalLink,
   FileText,
-  Info
+  Info,
+  CheckCircle
 } from "lucide-react";
 
 const IncidentDetail = () => {
@@ -120,6 +121,19 @@ const IncidentDetail = () => {
         return "bg-yellow-100 text-yellow-800 border-yellow-200";
       case "low":
         return "bg-green-100 text-green-800 border-green-200";
+      default:
+        return "bg-gray-100 text-gray-800 border-gray-200";
+    }
+  };
+
+  const getVerificationStatusColor = (status: string) => {
+    switch (status.toLowerCase()) {
+      case "verified":
+        return "bg-green-100 text-green-800 border-green-200";
+      case "unverified":
+        return "bg-yellow-100 text-yellow-800 border-yellow-200";
+      case "disputed":
+        return "bg-red-100 text-red-800 border-red-200";
       default:
         return "bg-gray-100 text-gray-800 border-gray-200";
     }
@@ -294,6 +308,25 @@ const IncidentDetail = () => {
                       </div>
                     </div>
                   ))}
+                </div>
+              </Card>
+
+              {/* Verification Status */}
+              <Card className="p-6">
+                <h2 className="text-xl font-semibold academic-subheading mb-4">Verification Status</h2>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-muted-foreground mt-0.5 flex-shrink-0" />
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center space-x-3">
+                      <span className="text-sm text-muted-foreground">Status:</span>
+                      <Badge className={`text-sm px-3 py-1 ${getVerificationStatusColor(incident.verificationStatus)}`}>
+                        {incident.verificationStatus}
+                      </Badge>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      This incident report has been {incident.verificationStatus.toLowerCase()} based on available sources and evidence.
+                    </p>
+                  </div>
                 </div>
               </Card>
             </div>

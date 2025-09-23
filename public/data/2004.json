@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "id": "inc-2004-001",
+    "date": "2004",
+    "organization": "Multiple Indian government and private websites",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hacker groups",
+    "rootCause": "Vulnerable web servers and insufficient security monitoring",
+    "impact": "Indian websites defaced with anti-India propaganda, temporary service disruption",
+    "severity": "Medium",
+    "description": "In 2004, Pakistani hacker groups continued their campaign of defacing Indian websites as part of the ongoing Indo-Pak cyber skirmishes. The defacements featured pro-Pakistan slogans and anti-India messages, exploiting poorly secured web servers. This was a continuation of previous years' attacks, with hackers responding to geopolitical tensions.\n\nKey details:\n- Actors: Pakistani hacktivist groups\n- Targets: Various Indian government and private websites\n- Motivation: Political hacktivism linked to Indo-Pak tensions\n- Consequence: Reputational damage, heightened cybersecurity awareness",
+    "sources": [
+      {
+        "title": "Regional rivalry between India–Pakistan: tit-for-tat in cyberspace (ETH Zurich CSS report, 2018)",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      },
+      {
+        "title": "India, Pakistan & Hacktivism – Past, Present & Future (Part One)",
+        "url": "https://realhackhistory.org/2025/07/01/india-pakistan-hacktivism-past-present-future-part-one-early-years/",
+        "type": "Blog/Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (with date clarification - part of year-long campaign)"
+  },
+  {
+    "id": "inc-2004-002",
+    "date": "2004-01-26",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (MyDoom)",
+    "attackMethod": "Mass-mailing worm with DDoS capabilities",
+    "rootCause": "User interaction with malicious email attachments",
+    "impact": "Email system disruptions, network slowdowns, and backdoor installations across India",
+    "severity": "High",
+    "description": "The MyDoom worm, first identified on January 26, 2004, became the fastest-spreading email worm ever, affecting millions globally, including in India. It spread via email attachments, installing backdoors and launching DDoS attacks on targets like SCO Group and Microsoft. In India, it caused email overloads and internet slowdowns as the country's internet usage grew.\n\nKey details:\n- Exploit: Email attachments disguising as errors or documents\n- Impact in India: Part of global disruptions, with significant email traffic\n- Consequence: Estimated $38 billion global damage, prompted anti-virus updates",
+    "sources": [
+      {
+        "title": "Timeline of computer viruses and worms (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_computer_viruses_and_worms",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Mydoom (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Mydoom",
+        "type": "Reference Article"
+      }
+    ],
+    "verificationStatus": "Verified (global impact with effects on India)"
+  },
+  {
+    "id": "inc-2004-003",
+    "date": "2004-04-30",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (Sasser)",
+    "attackMethod": "Buffer overflow exploit in LSASS service",
+    "rootCause": "Unpatched Microsoft Windows vulnerability (MS04-011)",
+    "impact": "System crashes, reboots, and network disruptions in India, though limited due to holidays",
+    "severity": "High",
+    "description": "The Sasser worm, discovered on April 30, 2004, exploited a vulnerability in the LSASS service on Windows 2000, XP, and Server 2003, causing infected systems to crash and reboot. In India, it had limited impact due to a national holiday reducing computer usage, but still affected some networks and users.\n\nKey details:\n- Exploit: LSASS buffer overflow\n- Impact in India: Few reported incidents, part of global havoc\n- Consequence: Global disruptions, arrests of creators",
+    "sources": [
+      {
+        "title": "Sasser (computer worm) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sasser_(computer_worm)",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Sasser worm hits up to 1m computers (The Guardian)",
+        "url": "https://www.theguardian.com/technology/2004/may/04/security.business",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2004-004",
+    "date": "2004-02",
+    "organization": "Yahoo Message Group (individual victim in Chennai)",
+    "sector": "Private / Individual",
+    "incidentType": "Cyber Stalking / Obscene Messages",
+    "attackMethod": "Posting obscene and defamatory messages online",
+    "rootCause": "Misuse of online platforms for harassment, personal animosity",
+    "impact": "Emotional distress to victim, unwanted contacts and harassment, landmark legal precedent",
+    "severity": "Medium",
+    "description": "In February 2004, Suhas Katti posted obscene, defamatory, and annoying messages about a divorced woman in a Yahoo message group and sent emails from fake accounts in her name, leading to her receiving harassing calls. He was convicted on November 5, 2004, under Section 67 of the IT Act 2000 and IPC Sections 469 and 509, marking India's first conviction for online obscenity. The case set a precedent for electronic evidence in cyber law.\n\nKey details:\n- Actor: Suhas Katti\n- Target: Individual woman\n- Motivation: Rejected marriage proposal\n- Consequence: Fine of Rs 1 lakh, strengthened cyber law enforcement",
+    "sources": [
+      {
+        "title": "Suhas Katti v. Tamil Nadu (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Suhas_Katti_v._Tamil_Nadu",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Cyber Crime Case Studies Ahmedabad :: Cyber Fraud In India",
+        "url": "https://www.cyberralegalservices.com/detail-casestudies.php",
+        "type": "Case Study"
+      },
+      {
+        "title": "State of Tamil Nadu vs Suhas Katti - Case Analysis",
+        "url": "https://testbook.com/landmark-judgements/state-of-tamil-nadu-vs-suhas-katti",
+        "type": "Case Analysis"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2004-005",
+    "date": "2004",
+    "organization": "Citibank (US customers) via MphasiS BPO",
+    "sector": "Financial / Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Financial Fraud",
+    "attackMethod": "Social engineering, unauthorized access",
+    "rootCause": "Insider threat, insufficient security controls within the BPO, misuse of confidential customer data",
+    "impact": "Fraudulent transfer of approximately $426,000 from U.S. customer accounts, financial loss, reputational damage to India's BPO industry",
+    "severity": "High",
+    "description": "In late 2004, four call center employees of MphasiS in Pune, servicing Citibank US customers, engaged in financial fraud. They used social engineering to obtain PINs and personal data, transferring $426,000 to fake accounts in India. The fraud was detected after a US bank flagged suspicious withdrawals, leading to arrests in April 2005. The case highlighted vulnerabilities in India’s BPO sector, prompting stricter data security regulations.\n\nKey details:\n- Actors: Four MphasiS employees\n- Target: Citibank US customer accounts\n- Motivation: Financial gain\n- Consequence: Arrests, regulatory reforms in BPO sector",
+    "sources": [
+      {
+        "title": "Cyber Crime Case Studies Ahmedabad :: Cyber Fraud In India",
+        "url": "https://www.cyberralegalservices.com/detail-casestudies.php",
+        "type": "Case Study"
+      },
+      {
+        "title": "BPO frauds",
+        "url": "https://m.economictimes.com/special-coverage/scams-scandals/bpo-frauds/articleshow/1689696.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "India's first BPO scam unraveled",
+        "url": "https://timesofindia.indiatimes.com/home/sunday-times/deep-focus/indias-first-bpo-scam-unraveled/articleshow/1086438.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2004-006",
+    "date": "2004-12",
+    "organization": "Bazee.com (now eBay India)",
+    "sector": "E-Commerce",
+    "incidentType": "Obscenity and Content Liability",
+    "attackMethod": "Hosting objectionable material",
+    "rootCause": "Lack of clear distinction between Internet Service Provider and Content Provider, inadequate content monitoring",
+    "impact": "Arrest of CEO Avnish Bajaj (later released on bail), legal proceedings, reputational damage",
+    "severity": "Medium",
+    "description": "In December 2004, Avnish Bajaj, CEO of Bazee.com, was arrested after a pornographic MMS clip (the 'DPS MMS scandal') was listed for sale on the platform. The case involved a video clip of a Delhi schoolgirl, raising questions about intermediary liability under the IT Act 2000. Bajaj was released on bail, and the incident led to clarifications in e-commerce content moderation laws.\n\nKey details:\n- Actor: Unknown user posting content\n- Target: Bazee.com platform\n- Motivation: Sale of illegal content\n- Consequence: Legal precedent for intermediary liability",
+    "sources": [
+      {
+        "title": "Cyber Crime Case Studies Ahmedabad :: Cyber Fraud In India",
+        "url": "https://www.cyberralegalservices.com/detail-casestudies.php",
+        "type": "Case Study"
+      },
+      {
+        "title": "Overview of famous cyber crime cases that target people instead of ...",
+        "url": "https://blog.ipleaders.in/overview-of-famous-cyber-crime-cases-that-target-people-instead-of-money/",
+        "type": "Blog Post"
+      }
+    ],
+    "verificationStatus": "Verified"
+  }
+]

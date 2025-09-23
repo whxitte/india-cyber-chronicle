@@ -1,40 +1,177 @@
 [
   {
-    "id": "inc-018",
-    "date": "2011-03-16",
-    "organization": "RSA Security",
-    "sector": "Technology & IT services",
-    "incidentType": "Data Breach",
-    "attackMethod": "Spear Phishing (APT)",
-    "rootCause": "An employee opened a malicious Excel file from a phishing email, allowing attackers to install a backdoor and pivot within the network.",
-    "impact": "Exfiltration of sensitive data related to RSA's SecurID two-factor authentication products, which was later used in an attack against Lockheed Martin.",
-    "severity": "High",
-    "description": "A sophisticated APT group breached cybersecurity firm RSA and stole information critical to its flagship SecurID authentication tokens. This attack demonstrated that even top security companies are vulnerable and highlighted the use of stolen security information to target other high-value entities.",
+    "id": "inc-2011-001",
+    "date": "2011",
+    "organization": "Mahanagar Telephone Nigam Limited (MTNL)",
+    "sector": "Telecommunications / Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hackers",
+    "rootCause": "Vulnerable web server, Indo-Pak geopolitical tensions",
+    "impact": "Defacement of MTNL website with pro-Pakistan messages, reputational damage",
+    "severity": "Medium",
+    "description": "In 2011, the MTNL website was defaced by the Pakistani hacker group 'H4x0r HuSsY' as part of Indo-Pak cyber skirmishes. The attack altered the homepage to display pro-Pakistan messages, highlighting vulnerabilities in government-linked infrastructure.\n\nKey details:\n- Actors: H4x0r HuSsY (Pakistani hackers)\n- Targets: MTNL website\n- Motivation: Political hacktivism\n- Consequence: Public embarrassment, server security upgrades",
     "sources": [
       {
-        "title": "RSA breached, SecurID data stolen",
-        "url": "https://www.csoonline.com/article/518609/rsa-breached-securid-data-stolen.html",
+        "title": "Pakistani hackers deface MTNL website",
+        "url": "https://www.thehindu.com/news/national/pakistani-hackers-deface-mtnl-website/article2689512.ece",
+        "type": "News Article"
+      },
+      {
+        "title": "Cyber war: Pakistani hackers target Indian websites",
+        "url": "https://www.indiatoday.in/technology/news/story/cyber-war-pakistani-hackers-target-indian-websites-145672-2011-11-10",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-043",
-    "date": "2011-06-19",
-    "organization": "Citigroup",
-    "sector": "Banking & Finance",
-    "incidentType": "Data Breach",
-    "attackMethod": "Web Application Vulnerability",
-    "rootCause": "A parameter tampering vulnerability in the bank's website allowed attackers to access customer account data.",
-    "impact": "Exposed the names, account numbers, and contact information of approximately 360,000 credit card customers.",
-    "severity": "Medium",
-    "description": "Hackers exploited a basic security flaw on the Citigroup website to access the credit card data of hundreds of thousands of customers. The attackers simply needed to be logged-in customers and then alter digits in the browser's address bar to view the details of other accounts.",
+    "id": "inc-2011-002",
+    "date": "2011",
+    "organization": "Indian Government Organizations (e.g., PMO, Defense, MEA)",
+    "sector": "Government",
+    "incidentType": "Cyber Espionage (Operation Shady RAT)",
+    "attackMethod": "Sophisticated malware, APT",
+    "rootCause": "State-sponsored hacking (Chinese origin suspected), vulnerable systems",
+    "impact": "Data exfiltration from government networks, including PMO and Defense",
+    "severity": "High",
+    "description": "Operation Shady RAT, a China-based APT campaign, continued into 2011, targeting Indian government entities like the PMO, Defense, and MEA. Revealed by McAfee in 2011, the campaign used malware to steal sensitive data, affecting India among 70+ global targets.\n\nKey details:\n- Actors: Chinese hackers (state-sponsored)\n- Targets: Indian government networks\n- Motivation: Espionage\n- Consequence: Strengthened cyber defenses",
     "sources": [
       {
-        "title": "Citigroup data breach hits 360,000 customers, more than first thought",
-        "url": "https://www.theguardian.com/business/2011/jun/16/citigroup-data-breach-customers",
+        "title": "Operation Shady RAT - McAfee",
+        "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/restricted/rp-operation-shady-rat.pdf",
+        "type": "Security Report"
+      },
+      {
+        "title": "Operation Shady RAT (2010-2011) - Times of India",
+        "url": "https://timesofindia.indiatimes.com/gadgets-news/12-cyber-attacks-in-history-major-breaches-and-impacts/photostory/100442862.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified (active in 2011, reported in 2011)"
+  },
+  {
+    "id": "inc-2011-003",
+    "date": "2011-07",
+    "organization": "Indian Government Ministries (MEA, Defense, Finance)",
+    "sector": "Government",
+    "incidentType": "Cyber Espionage / Credential Theft",
+    "attackMethod": "Phishing, malware",
+    "rootCause": "Suspected state-sponsored hacking, user credential vulnerabilities",
+    "impact": "Compromise of 12,000 government email accounts, potential data leakage",
+    "severity": "High",
+    "description": "In July 2011, hackers compromised 12,000 email accounts of Indian government officials across ministries like MEA, Defense, and Finance. The attack used phishing and malware to steal credentials, raising concerns about national security data leakage.\n\nKey details:\n- Actors: Unknown (state-sponsored suspected)\n- Targets: Government email accounts\n- Motivation: Espionage\n- Consequence: Password resets, enhanced security protocols",
+    "sources": [
+      {
+        "title": "12,000 government email accounts hacked",
+        "url": "https://economictimes.indiatimes.com/news/politics-and-nation/12000-government-email-accounts-hacked/articleshow/9147327.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Government email accounts under cyber attack",
+        "url": "https://timesofindia.indiatimes.com/india/government-email-accounts-under-cyber-attack/articleshow/9144567.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2011-004",
+    "date": "2011",
+    "organization": "Indian Financial Institutions",
+    "sector": "Financial",
+    "incidentType": "Banking Trojans",
+    "attackMethod": "ZeuS and Zitmo malware, phishing",
+    "rootCause": "Crimeware-as-a-service, user infections via phishing",
+    "impact": "Financial losses from stolen credentials, fraudulent transactions",
+    "severity": "High",
+    "description": "In 2011, ZeuS and Zitmo malware continued targeting Indian banks, stealing credentials and bypassing SMS-based authentication. CERT-In reported increased financial frauds via phishing and malware.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Indian bank users\n- Motivation: Financial gain\n- Consequence: RBI security guidelines, user awareness campaigns",
+    "sources": [
+      {
+        "title": "Annual Report 2011 CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2011-0021.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "ZeuS: A Persistent Criminal Enterprise - McAfee",
+        "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-zeus-persistent-criminal-enterprise.pdf",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2011-005",
+    "date": "2011",
+    "organization": "Multiple Indian organizations and websites",
+    "sector": "Multiple",
+    "incidentType": "Mass Malware Propagation",
+    "attackMethod": "Malvertising, compromised websites (SQL injection, XSS), worms (e.g., Morto)",
+    "rootCause": "Web vulnerabilities, unpatched systems",
+    "impact": "Widespread infections, data theft, botnet formation",
+    "severity": "High",
+    "description": "CERT-In reported a surge in malware in 2011, including Morto worm and Asprox botnet, exploiting SQL injection, XSS, and unpatched systems. These attacks compromised Indian websites and networks, leading to data theft and botnets.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Websites, corporate networks\n- Motivation: Malware distribution\n- Consequence: CERT-In advisories, patching efforts",
+    "sources": [
+      {
+        "title": "Annual Report 2011 CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2011-0021.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "Spam evolution: August 2011 | Securelist",
+        "url": "https://securelist.com/spam-evolution-august-2011/36400/",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2011-006",
+    "date": "2011",
+    "organization": "Multiple Indian websites (government, corporate, educational)",
+    "sector": "Government / Private / Education",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hackers",
+    "rootCause": "Vulnerable web servers, Indo-Pak tensions",
+    "impact": "Defacement of thousands of Indian websites, reputational damage",
+    "severity": "Medium",
+    "description": "Pakistani hacker groups, including Pakistan Cyber Army, defaced thousands of Indian websites in 2011, continuing Indo-Pak cyber rivalry. Attacks targeted government and private sites, escalating post-26/11 tensions.\n\nKey details:\n- Actors: Pakistani hackers\n- Targets: Indian websites\n- Motivation: Political hacktivism\n- Consequence: Tit-for-tat defacements, CERT-In monitoring",
+    "sources": [
+      {
+        "title": "Cyber war: Pakistani hackers target Indian websites",
+        "url": "https://www.indiatoday.in/technology/news/story/cyber-war-pakistani-hackers-target-indian-websites-145672-2011-11-10",
+        "type": "News Article"
+      },
+      {
+        "title": "Regional rivalry between India–Pakistan: tit-for-tat in cyberspace",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      }
+    ],
+    "verificationStatus": "Verified (year-long campaign)"
+  },
+  {
+    "id": "inc-2011-007",
+    "date": "2006-2011",
+    "organization": "Indian Oil and Gas Companies (e.g., ONGC, Reliance)",
+    "sector": "Energy / Critical Infrastructure",
+    "incidentType": "Cyber Espionage (Night Dragon)",
+    "attackMethod": "Spear-phishing, SQL injection, RATs",
+    "rootCause": "Vulnerable networks, state-sponsored APT",
+    "impact": "Theft of IP and operational data from 71 global organizations, including Indian energy firms",
+    "severity": "High",
+    "description": "Night Dragon, a China-based APT campaign (2006–2011), targeted Indian oil/gas companies like ONGC and Reliance via spear-phishing and SQL injection to steal IP and financial data. Revealed by McAfee in 2011, it affected India's energy sector amid global espionage.\n\nKey details:\n- Actors: Chinese hackers (state-sponsored)\n- Targets: Indian energy firms\n- Motivation: Espionage\n- Consequence: Sector-wide security upgrades",
+    "sources": [
+      {
+        "title": "Night Dragon Operation - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Night_Dragon_Operation",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Global Energy Cyberattacks: Night Dragon - McAfee",
+        "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-global-energy-cyberattacks-night-dragon.pdf",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified (active through 2011)"
   }
 ]

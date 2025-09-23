@@ -1,21 +1,162 @@
 [
   {
-    "id": "inc-024",
-    "date": "2007-12-05",
-    "organization": "TJX Companies",
-    "sector": "Retail & E-commerce",
-    "incidentType": "Data Breach",
-    "attackMethod": "Wi-Fi Wardriving, SQL Injection",
-    "rootCause": "Poorly secured in-store Wi-Fi networks (using WEP) allowed attackers to access the corporate network and exploit vulnerabilities to steal data.",
-    "impact": "Theft of over 45 million credit and debit card numbers over an 18-month period, resulting in massive financial losses and fines.",
-    "severity": "Critical",
-    "description": "In one of the earliest mega-breaches, attackers led by Albert Gonzalez exploited weak Wi-Fi security at TJX retail stores. They maintained access for over a year, siphoning payment card data from the company's payment processing systems, setting a precedent for large-scale retail breaches.",
+    "id": "inc-2007-001",
+    "date": "2007",
+    "organization": "Multiple Indian websites (government, corporate, and educational)",
+    "sector": "Government / Private / Education",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hacker groups",
+    "rootCause": "Vulnerable web servers, outdated software, and geopolitical tensions",
+    "impact": "Thousands of Indian websites defaced with anti-India messages, temporary disruptions, reputational damage",
+    "severity": "Medium",
+    "description": "Throughout 2007, Pakistani hacker groups like Pakistan Cyber Army (PCA) and Anti-India Crew intensified defacements on Indian websites, continuing the Indo-Pak cyber rivalry. This included government, corporate, and educational sites, with messages mocking India. Attacks escalated around independence days and cricket matches, reflecting tensions over Kashmir.\n\nKey details:\n- Actors: PCA, Anti-India Crew\n- Targets: High-profile Indian sites\n- Motivation: Political retaliation\n- Consequence: Increased CERT-In alerts, calls for better web security",
     "sources": [
       {
-        "title": "The TJX data breach: 15 years later",
-        "url": "https://www.twingate.com/blog/tips/TJX-data-breach",
-        "type": "Blog Post"
+        "title": "Hacktivism: India vs. Pakistan",
+        "url": "https://www.recordedfuture.com/blog/india-pakistan-cyber-rivalry",
+        "type": "Analysis"
+      },
+      {
+        "title": "Indo-Pak Conflict – Darknet Diaries",
+        "url": "https://darknetdiaries.com/transcript/51/",
+        "type": "Podcast Transcript"
       }
-    ]
+    ],
+    "verificationStatus": "Verified (with date clarification - year-long campaign)"
+  },
+  {
+    "id": "inc-2007-002",
+    "date": "2007-01-20",
+    "organization": "Multiple Indian organizations (corporates, ISPs, government)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (Storm Worm)",
+    "attackMethod": "Email-based worm with botnet formation",
+    "rootCause": "User interaction with malicious attachments, unpatched systems",
+    "impact": "Widespread infections leading to botnets, spam propagation, and DDoS capabilities in India",
+    "severity": "High",
+    "description": "The Storm Worm, first detected on January 20, 2007, spread via emails with subjects like '230 dead as storm batters Europe,' forming massive botnets for spam and DDoS attacks. In India, it infected numerous systems amid rising internet use, contributing to global botnet growth.\n\nKey details:\n- Exploit: Email attachments\n- Impact in India: Botnet recruitment, network strain\n- Consequence: One of the largest botnets ever, prompting antivirus responses",
+    "sources": [
+      {
+        "title": "Timeline of computer viruses and worms - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_computer_viruses_and_worms",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Storm Worm - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Storm_Worm",
+        "type": "Reference Article"
+      }
+    ],
+    "verificationStatus": "Verified (global impact with effects on India)"
+  },
+  {
+    "id": "inc-2007-003",
+    "date": "2007",
+    "organization": "Sony India",
+    "sector": "E-Commerce / Retail",
+    "incidentType": "Insider Financial Fraud",
+    "attackMethod": "Misuse of customer credit card information by an insider",
+    "rootCause": "Insider threat, inadequate access controls and monitoring in the call center",
+    "impact": "Loss of a colour television and cordless headphone for Sony, misuse of a customer's credit card, conviction under IPC establishing legal precedent",
+    "severity": "High",
+    "description": "In 2007, Arif Azim, an employee at a Noida call center for Sony India, misused an American customer's credit card details from `www.sony.sambandh.com` to ship a television and headphones to his residence. The fraud was flagged by the credit card company, leading Sony to file a CBI complaint. Azim was convicted under IPC Sections 418, 419, and 420, marking the first cybercrime conviction using IPC, a key precedent before IT Act amendments.\n\nKey details:\n- Actor: Arif Azim\n- Target: Sony India customer\n- Motivation: Financial gain\n- Consequence: Legal precedent, improved call center controls",
+    "sources": [
+      {
+        "title": "Critical analysis of cyber crime in India - iPleaders",
+        "url": "https://blog.ipleaders.in/critical-analysis-cybercrime-india/",
+        "type": "Blog Post/Legal Analysis"
+      },
+      {
+        "title": "Top 20 Cyber Law Cases You Must Be Aware Of - YLCC",
+        "url": "https://yourlegalcareercoach.com/top-20-cyber-law-cases-you-must-be-aware-of/",
+        "type": "Blog Post/Legal Analysis"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2007-004",
+    "date": "2007-09",
+    "organization": "Government of Maharashtra",
+    "sector": "Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacking vulnerable server, exploiting security weaknesses",
+    "rootCause": "Lack of security measures (absence of a firewall), vulnerable web server",
+    "impact": "Defacement of `maharashtra.gov.in` with a palm image, 'Hacker School' logo, and 'Al Vida' message, causing disruption and embarrassment",
+    "severity": "Medium",
+    "description": "In September 2007, hackers defaced the Maharashtra government website with a palm image, 'Hacker School' logo, and 'Al Vida' message. Discovered the next morning, it prompted a Mumbai crime branch investigation, with suspicions of a Washington-based origin. The site lacked a firewall, marking its first hack despite prior virus issues.\n\nKey details:\n- Actors: Unknown hackers\n- Target: maharashtra.gov.in\n- Motivation: Likely hacktivism or testing vulnerabilities\n- Consequence: Investigation, exposed security gaps",
+    "sources": [
+      {
+        "title": "Maharashtra govt website hacked | Mumbai News - Times of India",
+        "url": "https://timesofindia.indiatimes.com/city/mumbai/maharashtra-govt-website-hacked/articleshow/2381397.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2007-005",
+    "date": "2007",
+    "organization": "Orkut (Google-owned social network, affecting Indian users)",
+    "sector": "Social Media / Technology",
+    "incidentType": "Cyber Defamation / Obscene Content",
+    "attackMethod": "Creation of fake profile with obscene content",
+    "rootCause": "Misuse of social media platform, lack of robust content moderation",
+    "impact": "Defamation of public figure (Sonia Gandhi), emotional distress, legal action against platform",
+    "severity": "Medium",
+    "description": "In 2007, a fake Orkut profile was created in Sonia Gandhi's name with obscene content, leading to a complaint and Orkut being summoned by Mumbai police. This case highlighted issues with social media liability and content control in India.\n\nKey details:\n- Actors: Unknown user\n- Target: Sonia Gandhi's reputation via Orkut profile\n- Motivation: Defamation\n- Consequence: Legal precedent for platform accountability",
+    "sources": [
+      {
+        "title": "Orkut Summoned Over Fake Sonia Gandhi Profile - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/orkut-summoned-over-fake-sonia-gandhi-profile/articleshow/2685648.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2007-006",
+    "date": "2007",
+    "organization": "Multiple Indian BPO firms",
+    "sector": "Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Fraud / Data Theft",
+    "attackMethod": "Misuse of privileged access for fraudulent transactions",
+    "rootCause": "Insider threats, weak access controls, inadequate monitoring",
+    "impact": "Financial losses across cases, erosion of trust in Indian BPO sector",
+    "severity": "High",
+    "description": "In 2007, several BPO firms in India faced insider frauds where employees manipulated client data for unauthorized transfers. Cases involved siphoning funds from US/UK clients, leading to arrests and regulatory scrutiny.\n\nKey details:\n- Actors: BPO employees\n- Targets: Client accounts in international firms\n- Motivation: Financial gain\n- Consequence: Enhanced compliance, NASSCOM guidelines",
+    "sources": [
+      {
+        "title": "BPO Fraud in India on the Rise - Asia Sentinel",
+        "url": "https://www.asiasentinel.com/p/bpo-frauds-india-on-the-rise",
+        "type": "Analysis"
+      },
+      {
+        "title": "BPO executive held for fraud - Times of India",
+        "url": "https://timesofindia.indiatimes.com/city/delhi/BPO-executive-held-for-fraud/articleshow/3995148.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified (aggregated cases across the year)"
+  },
+  {
+    "id": "inc-2007-007",
+    "date": "2007-11",
+    "organization": "ICICI Bank",
+    "sector": "Financial",
+    "incidentType": "DDoS Attack",
+    "attackMethod": "Distributed Denial of Service via botnets",
+    "rootCause": "Vulnerable network infrastructure, insufficient DDoS mitigation",
+    "impact": "Temporary downtime of bank's website, operational disruptions, customer inconvenience",
+    "severity": "Medium",
+    "description": "In November 2007, ICICI Bank faced a DDoS attack that attempted to overwhelm its website with traffic, causing temporary unavailability. This was part of broader 'web terrorism' attempts on Indian financial sites, highlighting emerging threats to banking.\n\nKey details:\n- Actors: Unknown cybercriminals (suspected external)\n- Target: ICICI Bank website\n- Motivation: Disruption and potential extortion\n- Consequence: Bank enhanced defenses, raised awareness on financial cyber risks",
+    "sources": [
+      {
+        "title": "How safe Is India's IT network? - BusinessToday",
+        "url": "https://www.businesstoday.in/magazine/features/story/how-safe-is-indias-it-network-12758-2007-11-13",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

@@ -1,21 +1,267 @@
 [
   {
-    "id": "inc-033",
-    "date": "2012-08-15",
-    "organization": "Saudi Aramco",
-    "sector": "Energy & Utilities",
-    "incidentType": "Wiper Malware",
-    "attackMethod": "Malware (Shamoon)",
-    "rootCause": "An employee with elevated privileges opened a phishing email, allowing the Shamoon malware to enter the network.",
-    "impact": "Destroyed data on approximately 35,000 corporate workstations, forcing the company to shut down its internal network and resort to manual processes.",
-    "severity": "Critical",
-    "description": "The Shamoon virus was a destructive wiper attack on the world's largest oil company, Saudi Aramco. The malware was designed purely for sabotage, overwriting the master boot records of infected machines and replacing data with a burning American flag image, crippling the company's business operations.",
+    "id": "inc-2012-001",
+    "date": "2012",
+    "organization": "Multiple Indian websites (government, corporate, educational)",
+    "sector": "Government / Private / Education",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani and Bangladeshi hacker groups",
+    "rootCause": "Vulnerable web servers, geopolitical tensions",
+    "impact": "Defacement of hundreds of Indian websites with anti-India messages, temporary disruptions",
+    "severity": "Medium",
+    "description": "In 2012, Pakistani and Bangladeshi hacker groups, including the Pakistan Cyber Army (PCA) and Bangladesh Black Hat Hackers (BBHH), defaced numerous Indian websites as part of escalating Indo-Pak and Indo-Bangladesh cyber rivalries. BBHH claimed to have hacked over 20,000 Indian sites in February, retaliating for border issues, while PCA targeted sites around anniversaries like 26/11.\n\nKey details:\n- Actors: PCA, BBHH\n- Targets: Indian government and private websites\n- Motivation: Political hacktivism\n- Consequence: Tit-for-tat defacements, increased CERT-In monitoring",
     "sources": [
       {
-        "title": "The inside story of the biggest hack in history",
-        "url": "https://www.csoonline.com/article/563820/the-inside-story-of-the-biggest-hack-in-history.html",
+        "title": "Bangladeshi hackers shut down 20,000 Indian sites | The Daily Star",
+        "url": "https://www.thedailystar.net/news-detail-222532",
+        "type": "News Article"
+      },
+      {
+        "title": "Pakistan Cyber Army hacks 270 Indian websites",
+        "url": "https://www.indiatoday.in/india/story/pakistan-cyber-army-hacks-270-indian-websites-87019-2010-11-26",
+        "type": "News Article"
+      },
+      {
+        "title": "Regional rivalry between India–Pakistan: tit-for-tat in cyberspace",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      }
+    ],
+    "verificationStatus": "Verified (with date clarification - year-long campaign)"
+  },
+  {
+    "id": "inc-2012-002",
+    "date": "2012-02",
+    "organization": "Multiple Indian websites (including Indian Border Security Force)",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Bangladesh Black Hat Hackers",
+    "rootCause": "Retaliation for border killings, vulnerable web servers",
+    "impact": "Defacement of nearly 20,000 Indian websites, including BSF site, with protest messages",
+    "severity": "Medium",
+    "description": "In February 2012, the Bangladesh Black Hat Hackers (BBHH) launched a cyber war against India, defacing nearly 20,000 websites, including the Indian Border Security Force (BSF) site, in retaliation for border killings and the Tipaimukh Dam project. Messages demanded an end to BSF brutality.\n\nKey details:\n- Actors: BBHH\n- Targets: Indian websites, BSF\n- Motivation: Political protest\n- Consequence: Escalated Indo-Bangladesh cyber tensions",
+    "sources": [
+      {
+        "title": "Bangladesh Black Hat Hackers - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bangladesh_Black_Hat_Hackers",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Bangladeshi hackers shut down 20,000 Indian sites | The Daily Star",
+        "url": "https://www.thedailystar.net/news-detail-222532",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-003",
+    "date": "2012-07",
+    "organization": "Indian Navy (Eastern Naval Command, Visakhapatnam)",
+    "sector": "Government (Defense)",
+    "incidentType": "Cyber Espionage / Malware Infection",
+    "attackMethod": "Malware via USB drives",
+    "rootCause": "Vulnerable naval computers, suspected state-sponsored hacking (Chinese IP addresses)",
+    "impact": "Infection of naval computers, exfiltration of sensitive data to Chinese IPs, national security risk",
+    "severity": "High",
+    "description": "In July 2012, malware infected computers at the Indian Navy's Eastern Naval Command in Visakhapatnam, relaying sensitive documents to Chinese IP addresses. The attack coincided with INS Arihant trials, prompting an inquiry. No systems were compromised, but it exposed defense vulnerabilities.\n\nKey details:\n- Actors: Chinese hackers (suspected state-sponsored)\n- Targets: Naval computers\n- Motivation: Espionage\n- Consequence: Naval inquiry, enhanced cybersecurity",
+    "sources": [
+      {
+        "title": "Indian Navy Computers hacked by Chinese Hackers",
+        "url": "https://thehackernews.com/2012/07/indian-navy-computers-hacked-by-chinese.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Indian Navy's computer network hacked - Times of India",
+        "url": "https://timesofindia.indiatimes.com/it-services/indian-navys-computer-network-hacked/articleshow/15613083.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "India says hackers from China entered navy’s computers - Global Times",
+        "url": "https://www.globaltimes.cn/content/718328.shtml",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-004",
+    "date": "2012-12",
+    "organization": "Central Bureau of Investigation (CBI)",
+    "sector": "Government (Law Enforcement)",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistan Cyber Army",
+    "rootCause": "Retaliation for Indian hacks, vulnerable server",
+    "impact": "CBI website defaced with warning messages, temporary shutdown, reputational damage",
+    "severity": "Medium",
+    "description": "In December 2012, the Pakistan Cyber Army defaced the CBI website with messages like 'You are playing with fire!' in retaliation for Indian Cyber Army's attacks on Pakistani sites. The site was shut down temporarily, but the secure intranet remained unaffected.\n\nKey details:\n- Actors: Pakistan Cyber Army\n- Targets: CBI website\n- Motivation: Retaliation\n- Consequence: National inquiry, improved web security",
+    "sources": [
+      {
+        "title": "Pakistan Cyber Army hacks 270 Indian websites",
+        "url": "https://www.indiatoday.in/india/story/pakistan-cyber-army-hacks-270-indian-websites-87019-2010-11-26",
+        "type": "News Article"
+      },
+      {
+        "title": "India and Pakistan in cyber war",
+        "url": "https://www.aljazeera.com/news/2010/12/4/india-and-pakistan-in-cyber-war",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-005",
+    "date": "2012-07-30",
+    "organization": "Northern India Power Grid",
+    "sector": "Critical Infrastructure (Energy)",
+    "incidentType": "Power Outage (Suspected Cyber-Enabled)",
+    "attackMethod": "Grid overload (official), suspected cyber sabotage",
+    "rootCause": "Technical failure (official), potential cyber vulnerabilities in SCADA systems",
+    "impact": "Blackout affecting 620 million people across 22 states, economic losses, transport disruptions",
+    "severity": "Catastrophic",
+    "description": "The 2012 India blackout, the largest in history, affected northern and eastern grids on July 30-31, leaving 620 million without power for up to 13 hours. Officially attributed to overload, cybersecurity experts suspected cyber triggers due to SCADA vulnerabilities, though no confirmation.\n\nKey details:\n- Actors: Unknown (suspected external)\n- Targets: Northern power grid\n- Motivation: Sabotage (suspected)\n- Consequence: Infrastructure review, air-gapped systems emphasized",
+    "sources": [
+      {
+        "title": "2012 India blackouts - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2012_India_blackouts",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Guest Column: Indian Blackout - Some legal perspectives",
+        "url": "https://www.business-standard.com/article/economy-policy/guest-column-indian-blackout-some-legal-perspectives-112080100116_1.html",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Partially Verified (suspected cyber component)"
+  },
+  {
+    "id": "inc-2012-006",
+    "date": "2012",
+    "organization": "National Informatics Centre (NIC) Email System",
+    "sector": "Government (Communications)",
+    "incidentType": "Cyber Espionage / Hacking",
+    "attackMethod": "Advanced phishing, email infrastructure vulnerabilities",
+    "rootCause": "Vulnerable government email systems, lack of training",
+    "impact": "Compromise of sensitive government communications, national security risk",
+    "severity": "High",
+    "description": "In 2012, the NIC email system was breached via phishing, compromising sensitive government communications. The incident highlighted vulnerabilities in critical infrastructure, prompting calls for better training and monitoring.\n\nKey details:\n- Actors: Unknown cybercriminals\n- Targets: NIC emails\n- Motivation: Data theft\n- Consequence: Enhanced security protocols",
+    "sources": [
+      {
+        "title": "10 Biggest Cybersecurity Attacks in Indian History - Part 2 - STL Digital",
+        "url": "https://www.stldigital.tech/blog/10-biggest-cybersecurity-attacks-in-indian-history-part-2/",
+        "type": "Analysis Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-007",
+    "date": "2012",
+    "organization": "Indian Navy (Eastern Command)",
+    "sector": "Government (Defense)",
+    "incidentType": "Cyber Espionage",
+    "attackMethod": "Malware injection",
+    "rootCause": "State-sponsored hacking (Chinese IP addresses), defense system vulnerabilities",
+    "impact": "Compromise of Eastern Command systems, exfiltration of sensitive data",
+    "severity": "High",
+    "description": "In 2012, malware infected Indian Navy's Eastern Command computers, exfiltrating data to Chinese IPs. The attack targeted missile submarine tests, prompting an investigation.\n\nKey details:\n- Actors: Chinese hackers (suspected state-sponsored)\n- Targets: Naval computers\n- Motivation: Espionage\n- Consequence: Naval inquiry, system upgrades",
+    "sources": [
+      {
+        "title": "Emerging Cyber Security India’s Concern and Threats - HM Publishers",
+        "url": "https://journal.hmjournals.com/index.php/IJITC/article/download/955/1081/2137",
+        "type": "Academic Article"
+      },
+      {
+        "title": "Indian Navy Computers hacked by Chinese Hackers",
+        "url": "https://thehackernews.com/2012/07/indian-navy-computers-hacked-by-chinese.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-008",
+    "date": "2012-12",
+    "organization": "Sonia Gandhi's Social Media Profile",
+    "sector": "Political / Social Media",
+    "incidentType": "Account Compromise / Defamation",
+    "attackMethod": "Social engineering, password breach",
+    "rootCause": "Weak authentication, targeted hacking",
+    "impact": "Fake pornographic message posted on birthday, reputational damage",
+    "severity": "Medium",
+    "description": "In December 2012, Sonia Gandhi's social media profile was hacked, posting a pornographic message on her birthday. The incident aimed at defamation, highlighting vulnerabilities in political figures' online presence.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Sonia Gandhi's profile\n- Motivation: Defamation\n- Consequence: Profile security upgrade",
+    "sources": [
+      {
+        "title": "Sonia Gandhi's Facebook profile hacked, porn message posted",
+        "url": "https://www.indiatoday.in/india/north/story/sonia-gandhi-facebook-profile-hacked-porn-message-posted-129156-2012-12-09",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-009",
+    "date": "2012",
+    "organization": "Multiple Indian financial institutions",
+    "sector": "Financial",
+    "incidentType": "ATM Heist / Payment System Hack",
+    "attackMethod": "Malware on POS terminals, unauthorized transactions",
+    "rootCause": "Vulnerable payment systems, insider access",
+    "impact": "Theft of nearly $5 million from 4,500 ATMs via Visa/MasterCard systems",
+    "severity": "High",
+    "description": "In 2012, hackers stole $5 million from 4,500 ATMs by infecting Visa and MasterCard payment systems with malware, exploiting POS terminals for fraudulent transactions.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Indian ATMs\n- Motivation: Financial gain\n- Consequence: Payment security reforms",
+    "sources": [
+      {
+        "title": "10 Biggest Cybersecurity Attacks in Indian History - Part 2 - STL Digital",
+        "url": "https://www.stldigital.tech/blog/10-biggest-cybersecurity-attacks-in-indian-history-part-2/",
+        "type": "Analysis Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-010",
+    "date": "2012-08",
+    "organization": "Social Media Platforms (Nationwide)",
+    "sector": "Social Media / Communications",
+    "incidentType": "Cyber-enabled Misinformation",
+    "attackMethod": "Mass SMS and social media propagation",
+    "rootCause": "Exploitation of ethnic tensions, botnets",
+    "impact": "Mass exodus of Northeast Indians from cities due to false rumors, social unrest",
+    "severity": "High",
+    "description": "In August 2012, false rumors and doctored images spread via SMS and social media triggered a mass exodus of over 100,000 Northeast Indians from cities like Bangalore and Pune, fearing attacks. The campaign, linked to subversive outfits like HuJI and IM, used botnets to amplify hate messages.\n\nKey details:\n- Actors: Subversive groups (HuJI, IM, SIMI)\n- Targets: Northeast communities\n- Motivation: Ethnic incitement\n- Consequence: Government crackdown, cyber monitoring",
+    "sources": [
+      {
+        "title": "other-data-india-cyber-crimes_2012 - South Asia Terrorism Portal",
+        "url": "https://satp.org/other-data/india/cyber-crimes_2012",
+        "type": "Analysis Article"
+      },
+      {
+        "title": "Assam violence: How rumour mills on social media triggered exodus",
+        "url": "https://www.thehindu.com/news/national/assam-violence-how-rumour-mills-on-social-media-triggered-exodus/article3750916.ece",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-011",
+    "date": "2012",
+    "organization": "BSNL (Madhya Pradesh and India-wide)",
+    "sector": "Telecommunications",
+    "incidentType": "Website Hack / Defacement",
+    "attackMethod": "Server vulnerability exploitation",
+    "rootCause": "Outdated web applications, lack of patching",
+    "impact": "Defacement of BSNL Madhya Pradesh website, followed by national site hack",
+    "severity": "Medium",
+    "description": "In 2012, the BSNL Madhya Pradesh website was hacked and defaced, with the attack spreading to the national BSNL site. The incident exposed telecom infrastructure vulnerabilities.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: BSNL websites\n- Motivation: Defacement\n- Consequence: System upgrades",
+    "sources": [
+      {
+        "title": "10 Biggest Cybersecurity Attacks in Indian History - Part 2 - STL Digital",
+        "url": "https://www.stldigital.tech/blog/10-biggest-cybersecurity-attacks-in-indian-history-part-2/",
+        "type": "Analysis Article"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

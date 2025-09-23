@@ -1,1 +1,172 @@
-[]
+[
+  {
+    "id": "inc-2002-001",
+    "date": "2002",
+    "organization": "Multiple Indian government websites",
+    "sector": "Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hacker groups",
+    "rootCause": "Vulnerable web servers and insufficient security monitoring",
+    "impact": "Multiple government websites defaced with anti-India propaganda, temporary service disruption",
+    "severity": "Medium",
+    "description": "Throughout 2002, Pakistani hacker groups, including GForce Pakistan and Anti-India Crew (AIC), continued their campaign of defacing Indian government websites as part of ongoing Indo-Pak cyber skirmishes over Kashmir. The defacements featured pro-Pakistan slogans and anti-India messages, exploiting poorly secured web servers. While specific websites and exact dates are not always detailed in sources, the pattern was consistent with 2000-2001 attacks, targeting government portals. This prompted increased focus on cybersecurity by Indian authorities.\n\nKey details:\n- Actors: GForce Pakistan, Anti-India Crew\n- Targets: Various Indian government websites\n- Motivation: Political hacktivism linked to Indo-Pak tensions\n- Consequence: Reputational damage, heightened cybersecurity awareness",
+    "sources": [
+      {
+        "title": "Regional rivalry between India–Pakistan: tit-for-tat in cyberspace (ETH Zurich CSS report, 2018)",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      },
+      {
+        "title": "India, Pakistan & Hacktivism – Past, Present & Future (Part One)",
+        "url": "https://realhackhistory.org/2025/07/01/india-pakistan-hacktivism-past-present-future-part-one-early-years/",
+        "type": "Blog/Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (with date clarification - part of year-long campaign)"
+  },
+  {
+    "id": "inc-2002-002",
+    "date": "2002-05-15",
+    "organization": "Indian Institute of Science (IISc)",
+    "sector": "Education / Research",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Unauthorized defacement by Pakistani hackers",
+    "rootCause": "Exploitation of web server vulnerabilities",
+    "impact": "IISc website defaced with pro-Pakistan messages, temporary downtime",
+    "severity": "Medium",
+    "description": "On or around May 15, 2002, the Indian Institute of Science (IISc) website was defaced by Pakistani hackers, likely from the Anti-India Crew (AIC), as part of the ongoing Indo-Pak cyber conflict. The attackers replaced the homepage with pro-Pakistan and anti-India messages, exploiting vulnerabilities in the web server. The incident was notable due to IISc’s prominence as a research institution, raising concerns about academic cybersecurity.\n\nKey details:\n- Actors: Pakistani hackers (likely Anti-India Crew)\n- Target: IISc website\n- Motivation: Political hacktivism\n- Consequence: Reputational damage, site restored after cleanup",
+    "sources": [
+      {
+        "title": "Times of India retrospective (mentions IISc incidents around 2000-2002)",
+        "url": "https://timesofindia.indiatimes.com/india/hacking-of-iisc-website-was-a-warning/articleshow/1351795.cms",
+        "type": "Indian newspaper retrospective"
+      },
+      {
+        "title": "India, Pakistan & Hacktivism – Past, Present & Future (Part One)",
+        "url": "https://realhackhistory.org/2025/07/01/india-pakistan-hacktivism-past-present-future-part-one-early-years/",
+        "type": "Blog/Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (with date approximation - specific date from retrospective source)"
+  },
+  {
+    "id": "inc-2002-003",
+    "date": "2002",
+    "organization": "Bhabha Atomic Research Centre (BARC)",
+    "sector": "Government / Nuclear Research",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hacker group Anti-India Crew",
+    "rootCause": "Inadequate web server security",
+    "impact": "BARC website defaced with anti-India messages, concerns over nuclear security perception",
+    "severity": "Medium",
+    "description": "In 2002, the Bhabha Atomic Research Centre (BARC) website was defaced by the Pakistani hacker group Anti-India Crew (AIC). The attackers posted anti-India messages, similar to earlier attacks on nuclear-related sites like IGCAR in 2001. While no data theft was confirmed, the incident raised concerns about the security of critical research institutions. The exact date is not specified in sources, but it occurred within the year’s Indo-Pak cyber skirmishes.\n\nKey details:\n- Actor: Anti-India Crew\n- Target: BARC website\n- Motivation: Political hacktivism\n- Consequence: Reputational damage, no operational impact",
+    "sources": [
+      {
+        "title": "India, Pakistan & Hacktivism – Past, Present & Future (Part One)",
+        "url": "https://realhackhistory.org/2025/07/01/india-pakistan-hacktivism-past-present-future-part-one-early-years/",
+        "type": "Blog/Analysis"
+      },
+      {
+        "title": "Whither Cyber Terror? (SSRC)",
+        "url": "https://items.ssrc.org/10-years-after-september-11/whither-cyber-terror/",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (with date clarification - part of year-long campaign)"
+  },
+  {
+    "id": "inc-2002-004",
+    "date": "2002",
+    "organization": "Multiple Indian private and media websites",
+    "sector": "Private / Media",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Coordinated defacement by Pakistani hackers",
+    "rootCause": "Weak web application security and lack of monitoring",
+    "impact": "Multiple private and media websites defaced with anti-India propaganda, temporary downtime",
+    "severity": "Medium",
+    "description": "In 2002, Pakistani hacker groups like GForce Pakistan and Anti-India Crew targeted various Indian private sector and media websites, continuing the tit-for-tat cyber skirmishes over Kashmir. These attacks involved defacing websites with pro-Pakistan and anti-India messages, exploiting vulnerabilities in web servers. Specific targets are not always named, but the pattern affected media and corporate sites, causing reputational damage and prompting better security measures.\n\nKey details:\n- Actors: GForce Pakistan, Anti-India Crew\n- Targets: Various private and media websites\n- Motivation: Political hacktivism\n- Consequence: Temporary disruptions, increased focus on private sector cybersecurity",
+    "sources": [
+      {
+        "title": "Regional rivalry between India–Pakistan: tit-for-tat in cyberspace (ETH Zurich CSS report, 2018)",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      }
+    ],
+    "verificationStatus": "Verified (with date clarification - part of year-long campaign)"
+  },
+  {
+    "id": "inc-2002-005",
+    "date": "2002-09-01",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (Bugbear)",
+    "attackMethod": "Email-based worm with keylogging and backdoor capabilities",
+    "rootCause": "Unpatched systems and user interaction with malicious email attachments",
+    "impact": "Infections across Indian networks, potential data theft, and system disruptions",
+    "severity": "High",
+    "description": "The Bugbear worm, first detected in September 2002, spread globally via email attachments and network shares, affecting Indian organizations, including corporates, ISPs, and academic institutions. It exploited vulnerabilities in Microsoft Outlook and Internet Explorer, installing keyloggers and backdoors that could steal sensitive data. While India-specific impacts are less documented, global reports confirm its widespread reach, and Indian networks were vulnerable due to unpatched systems.\n\nKey details:\n- Exploit: Email attachments and network propagation\n- Impact in India: System infections, potential data breaches\n- Consequence: Highlighted need for better email security and patching",
+    "sources": [
+      {
+        "title": "Bugbear Worm Analysis (Symantec)",
+        "url": "https://www.symantec.com/security-center/writeup/2002-100316-3332-99",
+        "type": "Security Report"
+      },
+      {
+        "title": "Bugbear Worm Spreads Rapidly (BBC News, Oct 2002)",
+        "url": "http://news.bbc.co.uk/2/hi/technology/2290529.stm",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified (with date approximation - first detected globally in September 2002)"
+  },
+  {
+    "id": "inc-2002-006",
+    "date": "2002-08-27",
+    "organization": "Dassault Systemes (SolidWorks software)",
+    "sector": "Technology / Software",
+    "incidentType": "Data Theft / Intellectual Property Theft",
+    "attackMethod": "Unauthorized access and attempted sale of stolen source code",
+    "rootCause": "Insider threat from software engineer with access to proprietary code",
+    "impact": "Theft of source code for SolidWorks 2001 Plus software, attempted sale to undercover agents, arrest of perpetrator",
+    "severity": "High",
+    "description": "In August 2002, Shekhar Verma, a 27-year-old IIT Kharagpur graduate and software engineer, was arrested by the CBI in collaboration with the FBI for stealing and attempting to sell the source code of SolidWorks 2001 Plus, a sophisticated CAD software package worth millions of dollars developed by Dassault Systemes. Verma was caught red-handed during a sting operation at Ashoka Hotel in New Delhi, where he handed over the code on two CDs to undercover FBI agents posing as buyers. He was charged under Sections 379 (theft) and 406 (criminal breach of trust) of the Indian Penal Code and the Information Technology Act, 2000. This incident highlighted vulnerabilities in India's emerging IT and BPO sectors, sparking early discussions on data privacy and intellectual property protection.\n\nKey details:\n- Actor: Shekhar Verma (IIT Kharagpur alumnus)\n- Target: Source code of SolidWorks 2001 Plus\n- Motivation: Financial gain through illegal sale\n- Consequence: Arrest, catalyst for data security regulations in BPO industry",
+    "sources": [
+      {
+        "title": "IITian held for stealing software source code (Times of India, Aug 2002)",
+        "url": "https://timesofindia.indiatimes.com/iitian-held-for-stealing-software-source-code/articleshow/20389713.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Demystifying Data Breaches in India (Centre for Internet and Society)",
+        "url": "https://cis-india.org/internet-governance/blog/demistifying-data-breaches-in-india",
+        "type": "Research Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2002-007",
+    "date": "2002-05",
+    "organization": "Rediff.com (e-commerce platform)",
+    "sector": "E-commerce / Technology",
+    "incidentType": "Credit Card Fraud",
+    "attackMethod": "Fraudulent online order using stolen credit card details",
+    "rootCause": "Lack of robust verification for online transactions in early e-commerce",
+    "impact": "Unauthorized purchase of electronics (Sony TV and cordless headphones) using stolen identity, financial loss to cardholder",
+    "severity": "Medium",
+    "description": "In May 2002, an individual used the stolen identity of Barbara Campa to place an order on Rediff.com for a Sony Colour Television set and a cordless headphone. The goods were delivered to the fraudster's address, but the credit card company later flagged the transaction as unauthorized. This led to a complaint and investigation by the Central Bureau of Investigation (CBI) under the Indian Penal Code. The case underscored the vulnerabilities in India's nascent e-commerce sector and prompted improvements in transaction security.\n\nKey details:\n- Actor: Unknown fraudster using stolen identity\n- Target: Rediff.com online store\n- Motivation: Financial gain through fraudulent purchase\n- Consequence: CBI investigation, highlighted need for better fraud detection",
+    "sources": [
+      {
+        "title": "Cyber Crime Case Studies (Cyber Law Asia)",
+        "url": "https://www.cyberlawasia.com/cases.html",
+        "type": "Legal Case Study"
+      },
+      {
+        "title": "Cyber Fraud Case Studies Ahmedabad (Cyberra Legal Services)",
+        "url": "https://www.cyberralegalservices.com/detail-casestudies.php",
+        "type": "Legal Case Study"
+      }
+    ],
+    "verificationStatus": "Verified (with date approximation - occurred in May 2002)"
+  }
+]

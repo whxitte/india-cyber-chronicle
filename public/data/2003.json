@@ -1,21 +1,187 @@
 [
   {
-    "id": "inc-031",
-    "date": "2003-01-01",
-    "organization": "U.S. Government & Defense Contractors",
-    "sector": "Defense & Aerospace",
-    "incidentType": "APT",
-    "attackMethod": "Network Intrusion, Spear Phishing",
-    "rootCause": "Systematic and persistent intrusions into sensitive U.S. government and military networks.",
-    "impact": "Exfiltration of terabytes of sensitive data from organizations like Lockheed Martin, Sandia National Laboratories, and NASA over several years.",
-    "severity": "Critical",
-    "description": "Titan Rain was the designation given by the U.S. government to a series of coordinated cyberattacks on American computer systems starting in 2003. Believed to be orchestrated by a Chinese state-sponsored group, it was one of the earliest recognized large-scale cyber espionage campaigns.",
+    "id": "inc-2003-001",
+    "date": "2003",
+    "organization": "Multiple Indian government and private websites",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hacker groups",
+    "rootCause": "Vulnerable web servers and insufficient security monitoring",
+    "impact": "Hundreds of Indian websites defaced with anti-India propaganda, temporary service disruption",
+    "severity": "Medium",
+    "description": "Throughout 2003, Pakistani hacker groups such as G-Force, Anti-India Crew (AIC), Silver Lords, and Pakistan Hackers Club continued their campaign of defacing Indian websites as part of the ongoing Indo-Pak cyber skirmishes over Kashmir. The defacements featured pro-Pakistan slogans and anti-India messages, exploiting poorly secured web servers. Specific targets included government departments, political parties, and religious organizations. This was a continuation of attacks starting from India's 1998 nuclear tests, with Pakistani hackers often funded by intelligence agencies, while Indian hackers retaliated without such support.\n\nKey details:\n- Actors: G-Force, AIC (renamed al-Qaeda Muslim), Silver Lords, Pakistan Hackers Club\n- Targets: Various Indian government and private websites\n- Motivation: Political hacktivism linked to Indo-Pak tensions\n- Consequence: Reputational damage, heightened cybersecurity awareness, calls for Indian intelligence to assist hackers",
     "sources": [
       {
-        "title": "The snooping dragon: China's cyber-spies",
-        "url": "https://www.theguardian.com/technology/2005/aug/26/china.usnews",
+        "title": "India, Pak locked in cyber war (Times of India, Nov 2003)",
+        "url": "https://timesofindia.indiatimes.com/india/india-pak-locked-in-cyber-war/articleshow/278204.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "No-holds barred cyber war (Times of India, Nov 2003)",
+        "url": "https://timesofindia.indiatimes.com/city/chandigarh/no-holds-barred-cyber-war/articleshow/276643.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Log in...Tribune: IT supplement (Tribune India, Sep 2003)",
+        "url": "https://www.tribuneindia.com/2003/20030922/login/main5.htm",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified (with date clarification - part of year-long campaign)"
+  },
+  {
+    "id": "inc-2003-002",
+    "date": "2003",
+    "organization": "Indian Parliament, Department of Electronics, Ahmedabad Telephone Directory, Punjab Government IT Department",
+    "sector": "Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Unauthorized defacement by Pakistani hackers",
+    "rootCause": "Public-facing web server weaknesses and lack of proactive patching/hardening",
+    "impact": "Websites defaced with pro-Pakistan messages, temporary unavailability, reputational harm",
+    "severity": "Medium",
+    "description": "In 2003, the Pakistan Hackers Club defaced several key Indian government websites, including the Indian Parliament homepage, Department of Electronics, Ahmedabad online telephone directory, and Punjab government’s IT department website. These attacks were part of the broader Indo-Pak cyber war, with hackers posting profane, insulting messages and jokes about Indians. The Punjab IT defacement was in response to the Yaha virus unleashed by the Indian hacking group Indian Snakes against Pakistani sites. The exact dates are not specified, but the incidents align with the year's escalating cyber hostilities.\n\nKey details:\n- Actors: Pakistan Hackers Club\n- Targets: Indian Parliament, Department of Electronics, Ahmedabad telephone directory, Punjab IT department\n- Motivation: Political hacktivism over Kashmir\n- Consequence: Contributed to calls for better anti-virus and anti-intrusion software in India",
+    "sources": [
+      {
+        "title": "Indo-Pak hackers battle in cyberspace",
+        "url": "https://www.tribuneindia.com/2003/20030922/login/main5.htm",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified (with date clarification - part of year-long campaign)"
+  },
+  {
+    "id": "inc-2003-003",
+    "date": "2003-01-25",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (SQL Slammer)",
+    "attackMethod": "Buffer overflow exploit in Microsoft SQL Server",
+    "rootCause": "Unpatched Microsoft SQL Server vulnerability",
+    "impact": "Widespread internet slowdowns, network outages, and system crashes in India",
+    "severity": "High",
+    "description": "The SQL Slammer worm, released on January 25, 2003, exploited a buffer overflow vulnerability in Microsoft SQL Server, spreading rapidly and causing denial of service attacks. In India, it led to significant internet traffic slowdowns, network congestion, and disruptions to services relying on affected servers. While specific Indian targets are not detailed, the global impact affected Indian ISPs and organizations using SQL Server, highlighting the need for timely patching.\n\nKey details:\n- Exploit: Buffer overflow in SQL Server\n- Impact in India: Internet slowdowns, part of global outages\n- Consequence: Increased awareness of worm threats",
+    "sources": [
+      {
+        "title": "SQL Slammer (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/SQL_Slammer",
+        "type": "Reference Article"
+      }
+    ],
+    "verificationStatus": "Verified (global impact with inferred effects on India)"
+  },
+  {
+    "id": "inc-2003-004",
+    "date": "2003-08-11",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (Blaster)",
+    "attackMethod": "Exploit of DCOM RPC vulnerability in Windows",
+    "rootCause": "Unpatched Windows vulnerability (MS03-026)",
+    "impact": "Infections causing system instability, reboots, and network congestion in India",
+    "severity": "High",
+    "description": "The Blaster worm, first detected on August 11, 2003, exploited a DCOM RPC vulnerability in Windows NT/2000/XP, causing infected systems to reboot and launch DDoS attacks on Microsoft sites. In India, it affected many computers, including ATMs and corporate networks, leading to system crashes and slowdowns. The worm's spread highlighted vulnerabilities in Windows systems widely used in India.\n\nKey details:\n- Exploit: DCOM RPC buffer overflow\n- Impact in India: ATM disruptions, network issues\n- Consequence: Prompted patching and security updates",
+    "sources": [
+      {
+        "title": "Blaster (computer worm) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Blaster_(computer_worm)",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Now, viruses target ATMs (Times of India, Dec 2003)",
+        "url": "https://timesofindia.indiatimes.com/lucknow-times/now-viruses-target-atms/articleshow/357465.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2003-005",
+    "date": "2003-08-19",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (Sobig.F)",
+    "attackMethod": "Email-based worm with spam propagation",
+    "rootCause": "User interaction with malicious email attachments",
+    "impact": "Massive email spam, system infections, and network slowdowns in India",
+    "severity": "High",
+    "description": "The Sobig.F worm, activated on August 19, 2003, spread via email attachments, turning infected machines into spam relays. In India, it caused widespread email disruptions and network congestion, affecting businesses and users. As one of the fastest-spreading worms, it highlighted the risks of email-based malware in India's growing internet user base.\n\nKey details:\n- Exploit: Email attachments disguising as legitimate files\n- Impact in India: Email overload, part of global spam surge\n- Consequence: Economic damage estimated in billions globally",
+    "sources": [
+      {
+        "title": "Sobig (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sobig",
+        "type": "Reference Article"
+      },
+      {
+        "title": "When worms strike (Times of India, Sep 2003)",
+        "url": "https://timesofindia.indiatimes.com/bombay-times/when-worms-strike/articleshow/160498.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2003-006",
+    "date": "2003-05",
+    "organization": "Sony India Private Ltd",
+    "sector": "Corporate / E-commerce",
+    "incidentType": "Credit Card Fraud",
+    "attackMethod": "Misuse of credit card details for online purchase",
+    "rootCause": "Insider access to customer data in call center",
+    "impact": "Unauthorized purchase using American customer's credit card, financial loss",
+    "severity": "Medium",
+    "description": "In May 2003, Arif Azim, a call center employee in Noida, exploited an American girl's credit card number to buy a TV and cordless phone on Sony's website sony-sambandh.com. This was India's first convicted cyber crime case under the IT Act 2000. Azim was let off on probation as a first-time offender. The case highlighted vulnerabilities in India's BPO sector and data privacy issues.\n\nKey details:\n- Actor: Arif Azim\n- Target: Sony India website\n- Motivation: Financial gain\n- Consequence: First cyber crime conviction in India, sparked data security discussions",
+    "sources": [
+      {
+        "title": "Which was the 1st cyber crime conviction in India? (Techshots)",
+        "url": "https://www.techshotsapp.com/security/which-was-the-1st-cyber-crime-conviction-in-india",
+        "type": "News Article"
+      },
+      {
+        "title": "Cyber Case Laws (Cyber Law Consulting)",
+        "url": "https://www.cyberlawconsulting.com/cyber-cases.php",
+        "type": "Legal Case Study"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2003-007",
+    "date": "2003-04-01",
+    "organization": "Private School (Delhi)",
+    "sector": "Education",
+    "incidentType": "Cyber Defamation / Harassment",
+    "attackMethod": "Creation of vulgar website targeting classmates",
+    "rootCause": "Misuse of internet for personal vendetta",
+    "impact": "Vulgar remarks about classmates posted online, emotional distress",
+    "severity": "Medium",
+    "description": "On April 1, 2003, a Class 11 student in Delhi created a website 'Amazing.com' with vulgar remarks about his classmates, including a girl. The father of the victim complained to the crime branch. This was the first juvenile cyber crime case in Delhi. The juvenile faced trial under the Information Technology Act and for outraging the modesty of a woman, with charges under the Indecent Representation of Women Act dropped.\n\nKey details:\n- Actor: Juvenile student\n- Target: Classmates\n- Motivation: Personal harassment\n- Consequence: Trial proceeded, mental condition considered",
+    "sources": [
+      {
+        "title": "Juvenile faces trial in cyber-crime case (Times of India, Nov 2003)",
+        "url": "https://timesofindia.indiatimes.com/city/delhi/juvenile-faces-trial-in-cyber-crime-case/articleshow/262799.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2003-008",
+    "date": "2003-10",
+    "organization": "Mobera Systems (Chandigarh Branch)",
+    "sector": "Technology / Software",
+    "incidentType": "Data Theft / Intellectual Property Theft",
+    "attackMethod": "Insider leak of software to rival company",
+    "rootCause": "Former employees accessing and selling proprietary information",
+    "impact": "Loss of over Rs 5.5 crores, competitive disadvantage",
+    "severity": "High",
+    "description": "In October 2003, three former employees of Mobera Systems' Chandigarh branch leaked and sold proprietary software designs for embedded systems to a rival company, causing a loss of over Rs 5.5 crores. The fraud was discovered through internal investigations involving computer hard disk analysis and US experts. This was the fourth cyber crime case registered in Chandigarh.\n\nKey details:\n- Actors: Three former engineers\n- Target: Mobera Systems software\n- Motivation: Financial gain\n- Consequence: Case registered, highlighted insider threats in IT sector",
+    "sources": [
+      {
+        "title": "Fourth case of cyber crime; 3 booked (Times of India, Oct 2003)",
+        "url": "https://timesofindia.indiatimes.com/city/chandigarh/fourth-case-of-cyber-crime-3-booked/articleshow/249992.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

@@ -1,21 +1,212 @@
 [
   {
-    "id": "inc-016",
-    "date": "2010-06-01",
-    "organization": "Iranian Nuclear Facilities",
-    "sector": "Energy & Utilities",
-    "incidentType": "Critical Infrastructure Compromise",
-    "attackMethod": "Malware (Stuxnet Worm)",
-    "rootCause": "Introduction of malware via a USB drive into an air-gapped network, exploiting multiple zero-day vulnerabilities in Windows.",
-    "impact": "Physically destroyed nearly 1,000 uranium enrichment centrifuges at the Natanz facility in Iran by manipulating their industrial control systems (PLCs).",
-    "severity": "Critical",
-    "description": "Stuxnet was a highly sophisticated, nation-state cyber weapon designed to sabotage Iran's nuclear program. It was the first publicly known piece of malware to cause physical destruction of equipment, fundamentally changing the landscape of cyber warfare and critical infrastructure threats.",
+    "id": "inc-2010-001",
+    "date": "2010-10",
+    "organization": "Commonwealth Games (CWG) Information Systems",
+    "sector": "Sports / Government (Critical Infrastructure)",
+    "incidentType": "Targeted Cyberattacks",
+    "attackMethod": "Spear-phishing, hacking, network probing",
+    "rootCause": "Geopolitical motives, desire to disrupt a major event, system vulnerabilities",
+    "impact": "Over 8,000 cyberattacks attempted and mitigated, targeting ticketing and other systems",
+    "severity": "High",
+    "description": "During the 2010 Commonwealth Games in New Delhi (October 2010), NTRO and CERT-In defended against over 8,000 cyberattacks targeting ticketing and related systems. National Security Advisor Shivshankar Menon noted the attacks’ intent to disrupt the event, likely driven by geopolitical motives. Successful mitigation showcased India’s growing cyber defense capabilities.\n\nKey details:\n- Actors: Unknown (geopolitical suspected)\n- Targets: CWG systems\n- Motivation: Disruption\n- Consequence: Strengthened event security",
     "sources": [
       {
-        "title": "Stuxnet: How a Computer Virus That Began as an American-Israeli Project Became a Global Threat",
-        "url": "https://www.vanityfair.com/news/2016/06/how-a-computer-virus-that-began-as-an-american-israeli-project-became-a-global-threat",
+        "title": "8000 cyber attacks warded off during CWG, says NSA",
+        "url": "https://www.indiatoday.in/india/north/story/india-cyber-attacks-commonwealth-games-nsa-shivshankar-102376-2012-05-15",
+        "type": "News Article"
+      },
+      {
+        "title": "'8,000 cyber attacks warded off during CWG'",
+        "url": "https://www.newindianexpress.com/nation/2012/May/16/8000-cyber-attacks-warded-off-during-cwg-368658.html",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2010-002",
+    "date": "2010-12-04",
+    "organization": "Central Bureau of Investigation (CBI)",
+    "sector": "Government (Law Enforcement)",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacking vulnerable server, hacktivism",
+    "rootCause": "Indo-Pak tensions, retaliation for Indian hacks",
+    "impact": "CBI website defaced with messages like 'You are playing with fire!', reputational damage",
+    "severity": "Medium",
+    "description": "On December 4, 2010, the Pakistan Cyber Army defaced the CBI website in retaliation for Indian Cyber Army’s attacks on Pakistani sites. The defacement caused a temporary shutdown and public embarrassment, though the secure intranet was unaffected.\n\nKey details:\n- Actors: Pakistan Cyber Army\n- Targets: CBI website\n- Motivation: Retaliation\n- Consequence: National inquiry, web security focus",
+    "sources": [
+      {
+        "title": "India and Pakistan in cyber war",
+        "url": "https://www.aljazeera.com/news/2010/12/4/india-and-pakistan-in-cyber-war",
+        "type": "News Article"
+      },
+      {
+        "title": "Important government websites 'highly vulnerable'",
+        "url": "https://www.thehindu.com/sci-tech/technology/internet/Important-government-websites-ldquohighly-vulnerablerdquo-to-attacks/article15603120.ece",
+        "type": "News Article"
+      },
+      {
+        "title": "Pakistan Cyber Army hacks 270 Indian websites",
+        "url": "https://www.indiatoday.in/india/story/pakistan-cyber-army-hacks-270-indian-websites-87019-2010-11-26",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2010-003",
+    "date": "2010",
+    "organization": "Indian Government Organizations (e.g., PMO, Cabinet Secretariat)",
+    "sector": "Government",
+    "incidentType": "Cyber Espionage (Operation Shady RAT)",
+    "attackMethod": "Sophisticated malware, APT",
+    "rootCause": "State-sponsored hacking (Chinese origin suspected), vulnerable systems",
+    "impact": "Data exfiltration from government networks, including PMO and Cabinet Secretariat",
+    "severity": "High",
+    "description": "Throughout 2010, Indian government entities, including the PMO and Cabinet Secretariat, were targeted by Operation Shady RAT, a China-based APT campaign revealed by McAfee in 2011. Malware exfiltrated sensitive data from `.nic.in` addresses, highlighting India’s exposure to state-sponsored espionage.\n\nKey details:\n- Actors: Chinese hackers (state-sponsored)\n- Targets: Indian government networks\n- Motivation: Espionage\n- Consequence: Enhanced cyber defenses",
+    "sources": [
+      {
+        "title": "Chinese kept hacking CWG data for two months",
+        "url": "https://timesofindia.indiatimes.com/india/chinese-kept-hacking-cwg-data-for-two-months/articleshow/9521633.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Operation Shady RAT (2010) - Times of India",
+        "url": "https://timesofindia.indiatimes.com/gadgets-news/12-cyber-attacks-in-history-major-breaches-and-impacts/photostory/100442862.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Operation Shady RAT - McAfee",
+        "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/restricted/rp-operation-shady-rat.pdf",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified (reported in 2011, active in 2010)"
+  },
+  {
+    "id": "inc-2010-004",
+    "date": "2010",
+    "organization": "Indian Financial Institutions",
+    "sector": "Financial",
+    "incidentType": "Banking Trojans",
+    "attackMethod": "ZeuS and Zitmo malware, phishing",
+    "rootCause": "Crimeware-as-a-service, user infections via phishing",
+    "impact": "Financial losses from stolen banking credentials, fraudulent transactions",
+    "severity": "High",
+    "description": "In 2010, ZeuS and its mobile variant Zitmo targeted Indian banks, stealing credentials and bypassing SMS-based authentication. CERT-In reported significant financial sector attacks, with Zitmo intercepting banking SMS messages.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Indian bank users\n- Motivation: Financial gain\n- Consequence: RBI security guidelines",
+    "sources": [
+      {
+        "title": "Annual Report 2010 CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2011-0021.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "ZeuS: A Persistent Criminal Enterprise - McAfee",
+        "url": "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-zeus-persistent-criminal-enterprise.pdf",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2010-005",
+    "date": "2010",
+    "organization": "Indian Critical Infrastructure (e.g., power boards, ONGC)",
+    "sector": "Critical Infrastructure",
+    "incidentType": "Worm / Malware (Stuxnet)",
+    "attackMethod": "SCADA exploit, USB propagation",
+    "rootCause": "Unpatched industrial control systems",
+    "impact": "Infections in power boards and ONGC oil rig, no activation but exposed vulnerabilities",
+    "severity": "High",
+    "description": "Stuxnet, discovered in 2010, infected Indian industrial systems like power boards and an ONGC oil rig via USB drives. While it didn’t activate in India, its presence highlighted risks to critical infrastructure.\n\nKey details:\n- Actors: US-Israel (suspected)\n- Targets: Indian industrial systems\n- Motivation: Sabotage (global spread unintended)\n- Consequence: ICS security focus",
+    "sources": [
+      {
+        "title": "Stuxnet - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Stuxnet",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Timeline of computer viruses and worms - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_computer_viruses_and_worms",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Annual Report 2010 CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2011-0021.pdf",
+        "type": "Official Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2010-006",
+    "date": "2010",
+    "organization": "Multiple Indian organizations and websites",
+    "sector": "Multiple",
+    "incidentType": "Mass Malware Propagation",
+    "attackMethod": "Malvertising, compromised websites (SQL injection, XSS), worms (Conficker, Mariposa)",
+    "rootCause": "Web vulnerabilities, unpatched systems",
+    "impact": "Widespread infections, data theft, botnet formation",
+    "severity": "High",
+    "description": "CERT-In reported surges in malware like Conficker, Mariposa, and Asprox in 2010, exploiting SQL injection, XSS, and Windows vulnerabilities. These attacks compromised Indian websites and networks, leading to data theft and botnets.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Websites, corporate networks\n- Motivation: Malware distribution\n- Consequence: CERT-In advisories, patching efforts",
+    "sources": [
+      {
+        "title": "Annual Report 2010 CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2011-0021.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "Spam evolution: April 2010 | Securelist",
+        "url": "https://securelist.com/spam-evolution-april-2010/36302/",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2010-007",
+    "date": "2010-11-26",
+    "organization": "Multiple Pakistani websites",
+    "sector": "Government / Private (Foreign)",
+    "incidentType": "Website Defacement (Retaliatory)",
+    "attackMethod": "Hacktivism by Indian hacker groups",
+    "rootCause": "Indo-Pak tensions, retaliation for 26/11 anniversary",
+    "impact": "Defacement of 870 Pakistani websites, including government sites",
+    "severity": "Medium",
+    "description": "On November 26, 2010, the Indian Cyber Army defaced 870 Pakistani websites, including 34 government sites like the Navy and Foreign Ministry, marking the 26/11 Mumbai attacks’ anniversary.\n\nKey details:\n- Actors: Indian Cyber Army\n- Targets: Pakistani websites\n- Motivation: Retaliation\n- Consequence: Escalated cyber conflict",
+    "sources": [
+      {
+        "title": "Indo-Pak cyber war: Indian Cyber Army hacks 40 Pakistani websites",
+        "url": "https://www.indiatoday.in/india/north/story/indo-pak-cyber-war-indian-cyber-army-hacks-40-pakistani-websites-87018-2010-11-26",
+        "type": "News Article"
+      },
+      {
+        "title": "Hackistan: Indo-Pak rivalry takes on new frontiers",
+        "url": "https://www.dawn.com/news/681183/hackistan-indo-pak-rivalry-takes-on-new-frontiers",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2010-008",
+    "date": "2010",
+    "organization": "Multiple Indian BPO firms",
+    "sector": "Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Fraud / Data Theft",
+    "attackMethod": "Misuse of privileged access",
+    "rootCause": "Insider threats, weak access controls",
+    "impact": "Financial losses, client data compromise",
+    "severity": "High",
+    "description": "BPO insider frauds continued in 2010, with employees misusing client data for unauthorized transactions, leading to arrests and sector-wide scrutiny.\n\nKey details:\n- Actors: BPO employees\n- Targets: Client accounts\n- Motivation: Financial gain\n- Consequence: NASSCOM security guidelines",
+    "sources": [
+      {
+        "title": "BPO Fraud in India on the Rise - Asia Sentinel",
+        "url": "https://www.asiasentinel.com/p/bpo-frauds-india-on-the-rise",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (aggregated cases across the year)"
   }
 ]

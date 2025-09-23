@@ -1,21 +1,112 @@
 [
   {
-    "id": "inc-048",
-    "date": "2006-01-01",
-    "organization": "Multiple (Global)",
-    "sector": "Multiple",
-    "incidentType": "APT",
-    "attackMethod": "Spear Phishing, Network Intrusion",
-    "rootCause": "A long-term, coordinated cyber espionage campaign targeting a wide range of organizations.",
-    "impact": "Compromised at least 71 organizations, including the UN, governments, and defense contractors, leading to the theft of large volumes of sensitive data.",
-    "severity": "Critical",
-    "description": "Dubbed 'Operation Shady RAT' by McAfee, this was a multi-year campaign of cyber espionage targeting high-value organizations worldwide. The attacks, believed to originate from China, highlighted the scale and persistence of state-sponsored efforts to steal intellectual property and government secrets.",
+    "id": "inc-2006-001",
+    "date": "2006",
+    "organization": "Multiple Indian websites (including government '.gov.in' sites)",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism, exploiting vulnerable web servers",
+    "rootCause": "Cross-border geopolitical tensions (Indo-Pak), poor website security practices, outdated server software",
+    "impact": "Over 5,200 Indian websites defaced in 2006, including 39 '.gov.in' sites by mid-year; reputational damage to affected organizations",
+    "severity": "Medium",
+    "description": "In 2006, India faced a surge in website defacements, primarily by Pakistani hackers, with CERT-In reporting approximately 5,200 incidents, a significant increase from previous years. A notable spike occurred in December with over 400 sites hit. Government websites were targeted, including 39 '.gov.in' sites by June. These attacks were largely part of Indo-Pak cyber skirmishes, exploiting vulnerabilities in .com, .co.in, and other domains.\n\nKey details:\n- Actors: Pakistani hacker groups\n- Targets: Various Indian websites, including government departments\n- Motivation: Political hacktivism\n- Consequence: Increased intrusions (1,400 in first half of 2006), calls for better security",
     "sources": [
       {
-        "title": "Revealed: Operation Shady RAT",
-        "url": "https://www.vanityfair.com/news/2011/08/operation-shady-rat-201108",
+        "title": "Hackers - Hot Spot - 06: India - Siliconindia",
+        "url": "https://www.siliconindia.com/shownews/hackers--hot-spot--06-india-nid-34577-cid-2.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Indian cyberspace under attack - Rediff.com",
+        "url": "https://m.rediff.com/money/report/cyber/20060726.htm",
+        "type": "News Article"
+      },
+      {
+        "title": "400 Indian websites came under attack in Dec - The Economic Times",
+        "url": "https://m.economictimes.com/tech/internet/400-indian-websites-came-under-attack-in-dec/articleshow/1068244.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2006-002",
+    "date": "2006-01",
+    "organization": "SlashSupport (BPO in Chennai) and Webex Corp (US Client)",
+    "sector": "Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Financial Fraud / Embezzlement",
+    "attackMethod": "Insider misuse of privileged access and client systems",
+    "rootCause": "Insider threat, inadequate internal controls and monitoring of employee activities",
+    "impact": "Embezzlement of over ₹41 lakh from client funds, involving 3,047 fraudulent transactions; prompted scrutiny on BPO security",
+    "severity": "High",
+    "description": "In January 2006, two team leaders at SlashSupport in Chennai misused their authority to create 30 dummy customer email IDs and process 3,047 fraudulent refunds for Webex Corp, siphoning over ₹41 lakh into their credit card accounts. This incident highlighted insider risks in India's BPO sector following similar cases.\n\nKey details:\n- Actors: Two team leaders at SlashSupport\n- Targets: Webex Corp client funds\n- Motivation: Financial gain\n- Consequence: Fraud detection, further damage to BPO reputation",
+    "sources": [
+      {
+        "title": "BPO fraud unearthed at SlashSupport - Times of India",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/bpo-fraud-unearthed-at-slashsupport/articleshow/1390861.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "BPO fraud unearthed at SlashSupport, Chennai - The Economic Times",
+        "url": "https://m.economictimes.com/special-coverage/scams-scandals/bpo-fraud-unearthed-at-slashsupport-chennai/articleshow/1689715.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2006-003",
+    "date": "2006-07",
+    "organization": "HSBC BPO (Bangalore)",
+    "sector": "Business Process Outsourcing (BPO) / Financial",
+    "incidentType": "Insider Financial Fraud",
+    "attackMethod": "Insider misuse of bank systems",
+    "rootCause": "Insider threat, unauthorized access to customer account details, internal control failures",
+    "impact": "Siphoning of ₹1.8 crore from around 20 customers' accounts, significant financial loss",
+    "severity": "High",
+    "description": "In July 2006, an employee at HSBC's BPO facility in Bangalore siphoned ₹1.8 crore from the accounts of around 20 customers. This fraud added to the series of BPO-related incidents in 2006, raising concerns about data security and internal controls in India's outsourcing industry.\n\nKey details:\n- Actor: HSBC BPO employee\n- Targets: Customer accounts at HSBC\n- Motivation: Financial gain\n- Consequence: Reputational damage to BPO sector, increased scrutiny",
+    "sources": [
+      {
+        "title": "Do BPO frauds harm India's image? - Rediff.com",
+        "url": "https://m.rediff.com/money/2006/jul/05msg.htm",
+        "type": "News Article"
+      },
+      {
+        "title": "Fraud arrest at HSBC's Indian call centre | Money - The Guardian",
+        "url": "https://www.theguardian.com/money/2006/jun/28/business.accounts",
+        "type": "News Article"
+      },
+      {
+        "title": "HSBC BPO staff named in Rs 1.8 cr fraud - Business Standard",
+        "url": "https://www.business-standard.com/article/finance/hsbc-bpo-staff-named-inrs-1-8-cr-fraud-106062801094_1.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2006-004",
+    "date": "2006-01",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (Kama Sutra/Nyxem)",
+    "attackMethod": "Email-based worm with data destruction",
+    "rootCause": "User interaction with malicious attachments, lack of updated antivirus",
+    "impact": "Widespread infections in India, data file overwrites on the 3rd of each month, productivity losses",
+    "severity": "High",
+    "description": "The Kama Sutra worm (also known as Nyxem, Blackworm, or MyWife) spread rapidly in January 2006 via email attachments with sexually suggestive subjects. It was programmed to overwrite data files on the 3rd of each month, affecting over 300,000 computers globally, with India among the most impacted countries (along with Turkey and Peru). The worm targeted Windows PCs, causing significant data loss.\n\nKey details:\n- Exploit: Email attachments\n- Impact in India: High infection rates, file destruction\n- Consequence: Global cleanup efforts, antivirus updates",
+    "sources": [
+      {
+        "title": "Kama Sutra (computer worm) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kama_Sutra_(computer_worm)",
+        "type": "Reference Article"
+      },
+      {
+        "title": "The Nyxem Email Virus: Analysis and Inferences - CAIDA.org",
+        "url": "https://www.caida.org/archive/blackworm/",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (global impact with high effects on India)"
   }
 ]

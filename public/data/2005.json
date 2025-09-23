@@ -1,1 +1,152 @@
-[]
+[
+  {
+    "id": "inc-2005-001",
+    "date": "2005-04",
+    "organization": "Citibank (US customers) via MphasiS Call Center (Pune)",
+    "sector": "Financial / Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Financial Fraud / Data Theft",
+    "attackMethod": "Social engineering, unauthorized access, fraudulent account creation",
+    "rootCause": "Insider threat, weak security controls, lack of monitoring of privileged access in the BPO environment",
+    "impact": "Fraudulent transfers totaling approx. ₹1.9 crore (initial ₹1.5 crore + additional ₹38 lakh traced in 2005), substantial financial loss to Citibank and customers, reputational damage to the Indian BPO sector",
+    "severity": "High",
+    "description": "The MphasiS call center fraud, uncovered in April 2005, involved employees exploiting customer trust to extract PINs and personal details from US Citibank customers. Funds were transferred to bogus accounts in the US and then to India. Investigations revealed additional ₹38 lakh transferred in December 2004, bringing the total to ₹1.9 crore. Arrests followed, marking a pivotal case in India's BPO cybersecurity.\n\nKey details:\n- Actors: MphasiS employees (e.g., Ivan Thomas, Siddhartha Mehta, Stephen Daniel)\n- Targets: Citibank US customer accounts\n- Motivation: Financial gain\n- Consequence: Arrests, enhanced BPO regulations",
+    "sources": [
+      {
+        "title": "BPO fraud: another Rs 38 lakh traced | Pune News",
+        "url": "https://timesofindia.indiatimes.com/city/pune/bpo-fraud-another-rs-38-lakh-traced/articleshow/1076023.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Pune call centre fraud rattles India's booming BPO sector, raises questions on security",
+        "url": "https://www.indiatoday.in/magazine/economy/story/20050502-pune-call-centre-fraud-rattles-india-booming-bpo-sector-787790-2005-05-01",
+        "type": "News Article"
+      },
+      {
+        "title": "India's first BPO scam unraveled",
+        "url": "https://timesofindia.indiatimes.com/home/sunday-times/deep-focus/indias-first-bpo-scam-unraveled/articleshow/1086438.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2005-002",
+    "date": "2005-03-23",
+    "organization": "National Association of Software and Service Companies (NASSCOM)",
+    "sector": "Information Technology / Legal",
+    "incidentType": "Phishing / Identity Theft",
+    "attackMethod": "Fraudulent emails impersonating NASSCOM to extract personal data",
+    "rootCause": "Misuse of email for headhunting, lack of specific anti-phishing legislation",
+    "impact": "Potential data compromise for third parties, reputational harm to NASSCOM, legal precedent establishing phishing as illegal",
+    "severity": "Medium",
+    "description": "Defendants created fake emails and a website mimicking NASSCOM to solicit personal data (e.g., credit card details) for headhunting. The Delhi High Court ruled phishing illegal under passing off and tarnishment, granting injunctions and damages. This landmark judgment defined phishing under Indian law despite no specific statute.\n\nKey details:\n- Actors: Ajay Sood & Ors. (placement agency)\n- Target: NASSCOM identity and third-party data\n- Motivation: Data collection for recruitment\n- Consequence: Injunction, damages, bolstered IP protection",
+    "sources": [
+      {
+        "title": "Nasscom vs. Ajay Sood & Others",
+        "url": "https://www.indiancybersecurity.com/case_study_nasscom_ajay_sood.php",
+        "type": "Case Study"
+      },
+      {
+        "title": "National Association Of Software And ... vs Ajay Sood And Ors. on 23 March, 2005",
+        "url": "https://indiankanoon.org/doc/1804384/",
+        "type": "Court Judgment"
+      },
+      {
+        "title": "Cyber Case Laws by Cyber Law Consulting",
+        "url": "https://www.cyberlawconsulting.com/cyber-cases.php",
+        "type": "Legal Case Summary"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2005-003",
+    "date": "2005",
+    "organization": "Multiple Indian financial institutions (e.g., banks, stock exchanges, payment gateways)",
+    "sector": "Financial",
+    "incidentType": "Various Cyberattacks (DDoS, Phishing, Malware)",
+    "attackMethod": "Exploiting vulnerabilities (API security, outdated systems, unpatched software)",
+    "rootCause": "Weak API security, outdated systems, unpatched software, lack of robust cybersecurity frameworks",
+    "impact": "Service disruptions, potential data compromise, erosion of public trust, RBI advisories on secure domains",
+    "severity": "High",
+    "description": "India's financial sector faced multiple cyberattacks in 2005, targeting banking systems, stock exchanges (NSE, BSE), and payment gateways via DDoS, phishing, and malware. The RBI issued cautions and introduced secure domain measures, highlighting risks from unpatched systems and API flaws.\n\nKey details:\n- Actors: Various cybercriminals\n- Targets: Financial infrastructure\n- Motivation: Disruption and data theft\n- Consequence: RBI guidelines for enhanced security",
+    "sources": [
+      {
+        "title": "20 Recent Cyber Attacks in India [2025] - Eventus Security",
+        "url": "https://eventussecurity.com/cybersecurity/india/cyber-attacks/",
+        "type": "Industry Report"
+      }
+    ],
+    "verificationStatus": "Partially Verified (based on RBI actions and historical trends)"
+  },
+  {
+    "id": "inc-2005-004",
+    "date": "2005",
+    "organization": "Multiple Indian organizations (corporates, ISPs, academic hosts)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (Zotob)",
+    "attackMethod": "Buffer overflow exploit in Windows Plug and Play service",
+    "rootCause": "Unpatched Windows vulnerability (MS05-039)",
+    "impact": "System infections, network disruptions, backdoor installations in India",
+    "severity": "High",
+    "description": "The Zotob worm, active in August 2005, exploited a Windows Plug and Play vulnerability, infecting millions globally, including Indian networks. It installed backdoors for DDoS and spam, causing widespread disruptions amid growing internet use in India.\n\nKey details:\n- Exploit: Windows PnP buffer overflow\n- Impact in India: Part of global infections, system compromises\n- Consequence: Prompted emergency patching",
+    "sources": [
+      {
+        "title": "Internet Attacks 2005 | Securelist",
+        "url": "https://securelist.com/internet-attacks-2005/36072/",
+        "type": "Security Report"
+      },
+      {
+        "title": "Zotob (computer worm) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Zotob_(computer_worm)",
+        "type": "Reference Article"
+      }
+    ],
+    "verificationStatus": "Verified (global impact with effects on India)"
+  },
+  {
+    "id": "inc-2005-005",
+    "date": "2005-08",
+    "organization": "Multiple Indian organizations (corporates, ISPs)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (CBEPlay)",
+    "attackMethod": "Email-based worm with file infection",
+    "rootCause": "User interaction with malicious attachments",
+    "impact": "File overwrites, email propagation, productivity losses in India",
+    "severity": "Medium",
+    "description": "CBEPlay, detected in August 2005, spread via email attachments, overwriting files and propagating rapidly. It affected Indian users and networks, contributing to the year's malware surge.\n\nKey details:\n- Exploit: Email attachments\n- Impact in India: File corruption, network spread\n- Consequence: Heightened antivirus adoption",
+    "sources": [
+      {
+        "title": "Internet Attacks 2005 | Securelist",
+        "url": "https://securelist.com/internet-attacks-2005/36072/",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified (global impact with effects on India)"
+  },
+  {
+    "id": "inc-2005-006",
+    "date": "2005",
+    "organization": "Multiple Indian government and private websites",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hacker groups",
+    "rootCause": "Vulnerable web servers and insufficient security monitoring",
+    "impact": "Indian websites defaced with anti-India propaganda, temporary service disruption",
+    "severity": "Medium",
+    "description": "In 2005, Pakistani hacker groups continued their campaign of defacing Indian websites as part of ongoing Indo-Pak cyber skirmishes. The defacements featured pro-Pakistan slogans and anti-India messages, exploiting poorly secured web servers. This was a continuation of attacks from previous years, driven by geopolitical tensions.\n\nKey details:\n- Actors: Pakistani hacktivist groups (e.g., Anti-India Crew, G-Force Pakistan)\n- Targets: Various Indian government and private websites\n- Motivation: Political hacktivism linked to Indo-Pak tensions\n- Consequence: Reputational damage, increased cybersecurity measures",
+    "sources": [
+      {
+        "title": "Regional rivalry between India–Pakistan: tit-for-tat in cyberspace (ETH Zurich CSS report, 2018)",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Report"
+      },
+      {
+        "title": "India, Pakistan & Hacktivism – Past, Present & Future (Part One)",
+        "url": "https://realhackhistory.org/2025/07/01/india-pakistan-hacktivism-past-present-future-part-one-early-years/",
+        "type": "Blog/Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (with date clarification - part of year-long campaign)"
+  }
+]

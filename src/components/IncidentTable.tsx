@@ -21,6 +21,7 @@ export interface Incident {
     url: string;
     type: string;
   }>;
+  verificationStatus: string;
 }
 
 interface IncidentTableProps {

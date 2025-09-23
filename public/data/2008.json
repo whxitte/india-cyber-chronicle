@@ -1,21 +1,132 @@
 [
   {
-    "id": "inc-029",
-    "date": "2008-12-31",
-    "organization": "Heartland Payment Systems",
-    "sector": "Banking & Finance",
-    "incidentType": "Data Breach",
-    "attackMethod": "SQL Injection, PoS Malware",
-    "rootCause": "An SQL injection attack on the company's website allowed attackers to install spyware on the corporate network.",
-    "impact": "Compromise of approximately 130 million credit and debit card numbers, making it one of the largest card breaches in history.",
-    "severity": "Critical",
-    "description": "Payment processor Heartland was breached by the same group behind the TJX attack, led by Albert Gonzalez. They used sophisticated malware to sniff and exfiltrate card data from the company's payment processing network over several months.",
+    "id": "inc-2008-001",
+    "date": "2008-03",
+    "organization": "Ministry of External Affairs (MEA)",
+    "sector": "Government (National Security)",
+    "incidentType": "Cyber Espionage / Hacking",
+    "attackMethod": "Advanced network intrusion",
+    "rootCause": "State-sponsored hacking (Chinese origin suspected), network vulnerabilities",
+    "impact": "Breach of the MEA computer network, potential compromise of sensitive diplomatic and foreign policy information, forced government re-evaluation of cybersecurity strategy",
+    "severity": "High",
+    "description": "In March 5, 2008, Indian intelligence agencies detected a significant breach of the Ministry of External Affairs' computer network by hackers suspected to be from China. The IP addresses traced back to China, though attribution was difficult. This incident marked a serious escalation in state-sponsored cyber threats against India. It prompted the Indian government to strategize and fortify its systems against the more sophisticated and persistent threat of cyber warfare, particularly from China, which was already suspected of mounting frequent attacks on Indian networks.\n\nKey details:\n- Actors: Chinese hackers (state-sponsored suspected)\n- Targets: MEA network\n- Motivation: Espionage\n- Consequence: Investigations, enhanced cybersecurity measures",
     "sources": [
       {
-        "title": "Heartland Breach Affected 130 Million Credit Cards",
-        "url": "https://www.wired.com/2009/01/heartland-breach-affected-130-million-credit-cards/",
+        "title": "China mounts cyber attacks on Indian sites - The Times of India",
+        "url": "https://timesofindia.indiatimes.com/india/china-mounts-cyber-attacks-on-indian-sites/articleshow/3010288.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Is India prepared to face cyber warfare? - The Economic Times",
+        "url": "https://m.economictimes.com/the-big-story/is-india-prepared-to-face-cyber-warfare/articleshow/3107666.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "China's Cyber Warfare | IPCS",
+        "url": "https://www.ipcs.org/comm_select.php?articleNo=2597",
+        "type": "Article from Institute of Peace and Conflict Studies"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2008-002",
+    "date": "2008-11-26",
+    "organization": "Multiple locations in Mumbai",
+    "sector": "Hospitality / Critical Infrastructure",
+    "incidentType": "Cyber-enabled Terrorism",
+    "attackMethod": "Use of digital communication for planning and coordination",
+    "rootCause": "Terrorist plot coordinated via cyber means",
+    "impact": "Orchestration of the 26/11 attacks, causing massive loss of life and destruction. The cyber aspect was a critical enabler, involving reconnaissance via Google Earth and secure digital communications to coordinate the terrorist operation.",
+    "severity": "Catastrophic",
+    "description": "The 26/11 Mumbai attacks in 2008 demonstrated a new frontier of terrorism, leveraging technology extensively for planning and execution. The attackers utilized virtual private networks (VPNs) and voice-over-internet-protocol (VoIP) for secure communication with their handlers in Pakistan. They used Google Earth for reconnaissance of the target locations. This highlighted the dual-use nature of technology and the emergence of 'cyber-enabled terrorism' in India.\n\nKey details:\n- Actors: Lashkar-e-Taiba terrorists\n- Targets: Hotels, railway station, hospital, and other Mumbai sites\n- Motivation: Terrorism\n- Consequence: 166 deaths, global condemnation, IT Act amendments",
+    "sources": [
+      {
+        "title": "Critical evedenciarcy analysis of 26/11 attacks with reference to cyber-terrorism | International journal of health sciences",
+        "url": "https://sciencescholar.us/journal/index.php/ijhs/article/view/7663",
+        "type": "Academic Article"
+      },
+      {
+        "title": "In cyber attacks, terror has a found a new face - CivilsDaily",
+        "url": "https://www.civilsdaily.com/news/in-cyber-attacks-terror-has-a-found-a-new-face/",
+        "type": "Analysis"
+      },
+      {
+        "title": "Mumbai terrorist attacks of 2008 | Events, Death Toll, & Facts - Britannica",
+        "url": "https://www.britannica.com/event/Mumbai-terrorist-attacks-of-2008",
+        "type": "Reference Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2008-003",
+    "date": "2008",
+    "organization": "Multiple Indian websites (various, including '.gov.in')",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Exploiting vulnerable web servers, hacktivism",
+    "rootCause": "Continued cross-border geopolitical tensions, poor website security practices",
+    "impact": "5,475 Indian websites defaced, including 90 government websites. Reputational damage and potential for misinformation spread.",
+    "severity": "Medium",
+    "description": "Hacktivism remained a persistent threat. CERT-In tracked 5,475 website defacements in 2008, with 90 government websites also affected. A significant number targeted '.in' domain websites (3,042). These attacks were often associated with geopolitical tensions, with Pakistani hacking groups prominently involved in 'tit-for-tat' attacks that also targeted Indian government and private websites.\n\nKey details:\n- Actors: Pakistani hacker groups\n- Targets: Various Indian websites\n- Motivation: Political hacktivism\n- Consequence: Increased defacements, CERT-In monitoring",
+    "sources": [
+      {
+        "title": "Annual Report (2008) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=annualreport08.pdf",
+        "type": "Official Report"
+      },
+      {
+        "title": "Cyber Attacks - PIB",
+        "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?relid=77958",
+        "type": "Press Information Bureau (PIB) Release"
+      },
+      {
+        "title": "Indian, Pak hackers deface govt websites - Times of India",
+        "url": "https://timesofindia.indiatimes.com/india/indian-pak-hackers-deface-govt-websites/articleshow/3759424.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2008-004",
+    "date": "2008",
+    "organization": "Multiple Indian websites (government, financial, e-commerce)",
+    "sector": "Government / Financial / E-commerce",
+    "incidentType": "Mass Malware Propagation",
+    "attackMethod": "Malvertising, compromised websites (SQL injection, XSS), drive-by downloads, scareware",
+    "rootCause": "Widespread web application vulnerabilities (ASP, PHP), inadequate patching, exploitation of user trust",
+    "impact": "Malware infections, compromised machines (e.g., ASPROX botnet), scareware campaigns, information theft via Trojans",
+    "severity": "High",
+    "description": "The year 2008 saw a dramatic rise in sophisticated malware attacks. CERT-In noted surges in attacks exploiting web vulnerabilities like SQL injection and XSS. Attackers compromised websites and injected malicious code for drive-by downloads. The ASPROX botnet was active, and Conficker worm exploited Windows vulnerabilities. Scareware and Trojans like WOW, Hupigun, Nethell, Zbot targeted Indian users.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Vulnerable websites and users\n- Motivation: Malware distribution\n- Consequence: Botnet growth, data theft",
+    "sources": [
+      {
+        "title": "Annual Report (2008) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=annualreport08.pdf",
+        "type": "Official Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2008-005",
+    "date": "2008",
+    "organization": "Financial and E-commerce sectors",
+    "sector": "Financial / E-commerce",
+    "incidentType": "Phishing Attacks",
+    "attackMethod": "Mass phishing campaigns",
+    "rootCause": "Exploitation of human trust through social engineering, lack of user awareness",
+    "impact": "Financial loss for consumers, damage to institutional reputation. Phishing attacks on financial and e-commerce sectors constituted 59% and 37% of reported phishing incidents, respectively.",
+    "severity": "High",
+    "description": "Phishing attacks in 2008 became a dominant threat vector, particularly targeting online banking and e-commerce platforms. CERT-In reported that 59% of all phishing attacks targeted the financial services sector, with the e-commerce sector experiencing 37% of such attacks. Indian financial institutions accounted for a significant portion (36%) of the total phishing incidents reported to CERT-In. These attacks often involved sophisticated social engineering tactics to steal credentials and financial data.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Financial and e-commerce users\n- Motivation: Data theft\n- Consequence: Increased awareness campaigns",
+    "sources": [
+      {
+        "title": "Annual Report (2008) - CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=annualreport08.pdf",
+        "type": "Official Report"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]
