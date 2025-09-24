@@ -1,21 +1,188 @@
 [
   {
-    "id": "inc-041",
-    "date": "2024-02-12",
-    "organization": "Multiple French government ministries",
-    "sector": "Government",
-    "incidentType": "DDoS",
-    "attackMethod": "Distributed Denial-of-Service",
-    "rootCause": "Coordinated DDoS attacks claimed by hacktivist groups, including Anonymous Sudan.",
-    "impact": "Temporarily disrupted access to several government websites and internal services, though the impact was reportedly mitigated quickly.",
-    "severity": "Medium",
-    "description": "Several French government ministries were targeted by DDoS attacks of 'unprecedented intensity'. The attacks were claimed by pro-Russian hacktivist groups and were designed to overwhelm government servers and disrupt online services.",
+    "id": "inc-2024-001",
+    "date": "2024-01-15",
+    "organization": "Hathway Cable & Datacom Ltd",
+    "sector": "Telecommunications/ISP",
+    "incidentType": "Database Breach - Mass Customer Data Exposure",
+    "attackMethod": "Laravel framework vulnerability exploitation, CMS compromise",
+    "rootCause": "Vulnerability in Laravel content management system, inadequate web security controls",
+    "impact": "41.5 million customers' personal data exposed including Aadhaar numbers, email IDs, home addresses; over 200GB of sensitive data leaked",
+    "severity": "Critical",
+    "description": "Hathway, a major ISP and cable operator in India, suffered a massive data breach when hacker 'dawnofdevil' exploited vulnerabilities in the company's Laravel-based content management system. The breach exposed 12GB of customer data and 214GB of production data, making it one of the largest ISP breaches in India.",
+    "details": {
+      "Actors": "Hacker 'dawnofdevil' - individual threat actor",
+      "Targets": "Hathway customer database, production systems, CMS infrastructure",
+      "Motivation": "Data theft for potential financial gain and reputational damage",
+      "Consequence": "Enhanced web application security, ISP sector security review"
+    },
     "sources": [
       {
-        "title": "France says government websites hit by cyberattacks of 'unprecedented intensity'",
-        "url": "https://www.reuters.com/technology/cybersecurity/france-says-several-government-bodies-targeted-by-cyber-attack-2024-03-11/",
-        "type": "News Article"
+        "title": "Biggest Cyber Attacks in India 2024: Data Breaches & Hacks",
+        "url": "https://skillogic.com/blog/biggest-cyber-attacks-in-india-2024-data-breaches-hacks/",
+        "type": "Security Analysis"
+      },
+      {
+        "title": "25 Major Cyber Attacks in India That Shocked the Nation",
+        "url": "https://www.sattrix.com/blog/biggest-cyber-attacks-in-india/",
+        "type": "Comprehensive Report"
       }
-    ]
+    ],
+    "verificationStatus": "Verified - Company acknowledged breach"
+  },
+  {
+    "id": "inc-2024-002",
+    "date": "2024-03-07",
+    "organization": "Indian Government Entities and Energy Sector (Operation FlightNight)",
+    "sector": "Government/Energy/Defense",
+    "incidentType": "Advanced Persistent Threat - Cyber Espionage Campaign",
+    "attackMethod": "Spear phishing with weaponized document, modified HackBrowserData malware, Slack C2 exfiltration",
+    "rootCause": "Sophisticated APT campaign exploiting trust in official communications, inadequate email security",
+    "impact": "8.81GB of sensitive data exfiltrated from multiple government entities including defense, energy companies; financial documents, employee details, drilling activities compromised",
+    "severity": "Critical",
+    "description": "Operation FlightNight, discovered by EclecticIQ, targeted Indian government agencies and energy companies using a modified information stealer. The attack used phishing emails masquerading as Indian Air Force invitations and utilized Slack channels for data exfiltration. Multiple agencies responsible for defense, IT, and energy infrastructure were compromised.",
+    "details": {
+      "Actors": "Unknown APT group conducting cyber espionage (medium confidence state-sponsored)",
+      "Targets": "Indian defense agencies, energy companies, government IT infrastructure",
+      "Motivation": "Strategic intelligence gathering on critical infrastructure",
+      "Consequence": "Enhanced government email security, expanded APT threat monitoring"
+    },
+    "sources": [
+      {
+        "title": "Operation FlightNight: Indian Government Entities and Energy Sector Targeted",
+        "url": "https://blog.eclecticiq.com/operation-flightnight-indian-government-entities-and-energy-sector-targeted-by-cyber-espionage-campaign",
+        "type": "Threat Intelligence Report"
+      },
+      {
+        "title": "India's government, energy sector breached in cyber-espionage campaign",
+        "url": "https://therecord.media/india-infostealer-government-energy-sector-espionage",
+        "type": "Investigation Report"
+      }
+    ],
+    "verificationStatus": "Verified - EclecticIQ threat intelligence verified"
+  },
+  {
+    "id": "inc-2024-003",
+    "date": "2024-06-15",
+    "organization": "Bharat Sanchar Nigam Limited (BSNL)",
+    "sector": "Telecommunications/Government",
+    "incidentType": "Data Breach - Telecom Infrastructure",
+    "attackMethod": "Server compromise, database access, telecom data extraction",
+    "rootCause": "Inadequate server security, vulnerable telecom infrastructure",
+    "impact": "278GB of sensitive telecom data compromised including IMSI numbers, SIM card details, home location register data, security keys; second breach in 6 months",
+    "severity": "Critical",
+    "description": "BSNL suffered its second major data breach within six months when threat actor 'kiberphant0m' accessed over 278GB of sensitive telecom data. The breach included server snapshots that could enable SIM cloning and extortion. This followed a December 2023 breach by 'Perell', indicating systemic vulnerabilities in India's state telecom provider.",
+    "details": {
+      "Actors": "Threat actor 'kiberphant0m' (individual cybercriminal)",
+      "Targets": "BSNL telecom infrastructure, user databases, network configuration data",
+      "Motivation": "Data theft for sale, potential SIM cloning operations",
+      "Consequence": "Government inter-ministerial committee formed to audit telecom networks"
+    },
+    "sources": [
+      {
+        "title": "Year ender 2024: Biggest cyberattacks in India",
+        "url": "https://economictimes.com/tech/technology/year-ender-2024-biggest-cyberattacks-in-india/articleshow/116796935.cms",
+        "type": "Industry Report"
+      },
+      {
+        "title": "25 Major Cyber Attacks in India That Shocked the Nation",
+        "url": "https://www.sattrix.com/blog/biggest-cyber-attacks-in-india/",
+        "type": "Security Analysis"
+      }
+    ],
+    "verificationStatus": "Verified - Government acknowledged"
+  },
+  {
+    "id": "inc-2024-004",
+    "date": "2024-07-31",
+    "organization": "C-Edge Technologies (Banking Infrastructure Provider)",
+    "sector": "Financial Services/Banking Technology",
+    "incidentType": "Ransomware Attack - Banking Infrastructure",
+    "attackMethod": "RansomEXX ransomware via compromised Jenkins server at Brontoo Technology Solutions",
+    "rootCause": "Misconfigured Jenkins server at partner organization, supply chain vulnerability",
+    "impact": "Nearly 300 cooperative and regional rural banks affected; ATM withdrawals and UPI transactions disrupted; payment systems isolated by NPCI",
+    "severity": "Critical",
+    "description": "C-Edge Technologies, a joint venture between SBI and TCS serving 300+ small banks, was hit by RansomEXX ransomware. The attack originated through Brontoo Technology Solutions' misconfigured Jenkins server. NPCI temporarily isolated C-Edge from retail payment systems, affecting rural and cooperative banking operations nationwide.",
+    "details": {
+      "Actors": "RansomEXX group (also known as Defray777/Ransom X)",
+      "Targets": "C-Edge banking technology systems, cooperative bank infrastructure",
+      "Motivation": "Financial extortion through banking system disruption",
+      "Consequence": "Enhanced supply chain security protocols, banking infrastructure hardening"
+    },
+    "sources": [
+      {
+        "title": "Ransomware Attack on C-Edge Technologies: Implications for Indian Banking",
+        "url": "https://www.cyberpeace.org/resources/blogs/ransomware-attack-on-c-edge-technologies-implications-for-indian-banking",
+        "type": "Security Analysis"
+      },
+      {
+        "title": "Ransomware attack forces hundreds of small Indian banks offline",
+        "url": "https://www.reuters.com/technology/cybersecurity/ransomware-attack-forces-hundreds-small-indian-banks-offline-sources-say-2024-07-31/",
+        "type": "News Report"
+      }
+    ],
+    "verificationStatus": "Verified - NPCI statement issued"
+  },
+  {
+    "id": "inc-2024-005",
+    "date": "2024-09-20",
+    "organization": "Star Health Insurance",
+    "sector": "Healthcare/Insurance",
+    "incidentType": "Data Breach - Healthcare Records Exposure",
+    "attackMethod": "Internal system compromise, data exfiltration and Telegram distribution",
+    "rootCause": "Potential insider involvement, inadequate data access controls",
+    "impact": "31 million customers' personal and medical data compromised including tax records, medical claims; 7.24TB of sensitive data leaked; $68,000 ransom demanded",
+    "severity": "Critical",
+    "description": "Star Health, India's largest health insurer, suffered a massive breach when hacker 'xenZen' compromised 7.24TB of sensitive data affecting 31 million customers. The attacker used Telegram chatbots to distribute customer data and later sent death threats including bullet cartridges to company executives, citing denied medical claims as motivation.",
+    "details": {
+      "Actors": "Hacker 'xenZen' (potentially hacktivism-motivated)",
+      "Targets": "Star Health customer databases, medical records, internal systems",
+      "Motivation": "Financial extortion, hacktivism regarding denied medical claims",
+      "Consequence": "Healthcare data protection regulations tightened, insurance sector security review"
+    },
+    "sources": [
+      {
+        "title": "India's Star Health says it received $68000 ransom demand after data leak",
+        "url": "https://www.reuters.com/world/india/indias-star-health-says-it-received-68k-ransom-demand-after-data-leak-2024-10-12/",
+        "type": "Official Report"
+      },
+      {
+        "title": "Star Health Data Breach Affects 31 Million Users",
+        "url": "https://www.medianama.com/2024/09/223-star-health-data-breach-31-million-users-data-exposed-chatbots-offer-samples-on-telegram/",
+        "type": "Investigation Report"
+      }
+    ],
+    "verificationStatus": "Verified - Company acknowledged breach"
+  },
+  {
+    "id": "inc-2024-006",
+    "date": "2024-08-15",
+    "organization": "AI-Powered Healthcare Provider (Anonymous Indian Hospital)",
+    "sector": "Healthcare",
+    "incidentType": "AI-Powered Ransomware Attack",
+    "attackMethod": "AI-enhanced ransomware with intelligent encryption prioritization",
+    "rootCause": "Phishing email targeting hospital administrator, AI malware adaptation to network",
+    "impact": "₹100 crore ransom demand, patient admissions disrupted, surgeries rerouted, electronic health records encrypted",
+    "severity": "High",
+    "description": "An Indian healthcare provider specializing in AI advancements was targeted by sophisticated AI-driven ransomware. The attack began with a phishing email and the AI-infused malware intelligently prioritized encryption of critical systems. This represents the evolution of ransomware using artificial intelligence for maximum impact.",
+    "details": {
+      "Actors": "Unknown threat actors using AI-enhanced ransomware",
+      "Targets": "Hospital IT networks, electronic health records, billing systems",
+      "Motivation": "Financial extortion using advanced AI techniques",
+      "Consequence": "Hospital chose to work with law enforcement rather than pay ransom"
+    },
+    "sources": [
+      {
+        "title": "Research Report: AI-Powered Ransomware Attack on a Healthcare Provider",
+        "url": "https://www.cyberpeace.org/resources/blogs/research-report-ai-powered-ransomware-attack-on-a-healthcare-provider",
+        "type": "Research Report"
+      },
+      {
+        "title": "Plagued by Cyberattacks: Indian Healthcare Sector in Critical Condition",
+        "url": "https://www.tripwire.com/state-of-security/plagued-cyberattacks-indian-healthcare-sector-critical-condition",
+        "type": "Industry Analysis"
+      }
+    ],
+    "verificationStatus": "Verified - Research report verified"
   }
 ]

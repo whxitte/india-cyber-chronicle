@@ -1,1 +1,189 @@
-[]
+[
+  {
+    "id": "inc-2025-001",
+    "date": "2025-05-07",
+    "organization": "Indian Government Websites and Critical Infrastructure (Post-Operation Sindoor)",
+    "sector": "Government/Critical Infrastructure",
+    "incidentType": "Mass Coordinated Cyber Retaliation Campaign",
+    "attackMethod": "Coordinated APT campaign, DDoS attacks, malware injections, phishing campaigns",
+    "rootCause": "Geopolitical retaliation following Operation Sindoor military strikes, coordinated multi-nation APT groups",
+    "impact": "1.5 million cyberattacks attempted against Indian websites, 150 successful intrusions recorded, targeting government, banking, healthcare, and critical infrastructure",
+    "severity": "Critical",
+    "description": "Following India's Operation Sindoor military strikes against Pakistan, a massive coordinated cyber retaliation campaign was launched. Seven APT groups from Pakistan, Bangladesh, Indonesia, and the Middle East targeted Indian digital infrastructure. This represents the largest coordinated cyber warfare campaign against India to date.",
+    "details": {
+      "Actors": "7 APT groups primarily from Pakistan, Bangladesh, Indonesia, and Middle East",
+      "Targets": "Government websites, banking systems, healthcare infrastructure, critical national infrastructure",
+      "Motivation": "Geopolitical retaliation, cyber warfare in response to military operations",
+      "Consequence": "CERT-In issued emergency alerts, enhanced cyber defense protocols activated"
+    },
+    "sources": [
+      {
+        "title": "20 Recent Cyber Attacks in India [2025]",
+        "url": "https://eventussecurity.com/cybersecurity/india/cyber-attacks/",
+        "type": "Security Timeline"
+      },
+      {
+        "title": "2025 India–Pakistan conflict",
+        "url": "https://en.wikipedia.org/wiki/2025_India%E2%80%93Pakistan_conflict",
+        "type": "Conflict Documentation"
+      }
+    ],
+    "verificationStatus": "Verified - CERT-In alerts issued"
+  },
+  {
+    "id": "inc-2025-002",
+    "date": "2025-03-15",
+    "organization": "Star Health Insurance - Extended Incident",
+    "sector": "Healthcare/Insurance",
+    "incidentType": "Data Breach with Physical Threats",
+    "attackMethod": "Data exfiltration, extortion, physical intimidation tactics",
+    "rootCause": "Continued exploitation from 2024 breach, escalated threat tactics",
+    "impact": "Continued exposure of 31 million customer records, death threats to executives, bullet cartridges mailed to CEO and CFO",
+    "severity": "Critical",
+    "description": "The Star Health data breach escalated when hacker 'xenZen' mailed bullet cartridges to company executives as threats. The attacker cited denied medical claims as motivation, marking evolution from cybercrime to cyber-enabled physical intimidation.",
+    "details": {
+      "Actors": "Hacker 'xenZen'",
+      "Targets": "Star Health executives, continued data distribution",
+      "Motivation": "Hacktivism regarding denied medical claims, intimidation tactics",
+      "Consequence": "Law enforcement investigation, enhanced executive protection protocols"
+    },
+    "sources": [
+      {
+        "title": "Plagued by Cyberattacks: Indian Healthcare Sector in Critical Condition",
+        "url": "https://www.tripwire.com/state-of-security/plagued-cyberattacks-indian-healthcare-sector-critical-condition",
+        "type": "Industry Analysis"
+      }
+    ],
+    "verificationStatus": "Verified - Law enforcement investigation ongoing"
+  },
+  {
+    "id": "inc-2025-003",
+    "date": "2025-04-01",
+    "organization": "Multiple Indian Organizations - Hacktivist DDoS Campaign",
+    "sector": "Multiple Sectors",
+    "incidentType": "Large-Scale DDoS Attacks by Hacktivist Groups",
+    "attackMethod": "Distributed Denial of Service attacks, service disruption campaigns",
+    "rootCause": "Politically motivated hacktivist groups targeting Indian organizations",
+    "impact": "Over 100 Indian organizations across various sectors faced service outages, no data theft but significant operational disruption",
+    "severity": "Medium",
+    "description": "In 2025, Indian organizations across multiple sectors experienced a surge in DDoS attacks from hacktivist groups. While no data was compromised, the large-scale service outages demonstrated infrastructure vulnerabilities and the growing threat from politically motivated cyber actors.",
+    "details": {
+      "Actors": "Various hacktivist groups from Southeast Asia",
+      "Targets": "Over 100 Indian organizations across government, private, and educational sectors",
+      "Motivation": "Political protest against Indian policies, service disruption",
+      "Consequence": "Enhanced DDoS protection measures, infrastructure hardening"
+    },
+    "sources": [
+      {
+        "title": "20 Recent Cyber Attacks in India [2025]",
+        "url": "https://eventussecurity.com/cybersecurity/india/cyber-attacks/",
+        "type": "Security Analysis"
+      }
+    ],
+    "verificationStatus": "Verified - Multiple organization reports"
+  },
+  {
+    "id": "inc-2025-004",
+    "date": "2025-06-12",
+    "organization": "Indian State Load Dispatch Centres (SLDCs) - Power Grid",
+    "sector": "Critical Infrastructure - Energy",
+    "incidentType": "Cyber Espionage Against Critical Power Infrastructure",
+    "attackMethod": "Targeted SCADA system infiltration and espionage malware",
+    "rootCause": "Nation-state actors targeting critical infrastructure, SCADA system vulnerabilities",
+    "impact": "At least 7 State Load Dispatch Centres compromised, potential for grid manipulation, PLA-linked threat actors identified",
+    "severity": "Critical",
+    "description": "A sophisticated cyber espionage campaign targeted at least seven State Load Dispatch Centres responsible for electrical grid control via SCADA systems. The campaign, linked to PLA threat actors, represents a significant escalation in cyber threats against India's critical power infrastructure.",
+    "details": {
+      "Actors": "PLA-linked threat actors (China state-sponsored)",
+      "Targets": "State Load Dispatch Centres, SCADA systems, power grid control infrastructure",
+      "Motivation": "Strategic intelligence gathering, potential infrastructure disruption",
+      "Consequence": "Emergency security audit of all critical power infrastructure, enhanced monitoring"
+    },
+    "sources": [
+      {
+        "title": "Cyber Espionage Against Critical Infrastructure: A Case Study of Targeted Attacks on Indian State Load Dispatch Centres",
+        "url": "https://ijsrem.com/download/cyber-espionage-against-critical-infrastructure-a-case-study-of-targeted-attacks-on-indian-state-load-dispatch-centres-sldcs/",
+        "type": "Academic Research"
+      }
+    ],
+    "verificationStatus": "Verified - Academic research confirmed"
+  },
+  {
+    "id": "inc-2025-005",
+    "date": "2025-02-20",
+    "organization": "Pakistan-Origin 'Dance of the Hillary' Malware Campaign",
+    "sector": "Civilian/Government Personnel",
+    "incidentType": "Social Media Malware Distribution",
+    "attackMethod": "Social media-based malware distribution, spyware deployment",
+    "rootCause": "Social engineering via social media platforms, inadequate user awareness",
+    "impact": "Spyware distributed to steal personal and sensitive data from civilians and officials across India via social media",
+    "severity": "Medium",
+    "description": "A Pakistan-linked malware campaign named 'Dance of the Hillary' was discovered spreading via social media platforms. The malware posed significant risks to data security, prompting warnings from Indian intelligence agencies and Punjab Police about the social media-based threat vector.",
+    "details": {
+      "Actors": "Pakistan-based groups using social engineering",
+      "Targets": "Civilians, government officials, personal devices across India",
+      "Motivation": "Data theft, espionage through social media infiltration",
+      "Consequence": "Public advisories issued, social media security awareness campaigns"
+    },
+    "sources": [
+      {
+        "title": "20 Recent Cyber Attacks in India [2025]",
+        "url": "https://eventussecurity.com/cybersecurity/india/cyber-attacks/",
+        "type": "Security Timeline"
+      }
+    ],
+    "verificationStatus": "Verified - Punjab Police and intelligence agencies verified"
+  },
+  {
+    "id": "inc-2025-006",
+    "date": "2025-07-29",
+    "organization": "Indian Critical Infrastructure - Operation Bunyān al-Marsūs",
+    "sector": "Critical Infrastructure/Energy/Transport",
+    "incidentType": "APT Campaign Against Critical Infrastructure",
+    "attackMethod": "SCADA system targeting, OT network infiltration, ICS malware deployment",
+    "rootCause": "State-sponsored APT campaign exploiting OT vulnerabilities and default credentials",
+    "impact": "Multiple intrusions into SCADA and OT systems reported across energy grids and transport systems",
+    "severity": "Critical",
+    "description": "CERT-In issued alerts about Operation Bunyān al-Marsūs, a targeted APT campaign allegedly from Pakistan targeting India's critical infrastructure. The campaign focused on SCADA systems and operational technology networks using specialized malware and intrusion techniques designed for industrial control systems.",
+    "details": {
+      "Actors": "Pakistan-based APT groups specializing in critical infrastructure",
+      "Targets": "Energy grids, transport systems, government IT infrastructure, SCADA networks",
+      "Motivation": "Infrastructure disruption capabilities, surveillance, strategic deterrence",
+      "Consequence": "CERT-In emergency alerts, critical infrastructure security review"
+    },
+    "sources": [
+      {
+        "title": "20 Recent Cyber Attacks in India [2025]",
+        "url": "https://eventussecurity.com/cybersecurity/india/cyber-attacks/",
+        "type": "CERT-In Alert"
+      }
+    ],
+    "verificationStatus": "Verified - CERT-In confirmed"
+  },
+  {
+    "id": "inc-2025-007",
+    "date": "2025-06-16",
+    "organization": "Zoomcar (Indian Car Share Company)",
+    "sector": "Transportation/Automotive Sharing",
+    "incidentType": "Data Breach - Car Sharing Platform",
+    "attackMethod": "Database compromise, customer data exposure",
+    "rootCause": "Security vulnerabilities in car sharing platform infrastructure",
+    "impact": "8.4 million people affected by data breach at Indian car sharing company Zoomcar",
+    "severity": "High",
+    "description": "Zoomcar, one of India's leading car sharing platforms, suffered a significant data breach affecting 8.4 million customers. The breach exposed customer personal information, booking details, and potentially payment-related data, highlighting vulnerabilities in the growing shared mobility sector.",
+    "details": {
+      "Actors": "Unknown threat actors targeting mobility platforms",
+      "Targets": "Zoomcar customer database, booking records, user profiles",
+      "Motivation": "Data theft for potential financial fraud",
+      "Consequence": "Enhanced security measures for shared mobility platforms"
+    },
+    "sources": [
+      {
+        "title": "Major Cyber Attacks, Ransomware Attacks and Data Breaches of June 2025",
+        "url": "https://www.cm-alliance.com/cybersecurity-blog/major-cyber-attacks-ransomware-attacks-and-data-breaches-of-june-2025",
+        "type": "Breach Database"
+      }
+    ],
+    "verificationStatus": "Confirmed - Company notifications sent"
+  }
+]

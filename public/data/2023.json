@@ -1,21 +1,147 @@
 [
   {
-    "id": "inc-005",
-    "date": "2023-12-15",
-    "organization": "State Bank of India (SBI)",
-    "sector": "Banking",
-    "incidentType": "Phishing",
-    "attackMethod": "Email and SMS Phishing Campaign",
-    "rootCause": "Social Engineering",
-    "impact": "Customer login credentials, credit card details, and personal information were compromised for those who fell victim to the scam.",
+    "id": "inc-2023-001",
+    "date": "2023-02-19",
+    "organization": "RailYatri (Indian Railways Booking Platform)",
+    "sector": "Transportation/Government",
+    "incidentType": "Data Breach - Database Compromise",
+    "attackMethod": "Database breach, unauthorized data access and sale on dark web",
+    "rootCause": "Security misconfiguration, inadequate access controls on database systems",
+    "impact": "Over 31 million user records compromised including names, email addresses, phone numbers, travel information; data sold on BreachForums dark web marketplace",
     "severity": "High",
-    "description": "A sophisticated and large-scale phishing campaign targeted millions of SBI customers using fraudulent SMS and emails. The messages, which mimicked official bank communications, directed users to fake websites to harvest their credentials and financial information.",
+    "description": "In December 2022 (disclosed February 2023), RailYatri, India's largest train booking platform authorized by IRCTC, suffered a massive data breach affecting 31 million users and 37,000 invoices. The breach was discovered when cybercriminals listed the database for sale on BreachForums. This marked the second major breach for RailYatri after a 2020 incident affecting 700,000 users.",
+    "details": {
+      "Actors": "Unknown cybercriminals operating on dark web forums",
+      "Targets": "RailYatri user database, IRCTC passenger booking records",
+      "Motivation": "Financial gain through data sale",
+      "Consequence": "Enhanced security measures for railway booking platforms, IRCTC security review"
+    },
     "sources": [
       {
-        "title": "Fake SBI Message Warning: Mumbai Police Issues Alert, Asks People To Be Aware Of Phishing Scam",
-        "url": "https://www.indiatvnews.com/technology/news/fake-sbi-message-warning-mumbai-police-issues-alert-asks-people-to-be-aware-of-phishing-scam-2023-01-24-841793",
-        "type": "News Article"
+        "title": "RailYatri Data Breach 2023; Stolen Data Leaked on Dark Web",
+        "url": "https://thecyberexpress.com/the-railyatri-data-breach-data-dump-dark-web/",
+        "type": "Security Report"
+      },
+      {
+        "title": "RailYatri Data Breach Leaves Over 30 Million Users Exposed",
+        "url": "https://heimdalsecurity.com/blog/railyatri-data-breach/",
+        "type": "Cybersecurity Analysis"
       }
-    ]
+    ],
+    "verificationStatus": "Verified - Multiple security researchers verified"
+  },
+  {
+    "id": "inc-2023-002",
+    "date": "2023-10-09",
+    "organization": "Indian Council of Medical Research (ICMR) COVID-19 Database",
+    "sector": "Healthcare/Government",
+    "incidentType": "Database Breach - Dark Web Sale",
+    "attackMethod": "Database compromise and dark web data trafficking",
+    "rootCause": "Insecure database configuration, potential credential compromise during pandemic data collection",
+    "impact": "815 million Indian residents' COVID-19 test records offered for sale on dark web including names, ages, Aadhaar numbers, passport numbers, addresses",
+    "severity": "Critical",
+    "description": "The personal data of 815 million Indian residents from ICMR's COVID-19 testing database was discovered being sold on dark web markets. Security company Resecurity identified the listing which included comprehensive personal information collected during India's pandemic response. This represents one of the largest healthcare data breaches in Indian history.",
+    "details": {
+      "Actors": "Cybercriminal groups operating on dark web markets",
+      "Targets": "ICMR COVID-19 central testing database, health ID systems",
+      "Motivation": "Financial gain from selling healthcare PII data",
+      "Consequence": "Government investigation launched, enhanced healthcare data protection protocols"
+    },
+    "sources": [
+      {
+        "title": "List of Data Breaches and Cyber Attacks in 2023",
+        "url": "https://www.itgovernance.co.uk/blog/list-of-data-breaches-and-cyber-attacks-in-2023",
+        "type": "Breach Database"
+      },
+      {
+        "title": "Recent Data Breaches: Major Cybersecurity Threats",
+        "url": "https://thelegalschool.in/blog/recent-data-breaches",
+        "type": "Legal Analysis"
+      }
+    ],
+    "verificationStatus": "Confirmed by security researchers"
+  },
+  {
+    "id": "inc-2023-003",
+    "date": "2023-05-15",
+    "organization": "MoChhatua App (Odisha Ration Distribution)",
+    "sector": "Government - Food Distribution",
+    "incidentType": "Government App Breach",
+    "attackMethod": "Application vulnerability exploitation, database access",
+    "rootCause": "Vulnerable web application, inadequate security controls on government app",
+    "impact": "Sensitive user data exposed including beneficiary names, emails, passwords of ration distribution app users in Odisha",
+    "severity": "Medium",
+    "description": "The MoChhatua app, designed to digitize ration distribution in Odisha under the Public Distribution System, was breached in May 2023. A hacker claimed responsibility on cybercrime forums, sharing screenshots of compromised data including user credentials and personal information of ration card holders.",
+    "details": {
+      "Actors": "Unknown hacker claiming responsibility on forums",
+      "Targets": "MoChhatua app user database, PDS beneficiary records",
+      "Motivation": "Reputation/demonstration of skills, potential data sale",
+      "Consequence": "App security review, enhanced protection for government digital services"
+    },
+    "sources": [
+      {
+        "title": "25 Major Cyber Attacks in India That Shocked the Nation",
+        "url": "https://www.sattrix.com/blog/biggest-cyber-attacks-in-india/",
+        "type": "Comprehensive Report"
+      }
+    ],
+    "verificationStatus": "Claimed but not officially confirmed"
+  },
+  {
+    "id": "inc-2023-004",
+    "date": "2023-04-25",
+    "organization": "Multiple Organizations - Cyberabad Police Investigation",
+    "sector": "Multiple (Banking, IT, Government)",
+    "incidentType": "Mass Data Breach Investigation",
+    "attackMethod": "Multiple breach vectors across various organizations",
+    "rootCause": "Systematic vulnerabilities across multiple sectors, inadequate cybersecurity practices",
+    "impact": "66.9 crore (669 million) individuals and organizations affected in massive coordinated data breach investigation",
+    "severity": "Critical",
+    "description": "Cyberabad Police launched a major investigation into a massive data breach affecting over 669 million individuals and organizations. Notices were issued to 11 organizations including banks and IT firms for unauthorized access and theft of personal and confidential data. This investigation revealed systemic cybersecurity failures across multiple sectors.",
+    "details": {
+      "Actors": "Multiple threat actors targeting various sectors",
+      "Targets": "Banks, IT companies, government organizations",
+      "Motivation": "Data theft for financial gain and identity fraud",
+      "Consequence": "Enhanced cybersecurity regulations, mandatory breach reporting protocols"
+    },
+    "sources": [
+      {
+        "title": "25 Major Cyber Attacks in India That Shocked the Nation",
+        "url": "https://www.sattrix.com/blog/biggest-cyber-attacks-in-india/",
+        "type": "Investigation Report"
+      }
+    ],
+    "verificationStatus": "Verified - Police investigation confirmed"
+  },
+  {
+    "id": "inc-2023-005",
+    "date": "2023-11-23",
+    "organization": "All India Institute of Medical Sciences (AIIMS) Delhi - Extended Impact",
+    "sector": "Healthcare",
+    "incidentType": "Ransomware Attack - Extended Analysis",
+    "attackMethod": "Advanced ransomware encryption, healthcare system targeting",
+    "rootCause": "Healthcare infrastructure vulnerabilities, attribution to ChamelGang (China-linked APT)",
+    "impact": "Extended disruption affecting 40 million patient records at risk, ₹200 crore ransom demand, 12-day complete shutdown of digital services",
+    "severity": "Critical",
+    "description": "Enhanced analysis of the AIIMS ransomware attack reveals attribution to ChamelGang, a China-linked APT group. The attack utilized sophisticated ransomware that specifically targeted healthcare infrastructure. No ransom was paid, but the incident demonstrated critical vulnerabilities in India's premier healthcare institution's cybersecurity.",
+    "details": {
+      "Actors": "ChamelGang APT (China-linked advanced persistent threat group)",
+      "Targets": "AIIMS IT infrastructure, patient databases, hospital management systems",
+      "Motivation": "Cyber espionage, healthcare sector intelligence gathering, disruption",
+      "Consequence": "Complete overhaul of healthcare cybersecurity protocols, enhanced threat monitoring"
+    },
+    "sources": [
+      {
+        "title": "The AIIMS Cyber-Attack and India's Dilapidated Cyber Security",
+        "url": "https://csipr.nliu.ac.in/news-updates/the-aiims-cyber-attack-and-indias-dilapidated-cyber-security-infrastructure/",
+        "type": "Academic Analysis"
+      },
+      {
+        "title": "Unveiling the 7 Biggest Ransomware Attacks in India",
+        "url": "https://ccoe.dsci.in/blog/7-biggest-ransomware-attacks-in-india",
+        "type": "Security Report"
+      }
+    ],
+    "verificationStatus": "Verified - Government acknowledged"
   }
 ]
