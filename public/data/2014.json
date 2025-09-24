@@ -1,59 +1,267 @@
 [
   {
-    "id": "inc-013",
-    "date": "2014-12-23",
-    "organization": "Ukraine Power Grids (multiple)",
-    "sector": "Energy & Utilities",
-    "incidentType": "Critical Infrastructure Compromise",
-    "attackMethod": "Spear Phishing, BlackEnergy3 Malware",
-    "rootCause": "Spear-phishing emails allowed attackers to gain a foothold, steal credentials, and pivot to the SCADA network.",
-    "impact": "The first confirmed cyberattack to take down a power grid, leaving approximately 230,000 people without electricity for several hours in Ukraine.",
-    "severity": "Critical",
-    "description": "Russian state-sponsored hackers (Sandworm Team) executed a sophisticated, multi-stage attack against Ukrainian power distribution companies. They used the BlackEnergy3 malware to gain remote control of industrial control systems (ICS) and remotely trip breakers, causing a widespread power outage.",
-    "sources": [
-      {
-        "title": "CISA Alert (IR-ALERT-H-16-056-01): Cyber-Attack Against Ukrainian Critical Infrastructure",
-        "url": "https://www.cisa.gov/news-events/ics-alerts/ir-alert-h-16-056-01",
-        "type": "Government Advisory"
-      }
-    ]
-  },
-  {
-    "id": "inc-027",
-    "date": "2014-05-27",
-    "organization": "eBay",
-    "sector": "Retail & E-commerce",
-    "incidentType": "Data Breach",
-    "attackMethod": "Spear Phishing",
-    "rootCause": "Compromised employee credentials allowed attackers to access the corporate network and exfiltrate a user database.",
-    "impact": "Exposed names, encrypted passwords, email addresses, and phone numbers of all 145 million eBay users. No financial data was stolen.",
+    "id": "inc-2014-001",
+    "date": "2014",
+    "organization": "Indian Government Officials and Military Personnel",
+    "sector": "Government / Defense",
+    "incidentType": "Cyber Espionage (Operation Hangover)",
+    "attackMethod": "Spear-phishing, malware distribution, Command and Control (C2)",
+    "rootCause": "State-sponsored hacking (linked to Pakistani actors), social engineering, exploitation of end-user vulnerabilities",
+    "impact": "The compromise of highly sensitive information, including diplomatic and military intelligence. The attack demonstrated the persistent threat of sophisticated cyber espionage targeting India's national security apparatus.",
     "severity": "High",
-    "description": "Attackers gained access to eBay's network using a few compromised employee logins. The company urged all users to change their passwords following the discovery of the breach, which affected its entire user base at the time.",
+    "description": "Operation Hangover, an ongoing cyber espionage campaign, heavily targeted Indian government officials, military personnel, and organizations throughout 2014. The campaign used spear-phishing emails containing malicious attachments to gain a foothold in target networks. Security researchers, including those at FireEye, documented the use of a sophisticated C2 infrastructure and malware to exfiltrate sensitive data. Analysis of the operation's infrastructure pointed toward links with Pakistani actors, indicating a continued geopolitical dimension to these cyberattacks.\n\nKey details:\n- Actors: Pakistani hackers (suspected state-sponsored)\n- Targets: Indian government and military\n- Motivation: Espionage\n- Consequence: Enhanced security measures",
     "sources": [
       {
-        "title": "EBay asks 145m users to change passwords after data breach",
-        "url": "https://www.theguardian.com/technology/2014/may/21/ebay-urges-users-to-reset-passwords-after-cyberattack",
+        "title": "Hackers target Indian government, military with malware",
+        "url": "https://www.livemint.com/Industry/gM5lYQn7VzV91oI043w08K/Hackers-target-Indian-government-military-with-malware.html",
         "type": "News Article"
+      },
+      {
+        "title": "Pak-based hackers attack Indian govt, military cyber networks",
+        "url": "https://www.business-standard.com/article/technology/pak-based-hackers-attack-indian-govt-military-cyber-networks-114050201115_1.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Operation Hangover, the Indian Cyberattack Infrastructure",
+        "url": "https://www.cyberdefensemagazine.com/operation-hangover-the-indian-cyberattack-infrastructure/",
+        "type": "Analysis"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-034",
-    "date": "2014-11-24",
-    "organization": "Sony Pictures Entertainment",
-    "sector": "Manufacturing & Supply chain",
-    "incidentType": "Data Breach, Wiper Malware",
-    "attackMethod": "Spear Phishing (APT)",
-    "rootCause": "Stolen credentials from a phishing attack allowed attackers, attributed to North Korea, to access the network.",
-    "impact": "Leaked massive amounts of confidential data, including employee information, executive emails, and unreleased films. Deployed wiper malware that destroyed company data.",
-    "severity": "Critical",
-    "description": "A hacking group calling itself the 'Guardians of Peace' launched a devastating attack against Sony Pictures, believed to be in retaliation for the movie 'The Interview'. The incident combined a massive data leak with destructive malware, causing immense financial and reputational damage.",
+    "id": "inc-2014-002",
+    "date": "2014-07",
+    "organization": "ANI News and The Hindu (news websites and social media accounts)",
+    "sector": "Media / Communications",
+    "incidentType": "Website Defacement / Social Media Takeover",
+    "attackMethod": "Hacking vulnerable web servers, social engineering, hacktivism",
+    "rootCause": "Geopolitical motives, inadequate security measures, exploitation of web server/CMS vulnerabilities",
+    "impact": "Hacking of websites and social media accounts, posting politically motivated messages, reputational damage, disruption of services",
+    "severity": "Medium",
+    "description": "In July 2014, the Syrian Electronic Army (SEA), a pro-Syrian government hacktivist group, hacked ANI News and The Hindu websites, posting messages supporting the Syrian regime. This highlighted vulnerabilities in Indian media platforms to international hacktivism.\n\nKey details:\n- Actors: Syrian Electronic Army\n- Targets: ANI News, The Hindu\n- Motivation: Political activism\n- Consequence: Site restorations, increased security",
     "sources": [
       {
-        "title": "Sony Pictures hack: What you need to know",
-        "url": "https://www.bbc.com/news/technology-30526484",
+        "title": "Syrian Electronic Army hacks ANI, posts messages - India Today",
+        "url": "https://www.indiatoday.in/technology/news/story/syrian-electronic-army-hacks-ani-news-agency-posts-pro-syrian-message-218204-2014-07-25",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-003",
+    "date": "2014-05-28",
+    "organization": "Uttar Pradesh Government (Taj Mahal, Agra Fort, Fatehpur Sikri websites)",
+    "sector": "Government (Tourism / Heritage)",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacking vulnerable web servers, hacktivism",
+    "rootCause": "Geopolitical motives, inadequate security measures, exploitation of web server vulnerabilities",
+    "impact": "Temporary defacement with Pakistani flag and pro-Pakistan messages, disruption of services, reputational damage",
+    "severity": "Medium",
+    "description": "On May 28, 2014, the Pakistan Haxors Crew hacked three Uttar Pradesh government websites (tajmahal.gov.in, agrafort.gov.in, fatehpursikri.gov.in), posting a Pakistani flag and messages like 'Pakistan Zindabad' and anti-India slogans. The sites were suspended for an hour before restoration.\n\nKey details:\n- Actors: Pakistan Haxors Crew\n- Targets: UP tourism websites\n- Motivation: Hacktivism\n- Consequence: Sites restored, security probe",
+    "sources": [
+      {
+        "title": "Hackers temporarily deface Taj Mahal website - India Today",
+        "url": "https://www.indiatoday.in/india/north/story/hackers-temporarily-deface-taj-mahal-website-194779-2014-05-28",
+        "type": "News Article"
+      },
+      {
+        "title": "'Pak' group hacks 3 Uttar Pradesh government websites",
+        "url": "https://timesofindia.indiatimes.com/india/pak-group-hacks-3-uttar-pradesh-government-websites/articleshow/35697655.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-004",
+    "date": "2014-10",
+    "organization": "Multiple Indian and Pakistani Websites",
+    "sector": "Government / Private",
+    "incidentType": "Website Defacement (Indo-Pak Hacking War)",
+    "attackMethod": "Hacktivism, exploiting vulnerabilities",
+    "rootCause": "Indo-Pak tensions, retaliation",
+    "impact": "Defacement of over a dozen sites on both sides, including government portals, with messages hailing respective countries",
+    "severity": "Medium",
+    "description": "In October 2014, Indian and Pakistani hackers engaged in a full-blown defacement war. Indian Hackers Online Squad hacked Pakistan's PPP website, while Pakistani hackers retaliated on Press Club of India and railways sites. The attacks escalated, with groups like H4x0r HuSsY involved.\n\nKey details:\n- Actors: Indian Hackers Online Squad, Pakistani hackers\n- Targets: PPP, Press Club of India, railways\n- Motivation: Retaliation\n- Consequence: Cyber war escalation",
+    "sources": [
+      {
+        "title": "Hackers from India, Pakistan in full-blown online war - Times of India",
+        "url": "https://timesofindia.indiatimes.com/tech-news/hackers-from-india-pakistan-in-full-blown-online-war/articleshow/44766898.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "October 2014 Cyber Attacks Statistics - Hackmageddon",
+        "url": "https://www.hackmageddon.com/2014/11/10/october-2014-cyber-attacks-statistics/",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-005",
+    "date": "2014-11-06",
+    "organization": "Government Websites in Andhra Pradesh, Telangana, Odisha",
+    "sector": "Government",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacking vulnerable servers, hacktivism",
+    "rootCause": "Geopolitical motives, poor web security",
+    "impact": "Defacement of 22 government websites with messages on Kashmir atrocities, sites inaccessible for hours",
+    "severity": "Medium",
+    "description": "On November 6, 2014, hackers from '1337 & r00x! - Team MaDLeeTs' defaced 22 government websites in Andhra Pradesh, Telangana, and Odisha, posting messages alleging Indian Army atrocities in Kashmir and a video of assaults. The sites were restored after suspension.\n\nKey details:\n- Actors: Team MaDLeeTs (suspected Pakistani)\n- Targets: AP, TS, Odisha government portals\n- Motivation: Hacktivism\n- Consequence: Sites restored, TITA identification",
+    "sources": [
+      {
+        "title": "Web portals of Telangana, Andhra Pradesh and Odisha government hacked",
+        "url": "https://www.deccanchronicle.com/141107/nation-current-affairs/article/web-portals-telangana-andhra-pradesh-and-odisha-government",
+        "type": "News Article"
+      },
+      {
+        "title": "Pakistan hackers deface 22 Indian portals - Times of India",
+        "url": "https://timesofindia.indiatimes.com/india/pakistan-hackers-deface-22-indian-portals/articleshow/45076322.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "TITA identifies hacked govt websites - The Hans India",
+        "url": "https://www.thehansindia.com/posts/index/Telangana/2014-11-08/TITA-identifies-hacked-govt-websites/115268",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-006",
+    "date": "2014",
+    "organization": "Multiple Indian Consumers and Businesses",
+    "sector": "Cross-sectoral",
+    "incidentType": "Ransomware Attacks",
+    "attackMethod": "Phishing, drive-by downloads, unpatched vulnerabilities",
+    "rootCause": "Lack of security awareness, unpatched systems",
+    "impact": "Over 60,000 ransomware incidents, financial losses, data encryption",
+    "severity": "High",
+    "description": "In 2014, India ranked third in Asia for ransomware attacks, with over 7 attacks per hour (60,000 annually), mainly crypto-ransomware encrypting files for ransom. This surge affected consumers and businesses, highlighting vulnerabilities.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Indian users\n- Motivation: Financial gain\n- Consequence: Increased antivirus adoption",
+    "sources": [
+      {
+        "title": "India ranks third in ransomware attacks in Asia, says report - The Times of India",
+        "url": "https://timesofindia.indiatimes.com/tech-news/india-ranks-third-in-ransomware-attacks-in-asia-says-report/articleshow/45749005.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-007",
+    "date": "2014",
+    "organization": "Multiple Indian Critical Infrastructure (Power, Telecom, Transportation)",
+    "sector": "Critical Infrastructure",
+    "incidentType": "Cyber Espionage / Targeted Attacks (Operation Crouching Yeti)",
+    "attackMethod": "Spear-phishing, malware, RATs",
+    "rootCause": "State-sponsored hacking (Russian origin suspected), system vulnerabilities",
+    "impact": "Compromise of critical infrastructure, potential data theft, operational risks",
+    "severity": "High",
+    "description": "Operation Crouching Yeti (Energetic Bear), uncovered by Kaspersky in 2014, targeted India's power, telecom, and transportation sectors with malware for espionage and sabotage. The campaign, linked to Russia, exploited ICS vulnerabilities.\n\nKey details:\n- Actors: Russian hackers (state-sponsored)\n- Targets: Energy and infrastructure\n- Motivation: Espionage/sabotage\n- Consequence: Global alert, ICS security improvements",
+    "sources": [
+      {
+        "title": "Energetic Bear – Crouching Yeti - Kaspersky",
+        "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2018/03/09092926/EB-YetiJuly2014-Public.pdf",
+        "type": "Security Report"
+      },
+      {
+        "title": "Crouching Yeti | Energetic Bear Malware Threat | Virus Definition - Kaspersky",
+        "url": "https://www.kaspersky.com/resource-center/threats/crouching-yeti-energetic-bear-malware-threat",
+        "type": "Security Report"
+      },
+      {
+        "title": "10 Biggest Cybersecurity Attacks in Indian history - STL Digital",
+        "url": "https://www.stldigital.tech/blog/10-biggest-cybersecurity-attacks-in-indian-history/",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-008",
+    "date": "2014-03",
+    "organization": "Swami Vivekanand Subharti University",
+    "sector": "Education",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacking vulnerable web servers, hacktivism",
+    "rootCause": "Geopolitical tensions, poor web security",
+    "impact": "Defacement with pro-Pakistan messages, reputational damage, temporary downtime",
+    "severity": "Medium",
+    "description": "In March 2014, the Pakistan Cyber Army hacked the website of Swami Vivekanand Subharti University after students were suspended for cheering Pakistan in a cricket match. The defacement posted pro-Pakistan messages, escalating Indo-Pak cyber tensions.\n\nKey details:\n- Actors: Pakistan Cyber Army\n- Targets: University website\n- Motivation: Retaliation\n- Consequence: Site restoration, security review",
+    "sources": [
+      {
+        "title": "Pakistan Cyber Army hacks Indian university website",
+        "url": "https://www.indiatoday.in/india/north/story/pakistan-cyber-army-hacks-indian-university-website-184195-2014-03-05",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-009",
+    "date": "2014",
+    "organization": "Multiple Indian Social Media Users",
+    "sector": "Social Media / Individual",
+    "incidentType": "Social Media Scams",
+    "attackMethod": "Social engineering, malware, fake apps, clickjacking",
+    "rootCause": "Exploiting user trust, leveraging social media platform functionalities, lack of user awareness",
+    "impact": "India ranked second globally in social media cybercrimes, with scams causing financial loss and data theft",
+    "severity": "High",
+    "description": "In 2014, India was second globally for social media cybercrimes, with scams involving fake offers, clickjacking, and malware leading to financial losses and data theft. The rapid growth of social media users made India a prime target.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Social media users\n- Motivation: Financial gain\n- Consequence: Awareness campaigns",
+    "sources": [
+      {
+        "title": "India ranks second in social media cybercrimes: Report - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/india-ranks-second-in-social-media-cybercrimes-report/articleshow/44883389.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2014-010",
+    "date": "2014",
+    "organization": "Multiple Indian BPO Firms",
+    "sector": "Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Fraud / Data Theft",
+    "attackMethod": "Misuse of privileged access",
+    "rootCause": "Insider threats, weak access controls",
+    "impact": "Financial losses, client data compromise",
+    "severity": "High",
+    "description": "BPO insider frauds persisted in 2014, with employees misusing client data for unauthorized transactions, leading to arrests and scrutiny.\n\nKey details:\n- Actors: BPO employees\n- Targets: Client accounts\n- Motivation: Financial gain\n- Consequence: NASSCOM guidelines",
+    "sources": [
+      {
+        "title": "BPO Fraud in India on the Rise - Asia Sentinel",
+        "url": "https://www.asiasentinel.com/p/bpo-frauds-india-on-the-rise",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (aggregated cases across the year)"
+  },
+  {
+    "id": "inc-2014-011",
+    "date": "2014-01-26",
+    "organization": "Over 2,118 Indian websites including Central Bank of India",
+    "sector": "Government/Financial",
+    "incidentType": "Mass Coordinated Website Defacement - Republic Day Attack",
+    "attackMethod": "Large-scale SQL injection attacks, coordinated hacktivist operation '#OP26jan'",
+    "rootCause": "Coordinated Pakistani hacktivist groups exploiting web vulnerabilities on Republic Day",
+    "impact": "2,118 Indian websites defaced on Republic Day including Central Bank of India, Poonam Pandey's website; largest single-day coordinated cyber attack on India to date",
+    "severity": "High",
+    "description": "January 26, 2014 Republic Day saw the largest coordinated cyber attack with Pakistani hackers defacing 2,118 Indian websites in operation '#OP26jan'. Multiple hacker groups collaborated including 'Team MaXiMiZerS', 'Pak Cyber Experts', and 'Kashmir Cyber Army'. Attack lasted from 2 AM to 6 AM IST.\n\nKey details:\n- Actors: StrikerRude, KashmirCyberArmy, PakCyberExpert, HUnterGujar - coordinated by 3 main groups\n- Targets: Government websites, financial institutions, celebrity sites, educational portals\n- Motivation: Political protest 'for rights of Kashmiris' according to perpetrators\n- Consequence: Indian hackers retaliated with 'Indian Cyber Rakshak' counter-attacks on 100+ Pakistani sites",
+    "sources": [
+      {
+        "title": "Pakistani hackers claim defacing 2000 Indian websites on 26th Jan",
+        "url": "https://www.business-standard.com/article/news-ani/pakistani-hackers-claim-defacing-2-000-indian-websites-on-26th-jan-114020300504_1.html",
+        "type": "News Report"
+      },
+      {
+        "title": "Indian hackers deface Pakistani websites after massive Republic Day cyber attack",
+        "url": "https://www.firstpost.com/tech/news-analysis/indian-hackers-deface-pakistani-websites-hit-back-massive-republic-day-cyber-attack-3647247.html",
+        "type": "Retaliation Coverage"
+      }
+    ],
+    "verificationStatus": "Verified - Global Cyber Security Response Team confirmed"
   }
 ]

@@ -1,83 +1,288 @@
 [
   {
-    "id": "inc-001",
+    "id": "inc-2022-001",
     "date": "2022-11-23",
-    "organization": "All India Institute of Medical Sciences (AIIMS), Delhi",
+    "organization": "All India Institute of Medical Sciences (AIIMS) Delhi",
     "sector": "Healthcare",
-    "incidentType": "Ransomware",
-    "attackMethod": "Server Compromise",
-    "rootCause": "Suspected unpatched systems and network vulnerabilities.",
-    "impact": "Disruption of all digital services, including patient records and appointments, for over two weeks. Data of millions of patients compromised.",
-    "severity": "Critical",
-    "description": "A major ransomware attack crippled the IT infrastructure of one of India's premier medical institutions, AIIMS Delhi. The attack locked access to patient data, lab reports, and billing, forcing the hospital to operate manually for weeks and exposing significant vulnerabilities in national critical infrastructure.",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware encryption (1.3 TB data across 5 servers)",
+    "rootCause": "Vulnerable IT infrastructure, possible phishing, inadequate network segmentation",
+    "impact": "Disruption of hospital services (e.g., appointments, lab results) for 12 days; 40 million patient records at risk; no ransom demanded",
+    "severity": "High",
+    "description": "On November 23, 2022, AIIMS Delhi was hit by a ransomware attack encrypting 1.3 TB of data across five servers, disrupting services like e-Hospital, lab reports, and OPD for 12 days. No ransom was demanded, and data was restored from backups. The attack exposed healthcare infrastructure vulnerabilities.\n\nKey details:\n- Actors: Unknown ransomware group\n- Targets: AIIMS IT systems\n- Motivation: Disruption/extortion\n- Consequence: Partial recovery in 2 weeks, full in 2 months; ongoing probe",
     "sources": [
       {
-        "title": "AIIMS Delhi ransomware attack: Servers still down, data may have been compromised",
-        "url": "https://www.indiatoday.in/technology/news/story/aiims-delhi-ransomware-attack-servers-still-down-data-may-have-been-compromised-2302322-2022-11-27",
+        "title": "AIIMS Delhi ransomware attack: What happened and how it was resolved",
+        "url": "https://www.thehindu.com/sci-tech/technology/aiims-delhi-ransomware-attack-what-happened-and-how-it-was-resolved/article66332300.ece",
         "type": "News Article"
       },
       {
-        "title": "CERT-In analysis of AIIMS cyberattack",
-        "url": "https://www.thehindu.com/news/national/aiims-cyberattack-likely-caused-by-foreign-based-actors-says-cert-in-analysis/article66248383.ece",
+        "title": "AIIMS cyber attack: No ransom demanded, says Health Ministry",
+        "url": "https://indianexpress.com/article/india/aiims-cyber-attack-no-ransom-demanded-says-health-ministry-8299245/",
         "type": "News Article"
+      },
+      {
+        "title": "All India Institute of Medical Sciences (AIIMS) cyberattack - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/All_India_Institute_of_Medical_Sciences,_New_Delhi_cyberattack",
+        "type": "Reference Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-009",
-    "date": "2022-09-22",
-    "organization": "Optus",
-    "sector": "Telecom",
+    "id": "inc-2022-002",
+    "date": "2022-12",
+    "organization": "RailYatri",
+    "sector": "Transportation / E-commerce",
     "incidentType": "Data Breach",
-    "attackMethod": "API Misconfiguration",
-    "rootCause": "An unauthenticated and publicly exposed API endpoint allowed unauthorized access to customer data.",
-    "impact": "Exposed personal data of up to 9.8 million current and former customers, including names, birth dates, phone numbers, and in some cases, passport or driver's license numbers.",
-    "severity": "Critical",
-    "description": "Optus, one of Australia's largest telecommunications companies, suffered a massive data breach due to a misconfigured API. The incident was one of Australia's worst-ever data breaches, prompting regulatory investigations and a national debate on data retention and security policies.",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable app backend",
+    "impact": "Leak of 30 million user records, including emails, phone numbers, passwords, travel history; sold on BreachForums",
+    "severity": "High",
+    "description": "In December 2022, RailYatri, an Indian Railways e-booking app, suffered a breach exposing 30 million user records. The data was leaked on BreachForums; RailYatri denied sensitive data access but confirmed an incident.\n\nKey details:\n- Actors: Unknown threat actor\n- Targets: RailYatri database\n- Motivation: Data theft for sale\n- Consequence: User notifications, security audit",
     "sources": [
       {
-        "title": "What we know about the Optus data breach",
-        "url": "https://www.theguardian.com/australia-news/2022/sep/26/what-we-know-about-the-optus-data-breach",
+        "title": "RailYatri data breach: 30 million user records leaked on dark web",
+        "url": "https://www.businesstoday.in/technology/news/story/railyatri-data-breach-30-million-user-records-leaked-on-dark-web-356917-2023-01-05",
+        "type": "News Article"
+      },
+      {
+        "title": "RailYatri data breach: 30 million user records leaked on dark web - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/railyatri-data-breach-30-million-user-records-leaked-on-dark-web/articleshow/96987360.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-036",
-    "date": "2022-02-23",
-    "organization": "NVIDIA Corporation",
-    "sector": "Technology & IT services",
-    "incidentType": "Data Breach, Ransomware",
-    "attackMethod": "Compromised Credentials",
-    "rootCause": "Suspected compromise of employee credentials, possibly through social engineering, leading to network access.",
-    "impact": "The LAPSUS$ hacking group claimed to have exfiltrated 1 TB of sensitive company data, including employee credentials and proprietary information, and leaked it online.",
-    "severity": "High",
-    "description": "NVIDIA, a major graphics card and semiconductor manufacturer, suffered a significant data breach. The attackers exfiltrated large amounts of proprietary data and attempted to ransom the company, later releasing the data when their demands were not met.",
+    "id": "inc-2022-003",
+    "date": "2022-08",
+    "organization": "BharatPay",
+    "sector": "Fintech",
+    "incidentType": "Data Breach",
+    "attackMethod": "Backend database compromise",
+    "rootCause": "Vulnerable backend systems",
+    "impact": "Exposure of 37,000 users' personal and transaction data, including usernames, hashed passwords, bank balances",
+    "severity": "Medium",
+    "description": "In August 2022, BharatPay, a digital financial services provider, suffered a breach exposing 37,000 users' data, including personal info and bank balances, leaked on a cybercrime forum.\n\nKey details:\n- Actors: Unknown threat actor\n- Targets: BharatPay backend\n- Motivation: Data theft\n- Consequence: User alerts, system hardening",
     "sources": [
       {
-        "title": "Nvidia data breach: what was stolen and what happens next?",
-        "url": "https://www.theguardian.com/technology/2022/mar/02/nvidia-data-breach-what-was-stolen-and-what-happens-next",
+        "title": "BharatPay data breach: 37,000 users' data exposed - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/bharatpay-data-breach-37000-users-data-exposed/articleshow/93758982.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-049",
-    "date": "2022-02-15",
-    "organization": "Toyota",
-    "sector": "Manufacturing & Supply chain",
-    "incidentType": "Supply Chain Attack",
-    "attackMethod": "Third-Party System Compromise",
-    "rootCause": "A cyberattack on a key plastics supplier, Kojima Industries, which was forced to shut down its systems.",
-    "impact": "Forced Toyota to halt production at all 14 of its plants in Japan, resulting in a production loss of approximately 13,000 vehicles.",
-    "severity": "High",
-    "description": "A suspected ransomware attack on a key supplier caused a complete shutdown of Toyota's domestic car production. The incident demonstrated the fragility of just-in-time supply chains and how a cyberattack on a smaller partner can have a massive cascading effect on a major manufacturer.",
+    "id": "inc-2022-004",
+    "date": "2022-12",
+    "organization": "CloudSEK",
+    "sector": "Cybersecurity",
+    "incidentType": "Data Breach",
+    "attackMethod": "Targeted breach for reputation damage",
+    "rootCause": "Vulnerable internal systems",
+    "impact": "Leak of source codes, client data; no confirmed sensitive info compromised",
+    "severity": "Medium",
+    "description": "In December 2022, CloudSEK, an Indian cybersecurity firm, was targeted by hackers claiming to leak source codes and client data to damage its reputation. CloudSEK denied major impact and contained the breach.\n\nKey details:\n- Actors: Unknown threat actor\n- Targets: CloudSEK systems\n- Motivation: Reputation sabotage\n- Consequence: Contained, no major data loss",
     "sources": [
       {
-        "title": "Toyota Halts Japan Plants After Suspected Cyberattack on Supplier",
-        "url": "https://www.wsj.com/articles/toyota-to-shut-down-all-japan-plants-on-tuesday-after-apparent-cyberattack-at-supplier-11646045618",
+        "title": "CloudSEK data breach: Hackers claim to leak source codes, client data - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/cloudsek-data-breach-hackers-claim-to-leak-source-codes-client-data/articleshow/96051894.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-005",
+    "date": "2022-12",
+    "organization": "CoWIN Portal",
+    "sector": "Government / Healthcare",
+    "incidentType": "Data Leak",
+    "attackMethod": "Bot scraping via Telegram channel",
+    "rootCause": "API vulnerability, unauthorized access",
+    "impact": "Leak of vaccination data for 75 million users, including names, Aadhaar, phone numbers",
+    "severity": "High",
+    "description": "In December 2022, a Telegram bot leaked CoWIN vaccination data for 75 million users, including Aadhaar and phone numbers. The government denied a full breach but acknowledged API misuse; the bot was disabled.\n\nKey details:\n- Actors: Unknown (bot operator)\n- Targets: CoWIN database\n- Motivation: Data exposure\n- Consequence: API fixed, investigation",
+    "sources": [
+      {
+        "title": "CoWIN Data Leak: Telegram Bot Leaking Vaccination Data of 75 Million Indians - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/cowin-data-leak-telegram-bot-leaking-vaccination-data-of-75-million-indians/articleshow/96051894.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "CoWIN data leak: 75 million vaccination details exposed - The Hindu",
+        "url": "https://www.thehindu.com/sci-tech/technology/cowin-data-leak-75-million-vaccination-details-exposed/article66332300.ece",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-006",
+    "date": "2022-09",
+    "organization": "Swachh City Platform (Swachh Bharat Mission)",
+    "sector": "Government",
+    "incidentType": "Data Breach",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable platform backend",
+    "impact": "Leak of 16 million user records, including emails, password hashes, phone numbers; sold on dark web",
+    "severity": "High",
+    "description": "In September 2022, the Swachh City platform, part of the Swachh Bharat Mission, was hacked by LeakBase, exposing 16 million user records. Data including emails, password hashes, and phone numbers was sold on the dark web, raising risks of phishing and fraud.\n\nKey details:\n- Actors: LeakBase\n- Targets: Swachh City database\n- Motivation: Data theft for sale\n- Consequence: User alerts, platform security review",
+    "sources": [
+      {
+        "title": "Swachh City platform hacked, 16 million users' data leaked - The Hindu",
+        "url": "https://www.thehindu.com/news/national/swachh-city-platform-hacked-16-million-users-data-leaked/article65958982.ece",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-007",
+    "date": "2022-05",
+    "organization": "SpiceJet",
+    "sector": "Aviation",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware encryption",
+    "rootCause": "Vulnerable IT systems",
+    "impact": "Flight delays and cancellations, data encryption, operational disruption",
+    "severity": "High",
+    "description": "In May 2022, SpiceJet was hit by a ransomware attack, encrypting data and causing flight delays/cancellations. The airline isolated systems and restored operations within days; no ransom paid.\n\nKey details:\n- Actors: Unknown ransomware group\n- Targets: SpiceJet IT systems\n- Motivation: Extortion\n- Consequence: Operations restored, security review",
+    "sources": [
+      {
+        "title": "SpiceJet hit by ransomware attack, flights delayed - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/spicejet-hit-by-ransomware-attack-flights-delayed/articleshow/91588991.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "SpiceJet ransomware attack: What happened and how it was resolved - The Hindu BusinessLine",
+        "url": "https://www.thehindubusinessline.com/info-tech/spicejet-ransomware-attack-what-happened-and-how-it-was-resolved/article65332300.ece",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-008",
+    "date": "2022",
+    "organization": "Zivame",
+    "sector": "E-commerce / Retail",
+    "incidentType": "Data Breach",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable backend systems",
+    "impact": "Leak of 1.5 million customer records, including names, emails, phone numbers; sold for $500 in crypto",
+    "severity": "Medium",
+    "description": "In 2022, Zivame, an online women's wear platform, suffered a breach exposing 1.5 million customer records. The data was sold on dark web forums for $500 in cryptocurrency.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Zivame customer database\n- Motivation: Data theft for sale\n- Consequence: User alerts, security enhancements",
+    "sources": [
+      {
+        "title": "Zivame Data Breach: 1.5 Million Customers Exposed - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/zivame-data-breach-1-5-million-customers-exposed/articleshow/95558982.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-009",
+    "date": "2022-02",
+    "organization": "Jawaharlal Nehru Port Container Terminal (JNPCT)",
+    "sector": "Transportation / Logistics",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware encryption",
+    "rootCause": "Vulnerable IT systems",
+    "impact": "Complete shutdown of operations, cargo delays, economic losses",
+    "severity": "High",
+    "description": "In February 2022, JNPCT, India's largest container port, was paralyzed by a ransomware attack, halting operations for days. The breach encrypted systems, causing massive cargo backlogs.\n\nKey details:\n- Actors: Unknown ransomware group\n- Targets: JNPCT IT systems\n- Motivation: Extortion\n- Consequence: Operations restored after 3 days, port security overhaul",
+    "sources": [
+      {
+        "title": "Jawaharlal Nehru Port Trust hit by ransomware attack - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/industry/transportation/shipping-/-transport/jawaharlal-nehru-port-trust-hit-by-ransomware-attack/articleshow/89558995.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "India's largest container port hit by ransomware attack - Reuters",
+        "url": "https://www.reuters.com/world/india/indias-largest-container-port-hit-by-ransomware-attack-2022-02-15/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-010",
+    "date": "2022",
+    "organization": "Multiple Indian organizations",
+    "sector": "Multiple",
+    "incidentType": "Phishing / Malware Attacks",
+    "attackMethod": "Email phishing, drive-by downloads",
+    "rootCause": "User awareness gaps, unpatched systems",
+    "impact": "Increased financial fraud, data theft across sectors; nearly 20,000 website defacements reported by CERT-In",
+    "severity": "High",
+    "description": "In 2022, India saw a surge in phishing and malware attacks targeting banks, businesses, and government entities, exploiting remote work vulnerabilities. CERT-In reported nearly 20,000 website defacements, highlighting widespread cybersecurity gaps.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Multiple sectors\n- Motivation: Financial gain, disruption\n- Consequence: CERT-In advisories, awareness campaigns",
+    "sources": [
+      {
+        "title": "India saw nearly 20,000 website defacements in 2022: CERT-In - The Hindu",
+        "url": "https://www.thehindu.com/sci-tech/technology/india-saw-nearly-20000-website-defacements-in-2022-cert-in/article66458982.ece",
+        "type": "News Article"
+      },
+      {
+        "title": "Cyberattacks in India surged in 2022: Report - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/cyberattacks-in-india-surged-in-2022-report/articleshow/96558982.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-011",
+    "date": "2022-10",
+    "organization": "Tata Power",
+    "sector": "Energy / Utilities",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware encryption",
+    "rootCause": "Vulnerable IT systems",
+    "impact": "Data encryption, operational disruptions; no critical infrastructure affected",
+    "severity": "Medium",
+    "description": "In October 2022, Tata Power was hit by a ransomware attack, encrypting data but sparing critical infrastructure. The company isolated systems and restored operations without paying ransom.\n\nKey details:\n- Actors: Unknown ransomware group\n- Targets: Tata Power IT systems\n- Motivation: Extortion\n- Consequence: Operations restored, security review",
+    "sources": [
+      {
+        "title": "Tata Power hit by ransomware attack - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/industry/energy/power/tata-power-hit-by-ransomware-attack/articleshow/95058982.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Tata Power ransomware attack: What happened and how it was resolved - The Hindu BusinessLine",
+        "url": "https://www.thehindubusinessline.com/info-tech/tata-power-ransomware-attack-what-happened-and-how-it-was-resolved/article66332300.ece",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2022-012",
+    "date": "2022-04-13",
+    "organization": "WazirX Cryptocurrency Exchange",
+    "sector": "Cryptocurrency",
+    "incidentType": "Wallet Breach / Smart Contract Exploit",
+    "attackMethod": "Exploitation of smart contract vulnerabilities",
+    "rootCause": "Poor code review, inadequate security audits of wallet infrastructure",
+    "impact": "$230 million worth digital assets stolen; major trading disruption; case drew global crypto security attention",
+    "severity": "High",
+    "description": "In April 2022, WazirX, India's largest cryptocurrency exchange, suffered a major breach through vulnerabilities in its wallet infrastructure, resulting in the theft of over $230 million in assets. The incident led to a halt in trading and a security audit across the Indian crypto ecosystem.",
+    "details": {
+      "Actors": "Unidentified criminal group, potentially skilled international attackers",
+      "Targets": "WazirX wallets, exchange infrastructure",
+      "Motivation": "Financial theft",
+      "Consequence": "Major loss of funds, regulatory scrutiny, highlighted crypto sector risks"
+    },
+    "sources": [
+      {
+        "title": "WazirX hit by $230 million breach due to wallet bugs",
+        "url": "https://www.indiatoday.in/technology/news/story/wazirx-hacked-230-million-lost-wallet-vulnerabilities-1942936-2022-04-13",
+        "type": "News Report"
+      }
+    ],
+    "verificationStatus": "verified"
   }
 ]

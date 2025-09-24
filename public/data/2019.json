@@ -1,59 +1,207 @@
 [
   {
-    "id": "inc-008",
-    "date": "2019-10-21",
-    "organization": "Kudankulam Nuclear Power Plant (KKNPP)",
-    "sector": "Energy & Utilities",
-    "incidentType": "Malware Infection",
-    "attackMethod": "Spear Phishing / Network Intrusion",
-    "rootCause": "Malware, suspected to be 'DTrack', infected an administrative network computer connected to the internet.",
-    "impact": "Data exfiltration from an administrative network. Officials claimed the critical plant control systems were isolated and unaffected.",
-    "severity": "Medium",
-    "description": "India's largest nuclear power plant, KKNPP, confirmed a malware attack on its administrative network. While the plant's operational controls were reportedly secure, the incident raised serious concerns about the cybersecurity of India's critical nuclear infrastructure.",
-    "sources": [
-      {
-        "title": "Kudankulam Nuclear Power Plant's unit 1 and 2 not affected by cyber attack: Govt",
-        "url": "https://economictimes.indiatimes.com/news/defence/kudankulam-nuclear-power-plants-unit-1-and-2-not-affected-by-cyber-attack-govt/articleshow/72147395.cms",
-        "type": "News Article"
-      }
-    ]
-  },
-  {
-    "id": "inc-023",
-    "date": "2019-07-29",
-    "organization": "Capital One",
-    "sector": "Banking & Finance",
+    "id": "inc-2019-001",
+    "date": "2019-01",
+    "organization": "State Bank of India (SBI)",
+    "sector": "Financial",
     "incidentType": "Data Breach",
-    "attackMethod": "Server-Side Request Forgery (SSRF)",
-    "rootCause": "A misconfigured web application firewall (WAF) allowed a former AWS employee to access and exfiltrate data from Capital One's cloud storage.",
-    "impact": "Compromise of personal information, including credit card applications and social security numbers, for over 100 million customers in the US and Canada.",
-    "severity": "Critical",
-    "description": "A former Amazon Web Services engineer exploited a misconfigured firewall to gain access to Capital One's cloud environment. The breach was a significant example of a cloud-based data breach caused by misconfiguration, leading to the arrest of the perpetrator.",
-    "sources": [
-      {
-        "title": "Capital One Data Breach",
-        "url": "https://www.capitalone.com/facts2019/",
-        "type": "Company Statement"
-      }
-    ]
-  },
-  {
-    "id": "inc-030",
-    "date": "2019-03-01",
-    "organization": "Wipro",
-    "sector": "Technology & IT services",
-    "incidentType": "APT",
-    "attackMethod": "Phishing, Supply Chain Attack",
-    "rootCause": "Advanced phishing campaign targeting employees, leading to a breach of the company's network.",
-    "impact": "Wipro's systems were used as a launchpad to attack at least a dozen of its clients. Attackers created a covert command-and-control infrastructure.",
+    "attackMethod": "Unprotected server exposure",
+    "rootCause": "Misconfiguration of server security",
+    "impact": "Exposure of 422 million customer records, including personal and financial details",
     "severity": "High",
-    "description": "Indian IT giant Wipro was breached by a sophisticated threat actor who then used Wipro's network to launch attacks against its customers. The incident highlighted the significant risk of supply chain attacks where a trusted IT provider becomes the vector for compromising its clients.",
+    "description": "In January 2019, an unprotected server at State Bank of India exposed 422 million customer records, including names, phone numbers, addresses, and transaction details. The breach was discovered by security researchers and led to immediate server lockdown.\n\nKey details:\n- Actors: Unknown (opportunistic exposure)\n- Targets: SBI customer database\n- Motivation: N/A (misconfiguration)\n- Consequence: Server secured, public notification",
     "sources": [
       {
-        "title": "IT Giant Wipro Hacked, Used to Launch Attacks on a Dozen Customers",
-        "url": "https://krebsonsecurity.com/2019/04/it-giant-wipro-hacked-used-to-launch-attacks-on-a-dozen-customers/",
+        "title": "Biggest Cyber Breaches in India - Policybazaar",
+        "url": "https://www.policybazaar.com/corporate-insurance/articles/biggest-cyber-breaches-in-india/",
+        "type": "News Article"
+      },
+      {
+        "title": "SBI data breach: SBI exposed data of millions of customers - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/sbi-exposed-data-of-millions-of-customers/articleshow/67634567.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2019-002",
+    "date": "2019-04",
+    "organization": "Justdial",
+    "sector": "E-commerce / Technology",
+    "incidentType": "Data Breach",
+    "attackMethod": "API vulnerability exploitation",
+    "rootCause": "Insecure API endpoints",
+    "impact": "Leak of 100 million user records, including names, emails, phone numbers, and addresses",
+    "severity": "High",
+    "description": "In April 2019, JustDial, a local search service, experienced a data breach affecting over 100 million users, leaking details like names, mobile numbers, and email IDs.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Justdial user database\n- Motivation: Data theft for sale\n- Consequence: API secured, user notifications",
+    "sources": [
+      {
+        "title": "Justdial data breach: 100 million users' data exposed - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/justdial-data-breach-100-million-users-data-exposed/articleshow/69049998.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "10 Biggest Data Breaches in India [2025] - Corbado",
+        "url": "https://www.corbado.com/blog/data-breaches-India",
+        "type": "Analysis Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2019-003",
+    "date": "2019-10",
+    "organization": "Kudankulam Nuclear Power Plant",
+    "sector": "Critical Infrastructure / Energy",
+    "incidentType": "Cyber Espionage / Malware Infection",
+    "attackMethod": "Malware deployment, possibly via phishing",
+    "rootCause": "Vulnerable administrative network, state-sponsored hacking (North Korea suspected)",
+    "impact": "Infection of administrative computers, no operational disruption but potential data theft",
+    "severity": "High",
+    "description": "In October 2019, the Kudankulam Nuclear Power Plant was infected with malware linked to North Korea's Lazarus group. The breach was detected on administrative systems, with no impact on critical operations due to air-gapped controls.\n\nKey details:\n- Actors: Lazarus group (North Korea)\n- Targets: Kudankulam plant\n- Motivation: Espionage/sabotage\n- Consequence: Investigations, enhanced air-gapping",
+    "sources": [
+      {
+        "title": "Kudankulam nuclear power plant data breach - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kudankulam_nuclear_power_plant_data_breach",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Kudankulam Nuclear Plant Hit by Cyber Attack - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/news/defence/kudankulam-nuclear-plant-hit-by-cyber-attack/articleshow/71846298.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2019-004",
+    "date": "2019-10",
+    "organization": "Multiple Indian Banks",
+    "sector": "Financial",
+    "incidentType": "Credit/Debit Card Data Breach",
+    "attackMethod": "Card skimming, POS compromise",
+    "rootCause": "Vulnerable payment systems, skimming devices",
+    "impact": "1.3 million card records sold on dark web, including card numbers, CVVs, and personal info",
+    "severity": "High",
+    "description": "In October 2019, over 1.3 million Indian credit/debit card records were sold on Joker's Stash dark web shop. Data included card numbers, expiration dates, CVVs, names, emails, and addresses, likely from ATM skimmers or POS breaches.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Indian cardholders\n- Motivation: Financial gain\n- Consequence: Card reissuance, RBI alerts",
+    "sources": [
+      {
+        "title": "2019 credit and debit card data breach - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2019_credit_and_debit_card_data_breach",
+        "type": "Reference Article"
+      },
+      {
+        "title": "1.3 million Indian payment card details up for sale on the dark web",
+        "url": "https://www.zdnet.com/article/1-3-million-indian-payment-card-details-up-for-sale-on-the-dark-web/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2019-005",
+    "date": "2019",
+    "organization": "Multiple Indian Healthcare Providers",
+    "sector": "Healthcare",
+    "incidentType": "Data Breach",
+    "attackMethod": "Exploitation of vulnerable databases",
+    "rootCause": "Vulnerable healthcare websites, inadequate security",
+    "impact": "Theft of 6.8 million patient and doctor records by Chinese group Fallensky519",
+    "severity": "High",
+    "description": "In 2019, hackers targeted Indian healthcare websites, stealing records of 6.8 million patients and doctors. The Chinese group Fallensky519 sold the data on dark forums, exposing personal and medical information.\n\nKey details:\n- Actors: Fallensky519 (Chinese hackers)\n- Targets: Healthcare websites\n- Motivation: Data theft for sale\n- Consequence: Investigations, security enhancements",
+    "sources": [
+      {
+        "title": "10 Biggest Cybersecurity Attacks in Indian History - Part 2 - STL Digital",
+        "url": "https://www.stldigital.tech/blog/10-biggest-cybersecurity-attacks-in-indian-history-part-2/",
+        "type": "Analysis Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2019-006",
+    "date": "2019",
+    "organization": "Multiple Indian websites (government, corporate, educational)",
+    "sector": "Government / Private / Education",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism by Pakistani hacker groups",
+    "rootCause": "Vulnerable web servers, geopolitical tensions",
+    "impact": "Defacement of Indian websites with pro-Pakistan messages, reputational damage",
+    "severity": "Medium",
+    "description": "In 2019, Pakistani hackers defaced Indian websites, including government portals, in retaliation for events like Article 370 revocation. Attacks targeted sites with anti-India content.\n\nKey details:\n- Actors: Pakistani hackers\n- Targets: Indian websites\n- Motivation: Political retaliation\n- Consequence: Indian retaliatory hacks",
+    "sources": [
+      {
+        "title": "Pakistan-linked Hackers Launch 1.5 Million Cyber Attacks on Indian Websites, But Only 150 Successful - Deccan Herald",
+        "url": "https://www.deccanherald.com/india/maharashtra/pakistan-allied-hackers-launched-15-lakh-cyber-attacks-on-indian-websites-only-150-successful-3537123",
+        "type": "News Article"
+      },
+      {
+        "title": "From Missiles to Malware: India-Pakistan Cyber Rivalry and Lessons for Taiwan - Taiwan Insight",
+        "url": "https://taiwaninsight.org/2025/07/22/from-missiles-to-malware-india-pakistan-cyber-rivalry-and-lessons-for-taiwan/",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (year-long campaign)"
+  },
+  {
+    "id": "inc-2019-007",
+    "date": "2019",
+    "organization": "Multiple Indian BPO firms",
+    "sector": "Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Fraud / Data Theft",
+    "attackMethod": "Misuse of privileged access",
+    "rootCause": "Insider threats, weak controls",
+    "impact": "Financial losses, client data compromise",
+    "severity": "High",
+    "description": "BPO insider frauds persisted in 2019, with employees misusing client data for unauthorized transactions, leading to arrests and scrutiny.\n\nKey details:\n- Actors: BPO employees\n- Targets: Client accounts\n- Motivation: Financial gain\n- Consequence: NASSCOM guidelines",
+    "sources": [
+      {
+        "title": "BPO Fraud in India on the Rise - Asia Sentinel",
+        "url": "https://www.asiasentinel.com/p/bpo-frauds-india-on-the-rise",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (aggregated cases across the year)"
+  },
+  {
+    "id": "inc-2019-008",
+    "date": "2019",
+    "organization": "Multiple Indian financial institutions",
+    "sector": "Financial",
+    "incidentType": "Phishing / Malware Attacks",
+    "attackMethod": "Email phishing, drive-by downloads",
+    "rootCause": "User awareness gaps, unpatched systems",
+    "impact": "Financial fraud, data theft from banks",
+    "severity": "High",
+    "description": "Phishing and malware attacks surged in 2019, targeting Indian banks with fake emails and infected sites, leading to credential theft and fraud. CERT-In noted rising incidents in financial sector.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Indian banks\n- Motivation: Financial gain\n- Consequence: RBI guidelines on phishing",
+    "sources": [
+      {
+        "title": "Annual Report 2019 CERT-In",
+        "url": "https://www.cert-in.org.in/Downloader?pageid=22&type=2&fileName=ANUAL-2020-0014.pdf",
+        "type": "Official Report"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2019-009",
+    "date": "2019",
+    "organization": "Canara Bank",
+    "sector": "Financial",
+    "incidentType": "ATM Skimming Attack",
+    "attackMethod": "Skimming devices on ATMs",
+    "rootCause": "Vulnerable ATM hardware, lack of tamper detection",
+    "impact": "Theft of approximately ₹20 lakh from customer accounts, compromise of 300+ accounts",
+    "severity": "Medium",
+    "description": "In 2019, cybercriminals used skimming devices on Canara Bank ATMs to steal card data, enabling unauthorized withdrawals. The attack exposed ATM security flaws, leading to losses of ₹20 lakh.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Canara Bank customers\n- Motivation: Financial gain\n- Consequence: Bank investigations, security upgrades",
+    "sources": [
+      {
+        "title": "10 Biggest Cybersecurity Attacks in Indian History - Part 2 - STL Digital",
+        "url": "https://www.stldigital.tech/blog/10-biggest-cybersecurity-attacks-in-indian-history-part-2/",
+        "type": "Analysis Article"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

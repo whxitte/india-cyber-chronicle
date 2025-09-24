@@ -168,5 +168,30 @@
       }
     ],
     "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2000-008",
+    "date": "2000-07-31",
+    "organization": "Indian Government and Pakistani Government websites",
+    "sector": "Government",
+    "incidentType": "Website Defacement - Cyber Warfare Escalation",
+    "attackMethod": "SQL injection, cross-border hacktivism during Kargil aftermath",
+    "rootCause": "Escalation after India nuclear tests 1998, Kargil conflict 1999, vulnerable government web servers",
+    "impact": "First major Indo-Pak cyber warfare escalation; over 40 Indian websites including Army websites defaced with anti-India propaganda, marking beginning of sustained cyber conflict",
+    "severity": "High",
+    "description": "July 2000 marked the escalation of Indo-Pak cyber warfare with coordinated defacement of over 40 Indian government websites by Pakistani hackers. This followed Pakistan's nuclear tests and Kargil conflict aftermath. Pakistani groups like 'Milw0rm' and 'Dr. Nuker' targeted Indian Army and government sites with anti-India messages and Pakistani flags.\n\nKey details:\n- Actors: Pakistani hackers - Milw0rm, Dr. Nuker groups\n- Targets: Indian government websites, Army sites, nuclear facilities websites\n- Motivation: Retaliation for Kashmir conflict and nuclear competition\n- Consequence: Led to creation of Indian cyber response groups and first cyber security awareness in government",
+    "sources": [
+      {
+        "title": "Both Sides Hacked Over Kashmir (Wired)",
+        "url": "https://www.wired.com/2000/12/both-sides-hacked-over-kashmir/",
+        "type": "News Article"
+      },
+      {
+        "title": "Regional rivalry between India-Pakistan: tit-for-tat in cyberspace",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Paper"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

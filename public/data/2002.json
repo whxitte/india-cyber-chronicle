@@ -168,5 +168,30 @@
       }
     ],
     "verificationStatus": "Verified (with date approximation - occurred in May 2002)"
+  },
+  {
+    "id": "inc-2002-008",
+    "date": "2002-12-15",
+    "organization": "Multiple Indian educational and corporate websites",
+    "sector": "Education/Private",
+    "incidentType": "Mass Website Defacement",
+    "attackMethod": "SQL injection attacks by Pakistani hacker groups",
+    "rootCause": "Vulnerabilities in web applications, poor input validation",
+    "impact": "Over 1,400 Indian websites defaced in single coordinated attack; largest single-day defacement recorded till date, massive reputational impact",
+    "severity": "High",
+    "description": "December 15, 2002 saw the largest coordinated website defacement attack on Indian websites with over 1,400 sites compromised by Pakistani hacker group 'Pakistan Hackers Club' in retaliation for India-Pakistan tensions. The attack targeted educational institutions, corporate sites, and some government portals.\n\nKey details:\n- Actors: Pakistan Hackers Club, G-Force Pakistan\n- Targets: Educational institutions, corporate sites, some government portals\n- Motivation: Political protest against India's Kashmir policy\n- Consequence: Led to formation of first Indian white-hat hacking groups and enhanced web security awareness",
+    "sources": [
+      {
+        "title": "Regional rivalry between India-Pakistan: tit-for-tat in cyberspace",
+        "url": "https://css.ethz.ch/content/dam/ethz/special-interest/gess/cis/center-for-securities-studies/pdfs/Cyber-Reports-2018-04.pdf",
+        "type": "Research Timeline"
+      },
+      {
+        "title": "Cyber Warfare between Pakistan and India: Implications for the Region",
+        "url": "https://plhr.org.pk/issues/v4/1/cyber-warfare-between-pakistan-and-india-implications-for-the-region.pdf",
+        "type": "Academic Paper"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

@@ -263,5 +263,31 @@
       }
     ],
     "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2012-012",
+    "date": "2012-05-06",
+    "organization": "BSNL National Website",
+    "sector": "Telecommunications",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism, exploitation of site vulnerabilities",
+    "rootCause": "Security weaknesses in website platforms; Indo-Pak cyber rivalry",
+    "impact": "Defacement of BSNL’s national website with pro-Pakistan messages; temporary disruption, reputational impact",
+    "severity": "Medium",
+    "description": "On May 6, 2012, the official national website of BSNL was defaced by Pakistani hacker groups, posting anti-India slogans as part of ongoing hacktivist campaigns. The incident was publicized in Indian media and is an example of continued Indo-Pak cyber tensions.",
+    "details": {
+      "Actors": "Pakistani hacktivists (Pakistan Cyber Army)",
+      "Targets": "bsnl.co.in and subdomains",
+      "Motivation": "Political hacktivism, Kashmir issue",
+      "Consequence": "Prompted website restoration and review of telecom cyber defenses"
+    },
+    "sources": [
+      {
+        "title": "Pakistani hackers deface BSNL site",
+        "url": "https://www.news18.com/news/india/bsnl-website-hacked-by-pakistani-hackers-484518.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
   }
 ]

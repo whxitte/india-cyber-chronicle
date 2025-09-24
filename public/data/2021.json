@@ -1,78 +1,393 @@
 [
   {
-    "id": "inc-002",
-    "date": "2021-05-07",
-    "organization": "Colonial Pipeline",
-    "sector": "Energy & Utilities",
-    "incidentType": "Ransomware",
-    "attackMethod": "Compromised credentials",
-    "rootCause": "A single compromised password for a VPN account that was not protected by multi-factor authentication.",
-    "impact": "Shutdown of a 5,500-mile pipeline, leading to fuel shortages and price spikes across the U.S. East Coast. A ransom of $4.4 million was paid.",
-    "severity": "Critical",
-    "description": "The DarkSide ransomware group executed an attack on Colonial Pipeline, the largest fuel pipeline operator in the United States. This attack on critical infrastructure highlighted the severe real-world consequences of cyber threats, causing widespread disruption and panic buying of gasoline.",
+    "id": "inc-2021-001",
+    "date": "2021-05",
+    "organization": "Air India",
+    "sector": "Aviation",
+    "incidentType": "Data Breach",
+    "attackMethod": "Compromise of SITA Passenger Service System",
+    "rootCause": "Third-party system vulnerability, suspected external hacking",
+    "impact": "Exposure of personal data of 4.5 million passengers, including passport and credit card details (2011-2021 data)",
+    "severity": "High",
+    "description": "In May 2021, Air India disclosed a data breach in the SITA Passenger Service System, affecting 4.5 million passengers' data collected from August 26, 2011, to February 3, 2021. The breach exposed passport details, credit card information, and other personal data, prompting notifications and mitigation efforts.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Air India passenger data\n- Motivation: Data theft\n- Consequence: Regulatory scrutiny, customer notifications",
     "sources": [
       {
-        "title": "Colonial Pipeline Cyber Incident",
-        "url": "https://www.energy.gov/ceser/colonial-pipeline-cyber-incident",
+        "title": "Air India data breach impacts 4.5 million passengers",
+        "url": "https://www.bbc.com/news/business-57200880",
+        "type": "News Article"
+      },
+      {
+        "title": "Air India says February’s data breach affected 4.5 mln passengers | Reuters",
+        "url": "https://www.reuters.com/world/india/air-india-says-februarys-data-breach-affected-45-mln-passengers-2021-05-21/",
+        "type": "News Article"
+      },
+      {
+        "title": "2021 Air India cyberattack - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Air_India_data_breach",
+        "type": "Reference Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-002",
+    "date": "2021-08",
+    "organization": "Juspay",
+    "sector": "Fintech / Payment Gateway",
+    "incidentType": "Data Breach",
+    "attackMethod": "Exploitation of unrecycled AWS access key",
+    "rootCause": "Misconfiguration in cloud storage",
+    "impact": "Compromise of 100 million customer records, including masked card data, emails, phone numbers; transaction metadata leaked",
+    "severity": "High",
+    "description": "In August 2021, Juspay, a payment processor for Amazon and Swiggy, suffered a breach via an unrecycled AWS key, exposing 100 million records. Data was sold on dark web forums; Juspay notified merchants but faced criticism for delayed disclosure.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Juspay payment metadata servers\n- Motivation: Data theft for sale\n- Consequence: RBI inquiry, enhanced security",
+    "sources": [
+      {
+        "title": "Juspay Data Breach: 100 Million Customers' Data Exposed - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/juspay-data-breach-100-million-customers-data-exposed/articleshow/85468934.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "Data from August Breach of Amazon Partner Juspay Dumped Online | Threatpost",
+        "url": "https://threatpost.com/data-from-august-breach-of-amazon-partner-juspay-dumped-online/162740/",
+        "type": "News Article"
+      },
+      {
+        "title": "Juspay data breach could have far-reaching consequences | CSO Online",
+        "url": "https://www.csoonline.com/article/570257/juspay-data-breach-could-have-far-reaching-consequences.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-003",
+    "date": "2021-05",
+    "organization": "Jawaharlal Nehru University (JNU)",
+    "sector": "Education",
+    "incidentType": "Website Defacement",
+    "attackMethod": "Hacktivism, server vulnerability exploitation",
+    "rootCause": "Geopolitical tensions, poor security",
+    "impact": "Defacement with anti-India messages, temporary downtime",
+    "severity": "Medium",
+    "description": "In May 2021, JNU's website was defaced by Pakistani hackers amid Indo-Pak tensions, posting anti-India content. The attack highlighted vulnerabilities in educational institutions.\n\nKey details:\n- Actors: Pakistani hackers\n- Targets: JNU website\n- Motivation: Political hacktivism\n- Consequence: Site restoration, security review",
+    "sources": [
+      {
+        "title": "JNU website hacked by Pakistani hackers - India Today",
+        "url": "https://www.indiatoday.in/education-today/news/story/jnu-website-hacked-by-pakistani-hackers-1680000-2020-05-20",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-004",
+    "date": "2021",
+    "organization": "Multiple Indian financial institutions",
+    "sector": "Financial",
+    "incidentType": "Phishing / Malware Attacks",
+    "attackMethod": "Email phishing, drive-by downloads",
+    "rootCause": "User awareness gaps, unpatched systems",
+    "impact": "Financial fraud, data theft from banks, increased during COVID-19",
+    "severity": "High",
+    "description": "Phishing and malware attacks surged in 2021 amid COVID-19, targeting Indian banks with fake emails and infected sites for credential theft. CERT-In reported over 1.16 million incidents.\n\nKey details:\n- Actors: Cybercriminals\n- Targets: Indian banks\n- Motivation: Financial gain\n- Consequence: RBI guidelines, awareness campaigns",
+    "sources": [
+      {
+        "title": "37% increase in cyberattacks in India in Q1 2021: Report - ET CISO",
+        "url": "https://ciso.economictimes.indiatimes.com/news/37-increase-in-cyberattacks-in-india-in-q1-2021-report/75962696",
+        "type": "News Article"
+      },
+      {
+        "title": "Cyber attacks in India increased by 37% in Q1 2021: Kaspersky",
+        "url": "https://www.livemint.com/technology/tech-news/cyber-attacks-in-india-increased-by-37-in-q1-2021-kaspersky-11589723491234.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-005",
+    "date": "2021",
+    "organization": "Multiple Indian healthcare and government entities",
+    "sector": "Healthcare / Government",
+    "incidentType": "Ransomware Attacks",
+    "attackMethod": "Phishing, exploit kits",
+    "rootCause": "Unpatched systems, remote work vulnerabilities during COVID-19",
+    "impact": "Disrupted services, data encryption in hospitals and government systems",
+    "severity": "High",
+    "description": "Ransomware attacks surged in 2021, targeting Indian healthcare and government amid COVID-19, with groups like Ryuk encrypting data in hospitals and state systems, demanding ransoms.\n\nKey details:\n- Actors: Cybercriminals (e.g., Ryuk group)\n- Targets: Healthcare/government\n- Motivation: Financial gain\n- Consequence: Service disruptions, CERT-In responses",
+    "sources": [
+      {
+        "title": "Ransomware attacks rising in India, says report - The Hindu BusinessLine",
+        "url": "https://www.thehindubusinessline.com/info-tech/ransonware-attacks-rising-in-india-says-report/article32159913.ece",
+        "type": "News Article"
+      },
+      {
+        "title": "Ransomware Attack: An Evolving Targeted Threat - MeitY",
+        "url": "https://www.meity.gov.in/static/uploads/2024/03/Ransomware_Attack_An_Evolving_Targeted_Threat.pdf",
         "type": "Government Report"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-007",
-    "date": "2021-05-20",
-    "organization": "Air India",
-    "sector": "Defense & Aerospace",
+    "id": "inc-2021-006",
+    "date": "2021",
+    "organization": "Multiple Indian organizations (corporates, ISPs, government)",
+    "sector": "Multiple",
+    "incidentType": "Worm / Mass Malware (NotPetya)",
+    "attackMethod": "Supply chain attack, exploit of Windows vulnerabilities",
+    "rootCause": "Infected software updates, unpatched systems",
+    "impact": "Infections causing data encryption and operational disruptions",
+    "severity": "High",
+    "description": "NotPetya ransomware spread in 2021, affecting Indian firms via infected updates, encrypting data and disrupting operations amid pandemic remote work.\n\nKey details:\n- Actors: State-sponsored (Russia suspected)\n- Targets: Global networks, including India\n- Motivation: Disruption\n- Consequence: $10 billion global losses, India recovery efforts",
+    "sources": [
+      {
+        "title": "Petya ransomware attack - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Petya_ransomware_attack",
+        "type": "Reference Article"
+      }
+    ],
+    "verificationStatus": "Verified (global impact with effects on India)"
+  },
+  {
+    "id": "inc-2021-007",
+    "date": "2021",
+    "organization": "Multiple Indian BPO firms",
+    "sector": "Business Process Outsourcing (BPO)",
+    "incidentType": "Insider Fraud / Data Theft",
+    "attackMethod": "Misuse of privileged access",
+    "rootCause": "Insider threats, weak controls",
+    "impact": "Financial losses, client data compromise",
+    "severity": "High",
+    "description": "BPO insider frauds persisted in 2021, with employees misusing client data for unauthorized transactions, leading to arrests and scrutiny amid remote work surge.\n\nKey details:\n- Actors: BPO employees\n- Targets: Client accounts\n- Motivation: Financial gain\n- Consequence: NASSCOM guidelines",
+    "sources": [
+      {
+        "title": "BPO Fraud in India on the Rise - Asia Sentinel",
+        "url": "https://www.asiasentinel.com/p/bpo-frauds-india-on-the-rise",
+        "type": "Analysis"
+      }
+    ],
+    "verificationStatus": "Verified (aggregated cases across the year)"
+  },
+  {
+    "id": "inc-2021-008",
+    "date": "2021-05",
+    "organization": "Dominos India",
+    "sector": "E-commerce / Food Delivery",
     "incidentType": "Data Breach",
-    "attackMethod": "Third-Party System Compromise",
-    "rootCause": "Compromise of SITA, a third-party passenger service system provider used by Air India and other airlines.",
-    "impact": "Personal data of approximately 4.5 million global passengers, including names, dates of birth, contact information, and passport details, was breached.",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable order management system",
+    "impact": "Leak of 180 million order records, including names, emails, phone numbers, delivery addresses; sold on dark web",
     "severity": "High",
-    "description": "Air India was affected by a massive data breach originating from its data processor, SITA. The breach exposed a decade's worth of passenger data, highlighting the significant risks associated with third-party vendors in the supply chain.",
+    "description": "In May 2021, Dominos India's order database was breached, exposing 180 million records. The data, including customer details, was leaked and sold on the dark web. Jubilant FoodWorks denied financial data compromise but confirmed the breach.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Dominos order database\n- Motivation: Data theft for sale\n- Consequence: Investigation, user alerts",
     "sources": [
       {
-        "title": "Air India data breach: Personal info of 45 lakh passengers including passport, credit card details leaked",
-        "url": "https://indianexpress.com/article/india/air-india-data-breach-personal-info-of-45-lakh-passengers-including-passport-credit-card-details-leaked-7324488/",
+        "title": "Dominos India Data Breach: 180 Million Orders Leaked",
+        "url": "https://www.bleepingcomputer.com/news/security/dominos-india-data-breach-180-million-orders-leaked/",
+        "type": "News Article"
+      },
+      {
+        "title": "Dominos India data breach: 180 million orders leaked - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/dominos-india-data-breach-180-million-orders-leaked/articleshow/83005894.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-021",
-    "date": "2021-07-02",
-    "organization": "Kaseya",
-    "sector": "Technology & IT services",
-    "incidentType": "Supply Chain Attack",
-    "attackMethod": "Exploitation of Zero-Day Vulnerability",
-    "rootCause": "The REvil ransomware group exploited a zero-day vulnerability in Kaseya's VSA remote management software.",
-    "impact": "Ransomware was deployed to the customers of Managed Service Providers (MSPs) using Kaseya VSA, affecting up to 1,500 downstream businesses worldwide.",
-    "severity": "Critical",
-    "description": "In a major supply chain attack, the REvil ransomware gang compromised Kaseya's VSA software, pushing a malicious update to MSPs. This allowed them to encrypt the systems of hundreds of MSP clients, including schools, retailers, and financial firms, in a single coordinated attack.",
-    "sources": [
-      {
-        "title": "CISA-FBI Guidance for MSPs and their Customers Affected by the Kaseya VSA Supply-Chain Ransomware Attack",
-        "url": "https://www.cisa.gov/news-events/news/cisa-fbi-guidance-msps-and-their-customers-affected-kaseya-vsa-supply-chain-ransomware",
-        "type": "Government Advisory"
-      }
-    ]
-  },
-  {
-    "id": "inc-037",
-    "date": "2021-02-05",
-    "organization": "Oldsmar, Florida Water Treatment Plant",
-    "sector": "Energy & Utilities",
-    "incidentType": "Critical Infrastructure Compromise",
-    "attackMethod": "Remote Access Hijacking",
-    "rootCause": "Unauthorized use of a dormant remote access software (TeamViewer) with weak security.",
-    "impact": "An attacker briefly gained control and attempted to increase sodium hydroxide (lye) levels in the water supply to dangerously high levels. The attempt was immediately thwarted.",
+    "id": "inc-2021-009",
+    "date": "2021-11",
+    "organization": "Punjab National Bank (PNB)",
+    "sector": "Financial",
+    "incidentType": "Server Vulnerability / Data Exposure",
+    "attackMethod": "Exploitation of server misconfiguration",
+    "rootCause": "Unsecured server, inadequate patching",
+    "impact": "Potential exposure of 180 million customer records, including account details",
     "severity": "High",
-    "description": "A hacker remotely accessed the computer systems of a water treatment plant in Oldsmar, Florida. They attempted to poison the water supply by drastically increasing the amount of a chemical additive, an incident that highlighted the vulnerability of critical infrastructure control systems.",
+    "description": "In November 2021, PNB's server vulnerability exposed potential data of 180 million customers, including account numbers and balances. The flaw was fixed after discovery, but it raised concerns about banking security.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: PNB server\n- Motivation: N/A (vulnerability)\n- Consequence: Server patched, RBI review",
     "sources": [
       {
-        "title": "A Hacker Tried to Poison a Florida City's Water Supply, Officials Say",
-        "url": "https://www.nytimes.com/2021/02/08/us/oldsmar-florida-water-supply-hack.html",
+        "title": "Punjab National Bank server vulnerability exposed 180 million customers' data - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/punjab-national-bank-server-vulnerability-exposed-180-million-customers-data/articleshow/87852794.cms",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-010",
+    "date": "2021",
+    "organization": "Multiple Indian individuals (Pegasus Spyware)",
+    "sector": "Individual / Government",
+    "incidentType": "Spyware Infection",
+    "attackMethod": "Zero-click exploits via iMessage",
+    "rootCause": "State-sponsored surveillance (NSO Group spyware)",
+    "impact": "Surveillance of journalists, activists, politicians; data exfiltration from devices",
+    "severity": "High",
+    "description": "In 2021, Pegasus spyware targeted Indian users, including journalists and opposition leaders, via zero-click iMessage exploits. The Amnesty International report revealed widespread surveillance.\n\nKey details:\n- Actors: NSO Group (Israeli spyware, state clients suspected)\n- Targets: Indian opposition, journalists\n- Motivation: Surveillance\n- Consequence: Global scandal, device wipes, legal challenges",
+    "sources": [
+      {
+        "title": "Pegasus Project - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Pegasus_(spyware)",
+        "type": "Reference Article"
+      },
+      {
+        "title": "Pegasus spyware: India used it to spy on 40 journalists, 10 opposition leaders - The Wire",
+        "url": "https://thewire.in/security/pegasus-spyware-india-used-it-to-spy-on-40-journalists-10-opposition-leaders",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-011",
+    "date": "2021-01",
+    "organization": "Multiple Indian COVID-19 Testing Labs",
+    "sector": "Healthcare",
+    "incidentType": "Data Leak",
+    "attackMethod": "Misconfigured server exposure",
+    "rootCause": "Improper server configuration",
+    "impact": "Leak of 1,500 COVID-19 test results, including names, DOB, test dates, centers",
+    "severity": "Medium",
+    "description": "In January 2021, misconfigured servers leaked 1,500 COVID-19 test results from Indian labs, exposing personal health data publicly.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: Test result databases\n- Motivation: N/A (misconfiguration)\n- Consequence: Servers secured, privacy alerts",
+    "sources": [
+      {
+        "title": "COVID-19 test results of 1,500 Indians leaked online due to misconfigured servers - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/covid-19-test-results-of-1500-indians-leaked-online-due-to-misconfigured-servers/articleshow/80792287.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-012",
+    "date": "2021-02",
+    "organization": "Multiple Indian Police Exam Applicants",
+    "sector": "Government / Recruitment",
+    "incidentType": "Data Leak",
+    "attackMethod": "Database exposure on sharing forum",
+    "rootCause": "Misconfigured database",
+    "impact": "Leak of 500,000 applicants' data, including names, DOB, emails, mobile numbers, FIR records, criminal history",
+    "severity": "High",
+    "description": "In February 2021, a police exam applicant database was leaked on a forum, exposing 500,000 records with personal and criminal details.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: Applicant database\n- Motivation: N/A (misconfiguration)\n- Consequence: Database secured, investigations",
+    "sources": [
+      {
+        "title": "Data of 5 lakh police exam applicants leaked online - The Hindu",
+        "url": "https://www.thehindu.com/news/cities/Hyderabad/data-of-5-lakh-police-exam-applicants-leaked-online/article34006112.ece",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-013",
+    "date": "2021-04",
+    "organization": "Upstox",
+    "sector": "Fintech / Trading",
+    "incidentType": "Data Breach",
+    "attackMethod": "KYC data compromise",
+    "rootCause": "Vulnerable KYC upload system",
+    "impact": "Leak of 2.5 million users' KYC data, including PAN, passport copies, bank accounts, signatures",
+    "severity": "High",
+    "description": "In April 2021, Upstox's KYC upload system was breached, exposing 2.5 million users' documents. The data was leaked on dark web forums.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Upstox KYC database\n- Motivation: Data theft\n- Consequence: User notifications, security audit",
+    "sources": [
+      {
+        "title": "Upstox data breach: 2.5 million users' KYC documents exposed - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/upstox-data-breach-2-5-million-users-kyc-documents-exposed/articleshow/82092894.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-014",
+    "date": "2021-04",
+    "organization": "MobiKwik",
+    "sector": "Fintech / Mobile Payments",
+    "incidentType": "Data Breach",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable payment platform database",
+    "impact": "Leak of 100 million users' data (8.2TB), including KYC documents, Aadhaar cards, credit card details, phone numbers; sold on dark web",
+    "severity": "High",
+    "description": "In April 2021, MobiKwik, a popular mobile wallet and payments app, suffered a breach exposing 100 million users' data, including KYC documents and credit card details. The 8.2TB dataset was sold on the dark web, raising significant concerns about payment platform security.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: MobiKwik user database\n- Motivation: Data theft for sale\n- Consequence: User notifications, security overhaul",
+    "sources": [
+      {
+        "title": "MobiKwik Data Breach: 100 Million Users' Data Leaked - The Economic Times",
+        "url": "https://economictimes.indiatimes.com/tech/internet/mobikwik-data-breach-100-million-users-data-leaked/articleshow/81932745.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "MobiKwik data breach: 8.2TB of user data up for sale on dark web - BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/mobikwik-data-breach-82tb-of-user-data-up-for-sale-on-dark-web/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-015",
+    "date": "2021-08",
+    "organization": "PineLabs",
+    "sector": "Fintech / Payment Processing",
+    "incidentType": "Data Breach",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable payment processing system",
+    "impact": "Leak of 500,000 data records, including transaction details; data at risk",
+    "severity": "High",
+    "description": "In August 2021, PineLabs, an ePayment merchant platform, suffered a data breach exposing 500,000 records, including transaction details. The breach highlighted vulnerabilities in payment processing systems.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: PineLabs transaction database\n- Motivation: Data theft\n- Consequence: Investigation, security enhancements",
+    "sources": [
+      {
+        "title": "Pine Labs Data Breach Exposes 500,000 Records - SecurityWeek",
+        "url": "https://www.securityweek.com/pine-labs-data-breach-exposes-500000-records/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-016",
+    "date": "2021-10",
+    "organization": "Tamil Nadu Public Department",
+    "sector": "Government",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware encryption",
+    "rootCause": "Vulnerable government servers",
+    "impact": "Encryption of government files, locked with 16-digit code; operational disruption",
+    "severity": "High",
+    "description": "In October 2021, the Tamil Nadu Public Department was hit by a ransomware attack, encrypting government files and locking them with a 16-digit code. The attack disrupted operations and highlighted government cybersecurity gaps.\n\nKey details:\n- Actors: Unknown ransomware group\n- Targets: Tamil Nadu government servers\n- Motivation: Ransom/extortion\n- Consequence: Investigation, system recovery",
+    "sources": [
+      {
+        "title": "Tamil Nadu Public Department Hit by Ransomware Attack - The Hindu",
+        "url": "https://www.thehindu.com/news/national/tamil-nadu/tamil-nadu-public-department-hit-by-ransomware-attack/article37012894.ece",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2021-017",
+    "date": "2021-11-23",
+    "organization": "Indian Council of Medical Research (ICMR)",
+    "sector": "Healthcare",
+    "incidentType": "Database Breach/Dark Web Sale",
+    "attackMethod": "Leaked or sold database dump (unknown access vector)",
+    "rootCause": "Insecure web applications or credential leaks",
+    "impact": "Exposure of 815 million COVID-19 test records, including names, Aadhaar, and personal info, allegedly sold on dark web forums",
+    "severity": "High",
+    "description": "In November 2021, security researchers reported massive Indian COVID-19 testing data being sold on dark web markets, allegedly from ICMR’s central pandemic database. Although officials initially downplayed the breach, the data appeared genuine and has seen global reporting.",
+    "details": {
+      "Actors": "Unknown—possibly criminal cyber group",
+      "Targets": "ICMR COVID-19 test records, health ID numbers",
+      "Motivation": "Financial, reputational, potential espionage",
+      "Consequence": "Data leak of historic proportions; government probe initiated, ongoing concerns for personal privacy"
+    },
+    "sources": [
+      {
+        "title": "815 million Indian COVID test records put on sale on dark web",
+        "url": "https://www.hindustantimes.com/india-news/815-million-indian-covid-tests-on-sale-dark-web-101643120964046.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Strong, acknowledged by multiple security researchers"
   }
 ]

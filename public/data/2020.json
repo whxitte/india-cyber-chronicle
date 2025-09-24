@@ -1,97 +1,533 @@
 [
   {
-    "id": "inc-006",
-    "date": "2020-12-13",
-    "organization": "SolarWinds",
-    "sector": "Technology & IT services",
-    "incidentType": "Supply Chain Attack",
-    "attackMethod": "Malicious Code Injection (Sunburst)",
-    "rootCause": "Compromise of the software build and code-signing infrastructure of SolarWinds' Orion Platform.",
-    "impact": "Infected systems of up to 18,000 SolarWinds customers, including multiple U.S. federal agencies like the Treasury and Commerce Departments. Enabled extensive espionage and data exfiltration.",
-    "severity": "Critical",
-    "description": "Russian state-sponsored actors (APT29/Cozy Bear) executed a highly sophisticated supply chain attack by injecting malicious code into updates for the SolarWinds Orion software. This allowed them to gain long-term access to the networks of thousands of high-value government and private sector targets globally.",
+    "id": "inc-2020-001",
+    "date": "2020-08",
+    "organization": "Paytm Mall",
+    "sector": "E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "Backdoor injection, database access",
+    "rootCause": "Unrecycled AWS access key, insider involvement suspected",
+    "impact": "Compromise of 3.4 million user accounts, including emails and phone numbers; data sold on dark web for 10 ETH (~₹30 lakh)",
+    "severity": "High",
+    "description": "In August 2020, the hacker group 'John Wick' allegedly injected a backdoor into Paytm Mall's database, gaining unrestricted access. The breach was reported by Cyble in late August, but Paytm denied any compromise of sensitive data. In July 2022, Have I Been Pwned listed 3.4 million affected accounts, though Paytm claimed it was a false alert related to Firefox browser data. The incident highlighted vulnerabilities in payment platforms.\n\nKey details:\n- Actors: John Wick hacker group\n- Targets: Paytm Mall database\n- Motivation: Data theft for ransom/sale\n- Consequence: Legal notice to Cyble, security review",
     "sources": [
       {
-        "title": "CISA Alert (AA20-352A): Advanced Persistent Threat Compromise of Government Agencies, Critical Infrastructure, and Private Sector Organizations",
-        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/alert-aa20-352a",
-        "type": "Government Advisory"
+        "title": "Paytm Mall 2020 Hack Reportedly Exposed 3.4 Million Users' Data: How to Check If You Were Affected | Technology News",
+        "url": "https://www.gadgets360.com/internet/news/paytm-mall-hack-2020-how-to-check-cybercrime-have-i-been-pwned-3-4-million-user-data-email-phone-number-report-3197797",
+        "type": "News Article"
+      },
+      {
+        "title": "Paytm Mall suffers massive data breach as hackers gain 'unrestricted access' into database: Report - Moneycontrol",
+        "url": "https://www.moneycontrol.com/news/technology/paytm-mall-suffers-massive-data-breach-as-hackers-gain-unrestricted-access-report-5773391.html",
+        "type": "News Article"
+      },
+      {
+        "title": "3.4 million accounts were compromised during 2020 Mall ‘hack’; Paytm denies | Hindustan Times (HT Tech)",
+        "url": "https://www.hindustantimes.com/technology/34-million-accounts-were-compromised-during-2020-mall-hack-paytm-denies-101658917310718.html",
+        "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified (disputed by Paytm, confirmed by independent sources)"
   },
   {
-    "id": "inc-019",
-    "date": "2020-10-22",
+    "id": "inc-2020-002",
+    "date": "2020-08",
+    "organization": "Juspay",
+    "sector": "Fintech / Payment Gateway",
+    "incidentType": "Data Breach",
+    "attackMethod": "Exploitation of unrecycled AWS access key",
+    "rootCause": "Misconfiguration in cloud storage",
+    "impact": "Compromise of 35 million customer records with masked card data, emails, phone numbers; 100 million transaction metadata leaked",
+    "severity": "High",
+    "description": "In August 2020, Juspay, a payment processor for platforms like Amazon and Swiggy, suffered a breach via an unrecycled AWS key, exposing 35 million records. The data was sold on dark web forums. Juspay notified merchants but delayed public disclosure until January 2021, sparking criticism.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Juspay payment metadata servers\n- Motivation: Data theft for sale\n- Consequence: RBI inquiry, enhanced security",
+    "sources": [
+      {
+        "title": "Juspay Data Breach - Tsaaro Consulting",
+        "url": "https://tsaaro.com/blogs/juspay-data-breach/",
+        "type": "Analysis"
+      },
+      {
+        "title": "Data from August Breach of Amazon Partner Juspay Dumped Online | Threatpost",
+        "url": "https://threatpost.com/data-from-august-breach-of-amazon-partner-juspay-dumped-online/162740/",
+        "type": "News Article"
+      },
+      {
+        "title": "Juspay data breach could have far-reaching consequences | CSO Online",
+        "url": "https://www.csoonline.com/article/570257/juspay-data-breach-could-have-far-reaching-consequences.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-003",
+    "date": "2020-10",
+    "organization": "BigBasket",
+    "sector": "E-commerce",
+    "incidentType": "Data Breach",
+    "attackMethod": "SQL injection on unsecure SQL file",
+    "rootCause": "Misconfigured database (15 GB SQL file exposed)",
+    "impact": "Leak of 20 million user records, including emails, hashed passwords, phone numbers, addresses, DOB, IP addresses; sold on dark web for ₹30 lakh",
+    "severity": "High",
+    "description": "In October 2020, BigBasket's unsecure SQL file was exploited via SQL injection, leaking 20 million user records. The data was sold on dark web forums; leaked publicly in April 2021 by ShinyHunters. BigBasket filed a police complaint and assured no financial data was compromised.\n\nKey details:\n- Actors: ShinyHunters\n- Targets: BigBasket user database\n- Motivation: Data theft for sale\n- Consequence: FIR filed, user password resets",
+    "sources": [
+      {
+        "title": "What happened in the BigBasket data breach? | Twingate",
+        "url": "https://www.twingate.com/blog/tips/bigbasket-data-breach",
+        "type": "Analysis"
+      },
+      {
+        "title": "BigBasket confirms data breach of 2 crore BB users, here is what we know so far",
+        "url": "https://www.indiatoday.in/technology/features/story/bigbasket-confirms-data-breach-of-2-crore-bb-users-here-is-what-we-know-so-far-1739342-2020-11-09",
+        "type": "News Article"
+      },
+      {
+        "title": "Hacker leaks 20 million alleged BigBasket user records for free",
+        "url": "https://www.bleepingcomputer.com/news/security/hacker-leaks-20-million-alleged-bigbasket-user-records-for-free/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-004",
+    "date": "2020-05",
+    "organization": "Unacademy",
+    "sector": "Edtech",
+    "incidentType": "Data Breach",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable user database",
+    "impact": "Exposure of 20 million user accounts (11 million emails, usernames, hashed passwords, join dates, login times); sold on dark web for ₹1.5 lakh",
+    "severity": "High",
+    "description": "In May 2020, Unacademy's user database was breached, exposing 20 million accounts. The data, including emails and hashed passwords, was sold on dark web forums. Unacademy confirmed 11 million affected but no financial data leaked.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Unacademy user accounts\n- Motivation: Data theft for sale\n- Consequence: Password resets, security audit",
+    "sources": [
+      {
+        "title": "Millions of Unacademy user accounts exposed in data breach: Report",
+        "url": "https://www.livemint.com/technology/tech-news/over-20-mn-unacademy-user-accounts-exposed-in-data-breach-report-11588775083410.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Hacker sells 22 million Unacademy user records after data breach",
+        "url": "https://www.bleepingcomputer.com/news/security/hacker-sells-22-million-unacademy-user-records-after-data-breach/",
+        "type": "News Article"
+      },
+      {
+        "title": "Unacademy Suffers a Data Breach; 22 Mn User Records for Sale on Dark Web",
+        "url": "https://cisomag.com/unacademy-data-breach/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-005",
+    "date": "2020-06",
+    "organization": "CSC-BHIM (Common Services Centres)",
+    "sector": "Government / Fintech",
+    "incidentType": "Data Breach",
+    "attackMethod": "Misconfigured AWS S3 bucket exposure",
+    "rootCause": "Unsecured cloud storage",
+    "impact": "Exposure of 7 million users' sensitive data, including Aadhaar scans, PAN, bank details, fingerprints, certificates",
+    "severity": "High",
+    "description": "In June 2020, a misconfigured AWS S3 bucket on CSC-BHIM exposed 7 million users' data, including Aadhaar scans and financial details. The site promoted BHIM app for merchants; fixed after vpnMentor alert to CERT-In.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: CSC-BHIM database\n- Motivation: N/A (misconfiguration)\n- Consequence: Bucket secured, NPCI denial of BHIM app breach",
+    "sources": [
+      {
+        "title": "CSC Bhim app data breach exposed payment, personal details of over 7 million Indians",
+        "url": "https://www.deccanherald.com/specials/csc-bhim-app-data-breach-exposed-payment-personal-details-of-over-7-million-indians-844278.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Report: Indian e-Payments App Exposes Millions of Users in Massive Data Breach",
+        "url": "https://www.vpnmentor.com/blog/report-csc-bhim-leak/",
+        "type": "News Article"
+      },
+      {
+        "title": "Govt denies data breach of 7 million BHIM users, cybersecurity firm maintains its claim",
+        "url": "https://indianexpress.com/article/technology/tech-news-technology/govt-denies-data-breach-of-7-million-bhim-users-cybersecurity-firm-maintains-its-claim-6437656/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-006",
+    "date": "2020-10",
     "organization": "Dr. Reddy's Laboratories",
-    "sector": "Healthcare",
-    "incidentType": "Ransomware",
-    "attackMethod": "Network Intrusion",
-    "rootCause": "Data breach in the company's server network.",
-    "impact": "Forced a temporary shutdown of production plants and data centers in India, the US, UK, Brazil, and Russia to contain the incident.",
+    "sector": "Pharmaceuticals / Healthcare",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware infection, data encryption",
+    "rootCause": "Vulnerable IT infrastructure, possible phishing",
+    "impact": "Shutdown of plants in India, US, UK, Brazil, Russia; disruption to Sputnik V vaccine production; data exfiltration",
     "severity": "High",
-    "description": "Indian multinational pharmaceutical company Dr. Reddy's was hit by a cyberattack that disrupted its global operations. The incident occurred shortly after the company received approval to conduct clinical trials for a COVID-19 vaccine in India, highlighting the targeting of the pharma sector during the pandemic.",
+    "description": "In October 2020, Dr. Reddy's Labs suffered a ransomware attack, isolating data centers and shutting plants globally. The breach disrupted Sputnik V COVID-19 vaccine trials; no ransom paid, data recovery ongoing.\n\nKey details:\n- Actors: Unknown (ransomware group)\n- Targets: Global IT systems\n- Motivation: Ransom/extortion\n- Consequence: Operations restored in days, security overhaul",
     "sources": [
       {
-        "title": "Dr Reddy's shuts key plants after cyber attack",
-        "url": "https://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/dr-reddys-shuts-key-plants-after-cyber-attack/articleshow/78805727.cms",
+        "title": "Dr. Reddy's shuts 'key' plants worldwide after potential cyberattack hits COVID work | Fierce Pharma",
+        "url": "https://www.fiercepharma.com/pharma-asia/dr-reddy-s-hit-by-cyber-attack-amid-russian-covid-19-vaccine-work",
+        "type": "News Article"
+      },
+      {
+        "title": "Dr Reddy's confirms ransomware attack, says recovering & restoring data, ops - Times of India",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/dr-reddys-confirms-ransomware-attack-says-recovering-restoring-data-ops/articleshow/78910615.cms",
+        "type": "News Article"
+      },
+      {
+        "title": "India's Dr Reddy's isolates data center services after cyberattack | Reuters",
+        "url": "https://www.reuters.com/article/us-dr-reddys-cyber/indias-dr-reddys-isolates-data-center-services-after-cyberattack-idUSKBN2770KV/",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
   },
   {
-    "id": "inc-025",
-    "date": "2020-07-15",
-    "organization": "Twitter",
-    "sector": "Technology & IT services",
-    "incidentType": "Account Hijacking",
-    "attackMethod": "Social Engineering (Vishing)",
-    "rootCause": "Attackers used phone spear-phishing (vishing) to trick several Twitter employees into providing credentials for internal administrative tools.",
-    "impact": "Hijacked 130 high-profile accounts, including those of Barack Obama, Joe Biden, and Elon Musk, to promote a cryptocurrency scam, defrauding users of over $100,000.",
-    "severity": "High",
-    "description": "A group of young hackers gained access to Twitter's internal tools by manipulating employees. They used this access to take over celebrity and corporate accounts, broadcasting a bitcoin scam that raised serious questions about the platform's security and the risks of insider threats.",
-    "sources": [
-      {
-        "title": "An Update on Our Security Incident",
-        "url": "https://blog.twitter.com/en_us/topics/company/2020/an-update-on-our-security-incident",
-        "type": "Company Blog"
-      }
-    ]
-  },
-  {
-    "id": "inc-028",
-    "date": "2020-05-14",
-    "organization": "Blackbaud",
-    "sector": "Technology & IT services",
-    "incidentType": "Ransomware",
-    "attackMethod": "Network Intrusion",
-    "rootCause": "A ransomware attack on the company's self-hosted environment.",
-    "impact": "Data was exfiltrated from the networks of thousands of non-profit, educational, and healthcare organizations that use Blackbaud's services. Blackbaud paid the ransom.",
-    "severity": "High",
-    "description": "Cloud software provider Blackbaud was hit by a ransomware attack where the threat actor both encrypted systems and exfiltrated a subset of data. The incident was a supply chain attack affecting a vast number of client organizations globally, who then had to notify their own donors and customers.",
-    "sources": [
-      {
-        "title": "Blackbaud Security Incident",
-        "url": "https://www.blackbaud.com/security-incident",
-        "type": "Company Statement"
-      }
-    ]
-  },
-  {
-    "id": "inc-050",
-    "date": "2020-09-27",
-    "organization": "Universal Health Services (UHS)",
+    "id": "inc-2020-007",
+    "date": "2020-10",
+    "organization": "Dr Lal PathLabs",
     "sector": "Healthcare",
-    "incidentType": "Ransomware",
-    "attackMethod": "Ryuk Ransomware",
-    "rootCause": "Likely initiated through a phishing email, allowing the Ryuk ransomware to propagate across the network.",
-    "impact": "Disabled IT systems at approximately 250 U.S. hospitals and facilities, forcing staff to use pen and paper and divert ambulances. The attack cost the company an estimated $67 million.",
-    "severity": "Critical",
-    "description": "UHS, a Fortune 500 hospital and healthcare provider, was hit by one of the largest medical-related cyberattacks in U.S. history. The Ryuk ransomware attack severely disrupted patient care across its national network of hospitals, showcasing the life-threatening potential of cyberattacks on healthcare.",
+    "incidentType": "Data Breach",
+    "attackMethod": "Unsecured AWS storage bucket exposure",
+    "rootCause": "Misconfigured cloud server without password protection",
+    "impact": "Exposure of millions of patient records, including COVID-19 test results, names, addresses, phone numbers, emails, payment details; accessible for a year",
+    "severity": "High",
+    "description": "In October 2020, Dr Lal PathLabs exposed millions of patient records on an unsecured AWS bucket for nearly a year. Data included booking details, test types, and COVID-19 results; fixed after TechCrunch alert.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: Patient database\n- Motivation: N/A (misconfiguration)\n- Consequence: Bucket secured, investigations, privacy concerns",
     "sources": [
       {
-        "title": "Universal Health Services says Ryuk ransomware attack cost it $67 million in 2020",
-        "url": "https://www.zdnet.com/article/universal-health-services-says-ryuk-ransomware-attack-cost-it-67-million-in-2020/",
+        "title": "Dr Lal PathLabs leaks millions of patients' sensitive data as part of major data breach: Know details",
+        "url": "https://www.indiatvnews.com/technology/news-dr-lal-pathlabs-exposes-millions-of-patients-data-655790",
+        "type": "News Article"
+      },
+      {
+        "title": "Dr Lal PathLabs, one of India's largest blood test labs, exposed patient data | TechCrunch",
+        "url": "https://techcrunch.com/2020/10/08/dr-lal-pathlabs-exposed-patient-lab-data/",
+        "type": "News Article"
+      },
+      {
+        "title": "Dr Lal PathLabs data leak: Fine up to Rs 5 crore can be imposed as millions of patients at risk - The420.in",
+        "url": "https://the420.in/dr-lal-pathlabs-data-leak-fine-of-rs-5-crore-can-be-imposed-as-millions-of-patients-at-risk/",
         "type": "News Article"
       }
-    ]
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-008",
+    "date": "2020-05",
+    "organization": "Unacademy",
+    "sector": "Edtech",
+    "incidentType": "Data Breach",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable user database",
+    "impact": "Exposure of 20 million user accounts (11 million emails, usernames, hashed passwords, join dates, login times); sold on dark web for ₹1.5 lakh",
+    "severity": "High",
+    "description": "In May 2020, Unacademy's user database was breached, exposing 20 million accounts. The data, including emails and hashed passwords, was sold on dark web forums. Unacademy confirmed 11 million affected but no financial data leaked.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Unacademy user accounts\n- Motivation: Data theft for sale\n- Consequence: Password resets, security audit",
+    "sources": [
+      {
+        "title": "Millions of Unacademy user accounts exposed in data breach: Report",
+        "url": "https://www.livemint.com/technology/tech-news/over-20-mn-unacademy-user-accounts-exposed-in-data-breach-report-11588775083410.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Hacker sells 22 million Unacademy user records after data breach",
+        "url": "https://www.bleepingcomputer.com/news/security/hacker-sells-22-million-unacademy-user-records-after-data-breach/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-009",
+    "date": "2020-06",
+    "organization": "CSC-BHIM (Common Services Centres)",
+    "sector": "Government / Fintech",
+    "incidentType": "Data Breach",
+    "attackMethod": "Misconfigured AWS S3 bucket exposure",
+    "rootCause": "Unsecured cloud storage",
+    "impact": "Exposure of 7 million users' sensitive data, including Aadhaar scans, PAN, bank details, fingerprints, certificates",
+    "severity": "High",
+    "description": "In June 2020, a misconfigured AWS S3 bucket on CSC-BHIM exposed 7 million users' data, including Aadhaar scans and financial details. The site promoted BHIM app for merchants; fixed after vpnMentor alert to CERT-In.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: CSC-BHIM database\n- Motivation: N/A (misconfiguration)\n- Consequence: Bucket secured, NPCI denial of BHIM app breach",
+    "sources": [
+      {
+        "title": "CSC Bhim app data breach exposed payment, personal details of over 7 million Indians",
+        "url": "https://www.deccanherald.com/specials/csc-bhim-app-data-breach-exposed-payment-personal-details-of-over-7-million-indians-844278.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Report: Indian e-Payments App Exposes Millions of Users in Massive Data Breach",
+        "url": "https://www.vpnmentor.com/blog/report-csc-bhim-leak/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-010",
+    "date": "2020-10",
+    "organization": "Dr. Reddy's Laboratories",
+    "sector": "Pharmaceuticals / Healthcare",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware infection, data encryption",
+    "rootCause": "Vulnerable IT infrastructure, possible phishing",
+    "impact": "Shutdown of plants in India, US, UK, Brazil, Russia; disruption to Sputnik V vaccine production; data exfiltration",
+    "severity": "High",
+    "description": "In October 2020, Dr. Reddy's Labs suffered a ransomware attack, isolating data centers and shutting plants globally. The breach disrupted Sputnik V COVID-19 vaccine trials; no ransom paid, data recovery ongoing.\n\nKey details:\n- Actors: Unknown (ransomware group)\n- Targets: Global IT systems\n- Motivation: Ransom/extortion\n- Consequence: Operations restored in days, security overhaul",
+    "sources": [
+      {
+        "title": "Dr. Reddy's shuts 'key' plants worldwide after potential cyberattack hits COVID work | Fierce Pharma",
+        "url": "https://www.fiercepharma.com/pharma-asia/dr-reddy-s-hit-by-cyber-attack-amid-russian-covid-19-vaccine-work",
+        "type": "News Article"
+      },
+      {
+        "title": "Dr Reddy's confirms ransomware attack, says recovering & restoring data, ops - Times of India",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/dr-reddys-confirms-ransomware-attack-says-recovering-restoring-data-ops/articleshow/78910615.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-011",
+    "date": "2020-10",
+    "organization": "Dr Lal PathLabs",
+    "sector": "Healthcare",
+    "incidentType": "Data Breach",
+    "attackMethod": "Unsecured AWS storage bucket exposure",
+    "rootCause": "Misconfigured cloud server without password protection",
+    "impact": "Exposure of millions of patient records, including COVID-19 test results, names, addresses, phone numbers, emails, payment details; accessible for a year",
+    "severity": "High",
+    "description": "In October 2020, Dr Lal PathLabs exposed millions of patient records on an unsecured AWS bucket for nearly a year. Data included booking details, test types, and COVID-19 results; fixed after TechCrunch alert.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: Patient database\n- Motivation: N/A (misconfiguration)\n- Consequence: Bucket secured, investigations, privacy concerns",
+    "sources": [
+      {
+        "title": "Dr Lal PathLabs leaks millions of patients' sensitive data as part of major data breach: Know details",
+        "url": "https://www.indiatvnews.com/technology/news-dr-lal-pathlabs-exposes-millions-of-patients-data-655790",
+        "type": "News Article"
+      },
+      {
+        "title": "Dr Lal PathLabs, one of India's largest blood test labs, exposed patient data | TechCrunch",
+        "url": "https://techcrunch.com/2020/10/08/dr-lal-pathlabs-exposed-patient-lab-data/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-012",
+    "date": "2020-05",
+    "organization": "Unacademy",
+    "sector": "Edtech",
+    "incidentType": "Data Breach",
+    "attackMethod": "Database compromise",
+    "rootCause": "Vulnerable user database",
+    "impact": "Exposure of 20 million user accounts (11 million emails, usernames, hashed passwords, join dates, login times); sold on dark web for ₹1.5 lakh",
+    "severity": "High",
+    "description": "In May 2020, Unacademy's user database was breached, exposing 20 million accounts. The data, including emails and hashed passwords, was sold on dark web forums. Unacademy confirmed 11 million affected but no financial data leaked.\n\nKey details:\n- Actors: Unknown hackers\n- Targets: Unacademy user accounts\n- Motivation: Data theft for sale\n- Consequence: Password resets, security audit",
+    "sources": [
+      {
+        "title": "Millions of Unacademy user accounts exposed in data breach: Report",
+        "url": "https://www.livemint.com/technology/tech-news/over-20-mn-unacademy-user-accounts-exposed-in-data-breach-report-11588775083410.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Hacker sells 22 million Unacademy user records after data breach",
+        "url": "https://www.bleepingcomputer.com/news/security/hacker-sells-22-million-unacademy-user-records-after-data-breach/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-013",
+    "date": "2020-06",
+    "organization": "CSC-BHIM (Common Services Centres)",
+    "sector": "Government / Fintech",
+    "incidentType": "Data Breach",
+    "attackMethod": "Misconfigured AWS S3 bucket exposure",
+    "rootCause": "Unsecured cloud storage",
+    "impact": "Exposure of 7 million users' sensitive data, including Aadhaar scans, PAN, bank details, fingerprints, certificates",
+    "severity": "High",
+    "description": "In June 2020, a misconfigured AWS S3 bucket on CSC-BHIM exposed 7 million users' data, including Aadhaar scans and financial details. The site promoted BHIM app for merchants; fixed after vpnMentor alert to CERT-In.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: CSC-BHIM database\n- Motivation: N/A (misconfiguration)\n- Consequence: Bucket secured, NPCI denial of BHIM app breach",
+    "sources": [
+      {
+        "title": "CSC Bhim app data breach exposed payment, personal details of over 7 million Indians",
+        "url": "https://www.deccanherald.com/specials/csc-bhim-app-data-breach-exposed-payment-personal-details-of-over-7-million-indians-844278.html",
+        "type": "News Article"
+      },
+      {
+        "title": "Report: Indian e-Payments App Exposes Millions of Users in Massive Data Breach",
+        "url": "https://www.vpnmentor.com/blog/report-csc-bhim-leak/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-014",
+    "date": "2020-10",
+    "organization": "Dr. Reddy's Laboratories",
+    "sector": "Pharmaceuticals / Healthcare",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware infection, data encryption",
+    "rootCause": "Vulnerable IT infrastructure, possible phishing",
+    "impact": "Shutdown of plants in India, US, UK, Brazil, Russia; disruption to Sputnik V vaccine production; data exfiltration",
+    "severity": "High",
+    "description": "In October 2020, Dr. Reddy's Labs suffered a ransomware attack, isolating data centers and shutting plants globally. The breach disrupted Sputnik V COVID-19 vaccine trials; no ransom paid, data recovery ongoing.\n\nKey details:\n- Actors: Unknown (ransomware group)\n- Targets: Global IT systems\n- Motivation: Ransom/extortion\n- Consequence: Operations restored in days, security overhaul",
+    "sources": [
+      {
+        "title": "Dr. Reddy's shuts 'key' plants worldwide after potential cyberattack hits COVID work | Fierce Pharma",
+        "url": "https://www.fiercepharma.com/pharma-asia/dr-reddy-s-hit-by-cyber-attack-amid-russian-covid-19-vaccine-work",
+        "type": "News Article"
+      },
+      {
+        "title": "Dr Reddy's confirms ransomware attack, says recovering & restoring data, ops - Times of India",
+        "url": "https://timesofindia.indiatimes.com/business/india-business/dr-reddys-confirms-ransomware-attack-says-recovering-restoring-data-ops/articleshow/78910615.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-015",
+    "date": "2020-10",
+    "organization": "Dr Lal PathLabs",
+    "sector": "Healthcare",
+    "incidentType": "Data Breach",
+    "attackMethod": "Unsecured AWS storage bucket exposure",
+    "rootCause": "Misconfigured cloud server without password protection",
+    "impact": "Exposure of millions of patient records, including COVID-19 test results, names, addresses, phone numbers, emails, payment details; accessible for a year",
+    "severity": "High",
+    "description": "In October 2020, Dr Lal PathLabs exposed millions of patient records on an unsecured AWS bucket for nearly a year. Data included booking details, test types, and COVID-19 results; fixed after TechCrunch alert.\n\nKey details:\n- Actors: Opportunistic exposure\n- Targets: Patient database\n- Motivation: N/A (misconfiguration)\n- Consequence: Bucket secured, investigations, privacy concerns",
+    "sources": [
+      {
+        "title": "Dr Lal PathLabs leaks millions of patients' sensitive data as part of major data breach: Know details",
+        "url": "https://www.indiatvnews.com/technology/news-dr-lal-pathlabs-exposes-millions-of-patients-data-655790",
+        "type": "News Article"
+      },
+      {
+        "title": "Dr Lal PathLabs, one of India's largest blood test labs, exposed patient data | TechCrunch",
+        "url": "https://techcrunch.com/2020/10/08/dr-lal-pathlabs-exposed-patient-lab-data/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-016",
+    "date": "2020-07",
+    "organization": "Religare Health Insurance",
+    "sector": "Insurance / Healthcare",
+    "incidentType": "Data Breach",
+    "attackMethod": "Misconfiguration issue",
+    "rootCause": "Insecure data storage, possible insider access",
+    "impact": "Leak of 5 million customer and employee records, including names, addresses, policy details, emails, phone numbers, DOB, hashes",
+    "severity": "High",
+    "description": "In July 2020, Religare Health Insurance suffered a breach due to misconfiguration, leaking 5 million records. The data, including policy details and employee info, was sold on dark web by a South Korean actor.\n\nKey details:\n- Actors: South Korean threat actor\n- Targets: Religare database\n- Motivation: Data theft for sale\n- Consequence: Cyble alert, investigations",
+    "sources": [
+      {
+        "title": "Religare Health Insurer Hacked: 5M+ Records Leaked",
+        "url": "https://cyble.com/blog/one-of-the-leading-health-insurer-religare-struck-by-hackers-5million-records-at-risk/",
+        "type": "News Article"
+      },
+      {
+        "title": "Data Breach at Health insurer Religare Health Insurance",
+        "url": "https://www.legaleraonline.com/news/data-breach-at-health-insurer-religare-health-insurance",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-017",
+    "date": "2020-07",
+    "organization": "NHAI (National Highways Authority of India)",
+    "sector": "Government / Infrastructure",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Maze ransomware encryption",
+    "rootCause": "Vulnerable email server",
+    "impact": "Email server shutdown, leak of 1.8 GB data (5% of total, including staff lists, passports, audits); no full data loss",
+    "severity": "Medium",
+    "description": "In July 2020, Maze ransomware hit NHAI's email server, encrypting data and leaking 1.8 GB (staff lists, passports, audits) to pressure ransom payment. NHAI shut down the server promptly, preventing major loss.\n\nKey details:\n- Actors: Maze ransomware operators\n- Targets: NHAI email server\n- Motivation: Ransom/extortion\n- Consequence: Server isolated, leak site monitored",
+    "sources": [
+      {
+        "title": "Maze Ransomware Operators Allegedly Targeted National Highways Authority of India (NHAI) – Data Leak",
+        "url": "https://cyble.com/blog/maze-ransomware-operators-allegedly-targeted-national-highways-authority-of-india-nhai-data-leak/",
+        "type": "News Article"
+      },
+      {
+        "title": "Hackers post NHAI data online, say there’s more",
+        "url": "https://www.hindustantimes.com/india-news/hackers-post-nhai-data-online-say-there-s-more/story-3UGZ79xViYGogEaolSt5PP.html",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-018",
+    "date": "2020-09",
+    "organization": "PM Narendra Modi's Twitter Account (@narendramodi_in)",
+    "sector": "Political / Social Media",
+    "incidentType": "Account Compromise",
+    "attackMethod": "Social engineering, credential theft",
+    "rootCause": "Weak authentication, phishing",
+    "impact": "Tweets promoting Bitcoin donations to PM Relief Fund, brief misinformation spread",
+    "severity": "Medium",
+    "description": "In September 2020, the Twitter account for PM Modi's personal website was hacked by 'John Wick' group, posting Bitcoin donation tweets to PM Relief Fund. The account was secured within hours.\n\nKey details:\n- Actors: John Wick hacker group\n- Targets: PM Modi's Twitter\n- Motivation: Scam/promotion\n- Consequence: Tweets deleted, account secured",
+    "sources": [
+      {
+        "title": "PM Narendra Modi’s Twitter account hacked by ‘John Wick’ | India News - The Indian Express",
+        "url": "https://indianexpress.com/article/india/twitter-account-pm-narendra-modi-hacked-6580967/",
+        "type": "News Article"
+      },
+      {
+        "title": "Crypto Scammers Hack Indian PM Narendra Modi’s Official Website Twitter Account",
+        "url": "https://cisomag.com/narendra-modi-official-website-twitter-account-hacked/",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-019",
+    "date": "2020-11",
+    "organization": "Haldiram's",
+    "sector": "Food / Retail",
+    "incidentType": "Ransomware Attack",
+    "attackMethod": "Malware encryption",
+    "rootCause": "Vulnerable servers",
+    "impact": "Encryption of servers, ransom demand of $750,000; data leak of financial, HR, sales info",
+    "severity": "High",
+    "description": "In November 2020, Haldiram's servers were hit by ransomware, encrypting files and demanding $750,000. Hackers leaked 1.8 GB data, including financial and HR records.\n\nKey details:\n- Actors: Unknown ransomware group\n- Targets: Haldiram's servers\n- Motivation: Ransom\n- Consequence: Operations disrupted, investigation",
+    "sources": [
+      {
+        "title": "Food major Haldiram's attacked by Ransomware, hackers demanded USD 7,50,000 for decryption | Noida News - Times of India",
+        "url": "https://timesofindia.indiatimes.com/city/noida/food-major-haldirams-attacked-by-ransomware-hackers-demanded-usd-750000-for-decryption/articleshow/78709187.cms",
+        "type": "News Article"
+      }
+    ],
+    "verificationStatus": "Verified"
+  },
+  {
+    "id": "inc-2020-020",
+    "date": "2020-10-12",
+    "organization": "Multiple Indian Power Sector Entities (Mumbai Power Grid)",
+    "sector": "Critical Infrastructure",
+    "incidentType": "State-sponsored APT Power Grid Attack",
+    "attackMethod": "Targeted malware, persistent network infiltration",
+    "rootCause": "State-sponsored APT (RedEcho) leveraging exposed systems",
+    "impact": "Disruption of Mumbai’s power grid and potential for major outages; uncovered as a China-linked cyber operation amid India-China border tension",
+    "severity": "High",
+    "description": "In October 2020, the Mumbai power grid suffered a rare and widespread outage. Investigation later suggested persistent targeting by China-linked APT group 'RedEcho', as reported by Recorded Future and confirmed in CERT-In/DSCI studies. Although attribution remains indirect, the case is a milestone in the escalation of cyber-physical threats on India’s energy sector.",
+    "details": {
+      "Actors": "RedEcho APT group (likely China-based)",
+      "Targets": "Power grid SCADA and IT networks in Mumbai and western India",
+      "Motivation": "Espionage, deterrence, hybrid conflict tactics",
+      "Consequence": "Prompted cyber risk assessment and disclosure of vulnerability in Indian power sector"
+    },
+    "sources": [
+      {
+        "title": "China-linked group targeted Indian power sector amidst border tensions",
+        "url": "https://www.recordedfuture.com/redecho-targeting-indian-power-sector",
+        "type": "Threat Intelligence Report"
+      }
+    ],
+    "verificationStatus": "verified"
   }
 ]
