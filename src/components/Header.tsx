@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Shield, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   const location = useLocation();
@@ -65,15 +66,7 @@ const Header = () => {
               <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
             </Button>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button className="text-muted-foreground hover:text-academic-red">
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+            <MobileNav />
           </div>
         </div>
       </div>
