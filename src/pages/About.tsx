@@ -73,8 +73,8 @@ const About = () => {
               </div>
               <h2 className="text-2xl font-bold academic-heading">Our Mission</h2>
               <p className="text-lg academic-body">
-                To create a comprehensive, publicly accessible archive of cyber security incidents in India, 
-                fostering transparency, research, and improved security awareness across all sectors of society.
+                To create a comprehensive, publicly accessible archive of structured, publicly accessible archive of India’s cybersecurity incidents (2001–2025), 
+                fostering transparency, research, and improved security awareness across all sectors of society. This project was created to advance understanding of India’s evolving cyber threat landscape, strengthen awareness, and provide a trusted research foundation for the future.
               </p>
             </div>
           </Card>
@@ -164,28 +164,7 @@ const About = () => {
               </div>
             </div>
           </Card>
-
-          {/* Creator Information */}
-          <section className="text-center space-y-4">
-            <h2 className="text-2xl font-bold academic-heading">Research Team</h2>
-            <Card className="p-8 bg-muted/30">
-              <div className="space-y-4">
-                <div className="flex justify-center">
-                  <div className="w-20 h-20 rounded-full bg-academic-red flex items-center justify-center">
-                    <Users className="h-10 w-10 text-white" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold academic-subheading">Cyber Security Research Initiative</h3>
-                  <p className="text-muted-foreground">Independent Research Project</p>
-                </div>
-                <p className="text-sm academic-body max-w-2xl mx-auto">
-                  This archive is maintained by security researchers dedicated to advancing cyber security 
-                  awareness in India through systematic documentation and analysis of historical incidents.
-                </p>
-              </div>
-            </Card>
-          </section>
+          
         </div>
       </div>
     </div>

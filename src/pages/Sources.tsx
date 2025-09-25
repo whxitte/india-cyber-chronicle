@@ -201,7 +201,7 @@ const Sources = () => {
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold academic-heading">Source Methodology</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Our approach to source selection, verification, and quality assurance
+                The approach to source selection, verification, and quality assurance
               </p>
             </div>
 
@@ -239,7 +239,7 @@ const Sources = () => {
                 </div>
                 <div className="pt-4">
                   <Badge variant="outline" className="px-4 py-2">
-                    Contact: research@cyberarchive.in
+                    Contact in Linkedin: linkedin.com/in/sethusatheesh
                   </Badge>
                 </div>
               </div>
@@ -254,7 +254,7 @@ const Sources = () => {
                 <h3 className="font-semibold academic-subheading">How to Cite This Archive</h3>
                 <div className="bg-muted p-4 rounded-lg font-mono text-sm">
                   India Cyber Incident Archive (2024). "India Cyber Incident Archive (2001–2025)." 
-                  Available at: https://cyberarchive.in [Accessed: {new Date().toLocaleDateString()}]
+                  Available at: https://whxitte.github.io/india-cyber-chronicle [Accessed: {new Date().toLocaleDateString()}]
                 </div>
                 <p className="text-sm text-muted-foreground">
                   When citing specific incidents, please reference both this archive and the original source material 

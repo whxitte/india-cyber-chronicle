@@ -121,7 +121,7 @@ const Index = () => {
             <div className="flex items-center justify-center space-x-6 text-sm">
               <Link to="/about" className="text-muted-foreground hover:text-academic-red">About</Link>
               <Link to="/sources" className="text-muted-foreground hover:text-academic-red">Sources</Link>
-              <span className="text-muted-foreground">© 2024 Research Archive</span>
+              <span className="text-muted-foreground"><a href="www.linkedin.com/in/sethusatheesh">Author Linkedin</a></span>
             </div>
           </div>
         </div>
