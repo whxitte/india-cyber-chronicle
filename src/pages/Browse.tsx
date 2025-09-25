@@ -5,6 +5,7 @@ import SearchBar from "@/components/SearchBar";
 import FilterPanel from "@/components/FilterPanel";
 import IncidentTable from "@/components/IncidentTable";
 import { Incident } from "@/components/IncidentTable";
+import { getJsonDataUrl } from "@/lib/data";
 
 const Browse = () => {
   const [allIncidents, setAllIncidents] = useState<Incident[]>([]);
@@ -17,7 +18,7 @@ const Browse = () => {
         const years = Array.from({ length: 2025 - 2000 + 1 }, (_, i) => 2000 + i);
         const fetchPromises = years.map(async (year) => {
           try {
-            const response = await fetch(`/data/${year}.json`);
+            const response = await fetch(getJsonDataUrl(`data/${year}.json`));
             console.log(`Fetching: /data/${year}.json`);
             if (!response.ok) {
               if (response.status === 404) {

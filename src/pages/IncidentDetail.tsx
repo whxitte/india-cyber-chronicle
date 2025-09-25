@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Incident } from "@/components/IncidentTable"; // Assuming Incident interface is exported from IncidentTable
+import { Incident } from "@/components/IncidentTable";
+import { getJsonDataUrl } from "@/lib/data";
 import {
   ArrowLeft,
   Calendar,
@@ -32,7 +33,7 @@ const IncidentDetail = () => {
         const years = Array.from({ length: 2025 - 2000 + 1 }, (_, i) => 2000 + i);
         const fetchPromises = years.map(async (year) => {
           try {
-            const response = await fetch(`/data/${year}.json`);
+            const response = await fetch(getJsonDataUrl(`data/${year}.json`));
             console.log(`Fetching: /data/${year}.json`);
             if (!response.ok) {
               if (response.status === 404) {
