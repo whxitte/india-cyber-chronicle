@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ExternalLink, Calendar, Building } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export interface Incident {
   id: string;
@@ -105,14 +105,8 @@ const IncidentTable = ({ incidents }: IncidentTableProps) => {
           {/* Table Header */}
           <div className="border-b">
             <div className="grid grid-cols-8 gap-4 p-3 text-sm font-semibold text-academic-red">
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
-                Date
-              </div>
-              <div className="flex items-center gap-2">
-                <Building className="h-4 w-4" />
-                Organization
-              </div>
+              <div>Date</div>
+              <div>Organization</div>
               <div>Sector</div>
               <div>Incident Type</div>
               <div>Attack Method</div>

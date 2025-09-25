@@ -10,8 +10,6 @@ import { Filter, X } from "lucide-react";
 interface FilterPanelProps {
   filters: {
     years: string[];
-    sectors: string[];
-    incidentTypes: string[];
     severities: string[];
   };
   onFiltersChange: (filters: any) => void;
@@ -23,28 +21,6 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
   const [isExpanded, setIsExpanded] = useState(false);
 
   const yearOptions = Array.from({ length: 26 }, (_, i) => (2000 + i).toString());
-  const sectorOptions = [
-    "Banking",
-    "Government", 
-    "Healthcare",
-    "Transportation",
-    "Energy",
-    "IT Services",
-    "Financial Regulation",
-    "Telecommunications",
-    "Critical Infrastructure",
-  ];
-  const incidentTypeOptions = [
-    "Phishing",
-    "Ransomware", 
-    "Data Breach",
-    "DDoS Attack",
-    "APT Attack",
-    "Insider Threat",
-    "Malware",
-    "Web Defacement",
-    "SIM Swapping",
-  ];
   const severityOptions = ["Critical", "High", "Medium", "Low"];
 
   const handleFilterChange = (category: string, value: string, checked: boolean) => {
@@ -62,8 +38,6 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
   const clearAllFilters = () => {
     onFiltersChange({
       years: [],
-      sectors: [],
-      incidentTypes: [],
       severities: [],
     });
   };
@@ -142,14 +116,6 @@ const FilterPanel = ({ filters, onFiltersChange, totalIncidents, filteredCount }
 
         <div className="space-y-6">
           <FilterSection title="Year" options={yearOptions} category="years" />
-
-          <Separator />
-
-          <FilterSection title="Sector" options={sectorOptions} category="sectors" />
-
-          <Separator />
-
-          <FilterSection title="Incident Type" options={incidentTypeOptions} category="incidentTypes" />
 
           <Separator />
 
