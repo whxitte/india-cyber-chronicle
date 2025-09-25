@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -7,6 +7,7 @@ import SearchBar from "@/components/SearchBar";
 import { Database, Shield, FileText, TrendingUp, Users } from "lucide-react";
 
 const Index = () => {
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
 
   const stats = [
@@ -19,8 +20,8 @@ const Index = () => {
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
-      // Navigate to browse page with search query
-      window.location.href = `/browse?search=${encodeURIComponent(searchQuery)}`;
+      // Use React Router navigation instead of window.location
+      navigate(`/browse?search=${encodeURIComponent(searchQuery)}`);
     }
   };
 
@@ -121,7 +122,7 @@ const Index = () => {
             <div className="flex items-center justify-center space-x-6 text-sm">
               <Link to="/about" className="text-muted-foreground hover:text-academic-red">About</Link>
               <Link to="/sources" className="text-muted-foreground hover:text-academic-red">Sources</Link>
-              <span className="text-muted-foreground"><a href="www.linkedin.com/in/sethusatheesh">Author Linkedin</a></span>
+              <span className="text-muted-foreground"><a href="https://www.linkedin.com/in/sethusatheesh" target="_blank" rel="noopener noreferrer">Author Linkedin</a></span>
             </div>
           </div>
         </div>
