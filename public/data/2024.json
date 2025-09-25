@@ -18,17 +18,17 @@
     },
     "sources": [
       {
-        "title": "Biggest Cyber Attacks in India 2024: Data Breaches & Hacks",
-        "url": "https://skillogic.com/blog/biggest-cyber-attacks-in-india-2024-data-breaches-hacks/",
-        "type": "Security Analysis"
+        "title": "Alleged Hathway Data Leak Exposes 41 Million Customers",
+        "url": "https://thecyberexpress.com/alleged-hathway-data-leak/",
+        "type": "Security Report"
       },
       {
-        "title": "25 Major Cyber Attacks in India That Shocked the Nation",
-        "url": "https://www.sattrix.com/blog/biggest-cyber-attacks-in-india/",
-        "type": "Comprehensive Report"
+        "title": "Hathway Data Breach",
+        "url": "https://haveibeenpwned.com/Breach/Hathway",
+        "type": "Breach Database"
       }
     ],
-    "verificationStatus": "Verified - Company acknowledged breach"
+    "verificationStatus": "Confirmed - Company acknowledged breach"
   },
   {
     "id": "inc-2024-002",
@@ -59,7 +59,7 @@
         "type": "Investigation Report"
       }
     ],
-    "verificationStatus": "Verified - EclecticIQ threat intelligence verified"
+    "verificationStatus": "Confirmed - EclecticIQ threat intelligence verified"
   },
   {
     "id": "inc-2024-003",
@@ -90,10 +90,41 @@
         "type": "Security Analysis"
       }
     ],
-    "verificationStatus": "Verified - Government acknowledged"
+    "verificationStatus": "Confirmed - Government acknowledged"
   },
   {
     "id": "inc-2024-004",
+    "date": "2024-07-18",
+    "organization": "WazirX Cryptocurrency Exchange",
+    "sector": "Cryptocurrency/Financial Technology",
+    "incidentType": "Smart Contract Exploit - Multi-Signature Wallet Hack",
+    "attackMethod": "Exploitation of multi-signature wallet vulnerabilities, smart contract manipulation",
+    "rootCause": "Smart contract vulnerabilities in wallet infrastructure, inadequate security auditing of DeFi protocols",
+    "impact": "Over $230 million worth of cryptocurrency stolen including ETH, USDC, SHIB tokens; major disruption to Indian crypto ecosystem; trading suspended for weeks; 15 million users affected",
+    "severity": "Critical",
+    "description": "WazirX, India's largest cryptocurrency exchange by volume, suffered a catastrophic exploit of its multi-signature wallet system on July 18, 2024. Attackers exploited vulnerabilities in smart contract logic to drain over $230 million in digital assets including Ethereum, USDC, and Shiba Inu tokens. The attack was linked to North Korean Lazarus Group using sophisticated social engineering and smart contract manipulation techniques.",
+    "details": {
+      "Actors": "Sophisticated cybercriminals with advanced blockchain expertise, attributed to Lazarus Group (North Korea)",
+      "Targets": "WazirX multi-sig wallets, hot wallet infrastructure, DeFi smart contracts",
+      "Motivation": "Financial theft - targeting high-value cryptocurrency assets",
+      "Consequence": "Enhanced crypto exchange security regulations, mandatory cold storage requirements, increased regulatory scrutiny"
+    },
+    "sources": [
+      {
+        "title": "WazirX Hack: $230M Stolen in Major Crypto Breach",
+        "url": "https://www.forbes.com/sites/digital-assets/2024/07/18/wazirx-hack-230m-stolen-in-major-crypto-breach/",
+        "type": "News Report"
+      },
+      {
+        "title": "Biggest Cyber Attacks in India 2024",
+        "url": "https://skillogic.com/blog/biggest-cyber-attacks-in-india-2024-data-breaches-hacks/",
+        "type": "Blog Post"
+      }
+    ],
+    "verificationStatus": "Confirmed - Company admitted losses, law enforcement investigation ongoing"
+  },
+  {
+    "id": "inc-2024-005",
     "date": "2024-07-31",
     "organization": "C-Edge Technologies (Banking Infrastructure Provider)",
     "sector": "Financial Services/Banking Technology",
@@ -121,41 +152,41 @@
         "type": "News Report"
       }
     ],
-    "verificationStatus": "Verified - NPCI statement issued"
-  },
-  {
-    "id": "inc-2024-005",
-    "date": "2024-09-20",
-    "organization": "Star Health Insurance",
-    "sector": "Healthcare/Insurance",
-    "incidentType": "Data Breach - Healthcare Records Exposure",
-    "attackMethod": "Internal system compromise, data exfiltration and Telegram distribution",
-    "rootCause": "Potential insider involvement, inadequate data access controls",
-    "impact": "31 million customers' personal and medical data compromised including tax records, medical claims; 7.24TB of sensitive data leaked; $68,000 ransom demanded",
-    "severity": "Critical",
-    "description": "Star Health, India's largest health insurer, suffered a massive breach when hacker 'xenZen' compromised 7.24TB of sensitive data affecting 31 million customers. The attacker used Telegram chatbots to distribute customer data and later sent death threats including bullet cartridges to company executives, citing denied medical claims as motivation.",
-    "details": {
-      "Actors": "Hacker 'xenZen' (potentially hacktivism-motivated)",
-      "Targets": "Star Health customer databases, medical records, internal systems",
-      "Motivation": "Financial extortion, hacktivism regarding denied medical claims",
-      "Consequence": "Healthcare data protection regulations tightened, insurance sector security review"
-    },
-    "sources": [
-      {
-        "title": "India's Star Health says it received $68000 ransom demand after data leak",
-        "url": "https://www.reuters.com/world/india/indias-star-health-says-it-received-68k-ransom-demand-after-data-leak-2024-10-12/",
-        "type": "Official Report"
-      },
-      {
-        "title": "Star Health Data Breach Affects 31 Million Users",
-        "url": "https://www.medianama.com/2024/09/223-star-health-data-breach-31-million-users-data-exposed-chatbots-offer-samples-on-telegram/",
-        "type": "Investigation Report"
-      }
-    ],
-    "verificationStatus": "Verified - Company acknowledged breach"
+    "verificationStatus": "Officially confirmed - NPCI statement issued"
   },
   {
     "id": "inc-2024-006",
+    "date": "2024-08-01",
+    "organization": "Angel One Broking",
+    "sector": "Financial Services",
+    "incidentType": "Data Breach - Financial Records Exposure",
+    "attackMethod": "Unauthorized access to customer database",
+    "rootCause": "Security vulnerabilities in customer data systems",
+    "impact": "7.9-8 million customers' data leaked including stock holdings, financial portfolio details, trading history",
+    "severity": "High",
+    "description": "Angel One, a major Indian brokerage firm, faced a data breach exposing 8 million customer records on hacker forums. The breach included sensitive financial information, trading portfolios, and investment details, highlighting vulnerabilities in India's growing fintech sector.",
+    "details": {
+      "Actors": "Unknown threat actors targeting financial platforms",
+      "Targets": "Angel One customer database, trading records, financial portfolios",
+      "Motivation": "Data theft for potential financial fraud and market manipulation",
+      "Consequence": "Investigation launched by company, enhanced security measures for brokerage platforms"
+    },
+    "sources": [
+      {
+        "title": "Year Ender 2024: Biggest Cyberattacks in India",
+        "url": "https://economictimes.com/tech/technology/year-ender-2024-biggest-cyberattacks-in-india/articleshow/116796935.cms",
+        "type": "News Report"
+      },
+      {
+        "title": "Biggest Cyber Attacks in India 2024",
+        "url": "https://skillogic.com/blog/biggest-cyber-attacks-in-india-2024-data-breaches-hacks/",
+        "type": "Blog Post"
+      }
+    ],
+    "verificationStatus": "Claimed on hacker forums - Under investigation"
+  },
+  {
+    "id": "inc-2024-007",
     "date": "2024-08-15",
     "organization": "AI-Powered Healthcare Provider (Anonymous Indian Hospital)",
     "sector": "Healthcare",
@@ -183,6 +214,37 @@
         "type": "Industry Analysis"
       }
     ],
-    "verificationStatus": "Verified - Research report verified"
+    "verificationStatus": "Confirmed - Research report verified"
+  },
+  {
+    "id": "inc-2024-008",
+    "date": "2024-09-20",
+    "organization": "Star Health Insurance",
+    "sector": "Healthcare/Insurance",
+    "incidentType": "Data Breach - Healthcare Records Exposure",
+    "attackMethod": "Internal system compromise, data exfiltration and Telegram distribution",
+    "rootCause": "Potential insider involvement, inadequate data access controls",
+    "impact": "31 million customers' personal and medical data compromised including tax records, medical claims; 7.24TB of sensitive data leaked; $68,000 ransom demanded",
+    "severity": "Critical",
+    "description": "Star Health, India's largest health insurer, suffered a massive breach when hacker 'xenZen' compromised 7.24TB of sensitive data affecting 31 million customers. The attacker used Telegram chatbots to distribute customer data and later sent death threats including bullet cartridges to company executives, citing denied medical claims as motivation.",
+    "details": {
+      "Actors": "Hacker 'xenZen' (potentially hacktivism-motivated)",
+      "Targets": "Star Health customer databases, medical records, internal systems",
+      "Motivation": "Financial extortion, hacktivism regarding denied medical claims",
+      "Consequence": "Healthcare data protection regulations tightened, insurance sector security review"
+    },
+    "sources": [
+      {
+        "title": "India's Star Health says it received $68000 ransom demand after data leak",
+        "url": "https://www.reuters.com/world/india/indias-star-health-says-it-received-68k-ransom-demand-after-data-leak-2024-10-12/",
+        "type": "Official Report"
+      },
+      {
+        "title": "Star Health Data Breach Affects 31 Million Users",
+        "url": "https://www.medianama.com/2024/09/223-star-health-data-breach-31-million-users-data-exposed-chatbots-offer-samples-on-telegram/",
+        "type": "Investigation Report"
+      }
+    ],
+    "verificationStatus": "Officially confirmed - Company acknowledged breach"
   }
 ]
