@@ -358,9 +358,9 @@ const IncidentDetail = () => {
                     className="w-full justify-start"
                     asChild
                   >
-                    <Link to={`/browse?search=${encodeURIComponent(incident.organization)}`}>
-                      <Building className="h-4 w-4 mr-2" />
-                      View Similar Incidents
+                    <Link to={`/browse?search=${encodeURIComponent(incident.organization)}`} className="flex items-center w-full">
+                      <Building className="h-4 w-4 mr-2 flex-shrink-0" />
+                      <span className="truncate">View Similar Incidents</span>
                     </Link>
                   </Button>
                   <Button 
@@ -368,9 +368,9 @@ const IncidentDetail = () => {
                     className="w-full justify-start"
                     asChild
                   >
-                    <Link to={`/browse?search=${encodeURIComponent(incident.sector)}`}>
-                      <Shield className="h-4 w-4 mr-2" />
-                      Browse {incident.sector} Sector
+                    <Link to={`/browse?search=${encodeURIComponent(incident.sector)}`} className="flex items-center w-full">
+                      <Shield className="h-4 w-4 mr-2 flex-shrink-0" />
+                      <span className="truncate">Browse {incident.sector} Sector</span>
                     </Link>
                   </Button>
                   <Button 
@@ -378,9 +378,9 @@ const IncidentDetail = () => {
                     className="w-full justify-start"
                     asChild
                   >
-                    <Link to={`/browse?search=${encodeURIComponent(incident.incidentType)}`}>
-                      <AlertTriangle className="h-4 w-4 mr-2" />
-                      Similar Attack Types
+                    <Link to={`/browse?search=${encodeURIComponent(incident.incidentType)}`} className="flex items-center w-full">
+                      <AlertTriangle className="h-4 w-4 mr-2 flex-shrink-0" />
+                      <span className="truncate">Similar Attack Types</span>
                     </Link>
                   </Button>
                 </div>
