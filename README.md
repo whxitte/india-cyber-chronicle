@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# 🇮🇳 India Cybersecurity Incident Archive (2001–2025)  
 
-## Project info
+A **publicly accessible, structured archive of major cybersecurity incidents affecting India** between 2001 and 2025.  
+This project documents **200+ verified incidents** across government, banking, healthcare, telecom, defense, and other critical sectors.  
 
-**URL**: https://lovable.dev/projects/6748ae7a-2e17-4798-ad49-26c04d495553
+🔗 **Live Website:** [Visit the Archive](https://whxitte.github.io/india-cyber-chronicle/)  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 Project Overview  
+The *India Cybersecurity Incident Archive* is the **first initiative to systematically catalog cyber incidents in India**.  
+It was created as part of an independent cybersecurity research effort to:  
 
-**Use Lovable**
+- Document India’s **cyber threat landscape over 25 years**.  
+- Provide a **structured dataset** for researchers, students, policymakers, and security professionals.  
+- Increase **public awareness** of cyber risks.  
+- Support **future defensive strategies** by studying historical attack patterns.  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6748ae7a-2e17-4798-ad49-26c04d495553) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Objectives  
+- **Comprehensive Documentation** – Preserve records of major incidents in one place.  
+- **Research & Analysis** – Enable trend analysis and threat intelligence.  
+- **Public Awareness** – Highlight the impact of cyber threats on India’s digital ecosystem.  
+- **Education** – Serve as a reference for students, educators, and policymakers.  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧪 Research Methodology  
+1. **Source Collection** – Data gathered from CERT-In advisories, research reports, academic papers, and credible news outlets.  
+2. **Verification** – Each incident cross-validated with ≥2 credible sources.  
+3. **Categorization** – Incidents classified by sector, type, severity, and impact.  
+4. **Documentation** – Standardized JSON/CSV format with metadata and source links.  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Data Structure (JSON Schema Example)  
+```json
+{
+  "id": "inc-2016-007",
+  "date": "2016-10",
+  "organization": "Multiple Indian Banks",
+  "sector": "Financial",
+  "incidentType": "Data Breach / Malware Infection",
+  "attackMethod": "Malware injection in payment systems",
+  "rootCause": "Vulnerable payment gateway network",
+  "impact": "Compromise of 3.2 million debit cards",
+  "severity": "High",
+  "description": "Malware injected into Hitachi Payment Services' ATM/POS network compromised 3.2M cards.",
+  "sources": [
+    {
+      "title": "The Hindu - Debit Card Breach 2016",
+      "url": "https://www.thehindu.com/news/national/32-lakh-debit-cards-compromised-in-cyber-attack-on-banks/article9220591.ece",
+      "type": "News Article"
+    }
+  ],
+  "verificationStatus": "Verified"
+}
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🌐 Website Features  
+- 🔍 **Search & Filter** incidents by year, sector, type, or organization.  
+- 📊 **Structured Data** in JSON & CSV formats.  
+- 📖 **Detailed Pages** with description, technical details, and sources.  
+- 🎓 **Educational Resource** for cybersecurity students and professionals.  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📅 Scope & Coverage  
+- **Timeline:** 2001–2025 (25 years)  
+- **Sectors:** Government, Banking, Healthcare, Telecom, Defense, Energy, IT, Education, Retail, etc.  
+- **Incidents:** 200+ verified cases  
+- **Organizations:** 120+ public & private sector entities  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 👤 Author
+**Sethu Satheesh**  
+Independent Cybersecurity Researcher | Security Engineer  
+📍 Kerala, India  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## ⚠️ Important Notice  
+This archive is compiled for **research and educational purposes only**.  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6748ae7a-2e17-4798-ad49-26c04d495553) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- All incidents are sourced from publicly available reports.  
+- Accuracy depends on the quality of disclosed information.  
+- This archive should not be used as the **sole basis for critical security decisions**.  
